@@ -1,8 +1,9 @@
 
 import pygame
 from config import WIDTH, HEIGHT
-from scenes.booster import BoosterScene
 from scenes.media_collection import MediaCollectionScene
+
+from gameplay.card import Card_Item
 
 
 class MenuScene:
@@ -77,6 +78,8 @@ class MenuScene:
             self.plus_radius * 2,
             self.plus_radius * 2
         )
+
+        self.card = Card_Item("barbie","card_perso")
 
         # Boutons principaux
         button_width = int(WIDTH * 0.39)
@@ -179,9 +182,6 @@ class MenuScene:
                 elif self.buttons["REF"].collidepoint(mouse_pos):
                     self.open_references()
 
-                # Bouton BOOSTER
-                elif self.buttons["BOOSTER"].collidepoint(mouse_pos):
-                    self.open_booster()
                 # Bouton QUITTER
                 elif self.buttons["QUITTER"].collidepoint(mouse_pos):
                     self.game.running = False
@@ -425,150 +425,6 @@ class MenuScene:
                 expanded
             )
 
-    def draw_preview_card(self, surface):
-        rect = self.preview_card_rect
-
-        # Ombre
-        shadow_rect = rect.move(8, 10)
-        pygame.draw.rect(
-            surface,
-            (10, 12, 18),
-            shadow_rect,
-            border_radius=18
-        )
-
-        # Fond principal de la carte
-        pygame.draw.rect(
-            surface,
-            (46, 56, 80),
-            rect,
-            border_radius=18
-        )
-
-        # Contour externe
-        pygame.draw.rect(
-            surface,
-            (120, 180, 255),
-            rect,
-            3,
-            border_radius=18
-        )
-
-        # Bandeau haut
-        top_band = pygame.Rect(rect.x + 8, rect.y + 8, rect.w - 16, 34)
-        pygame.draw.rect(
-            surface,
-            (30, 38, 58),
-            top_band,
-            border_radius=10
-        )
-
-        # Nom de la carte
-        text_name = self.font_card_title.render(
-            "TRUMP DANCE", True, self.WHITE
-        )
-        surface.blit(
-            text_name,
-            text_name.get_rect(center=top_band.center)
-        )
-
-        # Zone image / illustration
-        art_rect = pygame.Rect(
-            rect.x + 15,
-            rect.y + 52,
-            rect.w - 30,
-            int(rect.h * 0.46)
-        )
-        pygame.draw.rect(
-            surface,
-            (90, 110, 145),
-            art_rect,
-            border_radius=12
-        )
-
-        # Petit visuel placeholder
-        pygame.draw.circle(
-            surface,
-            (220, 225, 235),
-            (art_rect.centerx, art_rect.y + 42),
-            18
-        )
-
-        body_rect = pygame.Rect(
-            art_rect.centerx - 28,
-            art_rect.y + 62,
-            56,
-            42
-        )
-        pygame.draw.ellipse(
-            surface,
-            (220, 225, 235),
-            body_rect
-        )
-
-        # Type de carte
-        type_rect = pygame.Rect(
-            rect.x + 15,
-            art_rect.bottom + 10,
-            72,
-            24
-        )
-        pygame.draw.rect(
-            surface,
-            (65, 170, 220),
-            type_rect,
-            border_radius=8
-        )
-
-        type_text = self.font_card_small.render(
-            "REF", True, self.WHITE
-        )
-        surface.blit(
-            type_text,
-            type_text.get_rect(center=type_rect.center)
-        )
-
-        # Coût
-        cost_circle_center = (rect.right - 28, rect.y + 28)
-        pygame.draw.circle(
-            surface,
-            (65, 190, 130),
-            cost_circle_center,
-            16
-        )
-        pygame.draw.circle(
-            surface,
-            self.WHITE,
-            cost_circle_center,
-            16,
-            2
-        )
-
-        cost_text = self.font_card_small.render(
-            "2", True, self.WHITE
-        )
-        surface.blit(
-            cost_text,
-            cost_text.get_rect(center=cost_circle_center)
-        )
-
-        # Description
-        desc_lines = [
-            "Danse absurde.",
-            "Inflige 3 dégâts",
-            "à une cible."
-        ]
-
-        start_y = art_rect.bottom + 44
-        for i, line in enumerate(desc_lines):
-            txt = self.font_card_small.render(
-                line, True, self.WHITE
-            )
-            txt_rect = txt.get_rect(
-                center=(rect.centerx, start_y + i * 18)
-            )
-            surface.blit(txt, txt_rect)
-
     # -------------------------------------------------
     # DRAW
     # -------------------------------------------------
@@ -598,4 +454,4 @@ class MenuScene:
         self.draw_header(surface)
         self.draw_profile(surface)
         self.draw_buttons(surface)
-        self.draw_preview_card(surface)
+        self.card.draw(surface)
