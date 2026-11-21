@@ -1,0 +1,15 @@
+{
+    "name_pers": "the_mask",
+    "name": "Sssplendide",
+    "gif": "",
+    "image": "/src/image/the_mask_ref_1_img.png",
+    "sound": "",
+
+    "cost": 0,
+
+    "damage": 0,
+    "cooldown": 0,
+
+    "effect": 0,
+    "value_effect": 0
+}
