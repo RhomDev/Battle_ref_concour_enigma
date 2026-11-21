@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "i_am_steve",
   "name": "I Am Steve",
   "kind": "ref",
@@ -16,21 +16,17 @@
     "i_am_steve_source"
   ],
   "cost": 2,
-  "text": "Donnez 2 Boucliers à un allié. Avec Steve en jeu, donnez-en 3.",
-  "strength": "Protège un allié avant l’échange.",
-  "weakness": "Demande un allié en jeu.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "text": "Donnez 2 points de bouclier à un allié. Avec Steve sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "steve_minecraft_film",
+    "bonus": 1
+  }
 }

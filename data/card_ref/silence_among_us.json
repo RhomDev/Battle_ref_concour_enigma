@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "silence_among_us",
   "name": "Chut !",
   "kind": "ref",
@@ -16,25 +16,17 @@
     "silence_among_us_source"
   ],
   "cost": 2,
-  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Rouge en jeu, donnez-lui 2 Boucliers.",
-  "strength": "Intercepte les attaques avec un allié choisi.",
-  "weakness": "Expose cet allié aux attaques adverses.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "guard",
-          "target": "chosen"
-        },
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 1
-        }
-      ]
+  "text": "Donnez 1 point de bouclier à un allié. Avec Rouge sur votre terrain, donnez 2 points de bouclier.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "rouge_among_us",
+    "bonus": 1
+  }
 }

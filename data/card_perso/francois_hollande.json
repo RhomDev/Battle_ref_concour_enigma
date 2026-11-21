@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "francois_hollande",
   "name": "François Hollande",
   "kind": "character",
@@ -15,25 +15,11 @@
   "media": [
     "francois_hollande_source"
   ],
-  "text": "Déploiement · Gagne 1 Bouclier.",
-  "strength": "Encaisse une première attaque.",
-  "weakness": "Sa protection initiale est limitée.",
+  "text": "Débat présidentiel Hollande–Sarkozy",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "cost": 2,
   "stats": {
     "hp": 3
-  },
-  "abilities": [
-    {
-      "id": "deploiement",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "self",
-          "amount": 1
-        }
-      ]
-    }
-  ]
+  }
 }

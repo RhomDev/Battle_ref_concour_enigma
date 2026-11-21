@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "creeper",
     "name": "Creeper",
     "kind": "character",
@@ -13,33 +13,19 @@
       ]
     },
     "cost": 2,
-    "text": "K.-O. · Donne 1 Bouclier aux autres alliés.",
-    "strength": "Protège le reste du plateau quand il est éliminé.",
-    "weakness": "Sa protection exige d’autres Personnages en jeu.",
+    "text": "Minecraft · version sortie en 2011",
+    "strength": "Dispose de 2 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "pixel",
     "media": [
       "creeper_scene"
-    ],
-    "abilities": [
-      {
-        "id": "psssht",
-        "timing": "defeated",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
-      }
     ],
     "stats": {
       "hp": 2
     }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "francois_hollande",
     "name": "François Hollande",
     "kind": "character",
@@ -55,30 +41,16 @@
     "media": [
       "francois_hollande_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Débat présidentiel Hollande–Sarkozy",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 2,
     "stats": {
       "hp": 3
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "franklin_clinton",
     "name": "Franklin Clinton",
     "kind": "character",
@@ -94,30 +66,16 @@
     "media": [
       "franklin_clinton_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Grand Theft Auto V",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 2,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "ken",
     "name": "Ken",
     "kind": "character",
@@ -133,30 +91,16 @@
     "media": [
       "ken_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Barbie",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 2,
     "stats": {
       "hp": 3
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "macron",
     "name": "Emmanuel Macron",
     "kind": "character",
@@ -170,32 +114,19 @@
       ]
     },
     "cost": 2,
-    "text": "À l’arrivée · Dissipation ennemie facultative.",
-    "strength": "Ouvre une cible protégée et renforce Poudre de perlimpinpin.",
-    "weakness": "Sa dissipation exige une cible protégée.",
+    "text": "Débat présidentiel de l’entre-deux-tours",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "powder",
     "media": [
       "debate_scene"
-    ],
-    "abilities": [
-      {
-        "id": "debunk",
-        "timing": "summoned",
-        "targeting": "optional_enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
-      }
     ],
     "stats": {
       "hp": 3
     }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "wheatley",
     "name": "Wheatley",
     "kind": "character",
@@ -211,30 +142,16 @@
     "media": [
       "wheatley_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Portal 2",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 2,
     "stats": {
       "hp": 3
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "barbie",
     "name": "Barbie",
     "kind": "character",
@@ -250,30 +167,16 @@
     "media": [
       "barbie_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Barbie",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "chat_potte",
     "name": "Le Chat Potté",
     "kind": "character",
@@ -289,30 +192,16 @@
     "media": [
       "chat_potte_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Puss in Boots: The Last Wish",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "jean_luc_melenchon",
     "name": "Jean-Luc Mélenchon",
     "kind": "character",
@@ -328,30 +217,16 @@
     "media": [
       "jean_luc_melenchon_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Images de Quotidien lors de la perquisition",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "joe_biden",
     "name": "Joe Biden",
     "kind": "character",
@@ -367,30 +242,16 @@
     "media": [
       "joe_biden_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Premier débat présidentiel Biden–Trump",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "jonesy",
     "name": "Jonesy",
     "kind": "character",
@@ -406,30 +267,16 @@
     "media": [
       "jonesy_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Fortnite Battle Royale",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "luffy",
     "name": "Monkey D. Luffy",
     "kind": "character",
@@ -446,29 +293,15 @@
       "luffy_source"
     ],
     "cost": 3,
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse un premier dégât dès son arrivée.",
-    "weakness": "S’expose quand son Bouclier est retiré.",
+    "text": "One Piece",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "stats": {
       "hp": 4
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "mista",
     "name": "Guido Mista",
     "kind": "character",
@@ -483,35 +316,21 @@
       ]
     },
     "cost": 3,
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
-    "weakness": "Son Bouclier de départ est limité.",
+    "text": "JoJo’s Bizarre Adventure: Golden Wind, épisode 7",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "spotlight",
     "media": [
       "mista_anime",
       "jojo_scene",
       "jojo_stills"
     ],
-    "abilities": [
-      {
-        "id": "sex_pistols",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ],
     "stats": {
       "hp": 3
     }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "rouge_among_us",
     "name": "Rouge",
     "kind": "character",
@@ -527,30 +346,16 @@
     "media": [
       "rouge_among_us_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Among Us",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
     "stats": {
       "hp": 3
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "trump",
     "name": "Donald Trump",
     "kind": "character",
@@ -564,34 +369,20 @@
       ]
     },
     "cost": 3,
-    "text": "Gagne 1 Bouclier par Ref Danse jouée par votre camp.",
-    "strength": "Renforce Y.M.C.A. et peut regagner du Bouclier.",
-    "weakness": "Dépend des Refs Danse pour renouveler sa protection.",
+    "text": "Donald Trump danse à Norfolk · 250 ans de l’U.S. Navy",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "spotlight",
     "media": [
       "ymca_photo",
       "trump_dance_scene"
-    ],
-    "abilities": [
-      {
-        "id": "encore",
-        "timing": "ally_dance_ref_resolved",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
     ],
     "stats": {
       "hp": 4
     }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "satoru_gojo",
     "name": "Satoru Gojo",
     "kind": "character",
@@ -607,30 +398,16 @@
     "media": [
       "satoru_gojo_source"
     ],
-    "text": "Déploiement · Gagne 1 Bouclier.",
-    "strength": "Encaisse une première attaque.",
-    "weakness": "Sa protection initiale est limitée.",
+    "text": "Jujutsu Kaisen",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 4,
     "stats": {
       "hp": 5
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "steve_minecraft_film",
     "name": "Steve",
     "kind": "character",
@@ -646,29 +423,16 @@
     "media": [
       "steve_minecraft_film_source"
     ],
-    "text": "Déploiement · Gagne Garde.",
-    "strength": "Protège son camp dès son arrivée.",
-    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "text": "A Minecraft Movie",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 4,
     "stats": {
       "hp": 5
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "self"
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "saitama",
     "name": "Saitama",
     "kind": "character",
@@ -684,29 +448,16 @@
     "media": [
       "saitama_source"
     ],
-    "text": "Déploiement · Gagne Garde.",
-    "strength": "Protège son camp dès son arrivée.",
-    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "text": "One-Punch Man",
+    "strength": "Dispose de 6 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 5,
     "stats": {
       "hp": 6
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "self"
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "thanos",
     "name": "Thanos",
     "kind": "character",
@@ -722,29 +473,16 @@
     "media": [
       "thanos_source"
     ],
-    "text": "Déploiement · Gagne Garde.",
-    "strength": "Protège son camp dès son arrivée.",
-    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "text": "Avengers: Infinity War",
+    "strength": "Dispose de 6 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 5,
     "stats": {
       "hp": 6
-    },
-    "abilities": [
-      {
-        "id": "deploiement",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "self"
-          }
-        ]
-      }
-    ]
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "vegeta",
     "name": "Vegeta",
     "kind": "character",
@@ -759,39 +497,21 @@
       ]
     },
     "cost": 5,
-    "text": "Déploiement · Gagne Garde et 1 Bouclier.",
-    "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
-    "weakness": "Son déploiement demande beaucoup d’énergie.",
+    "text": "Dragon Ball Super, épisode 7",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "pulse",
     "media": [
       "vegeta_anime",
       "bulma_scene",
       "bulma_trailer"
     ],
-    "abilities": [
-      {
-        "id": "fierte",
-        "timing": "summoned",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "self"
-          },
-          {
-            "op": "shield",
-            "target": "self",
-            "amount": 1
-          }
-        ]
-      }
-    ],
     "stats": {
       "hp": 5
     }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "covfefe",
     "name": "Covfefe",
     "kind": "ref",
@@ -809,25 +529,22 @@
       "covfefe_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Trump en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Donald Trump sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "trump",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "dango_luffy_kid",
     "name": "Le concours de dango",
     "kind": "ref",
@@ -844,26 +561,22 @@
       "dango_luffy_kid_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Monkey D. Luffy en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié. Avec Monkey D. Luffy sur votre terrain, rendez 3 PV.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "luffy",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "flint_and_steel",
     "name": "Flint and Steel !",
     "kind": "ref",
@@ -880,25 +593,22 @@
       "flint_and_steel_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Steve en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Steve sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "steve_minecraft_film",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "fortnite_take_the_l",
     "name": "Take the L",
     "kind": "ref",
@@ -915,29 +625,20 @@
     "media": [
       "fortnite_take_the_l_source"
     ],
-    "tags": [
-      "dance"
-    ],
     "cost": 1,
-    "text": "Danse · Dissipez les protections d’un ennemi. Avec Jonesy en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "gear_fifth",
     "name": "Gear 5",
     "kind": "ref",
@@ -954,25 +655,22 @@
       "gear_fifth_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Monkey D. Luffy en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre une cible protégée aux attaques suivantes.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Monkey D. Luffy sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "luffy",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "giorno_soigne_mista",
     "name": "T’as rien vu, Narancia",
     "kind": "ref",
@@ -989,26 +687,19 @@
       "giorno_soigne_mista_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Mista en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "gojo_t_es_faible",
     "name": "Parce que t’es faible",
     "kind": "ref",
@@ -1025,25 +716,22 @@
       "gojo_t_es_faible_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Gojo en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Satoru Gojo sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "satoru_gojo",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "hi_barbie",
     "name": "Hi, Barbie !",
     "kind": "ref",
@@ -1060,26 +748,22 @@
       "hi_barbie_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Barbie en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié. Avec Barbie sur votre terrain, rendez 3 PV.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "barbie",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "la_derniere_vie",
     "name": "La dernière vie",
     "kind": "ref",
@@ -1096,26 +780,19 @@
       "la_derniere_vie_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Le Chat Potté en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "lamar_roast",
     "name": "La coupe de Franklin",
     "kind": "ref",
@@ -1133,25 +810,19 @@
       "lamar_roast_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Franklin en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "parfaitement_equilibre",
     "name": "Parfaitement équilibré",
     "kind": "ref",
@@ -1168,25 +839,22 @@
       "parfaitement_equilibre_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Thanos en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Thanos sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "thanos",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "penser_a_la_mort",
     "name": "Vous pensez parfois à la mort ?",
     "kind": "ref",
@@ -1203,25 +871,22 @@
       "penser_a_la_mort_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Barbie en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Barbie sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "barbie",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "perlimpinpin",
     "name": "Poudre de perlimpinpin",
     "kind": "ref",
@@ -1235,30 +900,27 @@
       ]
     },
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui ensuite 2 dégâts.",
-    "strength": "Ouvre un Personnage protégé avant d’appliquer les dégâts bonus.",
-    "weakness": "L’amplification demande que Macron soit en jeu.",
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Emmanuel Macron sur votre terrain, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
       "debate_scene",
       "demo_perlimpinpin"
     ],
-    "abilities": [
-      {
-        "id": "poudre",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "macron",
+      "bonus": 2
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "rouge_est_sus",
     "name": "Rouge est sus",
     "kind": "ref",
@@ -1275,25 +937,19 @@
       "rouge_est_sus_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Rouge en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "saitama_ok",
     "name": "OK.",
     "kind": "ref",
@@ -1310,25 +966,22 @@
       "saitama_ok_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Saitama en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Saitama sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "saitama",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "saitama_promos",
     "name": "C’est le jour des promos !",
     "kind": "ref",
@@ -1345,26 +998,22 @@
       "saitama_promos_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Saitama en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié. Avec Saitama sur votre terrain, rendez 3 PV.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "saitama",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "shut_up_man",
     "name": "Will you shut up, man?",
     "kind": "ref",
@@ -1382,25 +1031,22 @@
       "shut_up_man_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Biden en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Joe Biden sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "joe_biden",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "sifflement_de_la_mort",
     "name": "Le sifflement du Loup",
     "kind": "ref",
@@ -1417,25 +1063,19 @@
       "sifflement_de_la_mort_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Le Chat Potté en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "steves_lava_chicken",
     "name": "Steve’s Lava Chicken",
     "kind": "ref",
@@ -1452,26 +1092,22 @@
       "steves_lava_chicken_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Steve en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié. Avec Steve sur votre terrain, rendez 3 PV.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "steve_minecraft_film",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "takoyaki_vegeta",
     "name": "Takoyaki de la dernière chance",
     "kind": "ref",
@@ -1488,26 +1124,22 @@
       "takoyaki_vegeta_source"
     ],
     "cost": 1,
-    "text": "Soignez 2 PV d’un allié. Avec Vegeta en jeu, soignez 3 PV.",
+    "text": "Rendez 2 PV à un allié. Avec Vegeta sur votre terrain, rendez 3 PV.",
     "strength": "Maintient un allié blessé en jeu.",
     "weakness": "Demande un allié blessé pour tirer parti du soin.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "heal",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "vegeta",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "traverse_la_rue",
     "name": "Je traverse la rue",
     "kind": "ref",
@@ -1524,25 +1156,22 @@
       "traverse_la_rue_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Emmanuel Macron sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "macron",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "wheatley_pas_un_cretin",
     "name": "Je ne suis pas idiot !",
     "kind": "ref",
@@ -1560,25 +1189,22 @@
       "wheatley_pas_un_cretin_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Wheatley en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Wheatley sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "wheatley",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "wrong_trump",
     "name": "Wrong !",
     "kind": "ref",
@@ -1596,25 +1222,22 @@
       "wrong_trump_source"
     ],
     "cost": 1,
-    "text": "Dissipez les protections d’un ennemi. Avec Trump en jeu, infligez-lui aussi 1 dégât.",
-    "strength": "Ouvre l’accès à une cible protégée.",
-    "weakness": "Demande un Personnage adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy_character",
-        "effects": [
-          {
-            "op": "dispel",
-            "target": "chosen"
-          }
-        ]
+    "text": "Infligez 1 dégât à un personnage adverse. Avec Donald Trump sur votre terrain, infligez 2 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "trump",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "arreter_la_pluie",
     "name": "Comme si je pouvais arrêter la pluie",
     "kind": "ref",
@@ -1631,26 +1254,22 @@
       "arreter_la_pluie_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Hollande en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec François Hollande sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "francois_hollande",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "beach_off",
     "name": "Beach-off !",
     "kind": "ref",
@@ -1667,26 +1286,22 @@
       "beach_off_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Ken en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Ken sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "ken",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "bingo_vegeta",
     "name": "Le bingo de Vegeta",
     "kind": "ref",
@@ -1702,30 +1317,23 @@
     "media": [
       "bingo_vegeta_source"
     ],
-    "tags": [
-      "dance"
-    ],
     "cost": 2,
-    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Vegeta sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "vegeta",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "chicken_jockey",
     "name": "Chicken Jockey !",
     "kind": "ref",
@@ -1742,26 +1350,22 @@
       "chicken_jockey_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Steve en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Steve sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "steve_minecraft_film",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "claquement_de_thanos",
     "name": "Le claquement de Thanos",
     "kind": "ref",
@@ -1778,26 +1382,22 @@
       "claquement_de_thanos_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Thanos en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Thanos sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "thanos",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "creeper_aw_man",
     "name": "Creeper, Aw Man",
     "kind": "ref",
@@ -1814,26 +1414,19 @@
       "creeper_aw_man_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "creeper_sifflement",
     "name": "Sss… BOUM",
     "kind": "ref",
@@ -1850,26 +1443,22 @@
       "creeper_sifflement_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Creeper sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "creeper",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "danse_jojo",
     "name": "Canzoni preferite",
     "kind": "ref",
@@ -1885,9 +1474,9 @@
       ]
     },
     "cost": 2,
-    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
-    "strength": "Protège une carte clé dès que la Ref est jouée.",
-    "weakness": "Demande un Personnage allié à protéger.",
+    "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
       "jojo_scene",
@@ -1895,26 +1484,19 @@
       "jojo_music",
       "demo_danse_jojo"
     ],
-    "abilities": [
-      {
-        "id": "choregraphie",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ],
-    "tags": [
-      "dance"
-    ]
+    },
+    "synergy": {
+      "character_id": "mista",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "dark_brandon",
     "name": "Dark Brandon",
     "kind": "ref",
@@ -1932,26 +1514,22 @@
       "dark_brandon_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Biden en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Joe Biden sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "joe_biden",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "fortnite_floss",
     "name": "Floss",
     "kind": "ref",
@@ -1967,30 +1545,20 @@
     "media": [
       "fortnite_floss_source"
     ],
-    "tags": [
-      "dance"
-    ],
     "cost": 2,
-    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Jonesy en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "franklin_et_chop",
     "name": "Chop fait le guet",
     "kind": "ref",
@@ -2007,30 +1575,22 @@
       "franklin_et_chop_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Franklin en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Franklin Clinton sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "franklin_clinton",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "gojo_domaine",
     "name": "0,2 seconde de territoire",
     "kind": "ref",
@@ -2047,30 +1607,22 @@
       "gojo_domaine_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Gojo en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Satoru Gojo sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "satoru_gojo",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "gojo_elu",
     "name": "The Honored One",
     "kind": "ref",
@@ -2087,26 +1639,22 @@
       "gojo_elu_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Gojo en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "satoru_gojo",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "i_am_steve",
     "name": "I Am Steve",
     "kind": "ref",
@@ -2123,26 +1671,22 @@
       "i_am_steve_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Steve en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Steve sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "steve_minecraft_film",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "inevitable_thanos",
     "name": "I Am Inevitable",
     "kind": "ref",
@@ -2159,26 +1703,22 @@
       "inevitable_thanos_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Thanos en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Thanos sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "thanos",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "jadore_la_bagnole",
     "name": "J’adore la bagnole",
     "kind": "ref",
@@ -2195,26 +1735,22 @@
       "jadore_la_bagnole_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Macron en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Emmanuel Macron sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "macron",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "la_republique_cest_moi",
     "name": "La République, c’est moi !",
     "kind": "ref",
@@ -2231,30 +1767,22 @@
       "la_republique_cest_moi_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Mélenchon en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Jean-Luc Mélenchon sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "jean_luc_melenchon",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "lucci_luffy_lunettes",
     "name": "Les lunettes sorties de nulle part",
     "kind": "ref",
@@ -2271,26 +1799,22 @@
       "lucci_luffy_lunettes_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Monkey D. Luffy en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Monkey D. Luffy sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "luffy",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "mojo_dojo_casa_house",
     "name": "Mojo Dojo Casa House",
     "kind": "ref",
@@ -2307,26 +1831,22 @@
       "mojo_dojo_casa_house_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Ken en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Ken sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "ken",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "quatre_cartouches",
     "name": "Il reste quatre cartouches",
     "kind": "ref",
@@ -2343,26 +1863,22 @@
       "quatre_cartouches_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant un échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "mista",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "qui_aurait_pu_predire",
     "name": "Qui aurait pu prédire ?",
     "kind": "ref",
@@ -2379,30 +1895,22 @@
       "qui_aurait_pu_predire_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Macron en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Emmanuel Macron sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "macron",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "rollers_de_venice",
     "name": "Rollers de Venice Beach",
     "kind": "ref",
@@ -2419,30 +1927,22 @@
       "rollers_de_venice_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Barbie en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Barbie sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "barbie",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "saitama_moustique",
     "name": "Le moustique invincible",
     "kind": "ref",
@@ -2459,26 +1959,22 @@
       "saitama_moustique_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Saitama en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Saitama sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "saitama",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "silence_among_us",
     "name": "Chut !",
     "kind": "ref",
@@ -2495,30 +1991,22 @@
       "silence_among_us_source"
     ],
     "cost": 2,
-    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Rouge en jeu, donnez-lui 2 Boucliers.",
-    "strength": "Intercepte les attaques avec un allié choisi.",
-    "weakness": "Expose cet allié aux attaques adverses.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "guard",
-            "target": "chosen"
-          },
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Rouge sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "rouge_among_us",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "vent_among_us",
     "name": "Il a pris le conduit",
     "kind": "ref",
@@ -2535,26 +2023,19 @@
       "vent_among_us_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Rouge en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "wheatley_le_chapitre",
     "name": "Un chapitre bien nommé",
     "kind": "ref",
@@ -2572,26 +2053,22 @@
       "wheatley_le_chapitre_source"
     ],
     "cost": 2,
-    "text": "Infligez 2 dégâts à une cible adverse. Avec Wheatley en jeu, infligez 3 dégâts.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Wheatley sur votre terrain, infligez 3 dégâts.",
     "strength": "Peut achever une cible affaiblie.",
-    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "weakness": "Demande un personnage adverse déployé.",
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "wheatley",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "wheatley_toc_toc",
     "name": "Y a quelqu’un ?",
     "kind": "ref",
@@ -2609,26 +2086,22 @@
       "wheatley_toc_toc_source"
     ],
     "cost": 2,
-    "text": "Donnez 2 Boucliers à un allié. Avec Wheatley en jeu, donnez-en 3.",
-    "strength": "Protège un allié avant l’échange.",
-    "weakness": "Demande un allié en jeu.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "text": "Donnez 2 points de bouclier à un allié. Avec Wheatley sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "wheatley",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "ymca",
     "name": "Y.M.C.A.",
     "kind": "ref",
@@ -2645,9 +2118,9 @@
       ]
     },
     "cost": 2,
-    "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
-    "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
-    "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Donald Trump sur votre terrain, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
     "media": [
       "ymca_photo",
@@ -2657,26 +2130,19 @@
       "trump_dance_scene",
       "ymca_original"
     ],
-    "abilities": [
-      {
-        "id": "chorus",
-        "timing": "cast",
-        "targeting": "enemy",
-        "effects": [
-          {
-            "op": "damage",
-            "target": "chosen",
-            "amount": 2
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
       }
-    ],
-    "tags": [
-      "dance"
-    ]
+    },
+    "synergy": {
+      "character_id": "trump",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "faites_mieux",
     "name": "Faites mieux !",
     "kind": "ref",
@@ -2693,26 +2159,22 @@
       "faites_mieux_source"
     ],
     "cost": 3,
-    "text": "Donnez 1 Bouclier à chaque allié. Avec Mélenchon en jeu, donnez-en 2 à chacun.",
-    "strength": "Protège plusieurs Personnages en une action.",
-    "weakness": "Demande plusieurs alliés pour être rentable.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Jean-Luc Mélenchon sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "jean_luc_melenchon",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "fortnite_default_dance",
     "name": "Danse par défaut",
     "kind": "ref",
@@ -2729,30 +2191,23 @@
     "media": [
       "fortnite_default_dance_source"
     ],
-    "tags": [
-      "dance"
-    ],
     "cost": 3,
-    "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Jonesy en jeu, donnez-en 2 à chacun.",
-    "strength": "Protège plusieurs Personnages en une action.",
-    "weakness": "Demande plusieurs alliés pour être rentable.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Jonesy sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "jonesy",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "im_just_ken",
     "name": "I’m Just Ken",
     "kind": "ref",
@@ -2768,30 +2223,23 @@
     "media": [
       "im_just_ken_source"
     ],
-    "tags": [
-      "dance"
-    ],
     "cost": 3,
-    "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Ken en jeu, donnez-en 2 à chacun.",
-    "strength": "Protège plusieurs Personnages en une action.",
-    "weakness": "Demande plusieurs alliés pour être rentable.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec Ken sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "ken",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "moi_president",
     "name": "Moi président…",
     "kind": "ref",
@@ -2809,26 +2257,22 @@
       "moi_president_source"
     ],
     "cost": 3,
-    "text": "Donnez 1 Bouclier à chaque allié. Avec Hollande en jeu, donnez-en 2 à chacun.",
-    "strength": "Protège plusieurs Personnages en une action.",
-    "weakness": "Demande plusieurs alliés pour être rentable.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié. Avec François Hollande sur votre terrain, donnez 2 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "francois_hollande",
+      "bonus": 1
+    }
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "reunion_urgence",
     "name": "Réunion d’urgence",
     "kind": "ref",
@@ -2845,26 +2289,19 @@
       "reunion_urgence_source"
     ],
     "cost": 3,
-    "text": "Donnez 1 Bouclier à chaque allié. Avec Rouge en jeu, donnez-en 2 à chacun.",
-    "strength": "Protège plusieurs Personnages en une action.",
-    "weakness": "Demande plusieurs alliés pour être rentable.",
-    "abilities": [
-      {
-        "id": "resolution",
-        "timing": "cast",
-        "targeting": "none",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "ally_characters",
-            "amount": 1
-          }
-        ]
+    "text": "Donnez 1 point de bouclier à un allié.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 1
       }
-    ]
+    },
+    "synergy": null
   },
   {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "id": "touche_pas_bulma",
     "name": "Touche pas à ma Bulma !",
     "kind": "ref",
@@ -2879,32 +2316,24 @@
       ]
     },
     "cost": 3,
-    "text": "Donnez Garde et 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-lui 4 Boucliers.",
-    "strength": "Met un allié en position de protéger le joueur.",
-    "weakness": "Garde et Bouclier peuvent être dissipés.",
+    "text": "Donnez 2 points de bouclier à un allié. Avec Vegeta sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Protège un allié avant une attaque.",
+    "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
       "bulma_scene",
       "bulma_trailer",
       "demo_touche_pas_bulma"
     ],
-    "abilities": [
-      {
-        "id": "replique",
-        "timing": "cast",
-        "targeting": "ally_character",
-        "effects": [
-          {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 2
-          },
-          {
-            "op": "guard",
-            "target": "chosen"
-          }
-        ]
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
       }
-    ]
+    },
+    "synergy": {
+      "character_id": "vegeta",
+      "bonus": 2
+    }
   }
 ]

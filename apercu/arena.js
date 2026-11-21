@@ -1,7 +1,6 @@
-const { cards, media, synergies } = window.BATTLE_REF_PREVIEW;
+const { cards, media } = window.BATTLE_REF_PREVIEW;
 const catalogue = new Map(cards.map(card => [card.id, card]));
 const mediaRegistry = new Map(media.map(item => [item.id, item]));
-const amplifications = new Map(synergies.filter(item => item.amplification).map(item => [item.sourceCardId, item]));
 const categories = { cinema: "Cinéma", series: "Séries", politique: "Politique", anime: "Animé", musique: "Musique", jeu_video: "Jeu vidéo", internet: "Internet" };
 const symbols = { pulse: "◈", subtitle: "…", scroll: "¶", spotlight: "▶", rewind: "⏪", powder: "✦", pixel: "▦" };
 const licenses = {
@@ -54,14 +53,13 @@ function node(tag, className, label) {
   return element;
 }
 
-function renderCard(card, { compact = false, interactive = false, hp, shield, guard, amplified } = {}) {
+function renderCard(card, { compact = false, interactive = false, hp, shield, amplified } = {}) {
   const element = node(interactive ? "button" : "div", `card ${card.kind}`);
   if (interactive) {
     element.type = "button";
     const details = [`${card.name}, ${card.kind === "ref" ? "Ref" : "Personnage"}`, `coût ${card.cost}`];
     if (card.stats) details.push(`${hp ?? card.stats.hp} PV`);
     if (shield) details.push(`${shield} Bouclier`);
-    if (guard) details.push("Garde");
     if (amplified) details.push("amplifiée");
     element.setAttribute("aria-label", details.join(", "));
     element.setAttribute("aria-haspopup", "dialog");
@@ -105,7 +103,6 @@ function renderCard(card, { compact = false, interactive = false, hp, shield, gu
     marker.title = `Bouclier ${shield}`;
     element.append(marker);
   }
-  if (guard) element.append(node("span", "card-copy card-stat card-guard", "Garde"));
   if (compact && amplified) {
     element.dataset.amplified = true;
     element.append(node("span", "card-copy card-stat card-amplified", "Amplifiée"));
@@ -119,9 +116,10 @@ function placeCards(container, positions, compact) {
     const slot = node("div", "slot");
     if (position) {
       const { id, ...values } = position;
+      const card = catalogue.get(id);
       const inHand = container === dom.main;
-      const amplified = inHand && Boolean(findAlly(amplifications.get(id)?.requirements[0].cardId));
-      const { element } = renderCard(catalogue.get(id), { compact, interactive: true, amplified, ...values });
+      const amplified = inHand && Boolean(findAlly(card.synergy?.character_id));
+      const { element } = renderCard(card, { compact, interactive: true, amplified, ...values });
       element.dataset.next = inHand && steps[state.step]?.cardId === id;
       element.addEventListener("click", () => {
         inspectCard(id, values, inHand, amplified);
@@ -139,10 +137,10 @@ function inspectCard(id, values, inHand, amplified) {
   const display = node("div", "detail-card");
   display.append(element);
   dom.detail.replaceChildren(display);
-  const amplifier = amplifications.get(id);
-  if (amplifier) {
-    const partner = catalogue.get(amplifier.requirements[0].cardId);
-    const label = amplified ? `Amplification active · ${partner.name}` : `Personnage associé · ${partner.name}`;
+  if (card.synergy) {
+    const { character_id, bonus } = card.synergy;
+    const partner = catalogue.get(character_id);
+    const label = amplified ? `Amplification active · ${partner.name} (+${bonus})` : `Personnage associé · ${partner.name} (+${bonus})`;
     dom.detail.append(node("p", "detail-note", label));
   }
   if (photo) {
@@ -205,17 +203,11 @@ function renderScene() {
 function reset() {
   stopPlayback();
   const vegeta = catalogue.get("vegeta");
-  const protection = vegeta.abilities[0].effects;
   state = {
     step: 0,
     energy: energyGems.length,
-    enemy: [{ id: "creeper" }, null, {
-      id: vegeta.id,
-      hp: vegeta.stats.hp,
-      shield: protection.find(effect => effect.op === "shield").amount,
-      guard: protection.some(effect => effect.op === "guard"),
-    }],
-    ally: [{ id: "mista", shield: catalogue.get("mista").abilities[0].effects[0].amount }, null, { id: "trump", shield: 0 }],
+    enemy: [{ id: "creeper" }, null, { id: vegeta.id, hp: vegeta.stats.hp }],
+    ally: [{ id: "mista" }, null, { id: "trump" }],
     hand: [ymca.id, "perlimpinpin", "touche_pas_bulma"],
   };
   renderScene();
@@ -374,32 +366,26 @@ function deployMacron() {
 }
 
 function playRef() {
-  const amplification = amplifications.get(ymca.id);
-  const amplifier = findAlly(amplification.requirements[0].cardId);
-  const baseDamage = ymca.abilities[0].effects[0].amount;
-  const bonusDamage = amplifier ? amplification.effects[0].amount : 0;
-  const target = state.enemy.find(position => position?.guard);
-  const absorbed = Math.min(target.shield, baseDamage + bonusDamage);
+  const amplifier = findAlly(ymca.synergy?.character_id);
+  const baseDamage = ymca.abilities.effect.amount;
+  const bonusDamage = amplifier ? ymca.synergy.bonus : 0;
+  const target = state.enemy.find(position => position?.id === "vegeta");
+  const damage = baseDamage + bonusDamage;
   const source = dom.main.querySelector(`[data-card-id="${ymca.id}"]`).getBoundingClientRect();
 
-  target.shield -= absorbed;
-  target.hp -= baseDamage + bonusDamage - absorbed;
+  target.hp = Math.max(0, target.hp - damage);
   state.hand = state.hand.filter(id => id !== ymca.id);
-  if (amplifier && ymca.tags.includes("dance")) {
-    const danceEffect = catalogue.get(amplifier.id).abilities.find(ability => ability.timing === "ally_dance_ref_resolved");
-    amplifier.shield += danceEffect.effects[0].amount;
-  }
   renderScene();
   const defender = dom.ennemi.querySelector(`[data-card-id="${target.id}"]`);
   defender.classList.add("flash");
   animateSignal(source, defender);
-  announce(amplification.title, `${ymca.name} inflige ${baseDamage} + ${bonusDamage} dégâts. La Garde de Vegeta protège son camp et son Bouclier en absorbe ${absorbed}. Vegeta garde ${target.hp} PV.`);
+  announce(ymca.name, `${ymca.name} inflige ${damage} dégâts à Vegeta. Il lui reste ${target.hp} PV.`);
   if (!playCardMedia(ymca)) playSound();
 }
 
 function finishTurn() {
   renderScene();
-  announce("Fin du tour", "La Ref a touché Vegeta. Le joueur adverse conserve ses PV.");
+  announce("Fin du tour", "La Ref a touché Vegeta.");
 }
 
 function advanceScene() {
@@ -426,7 +412,7 @@ dom["show-catalogue"].addEventListener("click", () => {
   if (!dom.gallery.childElementCount) {
     for (const card of cards) {
       const article = node("article", "gallery-item");
-      const partnerId = amplifications.get(card.id)?.requirements[0].cardId;
+      const partnerId = card.synergy?.character_id;
       const partner = catalogue.get(partnerId)?.name ?? "";
       article.dataset.search = searchText(`${card.name} ${card.origin.work} ${categories[card.category]} ${partner}`);
       const { element } = renderCard(card, { interactive: true });

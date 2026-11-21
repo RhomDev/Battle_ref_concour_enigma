@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "steve_minecraft_film",
   "name": "Steve",
   "kind": "character",
@@ -15,24 +15,11 @@
   "media": [
     "steve_minecraft_film_source"
   ],
-  "text": "Déploiement · Gagne Garde.",
-  "strength": "Protège son camp dès son arrivée.",
-  "weakness": "La Garde concentre les attaques adverses sur lui.",
+  "text": "A Minecraft Movie",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "cost": 4,
   "stats": {
     "hp": 5
-  },
-  "abilities": [
-    {
-      "id": "deploiement",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "guard",
-          "target": "self"
-        }
-      ]
-    }
-  ]
+  }
 }

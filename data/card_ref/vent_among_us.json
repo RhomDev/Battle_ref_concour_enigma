@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "vent_among_us",
   "name": "Il a pris le conduit",
   "kind": "ref",
@@ -16,21 +16,14 @@
     "vent_among_us_source"
   ],
   "cost": 2,
-  "text": "Donnez 2 Boucliers à un allié. Avec Rouge en jeu, donnez-en 3.",
-  "strength": "Protège un allié avant l’échange.",
-  "weakness": "Demande un allié en jeu.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "text": "Donnez 2 points de bouclier à un allié.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": null
 }

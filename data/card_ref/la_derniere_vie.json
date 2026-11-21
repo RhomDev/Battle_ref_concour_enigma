@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "la_derniere_vie",
   "name": "La dernière vie",
   "kind": "ref",
@@ -16,21 +16,14 @@
     "la_derniere_vie_source"
   ],
   "cost": 1,
-  "text": "Soignez 2 PV d’un allié. Avec Le Chat Potté en jeu, soignez 3 PV.",
+  "text": "Rendez 2 PV à un allié.",
   "strength": "Maintient un allié blessé en jeu.",
   "weakness": "Demande un allié blessé pour tirer parti du soin.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "heal",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": null
 }

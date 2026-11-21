@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "perlimpinpin",
   "name": "Poudre de perlimpinpin",
   "kind": "ref",
@@ -13,25 +13,22 @@
     ]
   },
   "cost": 1,
-  "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui ensuite 2 dégâts.",
-  "strength": "Ouvre un Personnage protégé avant d’appliquer les dégâts bonus.",
-  "weakness": "L’amplification demande que Macron soit en jeu.",
+  "text": "Infligez 1 dégât à un personnage adverse. Avec Emmanuel Macron sur votre terrain, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
     "debate_scene",
     "demo_perlimpinpin"
   ],
-  "abilities": [
-    {
-      "id": "poudre",
-      "timing": "cast",
-      "targeting": "enemy_character",
-      "effects": [
-        {
-          "op": "dispel",
-          "target": "chosen"
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "macron",
+    "bonus": 2
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "ymca",
   "name": "Y.M.C.A.",
   "kind": "ref",
@@ -16,9 +16,9 @@
     ]
   },
   "cost": 2,
-  "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
-  "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
-  "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Donald Trump sur votre terrain, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Demande un personnage adverse déployé.",
   "visual": "spotlight",
   "media": [
     "ymca_photo",
@@ -28,21 +28,14 @@
     "trump_dance_scene",
     "ymca_original"
   ],
-  "abilities": [
-    {
-      "id": "chorus",
-      "timing": "cast",
-      "targeting": "enemy",
-      "effects": [
-        {
-          "op": "damage",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
     }
-  ],
-  "tags": [
-    "dance"
-  ]
+  },
+  "synergy": {
+    "character_id": "trump",
+    "bonus": 1
+  }
 }

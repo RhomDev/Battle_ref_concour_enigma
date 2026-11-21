@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "im_just_ken",
   "name": "I’m Just Ken",
   "kind": "ref",
@@ -15,25 +15,18 @@
   "media": [
     "im_just_ken_source"
   ],
-  "tags": [
-    "dance"
-  ],
   "cost": 3,
-  "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Ken en jeu, donnez-en 2 à chacun.",
-  "strength": "Protège plusieurs Personnages en une action.",
-  "weakness": "Demande plusieurs alliés pour être rentable.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "ally_characters",
-          "amount": 1
-        }
-      ]
+  "text": "Donnez 1 point de bouclier à un allié. Avec Ken sur votre terrain, donnez 2 points de bouclier.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "ken",
+    "bonus": 1
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "creeper_aw_man",
   "name": "Creeper, Aw Man",
   "kind": "ref",
@@ -16,21 +16,14 @@
     "creeper_aw_man_source"
   ],
   "cost": 2,
-  "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+  "text": "Infligez 2 dégâts à un personnage adverse.",
   "strength": "Peut achever une cible affaiblie.",
-  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "enemy",
-      "effects": [
-        {
-          "op": "damage",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "weakness": "Demande un personnage adverse déployé.",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": null
 }

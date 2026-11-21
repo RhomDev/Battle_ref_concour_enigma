@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "nom_de_la_ref",
   "name": "Nom de la Ref",
   "kind": "ref",
@@ -7,26 +7,21 @@
   "origin": {
     "work": "Œuvre d’origine et scène",
     "year": 2023,
-    "sources": ["https://example.org/"]
+    "sources": [
+      "https://example.org/"
+    ]
   },
   "cost": 2,
-  "text": "Donnez 2 Boucliers à un allié.",
+  "text": "Donnez 2 points de bouclier à un allié.",
   "strength": "Protège un allié exposé.",
   "weakness": "Demande un allié en jeu.",
   "visual": "subtitle",
   "media": [],
-  "abilities": [
-    {
-      "id": "protection",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": null
 }

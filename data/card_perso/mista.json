@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "mista",
   "name": "Guido Mista",
   "kind": "character",
@@ -14,28 +14,14 @@
     ]
   },
   "cost": 3,
-  "text": "Déploiement · Gagne 1 Bouclier.",
-  "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
-  "weakness": "Son Bouclier de départ est limité.",
+  "text": "JoJo’s Bizarre Adventure: Golden Wind, épisode 7",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "spotlight",
   "media": [
     "mista_anime",
     "jojo_scene",
     "jojo_stills"
-  ],
-  "abilities": [
-    {
-      "id": "sex_pistols",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "self",
-          "amount": 1
-        }
-      ]
-    }
   ],
   "stats": {
     "hp": 3

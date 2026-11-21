@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "wheatley_pas_un_cretin",
   "name": "Je ne suis pas idiot !",
   "kind": "ref",
@@ -17,20 +17,17 @@
     "wheatley_pas_un_cretin_source"
   ],
   "cost": 1,
-  "text": "Dissipez les protections d’un ennemi. Avec Wheatley en jeu, infligez-lui aussi 1 dégât.",
-  "strength": "Ouvre l’accès à une cible protégée.",
-  "weakness": "Demande un Personnage adverse.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "enemy_character",
-      "effects": [
-        {
-          "op": "dispel",
-          "target": "chosen"
-        }
-      ]
+  "text": "Infligez 1 dégât à un personnage adverse. Avec Wheatley sur votre terrain, infligez 2 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "wheatley",
+    "bonus": 1
+  }
 }

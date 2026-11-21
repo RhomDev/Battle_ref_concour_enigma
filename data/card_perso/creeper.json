@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "creeper",
   "name": "Creeper",
   "kind": "character",
@@ -12,26 +12,12 @@
     ]
   },
   "cost": 2,
-  "text": "K.-O. · Donne 1 Bouclier aux autres alliés.",
-  "strength": "Protège le reste du plateau quand il est éliminé.",
-  "weakness": "Sa protection exige d’autres Personnages en jeu.",
+  "text": "Minecraft · version sortie en 2011",
+  "strength": "Dispose de 2 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "pixel",
   "media": [
     "creeper_scene"
-  ],
-  "abilities": [
-    {
-      "id": "psssht",
-      "timing": "defeated",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "ally_characters",
-          "amount": 1
-        }
-      ]
-    }
   ],
   "stats": {
     "hp": 2

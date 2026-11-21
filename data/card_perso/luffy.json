@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "luffy",
   "name": "Monkey D. Luffy",
   "kind": "character",
@@ -16,24 +16,10 @@
     "luffy_source"
   ],
   "cost": 3,
-  "text": "Déploiement · Gagne 1 Bouclier.",
-  "strength": "Encaisse un premier dégât dès son arrivée.",
-  "weakness": "S’expose quand son Bouclier est retiré.",
+  "text": "One Piece",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "stats": {
     "hp": 4
-  },
-  "abilities": [
-    {
-      "id": "deploiement",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "self",
-          "amount": 1
-        }
-      ]
-    }
-  ]
+  }
 }

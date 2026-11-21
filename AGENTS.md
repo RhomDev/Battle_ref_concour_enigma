@@ -1,26 +1,103 @@
-# Battle Ref Arena
+## Project architecture — Mandatory rules
 
-Battle Ref Arena est un jeu de cartes tactique pour deux joueurs en local. Le thème « T’as la ref ? » réunit des personnages et des scènes de cinéma, d’animé, de musique et de culture Internet. Un Personnage occupe un emplacement et possède des PV et une attaque. Une Ref dépense de l’énergie, applique un effet et peut révéler une synergie.
+### 1. Directory structure
 
-## Pile technique et état du projet
+- The `prototype/` directory is deprecated and will be removed.
+- **Never create, use, or reference a `prototype/` directory.**
+- All gameplay-related classes and logic must be placed in the existing `gameplay/` directory.
+- Reuse the existing project structure instead of creating parallel directories.
+- Before adding a new file, inspect the existing files to avoid duplication.
+- Keep game logic separate from Pygame rendering and user input.
+- The game is designed for multiplayer and mobile (Android). Architecture must remain compatible with both.
 
-- Développer le jeu et ses outils en **Python 3**, avec **Pygame** pour la fenêtre, le rendu, les entrées et l’audio.
-- `apercu/index.html` est une démonstration visuelle locale qui montre une scène guidée. Les collections de Pygame lisent les fiches de `data/`.
-- `data/template.json` illustre la structure des fiches sous `data/`. Le duel Pygame reste à construire.
-- Le plan de jeu, les règles de résolution et les synergies sont décrits dans [le document de conception](prototype/docs/conception.md).
+### 2. Card types
 
-## Données et visuels de référence
+The game supports two card types:
 
-- Les fiches sources sont dans `data/card_perso/` et `data/card_ref/`. Les synergies et les crédits média sont dans `data/synergies.json` et `data/medias.json`.
-- Les schémas JSON sont dans `data/schemas/`. Conserver des identifiants stables en `snake_case` et des chemins de médias relatifs à la racine.
-- La direction retenue utilise le fond bordeaux de la table de projection dans `asset/board/plateau.webp`. Les cadres dans `asset/frames/` sont bordeaux pour les Personnages et vert profond avec une bordure dorée pour les Refs.
-- Composer les cartes à partir des données. Placer la photo recadrée dans la fenêtre transparente puis superposer le cadre, le nom, le coût, le texte d’effet et les statistiques. Les PNG maîtres et leurs dérivés WebP servent de base au rendu Pygame.
-- Ranger les médias locaux dans `asset/`. Garder leur auteur, leur source et leur licence dans le registre. `localCopies` indique les fichiers téléchargés depuis les sources d’origine.
+- `character`: a character that can be deployed on the battlefield. Each player has 3 character slots.
+- `ref`: a reference card that performs an immediate action on a deployed character.
 
-## Organisation du portage
+**Reference cards support exactly three effects:**
 
-- Isoler le moteur de combat dans des modules Python indépendants de Pygame. Il valide les commandes, applique les effets et produit les événements que le rendu et le son consomment.
-- Charger cartes et effets depuis le catalogue JSON. Utiliser les identifiants d’instance pour les cibles d’une partie, et les identifiants du catalogue pour les définitions des cartes.
-- Résoudre les cibles, ripostes, éliminations et synergies dans un ordre déterministe. Garder la graine du mélange pour reproduire une partie.
-- Prioriser un duel local complet avec invocation, attaque, Ref, fin de tour et résultat. Vérifier ensuite l’inspection des cartes, les animations et la lisibilité sur petit écran.
-- Vérifier le catalogue avec `python3 data/valider.py` (dépendance `jsonschema`). Après modification des fiches, lancer la commande avec `--apercu` pour régénérer les données de l’aperçu. Tester séparément les cas limites du moteur au fil du portage.
+- `attack`: deal damage to a character.
+- `heal`: restore HP to a character.
+- `shield`: add shield points to a character.
+
+No other effects are allowed.
+
+Do not implement special abilities, status effects, damage over time, passive abilities, complex triggers, or additional effect categories.
+
+### 3. Reference card synergy
+
+A reference card may be associated with the character responsible for that reference (the character who originally performed or created the reference).
+
+When that character is deployed on the battlefield by the player using the reference card, the reference receives a numerical bonus.
+
+Rules:
+
+- The synergy activates only if the associated character is currently deployed on the player's battlefield.
+- The bonus increases the amount of the reference's existing effect.
+- The bonus can apply to `attack`, `heal`, or `shield`, depending on the reference card.
+- The bonus is applied only when the reference is played.
+- The synergy must not create any new effect or ability.
+- Synergy configuration must be stored in the reference card's JSON data.
+- If the associated character is not deployed, the reference uses its normal amount.
+
+Formula:
+
+`final_amount = base_amount + synergy_bonus`
+
+If no synergy is active:
+
+`final_amount = base_amount`
+
+### 4. Reference JSON configuration
+
+Reference cards must store their effect type, base amount, associated character, and synergy bonus in JSON.
+
+Example:
+
+```json
+{
+  "kind": "ref",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "character_jojo",
+    "bonus": 2
+  }
+}
+```
+
+In this example:
+
+- Base attack: 3 damage.
+- If `character_jojo` is deployed: 5 damage.
+- Otherwise: 3 damage.
+
+For references without synergy, use `null` for the `synergy` field.
+
+Keep the JSON schemas consistent with these rules. Do not introduce unnecessary effect fields or complex ability systems.
+
+### 5. Multiplayer architecture
+
+- Each player owns an independent deck, hand, and battlefield.
+- The game rules must be independent of the rendering system.
+- The server must validate card actions, targets, damage, healing, shields, and synergies.
+- Clients must not be authoritative over game state.
+- An opponent's hidden cards must not be revealed to the other player.
+- Pygame classes are responsible for rendering and interaction, not for deciding game outcomes.
+
+### 6. Simplicity
+
+This is a simple multiplayer card game, not a complex trading card game engine.
+
+- Prefer small, readable Python classes.
+- Avoid unnecessary abstractions and design patterns.
+- Do not add mechanics that have not been explicitly requested.
+- Do not overengineer the effect or synergy systems.
+- Ask before introducing new gameplay mechanics.

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "danse_jojo",
   "name": "Canzoni preferite",
   "kind": "ref",
@@ -15,9 +15,9 @@
     ]
   },
   "cost": 2,
-  "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
-  "strength": "Protège une carte clé dès que la Ref est jouée.",
-  "weakness": "Demande un Personnage allié à protéger.",
+  "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
     "jojo_scene",
@@ -25,21 +25,14 @@
     "jojo_music",
     "demo_danse_jojo"
   ],
-  "abilities": [
-    {
-      "id": "choregraphie",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
     }
-  ],
-  "tags": [
-    "dance"
-  ]
+  },
+  "synergy": {
+    "character_id": "mista",
+    "bonus": 1
+  }
 }

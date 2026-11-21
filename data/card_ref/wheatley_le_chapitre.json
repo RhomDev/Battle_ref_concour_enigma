@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "wheatley_le_chapitre",
   "name": "Un chapitre bien nommé",
   "kind": "ref",
@@ -17,21 +17,17 @@
     "wheatley_le_chapitre_source"
   ],
   "cost": 2,
-  "text": "Infligez 2 dégâts à une cible adverse. Avec Wheatley en jeu, infligez 3 dégâts.",
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Wheatley sur votre terrain, infligez 3 dégâts.",
   "strength": "Peut achever une cible affaiblie.",
-  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "enemy",
-      "effects": [
-        {
-          "op": "damage",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "weakness": "Demande un personnage adverse déployé.",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "wheatley",
+    "bonus": 1
+  }
 }

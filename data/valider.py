@@ -31,22 +31,20 @@ def validate():
     fiches = sorted(path for folder in CARD_FOLDERS.values() for path in (DATA / folder).glob("*.json"))
     cards = [read(path) for path in fiches]
     media = read("medias.json")
-    synergies = read("synergies.json")
     card_index = validate_and_index(cards, "carte")
+    validate_and_index([read("template.json")], "carte")
     for path, card in zip(fiches, cards):
         if path.stem != card["id"] or path.parent.name != CARD_FOLDERS[card["kind"]]:
             raise ValueError(f"Nom ou dossier de fiche incompatible: {path.relative_to(DATA)}")
     cards.sort(key=lambda card: (card["kind"], card["cost"], card["id"]))
     media_index = validate_and_index(media, "media")
-    validate_and_index(synergies, "synergie")
     for card in cards:
-        ability_ids = {ability["id"] for ability in card["abilities"]}
-        if len(ability_ids) != len(card["abilities"]):
-            raise ValueError(f"Capacité répétée: {card['id']}")
-        for ability in card["abilities"]:
-            targets = {effect["target"] for effect in ability["effects"]}
-            if "chosen" in targets and ability["targeting"] == "none":
-                raise ValueError(f"Capacité sans sélection: {card['id']} / {ability['id']}")
+        synergy = card.get("synergy")
+        if synergy is not None:
+            partner_id = synergy["character_id"]
+            partner = card_index.get(partner_id)
+            if partner is None or partner["kind"] != "character":
+                raise ValueError(f"Personnage associé invalide: {card['id']} / {partner_id}")
         for media_id in card["media"]:
             if media_id not in media_index:
                 raise ValueError(f"Média inconnu: {media_id}")
@@ -56,38 +54,7 @@ def validate():
         for copy in item.get("localCopies", []):
             if not (ROOT / copy["localPath"]).is_file():
                 raise ValueError(f"Copie locale manquante: {copy['localPath']}")
-    amplified_refs = set()
-    for synergy in synergies:
-        source = card_index[synergy["sourceCardId"]]
-        expected = "ref" if synergy["event"] == "ref_resolved" else "character"
-        if source["kind"] != expected:
-            raise ValueError(f"Événement incompatible: {synergy['id']}")
-        if synergy.get("amplification"):
-            if source["id"] in amplified_refs:
-                raise ValueError(f"Amplification répétée: {source['id']}")
-            amplified_refs.add(source["id"])
-        for requirement in synergy["requirements"]:
-            if card_index[requirement["cardId"]]["kind"] != "character":
-                raise ValueError(f"Cible incompatible: {synergy['id']}")
-            if synergy["event"] == "characters_combined" and requirement["cardId"] == source["id"]:
-                raise ValueError(f"Combinaison de deux Personnages distincts attendue: {synergy['id']}")
-            if requirement["kind"] == "chosen_card" and (
-                expected != "ref" or source["abilities"][0]["targeting"] == "none"
-            ):
-                raise ValueError(f"Synergie sans sélection: {synergy['id']}")
-        for effect in synergy["effects"]:
-            target = effect["target"]
-            if expected == "character" and effect["op"] == "damage":
-                raise ValueError(f"Un Personnage ne peut pas infliger de dégâts: {synergy['id']}")
-            if target == "chosen" and (expected != "ref" or source["abilities"][0]["targeting"] == "none"):
-                raise ValueError(f"Effet sans sélection: {synergy['id']}")
-            if ":" in target:
-                side, card_id = target.split(":")
-                if {"kind": "board_card", "cardId": card_id, "side": side} not in synergy["requirements"]:
-                    raise ValueError(f"Cible de plateau sans condition: {synergy['id']}")
-    if amplified_refs != {card["id"] for card in cards if card["kind"] == "ref"}:
-        raise ValueError("Chaque Ref doit avoir une amplification.")
-    return {"cards": cards, "media": media, "synergies": synergies}
+    return {"cards": cards, "media": media}
 
 
 if __name__ == "__main__":
@@ -102,4 +69,5 @@ if __name__ == "__main__":
         if preview.parent.is_dir():
             payload = json.dumps(dataset, ensure_ascii=False, separators=(",", ":"))
             preview.write_text(f"window.BATTLE_REF_PREVIEW = {payload};\n", encoding="utf-8")
-    print(f"{len(dataset['cards'])} cartes, {len(dataset['synergies'])} synergies et {len(dataset['media'])} entrées média validées.")
+    synergies = sum(card.get("synergy") is not None for card in dataset["cards"])
+    print(f"{len(dataset['cards'])} cartes, {synergies} synergies et {len(dataset['media'])} entrées média validées.")

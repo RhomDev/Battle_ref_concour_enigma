@@ -12,13 +12,12 @@
     "strength",
     "weakness",
     "visual",
-    "media",
-    "abilities"
+    "media"
   ],
   "additionalProperties": false,
   "properties": {
     "schemaVersion": {
-      "const": 2
+      "const": 3
     },
     "id": {
       "type": "string",
@@ -118,15 +117,6 @@
         "pulse"
       ]
     },
-    "tags": {
-      "type": "array",
-      "items": {
-        "enum": [
-          "dance"
-        ]
-      },
-      "uniqueItems": true
-    },
     "media": {
       "type": "array",
       "items": {
@@ -137,105 +127,56 @@
       "uniqueItems": true
     },
     "abilities": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "timing",
-          "targeting",
-          "effects"
-        ],
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
-          },
-          "timing": {
-            "enum": [
-              "summoned",
-              "defeated",
-              "ally_dance_ref_resolved",
-              "cast"
-            ]
-          },
-          "targeting": {
-            "enum": [
-              "ally_character",
-              "enemy_character",
-              "none",
-              "optional_enemy_character",
-              "optional_other_ally_character",
-              "enemy"
-            ]
-          },
-          "effects": {
-            "type": "array",
-            "items": {
-              "oneOf": [
-                {
-                  "type": "object",
-                  "required": [
-                    "op",
-                    "target",
-                    "amount"
-                  ],
-                  "additionalProperties": false,
-                  "properties": {
-                    "op": {
-                      "enum": [
-                        "shield",
-                        "damage",
-                        "heal"
-                      ]
-                    },
-                    "target": {
-                      "enum": [
-                        "self",
-                        "chosen",
-                        "ally_characters"
-                      ]
-                    },
-                    "amount": {
-                      "type": "integer",
-                      "minimum": 1,
-                      "maximum": 6
-                    }
-                  }
-                },
-                {
-                  "type": "object",
-                  "required": [
-                    "op",
-                    "target"
-                  ],
-                  "additionalProperties": false,
-                  "properties": {
-                    "op": {
-                      "enum": [
-                        "guard",
-                        "dispel"
-                      ]
-                    },
-                    "target": {
-                      "enum": [
-                        "self",
-                        "chosen",
-                        "ally_characters"
-                      ]
-                    }
-                  }
-                }
+      "type": "object",
+      "required": [
+        "effect"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "effect": {
+          "type": "object",
+          "required": [
+            "type",
+            "amount"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "enum": [
+                "attack",
+                "heal",
+                "shield"
               ]
             },
-            "minItems": 1,
-            "maxItems": 4
+            "amount": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 6
+            }
           }
         }
-      },
-      "minItems": 1,
-      "maxItems": 4
+      }
+    },
+    "synergy": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "character_id",
+        "bonus"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "character_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+        },
+        "bonus": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -254,52 +195,19 @@
           "stats"
         ],
         "properties": {
-          "abilities": {
-            "items": {
-              "properties": {
-                "timing": {
-                  "enum": [
-                    "summoned",
-                    "defeated",
-                    "ally_dance_ref_resolved"
-                  ]
-                },
-                "effects": {
-                  "items": {
-                    "properties": {
-                      "op": {
-                        "not": {
-                          "const": "damage"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+          "abilities": false,
+          "synergy": false
         }
       },
       "else": {
-        "not": {
-          "required": [
-            "stats"
-          ]
-        },
+        "required": [
+          "abilities",
+          "synergy"
+        ],
         "properties": {
+          "stats": false,
           "cost": {
             "minimum": 1
-          },
-          "abilities": {
-            "minItems": 1,
-            "maxItems": 1,
-            "items": {
-              "properties": {
-                "timing": {
-                  "const": "cast"
-                }
-              }
-            }
           }
         }
       }

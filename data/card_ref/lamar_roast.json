@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "lamar_roast",
   "name": "La coupe de Franklin",
   "kind": "ref",
@@ -17,20 +17,14 @@
     "lamar_roast_source"
   ],
   "cost": 1,
-  "text": "Dissipez les protections d’un ennemi. Avec Franklin en jeu, infligez-lui aussi 1 dégât.",
-  "strength": "Ouvre l’accès à une cible protégée.",
-  "weakness": "Demande un Personnage adverse.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "enemy_character",
-      "effects": [
-        {
-          "op": "dispel",
-          "target": "chosen"
-        }
-      ]
+  "text": "Infligez 1 dégât à un personnage adverse.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": null
 }

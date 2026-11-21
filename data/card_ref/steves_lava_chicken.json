@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "steves_lava_chicken",
   "name": "Steve’s Lava Chicken",
   "kind": "ref",
@@ -16,21 +16,17 @@
     "steves_lava_chicken_source"
   ],
   "cost": 1,
-  "text": "Soignez 2 PV d’un allié. Avec Steve en jeu, soignez 3 PV.",
+  "text": "Rendez 2 PV à un allié. Avec Steve sur votre terrain, rendez 3 PV.",
   "strength": "Maintient un allié blessé en jeu.",
   "weakness": "Demande un allié blessé pour tirer parti du soin.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "heal",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "steve_minecraft_film",
+    "bonus": 1
+  }
 }

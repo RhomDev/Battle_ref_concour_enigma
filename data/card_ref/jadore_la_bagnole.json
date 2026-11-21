@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "jadore_la_bagnole",
   "name": "J’adore la bagnole",
   "kind": "ref",
@@ -16,21 +16,17 @@
     "jadore_la_bagnole_source"
   ],
   "cost": 2,
-  "text": "Donnez 2 Boucliers à un allié. Avec Macron en jeu, donnez-en 3.",
-  "strength": "Protège un allié avant l’échange.",
-  "weakness": "Demande un allié en jeu.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "ally_character",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "text": "Donnez 2 points de bouclier à un allié. Avec Emmanuel Macron sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "macron",
+    "bonus": 1
+  }
 }

@@ -8,3 +8,7 @@ __pycache__/
 # Environnements virtuels Python
 .venv/
 venv/
+
+# APK de test générés localement
+android/*.apk
+android/.debug.keystore

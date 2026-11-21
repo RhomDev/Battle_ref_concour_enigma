@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "vegeta",
   "name": "Vegeta",
   "kind": "character",
@@ -14,32 +14,14 @@
     ]
   },
   "cost": 5,
-  "text": "Déploiement · Gagne Garde et 1 Bouclier.",
-  "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
-  "weakness": "Son déploiement demande beaucoup d’énergie.",
+  "text": "Dragon Ball Super, épisode 7",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "pulse",
   "media": [
     "vegeta_anime",
     "bulma_scene",
     "bulma_trailer"
-  ],
-  "abilities": [
-    {
-      "id": "fierte",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "guard",
-          "target": "self"
-        },
-        {
-          "op": "shield",
-          "target": "self",
-          "amount": 1
-        }
-      ]
-    }
   ],
   "stats": {
     "hp": 5

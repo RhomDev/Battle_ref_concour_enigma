@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "reunion_urgence",
   "name": "Réunion d’urgence",
   "kind": "ref",
@@ -16,21 +16,14 @@
     "reunion_urgence_source"
   ],
   "cost": 3,
-  "text": "Donnez 1 Bouclier à chaque allié. Avec Rouge en jeu, donnez-en 2 à chacun.",
-  "strength": "Protège plusieurs Personnages en une action.",
-  "weakness": "Demande plusieurs alliés pour être rentable.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "ally_characters",
-          "amount": 1
-        }
-      ]
+  "text": "Donnez 1 point de bouclier à un allié.",
+  "strength": "Protège un allié avant une attaque.",
+  "weakness": "Demande un personnage allié déployé.",
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 1
     }
-  ]
+  },
+  "synergy": null
 }

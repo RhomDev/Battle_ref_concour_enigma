@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "joe_biden",
   "name": "Joe Biden",
   "kind": "character",
@@ -15,25 +15,11 @@
   "media": [
     "joe_biden_source"
   ],
-  "text": "Déploiement · Gagne 1 Bouclier.",
-  "strength": "Encaisse une première attaque.",
-  "weakness": "Sa protection initiale est limitée.",
+  "text": "Premier débat présidentiel Biden–Trump",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
   "cost": 3,
   "stats": {
     "hp": 4
-  },
-  "abilities": [
-    {
-      "id": "deploiement",
-      "timing": "summoned",
-      "targeting": "none",
-      "effects": [
-        {
-          "op": "shield",
-          "target": "self",
-          "amount": 1
-        }
-      ]
-    }
-  ]
+  }
 }

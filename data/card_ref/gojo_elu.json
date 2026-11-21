@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "id": "gojo_elu",
   "name": "The Honored One",
   "kind": "ref",
@@ -16,21 +16,17 @@
     "gojo_elu_source"
   ],
   "cost": 2,
-  "text": "Infligez 2 dégâts à une cible adverse. Avec Gojo en jeu, infligez 3 dégâts.",
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",
   "strength": "Peut achever une cible affaiblie.",
-  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
-  "abilities": [
-    {
-      "id": "resolution",
-      "timing": "cast",
-      "targeting": "enemy",
-      "effects": [
-        {
-          "op": "damage",
-          "target": "chosen",
-          "amount": 2
-        }
-      ]
+  "weakness": "Demande un personnage adverse déployé.",
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
     }
-  ]
+  },
+  "synergy": {
+    "character_id": "satoru_gojo",
+    "bonus": 1
+  }
 }
