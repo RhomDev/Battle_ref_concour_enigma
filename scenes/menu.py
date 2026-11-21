@@ -1,9 +1,9 @@
 
 import pygame
 from config import WIDTH, HEIGHT
-from scenes.media_collection import MediaCollectionScene
-
 from gameplay.card import Card_Item
+from scenes.battle_scene import CardView
+from scenes.media_collection import MediaCollectionScene
 
 
 class MenuScene:
@@ -79,8 +79,6 @@ class MenuScene:
             self.plus_radius * 2
         )
 
-        self.card = Card_Item("barbie","card_perso")
-
         # Boutons principaux
         button_width = int(WIDTH * 0.39)
         button_height = int(HEIGHT * 0.105)
@@ -119,19 +117,13 @@ class MenuScene:
         self.hover_scale = {name: 0.0 for name in self.buttons}
 
         # Carte temporaire d'aperçu
+        self.card = Card_Item("barbie.json", "card_perso")
+        self.card_view = CardView()
         self.preview_card_rect = pygame.Rect(
             int(WIDTH * 0.39),
             int(HEIGHT * 0.18),
             int(WIDTH * 0.22),
             int(HEIGHT * 0.36)
-        )
-
-        self.font_card_title = pygame.font.SysFont(
-            "arial", max(18, int(HEIGHT * 0.028)), bold=True
-        )
-
-        self.font_card_small = pygame.font.SysFont(
-            "arial", max(13, int(HEIGHT * 0.020))
         )
 
     # -------------------------------------------------
@@ -454,4 +446,4 @@ class MenuScene:
         self.draw_header(surface)
         self.draw_profile(surface)
         self.draw_buttons(surface)
-        self.card.draw(surface)
+        self.card_view.draw(surface, self.preview_card_rect, self.card)

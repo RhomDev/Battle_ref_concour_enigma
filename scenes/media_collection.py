@@ -3,14 +3,13 @@
 import json
 import webbrowser
 from bisect import bisect_right
-from pathlib import Path
 
 import pygame
 
 from config import HEIGHT, WIDTH
+from core.asset_manager import ROOT, AssetManager
 
 
-ROOT = Path(__file__).resolve().parents[1]
 INK = (255, 243, 222)
 MUTED = (209, 184, 179)
 GOLD = (232, 192, 114)
@@ -31,8 +30,7 @@ class MediaCollectionScene:
             (json.loads(file.read_text(encoding="utf-8")) for file in (catalogue / folder).glob("*.json")),
             key=lambda card: (card["cost"], card["name"].casefold()),
         )
-        media = json.loads((catalogue / "medias.json").read_text(encoding="utf-8"))
-        self.media = {item["id"]: item for item in media}
+        self.assets = AssetManager()
         self.font_title = pygame.font.SysFont("arial", 46, bold=True)
         self.font_name = pygame.font.SysFont("arial", 32, bold=True)
         self.font = pygame.font.SysFont("arial", 23)
@@ -73,28 +71,16 @@ class MediaCollectionScene:
         self.stop_preview()
         self.index = index % len(self.cards)
         self.card = self.cards[self.index]
-        items = [self.media[media_id] for media_id in self.card["media"]]
-        demo = {
-            kind: next(
-                (item for item in items if item["kind"] == kind and item["status"] == "demo_asset"),
-                None,
-            )
-            for kind in ("image", "audio", "gif")
-        }
-        copies = [copy for item in items for copy in item.get("localCopies", [])]
-        original = {
-            kind: next((copy for copy in copies if copy["kind"] == kind), None)
-            for kind in ("image", "audio", "gif", "video")
-        }
-        self.audio = original["audio"] or demo["audio"]
-        self.animation = demo["gif"] or original["gif"]
-        self.video = original["video"]
+        media = self.assets.media_for(self.card["media"])
+        self.audio = media["audio"]
+        self.animation = media["gif"]
+        self.video = media["video"]
         self.photo = None
         self.notice = ""
-        photo = demo["image"] or original["image"]
+        photo = media["image"]
         if photo:
             try:
-                image = pygame.image.load(ROOT / photo["localPath"]).convert_alpha()
+                image = self.assets.load_image(photo["localPath"])
                 self.photo = self.fit_image(image)
             except (OSError, pygame.error):
                 self.notice = "Image locale indisponible."
