@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 0,
+  "id": "",
+  "name": "",
+  "kind": "",
+  "category": "",
+
+  "cost": 0,
+  "text": "",
+  "strength": "",
+  "weakness": "",
+
+    // affichage music et image ou gif
+  "media": [],
+
+  "abilities": [
+    {
+      "id": "",
+      "timing": "",
+      "targeting": "",
+      "effects": [
+        {
+          "op": "",
+          "target": "",
+          "amount": 0
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dance"
+  ]
+}
