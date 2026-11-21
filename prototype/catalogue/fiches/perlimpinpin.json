@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "perlimpinpin",
+  "name": "Poudre de perlimpinpin",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Débat présidentiel de l’entre-deux-tours",
+    "year": 2017,
+    "sources": [
+      "https://www.youtube.com/watch?v=FIJpp_TZC6k",
+      "https://www.youtube.com/watch?v=rCK-7Hki4II"
+    ]
+  },
+  "cost": 1,
+  "text": "Retirez les bonus visibles d’un Personnage ennemi.",
+  "strength": "Un outil abordable contre les stratégies de protection.",
+  "weakness": "Faible contre une cible dépourvue de bonus.",
+  "visual": "powder",
+  "media": [
+    "macron_photo",
+    "debate_scene"
+  ],
+  "abilities": [
+    {
+      "id": "poudre",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

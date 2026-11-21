@@ -1,0 +1,144 @@
+[
+  {
+    "id": "trump_photo",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
+    "creator": "Shealah Craighead / Maison-Blanche",
+    "license": "PD-USGov",
+    "restrictions": "Portrait officiel (2017). Domaine public aux États-Unis. Redimensionné et converti en WebP. Analyse de l’usage de l’image avant diffusion publique.",
+    "status": "demo_asset",
+    "localPath": "assets/media/trump.webp"
+  },
+  {
+    "id": "macron_photo",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macron_de_profil.jpg",
+    "creator": "France Diplomatie / MEAE",
+    "license": "CC0-1.0",
+    "restrictions": "Parlement européen à Strasbourg (2022). Photo de substitution pour la scène du débat. CC0 1.0. Conversion en WebP et cadrage à l’affichage.",
+    "status": "demo_asset",
+    "localPath": "assets/media/macron.webp",
+    "focalPoint": {
+      "x": 50,
+      "y": 33
+    }
+  },
+  {
+    "id": "psy_photo",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psy_does_Gangnam_Style_at_KIIS_FM_Jingle_Ball_2012.jpg",
+    "creator": "AngryJulieMonday",
+    "license": "CC-BY-2.0",
+    "restrictions": "Concert de 2012. Redimensionnée et convertie en WebP. L’image peut être cadrée par l’interface. Licence https://creativecommons.org/licenses/by/2.0/",
+    "status": "demo_asset",
+    "localPath": "assets/media/psy.webp"
+  },
+  {
+    "id": "mask_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=uPrUiKgQVQk",
+    "creator": "New Line Cinema / Arrow Video (publication)",
+    "license": "authorization-required",
+    "restrictions": "Bande-annonce VO. Film, doublage VF et piste audio à valider séparément.",
+    "status": "reference_only"
+  },
+  {
+    "id": "debate_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=FIJpp_TZC6k",
+    "creator": "France 2 / INA (publication)",
+    "license": "authorization-required",
+    "restrictions": "Archive du 3 mai 2017. Voir aussi les droits de production et de diffusion.",
+    "status": "reference_only"
+  },
+  {
+    "id": "trump_dance_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=4swzg3NV9tI",
+    "creator": "FOX 13 News (publication de la captation) / Village People (musique)",
+    "license": "authorization-required",
+    "restrictions": "Captation et morceau de 1978 à traiter séparément.",
+    "status": "reference_only"
+  },
+  {
+    "id": "bulma_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.crunchyroll.com/watch/GYNQ8NV9Y/how-dare-you-hurt-my-bulma-vegetas-sudden-angry-shift",
+    "creator": "Toei Animation / Shueisha / Crunchyroll (diffusion)",
+    "license": "authorization-required",
+    "restrictions": "Épisode 7, extrait et doublage à autoriser.",
+    "status": "reference_only"
+  },
+  {
+    "id": "jojo_scene",
+    "kind": "video",
+    "sourceUrl": "https://jojo-animation.com/story/007.php",
+    "creator": "Comité de production Golden Wind / David Production / Shueisha",
+    "license": "authorization-required",
+    "restrictions": "Page officielle de l’épisode avec visuels. GIF et vidéo de la scène à autoriser.",
+    "status": "reference_only"
+  },
+  {
+    "id": "jojo_music",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=GTuX8kohqSU",
+    "creator": "Yugo Kanno / label indiqué sur la bande-son",
+    "license": "authorization-required",
+    "restrictions": "Piste officielle. Composition et enregistrement à autoriser.",
+    "status": "reference_only"
+  },
+  {
+    "id": "perceval_scene",
+    "kind": "video",
+    "sourceUrl": "https://actu.m6.fr/series/kaamelott-sur-m6-les-livres-i-a-v-en-streaming-gratuit-des-ce-mercredi-8-octobre",
+    "creator": "Alexandre Astier / CALT / M6 (diffusion)",
+    "license": "authorization-required",
+    "restrictions": "Page officielle. Épisode à relever pour un extrait précis.",
+    "status": "reference_only"
+  },
+  {
+    "id": "otis_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/fr/films/asterix-et-obelix-mission-cleopatre/",
+    "creator": "Alain Chabat / Pathé / Éditions Albert René (adaptation)",
+    "license": "authorization-required",
+    "restrictions": "Page du film. Pour la tirade, relever le minutage de l’édition acquise.",
+    "status": "reference_only"
+  },
+  {
+    "id": "creeper_scene",
+    "kind": "mixed",
+    "sourceUrl": "https://www.minecraft.net/en-us/article/meet-creeper",
+    "creator": "Mojang / Microsoft",
+    "license": "authorization-required",
+    "restrictions": "Visuel, captation et bruit de jeu soumis aux conditions d’usage Mojang.",
+    "status": "reference_only"
+  },
+  {
+    "id": "rick_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "creator": "Rick Astley (interprète) / Stock Aitken Waterman (auteurs) / label",
+    "license": "authorization-required",
+    "restrictions": "Clip, composition et master à autoriser.",
+    "status": "reference_only"
+  },
+  {
+    "id": "psy_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    "creator": "PSY / YG Entertainment (publication originale)",
+    "license": "authorization-required",
+    "restrictions": "Clip vidéo et morceau soumis à des droits distincts.",
+    "status": "reference_only"
+  },
+  {
+    "id": "mask_vf_recreation",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=gdmujIq7uwc",
+    "creator": "Emmanuel Curtil (interprétation) / AlloCiné (captation)",
+    "license": "authorization-required",
+    "restrictions": "Réplique redite par le comédien pour un entretien. Pour une lecture dans le jeu, demander une autorisation de réutilisation.",
+    "status": "reference_only"
+  }
+]

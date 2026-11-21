@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "perceval",
+  "name": "Perceval",
+  "kind": "character",
+  "category": "series",
+  "origin": {
+    "work": "Kaamelott",
+    "year": 2005,
+    "sources": [
+      "https://actu.m6.fr/series/kaamelott-sur-m6-les-livres-i-a-v-en-streaming-gratuit-des-ce-mercredi-8-octobre"
+    ]
+  },
+  "cost": 1,
+  "text": "Invocation · Piochez 1 carte.",
+  "strength": "Remplit la main à faible coût.",
+  "weakness": "Tombe vite au combat.",
+  "visual": "subtitle",
+  "media": [
+    "perceval_scene"
+  ],
+  "abilities": [
+    {
+      "id": "c_est_pas_faux",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "draw",
+          "target": "player",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "attack": 1,
+    "hp": 2
+  }
+}

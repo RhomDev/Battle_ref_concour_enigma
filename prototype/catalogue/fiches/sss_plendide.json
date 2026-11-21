@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "sss_plendide",
+  "name": "Sssplendide !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "The Mask",
+    "year": 1994,
+    "sources": [
+      "https://www.youtube.com/watch?v=uPrUiKgQVQk",
+      "https://www.arrowvideo.com/p/the-mask-4k-uhd/18097046/",
+      "https://www.youtube.com/watch?v=gdmujIq7uwc"
+    ]
+  },
+  "cost": 1,
+  "text": "Soignez 2 PV à un allié.",
+  "strength": "Répare un échange sans épuiser l’énergie.",
+  "weakness": "Demande une cible alliée.",
+  "visual": "spotlight",
+  "media": [
+    "mask_scene",
+    "mask_vf_recreation"
+  ],
+  "abilities": [
+    {
+      "id": "panache",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "heal",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

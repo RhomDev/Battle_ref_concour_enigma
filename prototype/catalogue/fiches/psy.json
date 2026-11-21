@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "psy",
+  "name": "PSY",
+  "kind": "character",
+  "category": "musique",
+  "origin": {
+    "work": "Gangnam Style",
+    "year": 2012,
+    "sources": [
+      "https://www.youtube.com/watch?v=9bZkp7q19f0",
+      "https://blog.youtube/creator-and-artist-stories/10-years-of-youtubes-billion-views-club-psy-gangnam-style/"
+    ]
+  },
+  "cost": 3,
+  "text": "Invocation · Un autre allié gagne +1 ATQ pour ce tour, s’il y en a.",
+  "strength": "Transforme un allié prêt en menace.",
+  "weakness": "Arrivée peu rentable seul.",
+  "visual": "spotlight",
+  "media": [
+    "psy_photo",
+    "psy_scene"
+  ],
+  "abilities": [
+    {
+      "id": "pas_de_danse",
+      "timing": "summoned",
+      "targeting": "optional_other_ally_character",
+      "effects": [
+        {
+          "op": "boost_attack",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "attack": 2,
+    "hp": 3
+  }
+}

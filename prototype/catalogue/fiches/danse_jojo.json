@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "danse_jojo",
+  "name": "Canzoni preferite",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "Golden Wind, épisode 7 · Danse du trio",
+    "year": 2018,
+    "sources": [
+      "https://jojo-animation.com/story/007.php",
+      "https://jojo-animation.com/music/2018/10/bm01.php"
+    ]
+  },
+  "cost": 2,
+  "text": "Danse · Donnez 1 Charge et 1 Bouclier à un allié.",
+  "strength": "Prépare un ultime tout en protégeant son porteur.",
+  "weakness": "Demande un allié et coûte une carte.",
+  "visual": "spotlight",
+  "media": [
+    "jojo_scene",
+    "jojo_music"
+  ],
+  "abilities": [
+    {
+      "id": "choregraphie",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "charge",
+          "target": "chosen",
+          "amount": 1
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dance"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "rick_astley",
+  "name": "Rick Astley",
+  "kind": "character",
+  "category": "musique",
+  "origin": {
+    "work": "Never Gonna Give You Up (1987), puis Rickroll (2007)",
+    "year": 2007,
+    "sources": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://content.time.com/time/specials/packages/article/0,28804,1974961_1974925_1970486,00.html"
+    ]
+  },
+  "cost": 3,
+  "text": "Actif · 1 ⚡. Piochez 1 carte.",
+  "strength": "Recharge la main même sans cible.",
+  "weakness": "Renonce à attaquer pour piocher.",
+  "visual": "rewind",
+  "media": [
+    "rick_scene"
+  ],
+  "abilities": [
+    {
+      "id": "lien_surprise",
+      "timing": "active",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "draw",
+          "target": "player",
+          "amount": 1
+        }
+      ],
+      "cost": 1
+    }
+  ],
+  "stats": {
+    "attack": 2,
+    "hp": 3
+  }
+}

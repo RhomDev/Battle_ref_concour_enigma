@@ -1,0 +1,336 @@
+{
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "kind",
+    "category",
+    "origin",
+    "cost",
+    "text",
+    "strength",
+    "weakness",
+    "visual",
+    "media",
+    "abilities"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "kind": {
+      "enum": [
+        "character",
+        "ref"
+      ]
+    },
+    "category": {
+      "enum": [
+        "cinema",
+        "series",
+        "politique",
+        "anime",
+        "musique",
+        "jeu_video",
+        "internet"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "required": [
+        "work",
+        "year",
+        "sources"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "work": {
+          "type": "string",
+          "minLength": 1
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "cost": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6
+    },
+    "stats": {
+      "type": "object",
+      "required": [
+        "attack",
+        "hp"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "attack": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 12
+        },
+        "hp": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        }
+      }
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "strength": {
+      "type": "string",
+      "minLength": 1
+    },
+    "weakness": {
+      "type": "string",
+      "minLength": 1
+    },
+    "visual": {
+      "enum": [
+        "subtitle",
+        "pixel",
+        "scroll",
+        "powder",
+        "spotlight",
+        "rewind",
+        "pulse"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "dance"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "timing",
+          "targeting",
+          "effects"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+          },
+          "timing": {
+            "enum": [
+              "summoned",
+              "defeated",
+              "active",
+              "ally_dance_ref_resolved",
+              "cast"
+            ]
+          },
+          "targeting": {
+            "enum": [
+              "ally_character",
+              "enemy_character",
+              "none",
+              "optional_enemy_character",
+              "optional_other_ally_character"
+            ]
+          },
+          "effects": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "op",
+                    "target",
+                    "amount"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "op": {
+                      "enum": [
+                        "shield",
+                        "draw",
+                        "damage",
+                        "boost_attack",
+                        "charge",
+                        "heal"
+                      ]
+                    },
+                    "target": {
+                      "enum": [
+                        "self",
+                        "chosen",
+                        "player",
+                        "ally_characters",
+                        "enemy_characters"
+                      ]
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 6
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "op",
+                    "target"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "op": {
+                      "enum": [
+                        "guard",
+                        "dispel"
+                      ]
+                    },
+                    "target": {
+                      "enum": [
+                        "self",
+                        "chosen",
+                        "player",
+                        "ally_characters",
+                        "enemy_characters"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 4
+          },
+          "cost": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "timing": {
+                  "const": "active"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "cost"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "cost"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 4
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Battle Ref Arena — Carte",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "character"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "stats"
+        ],
+        "properties": {
+          "abilities": {
+            "items": {
+              "properties": {
+                "timing": {
+                  "enum": [
+                    "summoned",
+                    "defeated",
+                    "active",
+                    "ally_dance_ref_resolved"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "not": {
+          "required": [
+            "stats"
+          ]
+        },
+        "properties": {
+          "abilities": {
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "properties": {
+                "timing": {
+                  "const": "cast"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "ymca",
+  "name": "Y.M.C.A.",
+  "kind": "ref",
+  "category": "musique",
+  "origin": {
+    "work": "Danse de meeting sur le titre des Village People (1978)",
+    "year": 2020,
+    "sources": [
+      "https://www.youtube.com/watch?v=4swzg3NV9tI",
+      "https://journals.sagepub.com/doi/full/10.1177/20563051261472313"
+    ]
+  },
+  "cost": 2,
+  "text": "Danse · Donnez +1 ATQ à tous vos Personnages pour ce tour.",
+  "strength": "Valorise un plateau préparé.",
+  "weakness": "Faible avec un plateau vide ou épuisé.",
+  "visual": "spotlight",
+  "media": [
+    "trump_dance_scene"
+  ],
+  "abilities": [
+    {
+      "id": "chorus",
+      "timing": "cast",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "boost_attack",
+          "target": "ally_characters",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dance"
+  ]
+}

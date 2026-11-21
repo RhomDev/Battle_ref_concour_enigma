@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "the_mask",
+  "name": "The Mask",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "The Mask",
+    "year": 1994,
+    "sources": [
+      "https://www.arrowvideo.com/p/the-mask-4k-uhd/18097046/",
+      "https://www.youtube.com/watch?v=uPrUiKgQVQk"
+    ]
+  },
+  "cost": 4,
+  "text": "Invocation · Gagne 1 Bouclier.",
+  "strength": "Arrive protégé pour menacer avec ses attaques.",
+  "weakness": "Vulnérable à la dissipation.",
+  "visual": "spotlight",
+  "media": [
+    "mask_scene"
+  ],
+  "abilities": [
+    {
+      "id": "entree_en_scene",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "attack": 3,
+    "hp": 4
+  }
+}

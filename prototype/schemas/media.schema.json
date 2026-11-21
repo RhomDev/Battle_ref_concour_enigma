@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "sourceUrl",
+    "creator",
+    "license",
+    "status",
+    "restrictions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+    },
+    "kind": {
+      "enum": [
+        "image",
+        "video",
+        "gif",
+        "audio",
+        "mixed"
+      ]
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "creator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "license": {
+      "enum": [
+        "CC-BY-2.0",
+        "CC0-1.0",
+        "PD-USGov",
+        "authorization-required",
+        "unverified"
+      ]
+    },
+    "status": {
+      "enum": [
+        "demo_asset",
+        "reference_only"
+      ]
+    },
+    "restrictions": {
+      "type": "string",
+      "minLength": 1
+    },
+    "localPath": {
+      "type": "string",
+      "pattern": "^assets/media/[a-z][a-z0-9_-]*\\.(?:webp|png|gif|webm|mp4|ogg|mp3)$"
+    },
+    "focalPoint": {
+      "type": "object",
+      "required": [
+        "x",
+        "y"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Battle Ref Arena — Média",
+  "if": {
+    "properties": {
+      "status": {
+        "const": "demo_asset"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "localPath"
+    ],
+    "properties": {
+      "license": {
+        "enum": [
+          "CC-BY-2.0",
+          "CC0-1.0",
+          "PD-USGov"
+        ]
+      }
+    }
+  },
+  "else": {
+    "not": {
+      "required": [
+        "localPath"
+      ]
+    }
+  }
+}

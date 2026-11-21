@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle Ref Arena — Directions graphiques</title>
+<link rel="stylesheet" href="arena.css">
+<style>
+  .directions { max-width: 1210px; padding: 30px 22px; margin: auto; }
+  .directions h1 { margin-bottom: 8px; }
+  .directions p { color: #bdccdc; line-height: 1.55; }
+  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .direction { padding: 16px; border: 1px solid #334359; border-radius: 12px; background: #151f31; }
+  .direction h2 { font-size: 18px; margin: 0; }
+  .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 10px; margin-block: 16px; }
+  .pair > * { width: 100%; min-width: 0; aspect-ratio: 2/3; }
+  .final-frame { display: block; height: auto; object-fit: fill; }
+  .outline { position: relative; display: grid; grid-template-rows: 18% 50% 18% 14%; text-align: center; font-weight: 800; font-size: clamp(10px, 2vw, 16px); overflow: hidden; }
+  .outline b, .outline span { display: grid; place-items: center; }
+  .outline .screen { margin-inline: 10%; background: repeating-linear-gradient(135deg, #0004 0 3px, transparent 3px 12px); font-size: clamp(28px, 4vw, 44px); }
+  .relic { background: #25283b; border: 4px double #d5a768; color: #fff1d5; border-radius: 28px 28px 10px 10px; font-family: Georgia, serif; }
+  .relic.action { border-color: #e88691; border-radius: 25% 10% 25% 10%; background: #432635; }
+  .fanzine { border: 4px solid #101014; color: #16161a; background: #f5e9d7; transform: rotate(-2deg); }
+  .fanzine.action { background: #eb8099; clip-path: polygon(0 0, 100% 0, 100% 40%, 93% 46%, 100% 52%, 100% 100%, 0 100%, 0 52%, 7% 46%, 0 40%); transform: rotate(2deg); }
+  .fanzine b { border-bottom: 3px solid #1f2025; }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-icon" aria-hidden="true">▶</span><div><strong>BATTLE REF<span> ARENA</span></strong><small>Directions graphiques</small></div></div><a href="apercu.html">Voir le plateau</a></header>
+<main class="directions">
+<h1>Trois directions pour les cartes</h1>
+<p>Les aperçus comparent le cadre Personnage à gauche et le cadre Ref à droite.</p>
+<div class="panels">
+  <section class="direction">
+    <h2>Régie pop · retenue</h2>
+    <div class="pair"><img class="final-frame" src="assets/frames/personnage.webp" alt="Cadre Personnage cyan"><img class="final-frame" src="assets/frames/ref.webp" alt="Cadre Ref orange"></div>
+    <p>Une fenêtre de diffusion accueille des photos et des styles d’animation différents. Cyan et coin biseauté orange signalent les deux types.</p>
+  </section>
+  <section class="direction">
+    <h2>Cabinet des reliques</h2>
+    <div class="pair">
+      <div class="outline relic"><b>Personnage</b><span class="screen">♜</span><span>Capacité</span><span>⚔ &nbsp; ♥</span></div>
+      <div class="outline relic action"><b>Ref</b><span class="screen">◇</span><span>Effet</span><span>⚡</span></div>
+    </div>
+    <p>Un album d’archives, avec blasons, bronze et rubis. Les deux silhouettes empruntent au cartouche et à la fiche de collection.</p>
+  </section>
+  <section class="direction">
+    <h2>Fanzine de tournoi</h2>
+    <div class="pair">
+      <div class="outline fanzine"><b>Personnage</b><span class="screen">✶</span><span>Capacité</span><span>⚔ &nbsp; ♥</span></div>
+      <div class="outline fanzine action"><b>Ref</b><span class="screen">▶</span><span>Effet</span><span>⚡</span></div>
+    </div>
+    <p>Le carton ivoire évoque les photocopies de fanzine. La Ref devient un ticket rose à détacher.</p>
+  </section>
+</div>
+</main>
+</body>
+</html>

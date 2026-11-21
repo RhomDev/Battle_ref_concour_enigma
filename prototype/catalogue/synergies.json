@@ -1,0 +1,227 @@
+[
+  {
+    "id": "s1",
+    "title": "Le smoking prend feu",
+    "event": "ref_resolved",
+    "sourceCardId": "sss_plendide",
+    "requirements": [
+      {
+        "kind": "chosen_card",
+        "cardId": "the_mask"
+      }
+    ],
+    "effects": [
+      {
+        "op": "charge",
+        "target": "chosen",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Le Mask se nourrit de ses entrées en scène.",
+    "reveal": "Carton « Sssplendide ! » et flash cyan."
+  },
+  {
+    "id": "s2",
+    "title": "Poudre aux yeux",
+    "event": "ref_resolved",
+    "sourceCardId": "perlimpinpin",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "macron",
+        "side": "ally"
+      }
+    ],
+    "effects": [
+      {
+        "op": "draw",
+        "target": "player",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Quand il cite sa propre formule, Macron relance le débat.",
+    "reveal": "Tampon « Débat 2017 »."
+  },
+  {
+    "id": "s3",
+    "title": "Dernier rappel",
+    "event": "ref_resolved",
+    "sourceCardId": "ymca",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "trump",
+        "side": "ally"
+      }
+    ],
+    "effects": [
+      {
+        "op": "charge",
+        "target": "ally:trump",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Le danseur retrouve son morceau de sortie.",
+    "reveal": "Projecteur cuivre sur Trump."
+  },
+  {
+    "id": "s4",
+    "title": "Sex Pistols sur la piste",
+    "event": "ref_resolved",
+    "sourceCardId": "danse_jojo",
+    "requirements": [
+      {
+        "kind": "chosen_card",
+        "cardId": "mista"
+      }
+    ],
+    "effects": [
+      {
+        "op": "draw",
+        "target": "player",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Mista connaît la chorégraphie par cœur.",
+    "reveal": "Trois silhouettes de projecteurs et titre de la piste."
+  },
+  {
+    "id": "s5",
+    "title": "Fierté saiyenne",
+    "event": "ref_resolved",
+    "sourceCardId": "touche_pas_bulma",
+    "requirements": [
+      {
+        "kind": "chosen_card",
+        "cardId": "vegeta"
+      }
+    ],
+    "effects": [
+      {
+        "op": "charge",
+        "target": "chosen",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "La réplique originale déclenche sa montée de puissance.",
+    "reveal": "Alerte ambre et jauge de Charge."
+  },
+  {
+    "id": "s6",
+    "title": "Battle de chorés",
+    "event": "ref_resolved",
+    "sourceCardId": "ymca",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "psy",
+        "side": "ally"
+      }
+    ],
+    "effects": [
+      {
+        "op": "shield",
+        "target": "ally:psy",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Le pas de cheval répond aux poings du meeting.",
+    "reveal": "Deux faisceaux se croisent sur PSY."
+  },
+  {
+    "id": "s7",
+    "title": "C’est pas faux, c’est long",
+    "event": "character_summoned",
+    "sourceCardId": "otis",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "perceval",
+        "side": "ally"
+      }
+    ],
+    "effects": [
+      {
+        "op": "shield",
+        "target": "self",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Perceval hoche la tête pendant le monologue d’Otis.",
+    "reveal": "Sous-titre « C’est pas faux. »"
+  },
+  {
+    "id": "s8",
+    "title": "Le lien surprise",
+    "event": "character_summoned",
+    "sourceCardId": "rick_astley",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "mista",
+        "side": "enemy"
+      }
+    ],
+    "effects": [
+      {
+        "op": "shield",
+        "target": "self",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Mista attend la musique de son équipe et se fait rickroller.",
+    "reveal": "Lecteur qui change de piste et nom de Rick."
+  },
+  {
+    "id": "s9",
+    "title": "Psssh… sans le son",
+    "event": "ref_resolved",
+    "sourceCardId": "perlimpinpin",
+    "requirements": [
+      {
+        "kind": "chosen_card",
+        "cardId": "creeper"
+      }
+    ],
+    "effects": [
+      {
+        "op": "damage",
+        "target": "chosen",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Le grand effet d’annonce se résume à un grésillement.",
+    "reveal": "Parasites et bulle « Psssh. »"
+  },
+  {
+    "id": "s10",
+    "title": "Duel de grimaces",
+    "event": "attack_resolved",
+    "sourceCardId": "the_mask",
+    "requirements": [
+      {
+        "kind": "attack_target_card",
+        "cardId": "vegeta"
+      }
+    ],
+    "effects": [
+      {
+        "op": "shield",
+        "target": "self",
+        "amount": 1
+      }
+    ],
+    "limitPerPlayerMatch": 1,
+    "reason": "Le sérieux de Vegeta est le contrepoint comique du Mask. Le Mask doit survivre à l’échange.",
+    "reveal": "Double cadre et annonce « Duel de grimaces »."
+  }
+]

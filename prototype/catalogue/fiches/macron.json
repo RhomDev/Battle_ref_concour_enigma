@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "macron",
+  "name": "Emmanuel Macron",
+  "kind": "character",
+  "category": "politique",
+  "origin": {
+    "work": "Débat présidentiel de l’entre-deux-tours",
+    "year": 2017,
+    "sources": [
+      "https://www.youtube.com/watch?v=FIJpp_TZC6k",
+      "https://www.youtube.com/watch?v=rCK-7Hki4II"
+    ]
+  },
+  "cost": 2,
+  "text": "Invocation · Retirez les bonus visibles d’un ennemi, s’il y en a.",
+  "strength": "Ouvre un passage contre un ennemi protégé.",
+  "weakness": "Pouvoir sans valeur sur un plateau sans bonus.",
+  "visual": "powder",
+  "media": [
+    "macron_photo",
+    "debate_scene"
+  ],
+  "abilities": [
+    {
+      "id": "debunk",
+      "timing": "summoned",
+      "targeting": "optional_enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "attack": 1,
+    "hp": 3
+  }
+}

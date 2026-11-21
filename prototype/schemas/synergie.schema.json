@@ -1,0 +1,189 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "event",
+    "sourceCardId",
+    "requirements",
+    "effects",
+    "limitPerPlayerMatch",
+    "reason",
+    "reveal"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event": {
+      "enum": [
+        "ref_resolved",
+        "character_summoned",
+        "attack_resolved"
+      ]
+    },
+    "sourceCardId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "kind",
+              "cardId",
+              "side"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "board_card"
+                ]
+              },
+              "cardId": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+              },
+              "side": {
+                "enum": [
+                  "ally",
+                  "enemy"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "kind",
+              "cardId"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "chosen_card",
+                  "attack_target_card"
+                ]
+              },
+              "cardId": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "op",
+              "target",
+              "amount"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "op": {
+                "enum": [
+                  "shield",
+                  "draw",
+                  "damage",
+                  "boost_attack",
+                  "charge",
+                  "heal"
+                ]
+              },
+              "target": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "self",
+                      "chosen",
+                      "player",
+                      "ally_characters",
+                      "enemy_characters"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(ally|enemy):[a-z][a-z0-9_]*$"
+                  }
+                ]
+              },
+              "amount": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "op",
+              "target"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "op": {
+                "enum": [
+                  "guard",
+                  "dispel"
+                ]
+              },
+              "target": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "self",
+                      "chosen",
+                      "player",
+                      "ally_characters",
+                      "enemy_characters"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(ally|enemy):[a-z][a-z0-9_]*$"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "limitPerPlayerMatch": {
+      "const": 1
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reveal": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Battle Ref Arena — Synergie"
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "trump",
+  "name": "Donald Trump",
+  "kind": "character",
+  "category": "politique",
+  "origin": {
+    "work": "Meetings de la campagne américaine",
+    "year": 2020,
+    "sources": [
+      "https://www.youtube.com/watch?v=4swzg3NV9tI",
+      "https://journals.sagepub.com/doi/full/10.1177/20563051261472313"
+    ]
+  },
+  "cost": 3,
+  "text": "Passif · Quand vous jouez une Ref Danse, gagne 1 Bouclier.",
+  "strength": "Soutient le plan Danse.",
+  "weakness": "Dépend des Refs Danse pour son bouclier.",
+  "visual": "spotlight",
+  "media": [
+    "trump_photo",
+    "trump_dance_scene"
+  ],
+  "abilities": [
+    {
+      "id": "encore",
+      "timing": "ally_dance_ref_resolved",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "attack": 2,
+    "hp": 4
+  }
+}

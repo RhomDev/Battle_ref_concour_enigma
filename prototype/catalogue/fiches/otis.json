@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "otis",
+  "name": "Otis",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix et Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/fr/films/asterix-et-obelix-mission-cleopatre/",
+      "https://www.cinematheque.fr/film/76721.html"
+    ]
+  },
+  "cost": 2,
+  "text": "Actif · 1 ⚡. Donnez 1 Bouclier à un allié.",
+  "strength": "Protège une pièce clé à chaque tour.",
+  "weakness": "Consomme son action et de l’énergie.",
+  "visual": "scroll",
+  "media": [
+    "otis_scene"
+  ],
+  "abilities": [
+    {
+      "id": "bonne_situation",
+      "timing": "active",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ],
+      "cost": 1
+    }
+  ],
+  "stats": {
+    "attack": 1,
+    "hp": 4
+  }
+}
