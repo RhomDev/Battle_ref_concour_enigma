@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "vegeta",
   "name": "Vegeta",
   "kind": "character",
@@ -12,9 +12,9 @@
     ]
   },
   "cost": 5,
-  "text": "Actif · 1 ⚡. Gagne 1 Charge et soigne 1 de ses PV.",
-  "strength": "Peut préparer son ultime et se stabiliser.",
-  "weakness": "Coûte cher et doit choisir entre se préparer et attaquer.",
+  "text": "Déploiement · Gagne Garde et 1 Bouclier.",
+  "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
+  "weakness": "Son déploiement demande beaucoup d’énergie.",
   "visual": "pulse",
   "media": [
     "vegeta_cosplay",
@@ -23,25 +23,22 @@
   "abilities": [
     {
       "id": "fierte",
-      "timing": "active",
+      "timing": "summoned",
       "targeting": "none",
       "effects": [
         {
-          "op": "charge",
-          "target": "self",
-          "amount": 1
+          "op": "guard",
+          "target": "self"
         },
         {
-          "op": "heal",
+          "op": "shield",
           "target": "self",
           "amount": 1
         }
-      ],
-      "cost": 1
+      ]
     }
   ],
   "stats": {
-    "attack": 4,
     "hp": 5
   }
 }

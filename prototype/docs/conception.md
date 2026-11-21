@@ -23,12 +23,43 @@ Le **Théâtre des Échos** est un amphithéâtre en perspective, éclairé par 
 
 Les deux cadres PNG de 1 024 × 1 536 px ont été générés avec une fenêtre réellement transparente. Les WebP alpha de 660 × 990 px servent au jeu. L’interface place la photo derrière le cadre puis ajoute le texte et les statistiques devant. Les pourcentages de la fenêtre et du médaillon vivent dans la feuille de style.
 
-- **Personnage.** Bordeaux et angles biseautés. Le coût apparaît dans le médaillon. Le bandeau inférieur accueille univers, effet, attaque, PV et Bouclier. En combat, la fiche agrandie donne le détail de la règle.
+- **Personnage.** Bordeaux et angles biseautés. Le coût apparaît dans le médaillon. Le bandeau inférieur accueille l’univers, l’effet, les PV et les états de protection. En combat, la fiche agrandie donne le détail de la règle.
 - **Ref.** Vert profond et or, avec perforations latérales et encoches de ticket. Les cinq cartes ont une photographie locale. Sur la fiche, le bas présente la règle et la catégorie. Les médias de substitution sont identifiés sous la carte et dans les crédits.
 - **Rareté.** Différée au-delà du premier playtest.
 - **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. L’arène générée est stockée en WebP à 1 672 × 941 px. La plaque de statut réutilise un WebP avec alpha.
 
 ## Règles proposées
+
+### Règles provisoires retenues
+
+- **Personnages.** Une fois déployés, ils servent à protéger, à amplifier les Refs et à créer des synergies. Ils n’attaquent pas directement.
+- **Refs.** Elles infligent les dégâts et appliquent leurs effets. Si le joueur a déployé le Personnage qui correspond à la Ref jouée, celle-ci inflige davantage de dégâts ou son effet est renforcé.
+- **Synergies entre Personnages.** Certaines combinaisons de Personnages déployés déclenchent un effet supplémentaire.
+- **Énergie.** Piocher une carte et jouer une Ref sont deux actions qui consomment de l’énergie.
+
+### Valeurs d’essai du prototype
+
+- La pioche est volontaire et coûte **1 énergie**. Le coût imprimé s’applique au déploiement d’un Personnage et au jeu d’une Ref.
+- **Garde** protège les PV du joueur. Tant qu’il a un Personnage avec Garde, une Ref qui peut viser le joueur ou un Personnage doit viser un Personnage avec Garde. Les Refs qui ciblent uniquement un Personnage suivent les conditions imprimées sur leur fiche. Chaque point de Bouclier absorbe un dégât avant les PV. La dissipation retire Garde et Bouclier.
+- **Amplification.** Chaque Ref a un Personnage associé. Le bonus s’applique chaque fois que ce Personnage est dans le camp qui joue la Ref, y compris quand la Ref vise un autre Personnage. Les dégâts de base et leurs dégâts bonus forment un seul impact. Une dissipation est appliquée avant les dégâts qu’elle prépare.
+- **Combinaisons.** Otis et Perceval donnent 1 Bouclier à Otis. PSY et Trump donnent 1 Bouclier à PSY. Ces combinaisons se déclenchent quand les deux Personnages sont réunis dans le même camp, quel que soit leur ordre de déploiement, une fois par joueur et par partie.
+
+### Exemple de tour
+
+Vous commencez cette scène avec **5 énergies**, Perceval et Trump en jeu, et Y.M.C.A. en main. Côté adverse, Vegeta a **5 PV**, **Garde** et **1 Bouclier**.
+
+| Action | Énergie restante | Résultat |
+|---|---:|---|
+| Piocher Otis | 4 | Otis rejoint la main. |
+| Déployer Otis | 2 | Il gagne Garde en arrivant et 1 Bouclier grâce à Perceval. |
+| Jouer Y.M.C.A. | 0 | Avec la Garde de Vegeta, la Ref le cible. Trump fait passer les dégâts de 2 à 3. Le Bouclier en absorbe 1 et Vegeta descend à 3 PV. Trump gagne 1 Bouclier grâce à son effet Danse. |
+| Terminer le tour | 0 | Otis protège votre camp. Les PV du joueur adverse sont intacts. |
+
+[Jouer la scène guidée](../apercu.html)
+
+## Première proposition de règles (archive)
+
+Cette section conserve le modèle initial avec attaques de Personnages, ripostes et Charge pour la revue du prototype.
 
 ### Mise en place et rythme
 
@@ -104,7 +135,7 @@ legacy/python/
 
 Conventions. ID et fichiers de données en `snake_case` ASCII, labels français avec ponctuation, chemins relatifs POSIX, noms de propriétés en `camelCase`. Les fiches individuelles constituent la source maître lors de l’intégration. Le snapshot agrégé est généré au build. Les JSON de la livraison exposent déjà ces deux représentations. `schemaVersion` permet de versionner les entrées. Garder trois schémas indépendants pour carte, synergie et média. Valider aussi les références croisées, le typage des cibles et la compatibilité des opérations avec les événements. Une session identifie chaque unité par un ID d’instance. Les IDs catalogue servent à construire les matchs, les cibles et les journaux.
 
-Moteur recommandé. `applyCommand(state, command) → {state, events}`. Commandes `Summon`, `CastRef`, `Attack`, `Activate`, `EndTurn`. Un registre d’opérations implémente une fois par famille `damage`, `heal`, `shield`, `draw`, `dispel`, `boost_attack`, `charge` et `guard`. Les faits du combat sont portés par les événements. L’UI observe les événements pour l’animation, les crédits et le journal de découverte.
+Moteur recommandé. `applyCommand(state, command) → {state, events}`. Commandes `Summon`, `CastRef`, `Draw` et `EndTurn`. Un registre d’opérations implémente une fois par famille `damage`, `heal`, `shield`, `dispel` et `guard`. Les faits du combat sont portés par les événements. L’UI observe les événements pour l’animation, les crédits et le journal de découverte.
 
 ## Intégration automatique des médias
 
@@ -113,7 +144,7 @@ Moteur recommandé. `applyCommand(state, command) → {state, events}`. Commande
 3. Le build publie seulement les fichiers marqués admissibles à l’usage visé et leurs crédits. Les médias d’identification dont l’usage reste à vérifier restent dans le catalogue de recherche. Si une photo de remplacement est utilisée, documenter la différence avec la scène originale.
 4. Le composant carte pose par couches le fond, la photo recadrée `object-fit: cover`, le PNG/WebP alpha du type de carte, les icônes d’état, les champs texte/statistiques du JSON et enfin l’animation transitoire. En cas de fichier absent, remplacer son rectangle par un motif de la famille de carte. Les données de combat n’attendent jamais le téléchargement d’une image.
 5. Afficher un poster statique. Après `RefResolved` ou `SynergyDiscovered`, ouvrir un seul lecteur au premier plan pour 1 à 2 secondes. Privilégier MP4/WebM muet pour une scène compressée, utiliser GIF ou WebP animé quand c’est le seul format admissible, monter l’élément animé uniquement pendant la séquence, puis le retirer. Avec mouvement réduit, afficher poster et libellé. Objectif pour un clip de référence < 700 Ko en format vidéo à 480p. Mettre les fichiers locaux à nom haché en cache et précharger seulement ceux de la main ou du jeu de démo.
-6. Relier `CharacterSummoned`, `AttackResolved`, `UltimateResolved`, `RefResolved`, `SynergyDiscovered` et `MatchEnded` à des cues dédiés. Initialiser l’audio au clic « Activer le son ». Appliquer volume et mute dans un bus commun, interrompre un effet obsolète et tolérer un refus de lecture. La maquette contient un signal sonore original synthétisé pour une découverte, avec volume et activation. [Règles d’autoplay MDN](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay)
+6. Relier `CharacterSummoned`, `RefResolved`, `SynergyDiscovered` et `MatchEnded` à des cues dédiés. Initialiser l’audio au clic « Activer le son ». Appliquer volume et mute dans un bus commun, interrompre un effet obsolète et tolérer un refus de lecture. La maquette contient un signal sonore original synthétisé pour une découverte, avec volume et activation. [Règles d’autoplay MDN](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay)
 
 ## Pipeline éditorial assisté par IA
 
@@ -131,10 +162,10 @@ Moteur recommandé. `applyCommand(state, command) → {state, events}`. Commande
 | Lot | Livrable | Critère de sortie |
 |---|---|---|
 | 1 · Contrat | Schémas, migration Mask, catalogue | Échec explicite sur type, ID, média local et synergie incohérents. |
-| 2 · Combat minimal | Duel local à unités simples, main, actions, tours et résultat | Rejouer la même graine et vérifier énergie, Garde, riposte, sortie simultanée et match nul. |
+| 2 · Combat minimal | Duel local à unités simples, main, actions, tours et résultat | Rejouer la même graine et vérifier énergie, Garde, Bouclier, amplification et match nul. |
 | 3 · Rendu et chargement | Cadres, inspecteur, adaptation petit écran, cartes chargées depuis les JSON | Les deux types se lisent à 120 px. Démarrage offline, parcours clavier et erreur média testés. |
 | 4 · Médias | Signal au lancement, son et animation par événement | Audio volontaire, prise en charge du mute, fallback poster, une seule animation lourde. |
 | 5 · Paquet | 10 Personnages, 5 Refs, 10 synergies | Vérifier chaque déclencheur et contre-exemple. Les deux joueurs peuvent gagner avec plusieurs plans. |
 | 6 · Démonstration | Match guidé, départ rapide, replay local | 3 parties chronométrées complètes. Une variante prévisible garantit une occasion de découverte pendant le passage jury. |
 
-Première livraison vérifiable. L’aperçu joue une scène guidée et illustre la composition des cartes, le coût d’une Ref, la dissipation, la découverte et la pioche. Les autres règles constituent le cahier de conception du moteur. Les statistiques et le paquet seront calibrés avec les parties de test.
+L’aperçu joue un tour guidé avec une pioche payante, une combinaison de Personnages et une Ref amplifiée contre une Garde. Les statistiques et le paquet seront calibrés avec les parties de test.

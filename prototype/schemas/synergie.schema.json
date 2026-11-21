@@ -7,7 +7,6 @@
     "sourceCardId",
     "requirements",
     "effects",
-    "limitPerPlayerMatch",
     "reason",
     "reveal"
   ],
@@ -25,7 +24,7 @@
       "enum": [
         "ref_resolved",
         "character_summoned",
-        "attack_resolved"
+        "characters_combined"
       ]
     },
     "sourceCardId": {
@@ -72,8 +71,7 @@
             "properties": {
               "kind": {
                 "enum": [
-                  "chosen_card",
-                  "attack_target_card"
+                  "chosen_card"
                 ]
               },
               "cardId": {
@@ -103,10 +101,7 @@
               "op": {
                 "enum": [
                   "shield",
-                  "draw",
                   "damage",
-                  "boost_attack",
-                  "charge",
                   "heal"
                 ]
               },
@@ -116,9 +111,7 @@
                     "enum": [
                       "self",
                       "chosen",
-                      "player",
-                      "ally_characters",
-                      "enemy_characters"
+                      "ally_characters"
                     ]
                   },
                   {
@@ -154,9 +147,7 @@
                     "enum": [
                       "self",
                       "chosen",
-                      "player",
-                      "ally_characters",
-                      "enemy_characters"
+                      "ally_characters"
                     ]
                   },
                   {
@@ -182,8 +173,78 @@
     "reveal": {
       "type": "string",
       "minLength": 1
+    },
+    "amplification": {
+      "const": true
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Battle Ref Arena — Synergie"
+  "title": "Battle Ref Arena — Synergie",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "amplification"
+        ]
+      },
+      "then": {
+        "not": {
+          "required": [
+            "limitPerPlayerMatch"
+          ]
+        },
+        "properties": {
+          "event": {
+            "const": "ref_resolved"
+          },
+          "requirements": {
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "side"
+              ],
+              "properties": {
+                "side": {
+                  "const": "ally"
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "required": [
+          "limitPerPlayerMatch"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event": {
+            "const": "characters_combined"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "requirements": {
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "side"
+              ],
+              "properties": {
+                "side": {
+                  "const": "ally"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

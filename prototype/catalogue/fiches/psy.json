@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "psy",
   "name": "PSY",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 3,
-  "text": "Invocation · Un autre allié gagne +1 ATQ pour ce tour, s’il y en a.",
-  "strength": "Transforme un allié prêt en menace.",
-  "weakness": "Arrivée peu rentable seul.",
+  "text": "À l’arrivée · 1 Bouclier à un autre allié.",
+  "strength": "Protège une carte clé et se combine avec Trump.",
+  "weakness": "Son effet de déploiement demande un autre allié.",
   "visual": "spotlight",
   "media": [
     "psy_photo",
@@ -28,7 +28,7 @@
       "targeting": "optional_other_ally_character",
       "effects": [
         {
-          "op": "boost_attack",
+          "op": "shield",
           "target": "chosen",
           "amount": 1
         }
@@ -36,7 +36,6 @@
     }
   ],
   "stats": {
-    "attack": 2,
     "hp": 3
   }
 }

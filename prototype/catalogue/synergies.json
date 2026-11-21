@@ -6,20 +6,21 @@
     "sourceCardId": "sss_plendide",
     "requirements": [
       {
-        "kind": "chosen_card",
-        "cardId": "the_mask"
+        "kind": "board_card",
+        "cardId": "the_mask",
+        "side": "ally"
       }
     ],
     "effects": [
       {
-        "op": "charge",
+        "op": "shield",
         "target": "chosen",
-        "amount": 1
+        "amount": 2
       }
     ],
-    "limitPerPlayerMatch": 1,
     "reason": "Le Mask se nourrit de ses entrées en scène.",
-    "reveal": "Carton « Sssplendide ! » et flash cyan."
+    "reveal": "Carton « Sssplendide ! » et flash cyan.",
+    "amplification": true
   },
   {
     "id": "s2",
@@ -35,14 +36,14 @@
     ],
     "effects": [
       {
-        "op": "draw",
-        "target": "player",
-        "amount": 1
+        "op": "damage",
+        "target": "chosen",
+        "amount": 2
       }
     ],
-    "limitPerPlayerMatch": 1,
     "reason": "Quand il cite sa propre formule, Macron relance le débat.",
-    "reveal": "Tampon « Débat 2017 »."
+    "reveal": "Tampon « Débat 2017 ».",
+    "amplification": true
   },
   {
     "id": "s3",
@@ -58,14 +59,14 @@
     ],
     "effects": [
       {
-        "op": "charge",
-        "target": "ally:trump",
+        "op": "damage",
+        "target": "chosen",
         "amount": 1
       }
     ],
-    "limitPerPlayerMatch": 1,
     "reason": "Le danseur retrouve son morceau de sortie.",
-    "reveal": "Projecteur cuivre sur Trump."
+    "reveal": "Projecteur cuivre sur Trump.",
+    "amplification": true
   },
   {
     "id": "s4",
@@ -74,20 +75,21 @@
     "sourceCardId": "danse_jojo",
     "requirements": [
       {
-        "kind": "chosen_card",
-        "cardId": "mista"
+        "kind": "board_card",
+        "cardId": "mista",
+        "side": "ally"
       }
     ],
     "effects": [
       {
-        "op": "draw",
-        "target": "player",
+        "op": "shield",
+        "target": "chosen",
         "amount": 1
       }
     ],
-    "limitPerPlayerMatch": 1,
     "reason": "Mista connaît la chorégraphie par cœur.",
-    "reveal": "Trois silhouettes de projecteurs et titre de la piste."
+    "reveal": "Trois silhouettes de projecteurs et titre de la piste.",
+    "amplification": true
   },
   {
     "id": "s5",
@@ -96,37 +98,38 @@
     "sourceCardId": "touche_pas_bulma",
     "requirements": [
       {
-        "kind": "chosen_card",
-        "cardId": "vegeta"
-      }
-    ],
-    "effects": [
-      {
-        "op": "charge",
-        "target": "chosen",
-        "amount": 1
-      }
-    ],
-    "limitPerPlayerMatch": 1,
-    "reason": "La réplique originale déclenche sa montée de puissance.",
-    "reveal": "Alerte ambre et jauge de Charge."
-  },
-  {
-    "id": "s6",
-    "title": "Battle de chorés",
-    "event": "ref_resolved",
-    "sourceCardId": "ymca",
-    "requirements": [
-      {
         "kind": "board_card",
-        "cardId": "psy",
+        "cardId": "vegeta",
         "side": "ally"
       }
     ],
     "effects": [
       {
         "op": "shield",
-        "target": "ally:psy",
+        "target": "chosen",
+        "amount": 2
+      }
+    ],
+    "reason": "La réplique originale déclenche sa montée de puissance.",
+    "reveal": "Alerte ambre et deux icônes de Bouclier.",
+    "amplification": true
+  },
+  {
+    "id": "s6",
+    "title": "Battle de chorés",
+    "event": "characters_combined",
+    "sourceCardId": "psy",
+    "requirements": [
+      {
+        "kind": "board_card",
+        "cardId": "trump",
+        "side": "ally"
+      }
+    ],
+    "effects": [
+      {
+        "op": "shield",
+        "target": "self",
         "amount": 1
       }
     ],
@@ -137,7 +140,7 @@
   {
     "id": "s7",
     "title": "C’est pas faux, c’est long",
-    "event": "character_summoned",
+    "event": "characters_combined",
     "sourceCardId": "otis",
     "requirements": [
       {
@@ -205,12 +208,13 @@
   {
     "id": "s10",
     "title": "Duel de grimaces",
-    "event": "attack_resolved",
+    "event": "character_summoned",
     "sourceCardId": "the_mask",
     "requirements": [
       {
-        "kind": "attack_target_card",
-        "cardId": "vegeta"
+        "kind": "board_card",
+        "cardId": "vegeta",
+        "side": "enemy"
       }
     ],
     "effects": [
@@ -221,7 +225,7 @@
       }
     ],
     "limitPerPlayerMatch": 1,
-    "reason": "Le sérieux de Vegeta est le contrepoint comique du Mask. Le Mask doit survivre à l’échange.",
+    "reason": "Le sérieux de Vegeta contraste avec la grimace du Mask à son arrivée.",
     "reveal": "Double cadre et annonce « Duel de grimaces »."
   }
 ]

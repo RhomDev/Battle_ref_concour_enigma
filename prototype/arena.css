@@ -214,7 +214,9 @@ a { color: #a9e6df; text-underline-offset: 3px; }
 .hand-cards {
   position: relative;
   align-items: end;
-  grid-template-columns: repeat(4, var(--hand-card));
+  grid-template-columns: none;
+  grid-auto-columns: var(--hand-card);
+  grid-auto-flow: column;
   gap: 0;
   padding: 12px 0 6px;
   min-height: calc(var(--hand-card) * 1.5 + 18px);
@@ -232,6 +234,7 @@ a { color: #a9e6df; text-underline-offset: 3px; }
 .hand-cards .slot:nth-child(2) { transform: translate(5%, -3%) rotate(-3deg); }
 .hand-cards .slot:nth-child(3) { transform: translate(-5%, -3%) rotate(3deg); }
 .hand-cards .slot:nth-child(4) { transform: translate(-13%, 2%) rotate(9deg); }
+.hand-cards .slot:nth-child(2):last-child { transform: translate(-13%, 2%) rotate(9deg); }
 .hand-cards .slot:has(.card:hover), .hand-cards .slot:focus-within { z-index: 2; }
 .hand-cards .card:is(button):hover, .hand-cards .card:is(button):focus-visible { transform: translateY(-13px); }
 .energy-meter {
@@ -354,7 +357,7 @@ a { color: #a9e6df; text-underline-offset: 3px; }
   --tag-y: 68.7%;
 }
 .card:is(button) { transition: filter .16s ease, transform .16s ease; }
-.card[data-selected="true"] { filter: drop-shadow(0 0 6px #78e5e5b0) drop-shadow(0 8px 9px #000b); }
+.card[data-next="true"] { filter: drop-shadow(0 0 6px #78e5e5b0) drop-shadow(0 8px 9px #000b); }
 .card:is(button):hover, .card:is(button):focus-visible {
   filter: drop-shadow(0 0 7px #ffe1a3bb) drop-shadow(0 9px 10px #000b) brightness(1.1);
 }
@@ -387,22 +390,24 @@ a { color: #a9e6df; text-underline-offset: 3px; }
   color: var(--card-accent); font-size: 6.4cqw; font-weight: 780; letter-spacing: .06em; text-transform: uppercase;
 }
 .card-effect {
-  top: 75.8%; left: 8%; right: 8%; height: 12%;
-  font-size: 6.1cqw; line-height: 1.06; font-weight: 650; color: #352420;
+  top: 75.4%; left: 8%; right: 8%; height: 12.6%;
+  font-size: 6.1cqw; line-height: 1.02; font-weight: 650; color: #352420;
 }
-.ref .card-effect { top: 74.5%; height: 17%; font-size: 7cqw; }
+.ref .card-effect { top: 74%; height: 20%; font-size: 6.1cqw; }
 .card-stat, .card-status {
   top: 88%; min-width: 22%; height: 6.2%;
   padding: 0 3%; color: #fff4d6; background: var(--card-accent);
   border: 1px solid #9c673d; border-radius: 2px; font-size: 8.5cqw; line-height: 1; font-weight: 800;
   font-variant-numeric: tabular-nums; white-space: nowrap;
 }
-.card-atk { left: 8%; }
+.card-guard { left: 8%; font-size: 7cqw; }
 .card-hp { right: 8%; }
 .card-status { left: 36%; right: 36%; color: #fff1bc; background: #314739; }
+.card-amplified { left: 15%; right: 15%; font-size: 7.7cqw; }
 .card[data-compact="true"] .card-effect { display: none; }
 .card[data-compact="true"] .card-tag { top: 71%; height: 15%; font-size: 8cqw; }
 .card.ref[data-compact="true"] .card-tag { height: 24%; }
+.card.ref[data-amplified="true"] .card-tag { height: 15%; }
 .card.flash .card-illustration { animation: scene .65s ease-out; }
 @keyframes scene { 35% { filter: brightness(1.5) saturate(1.3); } }
 @media (max-height: 760px) and (min-width: 681px) {
@@ -415,7 +420,10 @@ a { color: #a9e6df; text-underline-offset: 3px; }
   .game-menu { gap: 4px; }
   .game-menu .metal-button { min-height: 31px; padding: 4px 7px; font-size: 15px; }
   .game-menu .fullscreen { min-width: 32px; font-size: 19px; }
-  .field { inset: clamp(88px, 14vh, 133px) 12px clamp(209px, 27vh, 240px); }
+  .field {
+    inset: clamp(88px, 14vh, 133px) 12px clamp(209px, 27vh, 240px);
+    grid-template-rows: minmax(0, 1fr) clamp(50px, 8.5vh, 74px) minmax(0, 1fr);
+  }
   .ranks { align-items: end; padding-bottom: 7px; }
   .team { top: 0; left: 50%; transform: translate(-50%, -28%); width: 125px; padding: 7px 6px; gap: 0; }
   .ally .team { top: 11px; transform: translateX(-50%); }
