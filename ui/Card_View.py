@@ -6,6 +6,7 @@ from core.asset_manager import AssetManager
 
 
 FRAMES = {"character": "personnage", "ref": "ref"}
+CARD_HEIGHT_RATIO = 1.5
 EFFECT_LABELS = {"attack": "Attaque", "heal": "Soin", "shield": "Bouclier"}
 TITLE_COLOR = (255, 240, 214)
 BODY_COLOR = (53, 36, 32)
@@ -36,7 +37,7 @@ class CardView:
                     image, (round(image.get_width() * scale), round(image.get_height() * scale))
                 )
                 background.set_clip(image_area)
-                background.blit(image, image.get_rect(center=image_area.center))
+                background.blit(image, image.get_rect(midtop=image_area.midtop))
                 background.set_clip(None)
             except (OSError, pygame.error):
                 pass

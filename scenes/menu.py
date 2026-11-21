@@ -2,6 +2,7 @@ import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT
+from scenes.battle_scene import BattleScene
 from scenes.media_collection import GOLD, INK, MediaCollectionScene
 
 
@@ -30,6 +31,7 @@ class MenuScene:
         self.quit_rect = pygame.Rect(0, 0, 180, 64)
         self.quit_rect.midbottom = (WIDTH // 2, HEIGHT - 48)
         self.mouse_pos = (-1, -1)
+        self.battle_scene = None
 
     @staticmethod
     def make_background():
@@ -72,7 +74,11 @@ class MenuScene:
             self.game.running = False
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             mouse = self.to_canvas_position(event.pos)
-            if self.characters_rect.collidepoint(mouse):
+            if self.play_rect.collidepoint(mouse):
+                if self.battle_scene is None:
+                    self.battle_scene = BattleScene(self)
+                self.game.change_scene(self.battle_scene)
+            elif self.characters_rect.collidepoint(mouse):
                 self.game.change_scene(MediaCollectionScene(self, "character"))
             elif self.references_rect.collidepoint(mouse):
                 self.game.change_scene(MediaCollectionScene(self, "ref"))
@@ -121,12 +127,10 @@ class MenuScene:
         pygame.draw.line(surface, GOLD, (left_line - 49, 216), (left_line, 216), 2)
         pygame.draw.line(surface, GOLD, (right_line, 216), (right_line + 49, 216), 2)
 
-        pygame.draw.rect(surface, PANEL, self.play_rect, border_radius=14)
-        pygame.draw.rect(surface, BORDER, self.play_rect, width=2, border_radius=14)
-        self.draw_centered(surface, "Jouer", self.font_play, MUTED, (center_x, self.play_rect.top + 42))
-        self.draw_centered(
-            surface, "Partie indisponible", self.font_small, MUTED, (center_x, self.play_rect.top + 94)
-        )
+        play_hovered = self.play_rect.collidepoint(self.mouse_pos)
+        pygame.draw.rect(surface, PANEL_HOVER if play_hovered else PANEL, self.play_rect, border_radius=14)
+        pygame.draw.rect(surface, GOLD, self.play_rect, width=2, border_radius=14)
+        self.draw_centered(surface, "Jouer", self.font_play, INK, self.play_rect.center)
 
         heading = self.font_button.render("Collection", True, GOLD)
         heading_rect = heading.get_rect(midleft=(self.characters_rect.left, 879))
