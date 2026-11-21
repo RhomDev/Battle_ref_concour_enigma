@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "sss_plendide",
   "name": "Sssplendide !",
   "kind": "ref",
@@ -14,9 +14,9 @@
     ]
   },
   "cost": 1,
-  "text": "Soignez 2 PV à un allié.",
-  "strength": "Répare un échange sans épuiser l’énergie.",
-  "weakness": "Demande une cible alliée.",
+  "text": "Soignez 2 PV à un allié. Avec The Mask en jeu, donnez aussi 2 Boucliers à cet allié.",
+  "strength": "Protège davantage un allié après le soin avec The Mask en jeu.",
+  "weakness": "Demande un Personnage allié.",
   "visual": "spotlight",
   "media": [
     "mask_cosplay",

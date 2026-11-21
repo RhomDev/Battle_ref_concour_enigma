@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "otis",
   "name": "Otis",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 2,
-  "text": "Actif · 1 ⚡. Donnez 1 Bouclier à un allié.",
-  "strength": "Protège une pièce clé à chaque tour.",
-  "weakness": "Consomme son action et de l’énergie.",
+  "text": "Déploiement · Gagne Garde.",
+  "strength": "Protège votre camp et obtient un Bouclier avec Perceval.",
+  "weakness": "Sa Garde l’expose aux Refs adverses.",
   "visual": "scroll",
   "media": [
     "otis_scene"
@@ -23,20 +23,17 @@
   "abilities": [
     {
       "id": "bonne_situation",
-      "timing": "active",
-      "targeting": "ally_character",
+      "timing": "summoned",
+      "targeting": "none",
       "effects": [
         {
-          "op": "shield",
-          "target": "chosen",
-          "amount": 1
+          "op": "guard",
+          "target": "self"
         }
-      ],
-      "cost": 1
+      ]
     }
   ],
   "stats": {
-    "attack": 1,
     "hp": 4
   }
 }

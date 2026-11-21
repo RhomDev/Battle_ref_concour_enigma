@@ -2,6 +2,8 @@
 
 Relevé du 21 novembre 2026. **★** indique une piste jouée parmi les 15 cartes. Les niveaux « France », « international », « communauté » et « incertain » estiment le public susceptible de reconnaître la référence. Ce sont des estimations éditoriales, sauf lorsque l’indice est précisé dans la ligne. Les liens permettent de retrouver les visuels et les captations. Les GIF de fans et les extraits de chaînes officielles restent des références de recherche tant que la réutilisation n’est pas documentée.
 
+La colonne « Application et lien » conserve les premières idées de jeu. Les effets actuels figurent dans les [fiches du catalogue](../catalogue/fiches/).
+
 | # | Référence et origine | Public et ressort comique | Application et lien | Média / interlocuteur |
 |---|---|---|---|---|
 | 1 | ★ **The Mask**, Chuck Russell, 1994 | International, grimace et surenchère cartoon | Unité explosive qui entre avec un Bouclier. Répond au sérieux de Vegeta. | New Line Cinema. [Édition Arrow Video](https://www.arrowvideo.com/p/the-mask-4k-uhd/18097046/) · [Bande-annonce VO](https://www.youtube.com/watch?v=uPrUiKgQVQk) |

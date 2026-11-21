@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "mista",
   "name": "Guido Mista",
   "kind": "character",
@@ -12,9 +12,9 @@
     ]
   },
   "cost": 3,
-  "text": "Invocation · Inflige 1 dégât à un ennemi s’il y en a.",
-  "strength": "Finit les unités qui ont survécu à un échange.",
-  "weakness": "Endurance moyenne.",
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
+  "weakness": "Son Bouclier de départ est limité.",
   "visual": "spotlight",
   "media": [
     "jojo_scene",
@@ -24,18 +24,17 @@
     {
       "id": "sex_pistols",
       "timing": "summoned",
-      "targeting": "optional_enemy_character",
+      "targeting": "none",
       "effects": [
         {
-          "op": "damage",
-          "target": "chosen",
+          "op": "shield",
+          "target": "self",
           "amount": 1
         }
       ]
     }
   ],
   "stats": {
-    "attack": 2,
     "hp": 3
   }
 }

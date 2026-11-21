@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "perceval",
     "name": "Perceval",
     "kind": "character",
@@ -13,9 +13,9 @@
       ]
     },
     "cost": 1,
-    "text": "Invocation · Piochez 1 carte.",
-    "strength": "Remplit la main à faible coût.",
-    "weakness": "Tombe vite au combat.",
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Une protection peu coûteuse et un partenaire pour Otis.",
+    "weakness": "Peu de PV après la perte du Bouclier.",
     "visual": "subtitle",
     "media": [
       "perceval_scene"
@@ -27,20 +27,19 @@
         "targeting": "none",
         "effects": [
           {
-            "op": "draw",
-            "target": "player",
+            "op": "shield",
+            "target": "self",
             "amount": 1
           }
         ]
       }
     ],
     "stats": {
-      "attack": 1,
       "hp": 2
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "creeper",
     "name": "Creeper",
     "kind": "character",
@@ -54,9 +53,9 @@
       ]
     },
     "cost": 2,
-    "text": "K.-O. · Inflige 1 dégât à chaque Personnage adverse.",
-    "strength": "Punit un plateau fragile.",
-    "weakness": "Ses dégâts touchent peu un adversaire sans plateau.",
+    "text": "K.-O. · Donne 1 Bouclier aux autres alliés.",
+    "strength": "Protège le reste du plateau quand il est éliminé.",
+    "weakness": "Sa protection exige d’autres Personnages en jeu.",
     "visual": "pixel",
     "media": [
       "creeper_scene"
@@ -68,20 +67,19 @@
         "targeting": "none",
         "effects": [
           {
-            "op": "damage",
-            "target": "enemy_characters",
+            "op": "shield",
+            "target": "ally_characters",
             "amount": 1
           }
         ]
       }
     ],
     "stats": {
-      "attack": 2,
       "hp": 2
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "macron",
     "name": "Emmanuel Macron",
     "kind": "character",
@@ -95,9 +93,9 @@
       ]
     },
     "cost": 2,
-    "text": "Invocation · Retirez les bonus visibles d’un ennemi, s’il y en a.",
-    "strength": "Ouvre un passage contre un ennemi protégé.",
-    "weakness": "Pouvoir sans valeur sur un plateau sans bonus.",
+    "text": "À l’arrivée · Dissipation ennemie facultative.",
+    "strength": "Ouvre une cible protégée et renforce Poudre de perlimpinpin.",
+    "weakness": "Sa dissipation exige une cible protégée.",
     "visual": "powder",
     "media": [
       "macron_photo",
@@ -117,12 +115,11 @@
       }
     ],
     "stats": {
-      "attack": 1,
       "hp": 3
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "otis",
     "name": "Otis",
     "kind": "character",
@@ -136,9 +133,9 @@
       ]
     },
     "cost": 2,
-    "text": "Actif · 1 ⚡. Donnez 1 Bouclier à un allié.",
-    "strength": "Protège une pièce clé à chaque tour.",
-    "weakness": "Consomme son action et de l’énergie.",
+    "text": "Déploiement · Gagne Garde.",
+    "strength": "Protège votre camp et obtient un Bouclier avec Perceval.",
+    "weakness": "Sa Garde l’expose aux Refs adverses.",
     "visual": "scroll",
     "media": [
       "otis_scene"
@@ -146,25 +143,22 @@
     "abilities": [
       {
         "id": "bonne_situation",
-        "timing": "active",
-        "targeting": "ally_character",
+        "timing": "summoned",
+        "targeting": "none",
         "effects": [
           {
-            "op": "shield",
-            "target": "chosen",
-            "amount": 1
+            "op": "guard",
+            "target": "self"
           }
-        ],
-        "cost": 1
+        ]
       }
     ],
     "stats": {
-      "attack": 1,
       "hp": 4
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "mista",
     "name": "Guido Mista",
     "kind": "character",
@@ -177,9 +171,9 @@
       ]
     },
     "cost": 3,
-    "text": "Invocation · Inflige 1 dégât à un ennemi s’il y en a.",
-    "strength": "Finit les unités qui ont survécu à un échange.",
-    "weakness": "Endurance moyenne.",
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
+    "weakness": "Son Bouclier de départ est limité.",
     "visual": "spotlight",
     "media": [
       "jojo_scene",
@@ -189,23 +183,22 @@
       {
         "id": "sex_pistols",
         "timing": "summoned",
-        "targeting": "optional_enemy_character",
+        "targeting": "none",
         "effects": [
           {
-            "op": "damage",
-            "target": "chosen",
+            "op": "shield",
+            "target": "self",
             "amount": 1
           }
         ]
       }
     ],
     "stats": {
-      "attack": 2,
       "hp": 3
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "psy",
     "name": "PSY",
     "kind": "character",
@@ -219,9 +212,9 @@
       ]
     },
     "cost": 3,
-    "text": "Invocation · Un autre allié gagne +1 ATQ pour ce tour, s’il y en a.",
-    "strength": "Transforme un allié prêt en menace.",
-    "weakness": "Arrivée peu rentable seul.",
+    "text": "À l’arrivée · 1 Bouclier à un autre allié.",
+    "strength": "Protège une carte clé et se combine avec Trump.",
+    "weakness": "Son effet de déploiement demande un autre allié.",
     "visual": "spotlight",
     "media": [
       "psy_photo",
@@ -234,7 +227,7 @@
         "targeting": "optional_other_ally_character",
         "effects": [
           {
-            "op": "boost_attack",
+            "op": "shield",
             "target": "chosen",
             "amount": 1
           }
@@ -242,12 +235,11 @@
       }
     ],
     "stats": {
-      "attack": 2,
       "hp": 3
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "rick_astley",
     "name": "Rick Astley",
     "kind": "character",
@@ -261,9 +253,9 @@
       ]
     },
     "cost": 3,
-    "text": "Actif · 1 ⚡. Piochez 1 carte.",
-    "strength": "Recharge la main même sans cible.",
-    "weakness": "Renonce à attaquer pour piocher.",
+    "text": "Déploiement · Gagne 2 Boucliers.",
+    "strength": "Résiste aux petites Refs offensives.",
+    "weakness": "Sa protection personnelle peut être dissipée.",
     "visual": "rewind",
     "media": [
       "rick_scene"
@@ -271,25 +263,23 @@
     "abilities": [
       {
         "id": "lien_surprise",
-        "timing": "active",
+        "timing": "summoned",
         "targeting": "none",
         "effects": [
           {
-            "op": "draw",
-            "target": "player",
-            "amount": 1
+            "op": "shield",
+            "target": "self",
+            "amount": 2
           }
-        ],
-        "cost": 1
+        ]
       }
     ],
     "stats": {
-      "attack": 2,
       "hp": 3
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "trump",
     "name": "Donald Trump",
     "kind": "character",
@@ -303,9 +293,9 @@
       ]
     },
     "cost": 3,
-    "text": "Passif · Quand vous jouez une Ref Danse, gagne 1 Bouclier.",
-    "strength": "Soutient le plan Danse.",
-    "weakness": "Dépend des Refs Danse pour son bouclier.",
+    "text": "Gagne 1 Bouclier par Ref Danse jouée par votre camp.",
+    "strength": "Renforce Y.M.C.A. et peut regagner du Bouclier.",
+    "weakness": "Dépend des Refs Danse pour renouveler sa protection.",
     "visual": "spotlight",
     "media": [
       "trump_photo",
@@ -326,12 +316,11 @@
       }
     ],
     "stats": {
-      "attack": 2,
       "hp": 4
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "the_mask",
     "name": "The Mask",
     "kind": "character",
@@ -345,9 +334,9 @@
       ]
     },
     "cost": 4,
-    "text": "Invocation · Gagne 1 Bouclier.",
-    "strength": "Arrive protégé pour menacer avec ses attaques.",
-    "weakness": "Vulnérable à la dissipation.",
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse et amplifie le soin de Sssplendide ! avec un Bouclier.",
+    "weakness": "Son coût de déploiement réduit l’énergie disponible pour les Refs.",
     "visual": "spotlight",
     "media": [
       "mask_cosplay",
@@ -368,12 +357,11 @@
       }
     ],
     "stats": {
-      "attack": 3,
       "hp": 4
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "vegeta",
     "name": "Vegeta",
     "kind": "character",
@@ -386,9 +374,9 @@
       ]
     },
     "cost": 5,
-    "text": "Actif · 1 ⚡. Gagne 1 Charge et soigne 1 de ses PV.",
-    "strength": "Peut préparer son ultime et se stabiliser.",
-    "weakness": "Coûte cher et doit choisir entre se préparer et attaquer.",
+    "text": "Déploiement · Gagne Garde et 1 Bouclier.",
+    "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
+    "weakness": "Son déploiement demande beaucoup d’énergie.",
     "visual": "pulse",
     "media": [
       "vegeta_cosplay",
@@ -397,30 +385,27 @@
     "abilities": [
       {
         "id": "fierte",
-        "timing": "active",
+        "timing": "summoned",
         "targeting": "none",
         "effects": [
           {
-            "op": "charge",
-            "target": "self",
-            "amount": 1
+            "op": "guard",
+            "target": "self"
           },
           {
-            "op": "heal",
+            "op": "shield",
             "target": "self",
             "amount": 1
           }
-        ],
-        "cost": 1
+        ]
       }
     ],
     "stats": {
-      "attack": 4,
       "hp": 5
     }
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "perlimpinpin",
     "name": "Poudre de perlimpinpin",
     "kind": "ref",
@@ -434,9 +419,9 @@
       ]
     },
     "cost": 1,
-    "text": "Retirez les bonus visibles d’un Personnage ennemi.",
-    "strength": "Un outil abordable contre les stratégies de protection.",
-    "weakness": "Faible contre une cible dépourvue de bonus.",
+    "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui ensuite 2 dégâts.",
+    "strength": "Ouvre un Personnage protégé avant d’appliquer les dégâts bonus.",
+    "weakness": "L’amplification demande que Macron soit en jeu.",
     "visual": "powder",
     "media": [
       "macron_photo",
@@ -457,7 +442,7 @@
     ]
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "sss_plendide",
     "name": "Sssplendide !",
     "kind": "ref",
@@ -472,9 +457,9 @@
       ]
     },
     "cost": 1,
-    "text": "Soignez 2 PV à un allié.",
-    "strength": "Répare un échange sans épuiser l’énergie.",
-    "weakness": "Demande une cible alliée.",
+    "text": "Soignez 2 PV à un allié. Avec The Mask en jeu, donnez aussi 2 Boucliers à cet allié.",
+    "strength": "Protège davantage un allié après le soin avec The Mask en jeu.",
+    "weakness": "Demande un Personnage allié.",
     "visual": "spotlight",
     "media": [
       "mask_cosplay",
@@ -497,7 +482,7 @@
     ]
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "danse_jojo",
     "name": "Canzoni preferite",
     "kind": "ref",
@@ -511,9 +496,9 @@
       ]
     },
     "cost": 2,
-    "text": "Danse · Donnez 1 Charge et 1 Bouclier à un allié.",
-    "strength": "Prépare un ultime tout en protégeant son porteur.",
-    "weakness": "Demande un allié et coûte une carte.",
+    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+    "strength": "Protège une carte clé dès que la Ref est jouée.",
+    "weakness": "Demande un Personnage allié à protéger.",
     "visual": "spotlight",
     "media": [
       "narancia_cosplay",
@@ -527,14 +512,9 @@
         "targeting": "ally_character",
         "effects": [
           {
-            "op": "charge",
-            "target": "chosen",
-            "amount": 1
-          },
-          {
             "op": "shield",
             "target": "chosen",
-            "amount": 1
+            "amount": 2
           }
         ]
       }
@@ -544,7 +524,7 @@
     ]
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "ymca",
     "name": "Y.M.C.A.",
     "kind": "ref",
@@ -558,9 +538,9 @@
       ]
     },
     "cost": 2,
-    "text": "Danse · Donnez +1 ATQ à tous vos Personnages pour ce tour.",
-    "strength": "Valorise un plateau préparé.",
-    "weakness": "Faible avec un plateau vide ou épuisé.",
+    "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
+    "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
+    "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
     "visual": "spotlight",
     "media": [
       "ymca_photo",
@@ -570,12 +550,12 @@
       {
         "id": "chorus",
         "timing": "cast",
-        "targeting": "none",
+        "targeting": "enemy",
         "effects": [
           {
-            "op": "boost_attack",
-            "target": "ally_characters",
-            "amount": 1
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
           }
         ]
       }
@@ -585,7 +565,7 @@
     ]
   },
   {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "id": "touche_pas_bulma",
     "name": "Touche pas à ma Bulma !",
     "kind": "ref",
@@ -598,9 +578,9 @@
       ]
     },
     "cost": 3,
-    "text": "Donnez 2 Boucliers et Garde à un allié.",
-    "strength": "Couvre le joueur et impose un échange.",
-    "weakness": "Les bonus s’exposent à la dissipation.",
+    "text": "Donnez Garde et 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-lui 4 Boucliers.",
+    "strength": "Met un allié en position de protéger le joueur.",
+    "weakness": "Garde et Bouclier peuvent être dissipés.",
     "visual": "pulse",
     "media": [
       "bulma_cosplay",

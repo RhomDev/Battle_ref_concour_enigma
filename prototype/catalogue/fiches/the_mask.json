@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "the_mask",
   "name": "The Mask",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 4,
-  "text": "Invocation · Gagne 1 Bouclier.",
-  "strength": "Arrive protégé pour menacer avec ses attaques.",
-  "weakness": "Vulnérable à la dissipation.",
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse et amplifie le soin de Sssplendide ! avec un Bouclier.",
+  "weakness": "Son coût de déploiement réduit l’énergie disponible pour les Refs.",
   "visual": "spotlight",
   "media": [
     "mask_cosplay",
@@ -36,7 +36,6 @@
     }
   ],
   "stats": {
-    "attack": 3,
     "hp": 4
   }
 }

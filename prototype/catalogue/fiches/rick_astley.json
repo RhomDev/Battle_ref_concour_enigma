@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "rick_astley",
   "name": "Rick Astley",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 3,
-  "text": "Actif · 1 ⚡. Piochez 1 carte.",
-  "strength": "Recharge la main même sans cible.",
-  "weakness": "Renonce à attaquer pour piocher.",
+  "text": "Déploiement · Gagne 2 Boucliers.",
+  "strength": "Résiste aux petites Refs offensives.",
+  "weakness": "Sa protection personnelle peut être dissipée.",
   "visual": "rewind",
   "media": [
     "rick_scene"
@@ -23,20 +23,18 @@
   "abilities": [
     {
       "id": "lien_surprise",
-      "timing": "active",
+      "timing": "summoned",
       "targeting": "none",
       "effects": [
         {
-          "op": "draw",
-          "target": "player",
-          "amount": 1
+          "op": "shield",
+          "target": "self",
+          "amount": 2
         }
-      ],
-      "cost": 1
+      ]
     }
   ],
   "stats": {
-    "attack": 2,
     "hp": 3
   }
 }

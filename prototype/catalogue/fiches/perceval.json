@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "perceval",
   "name": "Perceval",
   "kind": "character",
@@ -12,9 +12,9 @@
     ]
   },
   "cost": 1,
-  "text": "Invocation · Piochez 1 carte.",
-  "strength": "Remplit la main à faible coût.",
-  "weakness": "Tombe vite au combat.",
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Une protection peu coûteuse et un partenaire pour Otis.",
+  "weakness": "Peu de PV après la perte du Bouclier.",
   "visual": "subtitle",
   "media": [
     "perceval_scene"
@@ -26,15 +26,14 @@
       "targeting": "none",
       "effects": [
         {
-          "op": "draw",
-          "target": "player",
+          "op": "shield",
+          "target": "self",
           "amount": 1
         }
       ]
     }
   ],
   "stats": {
-    "attack": 1,
     "hp": 2
   }
 }
