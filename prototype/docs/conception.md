@@ -19,14 +19,14 @@ Migration proposée dans une future branche. Déplacer les fiches d’origine et
 
 ## Direction graphique retenue
 
-La **table de projection** assemble un tapis de jeu bordeaux, des bobines en périphérie et deux cadres inspirés du cinéma imprimé. Le fond illustré laisse libres les deux rangées du duel. Les jauges de PV longent le tapis et la main reste sur une zone papier séparée. Les directions alternatives restent consultables dans la [planche graphique](../directions.html).
+Le **Théâtre des Échos** est un amphithéâtre en perspective, éclairé par des projecteurs de bronze. Les deux camps prennent place de part et d’autre de la gravure qui divise le terrain. Les PV, le tour et les gemmes d’énergie apparaissent dans des plaques de bronze, avec la main en éventail au premier plan. L’inspection des cartes, le catalogue et les options s’ouvrent en surimpression. [Planche graphique](../directions.html)
 
 Les deux cadres PNG de 1 024 × 1 536 px ont été générés avec une fenêtre réellement transparente. Les WebP alpha de 660 × 990 px servent au jeu. L’interface place la photo derrière le cadre puis ajoute le texte et les statistiques devant. Les pourcentages de la fenêtre et du médaillon vivent dans la feuille de style.
 
 - **Personnage.** Bordeaux et angles biseautés. Le coût apparaît dans le médaillon. Le bandeau inférieur accueille univers, effet, attaque, PV et Bouclier. En combat, la fiche agrandie donne le détail de la règle.
 - **Ref.** Vert profond et or, avec perforations latérales et encoches de ticket. Les cinq cartes ont une photographie locale. Sur la fiche, le bas présente la règle et la catégorie. Les médias de substitution sont identifiés sous la carte et dans les crédits.
 - **Rareté.** Différée au-delà du premier playtest.
-- **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. Le fond généré est stocké en WebP à 1 560 × 780 px.
+- **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. L’arène générée est stockée en WebP à 1 672 × 941 px. La plaque de statut réutilise un WebP avec alpha.
 
 ## Règles proposées
 

@@ -9,7 +9,13 @@ const licenses = {
   "CC-BY-2.0": { label: "CC BY 2.0", url: "https://creativecommons.org/licenses/by/2.0/" },
   "CC-BY-SA-2.0": { label: "CC BY-SA 2.0", url: "https://creativecommons.org/licenses/by-sa/2.0/" },
 };
-const dom = Object.fromEntries(["ennemi", "allie", "main", "detail", "event", "activate", "reset", "energy", "son", "volume", "credit-list", "gallery"].map(id => [id, document.getElementById(id)]));
+const dom = Object.fromEntries([
+  "ennemi", "allie", "main", "detail", "event", "activate", "activate-card", "reset", "energy",
+  "son", "volume", "credit-list", "gallery", "inspector", "catalogue", "options", "show-catalogue",
+  "show-options", "fullscreen", "audio-status",
+].map(id => [id, document.getElementById(id)]));
+const battle = document.querySelector(".battle");
+const energyGems = document.querySelectorAll(".energy-gems i");
 const handIds = ["perlimpinpin", "danse_jojo", "touche_pas_bulma", "sss_plendide"];
 let state;
 let audio;
@@ -81,7 +87,11 @@ function placeCards(container, positions, compact) {
     if (position) {
       const { id, ...values } = position;
       const { element } = renderCard(catalogue.get(id), { compact, interactive: true, ...values });
-      element.addEventListener("click", () => selectCard(id, values));
+      element.addEventListener("click", () => {
+        selectCard(id, values);
+        element.focus({ preventScroll: true });
+        dom.inspector.showModal();
+      });
       slot.append(element);
     }
     container.append(slot);
@@ -103,14 +113,19 @@ function selectCard(id, values = {}) {
     button.dataset.selected = selected;
     button.setAttribute("aria-pressed", String(selected));
   }
-  dom.activate.disabled = id !== "perlimpinpin" || state.played;
-  dom.activate.textContent = state.played ? "Ref jouée" : "Jouer la Ref";
+  const canPlay = id === "perlimpinpin" && !state.played;
+  dom.activate.disabled = !canPlay && !state.played;
+  dom.activate.textContent = state.played ? "Rejouer" : "Jouer la Ref";
+  dom["activate-card"].hidden = !canPlay;
+  dom["activate-card"].disabled = !canPlay;
 }
 
 function renderScene() {
-  dom.energy.textContent = state.played ? 3 : 4;
-  placeCards(dom.ennemi, [{ id: "trump", hp: 3, shield: state.played ? 0 : 1 }, { id: "vegeta", hp: 3 }, null], true);
-  placeCards(dom.allie, [{ id: "macron" }, { id: "psy", hp: 2 }, null], true);
+  const energy = state.played ? 3 : 4;
+  dom.energy.textContent = energy;
+  energyGems.forEach((gem, index) => gem.classList.toggle("charged", index < energy));
+  placeCards(dom.ennemi, [{ id: "trump", hp: 3, shield: state.played ? 0 : 1 }, null, { id: "vegeta", hp: 3 }], true);
+  placeCards(dom.allie, [{ id: "macron" }, null, { id: "psy", hp: 2 }], true);
   const hand = state.played ? [...handIds.slice(1), "ymca"] : handIds;
   placeCards(dom.main, hand.map(id => ({ id })), true);
 }
@@ -119,7 +134,8 @@ function reset() {
   state = { played: false, selected: null };
   renderScene();
   selectCard("perlimpinpin");
-  dom.event.textContent = "Jouez Poudre de perlimpinpin pour dissiper le Bouclier de Trump et découvrir une synergie.";
+  dom.event.replaceChildren();
+  battle.querySelectorAll(".signal-mote").forEach(mote => mote.remove());
 }
 
 function playSound() {
@@ -144,42 +160,101 @@ function playSound() {
 dom.son.addEventListener("click", async () => {
   const enabled = dom.son.getAttribute("aria-pressed") !== "true";
   if (enabled) {
-    audio ??= new AudioContext();
     try {
+      audio ??= new AudioContext();
       await audio.resume();
     } catch {
-      dom.event.textContent = "Le son est bloqué par le navigateur.";
+      dom["audio-status"].hidden = false;
       return;
     }
   }
+  dom["audio-status"].hidden = true;
   dom.son.setAttribute("aria-pressed", String(enabled));
   dom.son.textContent = enabled ? "Couper le son" : "Activer le son";
 });
 
-dom.activate.addEventListener("click", () => {
+function animateSignal(source, target) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const board = battle.getBoundingClientRect();
+  const destination = target.getBoundingClientRect();
+  const startX = source.left + source.width / 2 - board.left;
+  const startY = source.top + source.height / 2 - board.top;
+  const endX = destination.left + destination.width / 2 - board.left;
+  const endY = destination.top + destination.height / 2 - board.top;
+  for (let index = 0; index < 3; index += 1) {
+    const mote = node("span", "signal-mote");
+    mote.setAttribute("aria-hidden", "true");
+    battle.append(mote);
+    const animation = mote.animate([
+      { transform: `translate(${startX}px, ${startY}px) scale(.7)`, opacity: 0 },
+      { transform: `translate(${(startX + endX) / 2 + 52 + index * 10}px, ${(startY + endY) / 2}px) scale(1)`, opacity: 1 },
+      { transform: `translate(${endX}px, ${endY}px) scale(.3)`, opacity: 0 },
+    ], { duration: 510 + index * 45, delay: index * 30, easing: "cubic-bezier(.2,.48,.3,1)" });
+    animation.finished.then(() => mote.remove(), () => mote.remove());
+  }
+}
+
+function playRef() {
   if (state.played || state.selected !== "perlimpinpin") return;
+  const source = dom.main.querySelector('[data-card-id="perlimpinpin"]').getBoundingClientRect();
+  if (dom.inspector.open) dom.inspector.close();
   state.played = true;
   renderScene();
   selectCard("perlimpinpin");
   const match = synergies.find(synergy => synergy.sourceCardId === "perlimpinpin" && synergy.requirements.some(requirement => requirement.cardId === "macron"));
-  dom.event.textContent = `Bouclier dissipé. Synergie révélée · ${match.title}. Vous piochez Y.M.C.A.`;
-  dom.detail.querySelector(".card").classList.add("flash");
-  dom.ennemi.querySelector('[data-card-id="trump"]').classList.add("flash");
+  dom.event.replaceChildren(
+    node("strong", "", match.title),
+    node("span", "", "Bouclier dissipé · Y.M.C.A. rejoint votre main."),
+  );
+  const trump = dom.ennemi.querySelector('[data-card-id="trump"]');
+  trump.classList.add("flash");
+  animateSignal(source, trump);
+  dom.activate.focus({ preventScroll: true });
   playSound();
-});
-dom.reset.addEventListener("click", reset);
-const gallery = document.getElementById("catalogue").querySelector("details");
-gallery.addEventListener("toggle", () => {
-  if (!gallery.open || dom.gallery.childElementCount) return;
-  for (const card of cards) {
-    const article = node("article", "gallery-item");
-    article.append(renderCard(card).element);
-    const summary = node("p", "detail-note", card.origin.work);
-    article.append(summary);
-    dom.gallery.append(article);
+}
+
+dom.activate.addEventListener("click", () => {
+  if (state.played) {
+    reset();
+    return;
   }
+  playRef();
 });
-document.querySelector('a[href="#catalogue"]').addEventListener("click", () => { gallery.open = true; });
+dom["activate-card"].addEventListener("click", playRef);
+dom.reset.addEventListener("click", () => {
+  dom.options.close();
+  reset();
+});
+
+dom["show-catalogue"].addEventListener("click", () => {
+  if (!dom.gallery.childElementCount) {
+    for (const card of cards) {
+      const article = node("article", "gallery-item");
+      article.append(renderCard(card).element);
+      article.append(node("p", "detail-note", card.origin.work));
+      dom.gallery.append(article);
+    }
+  }
+  dom.catalogue.showModal();
+});
+dom["show-options"].addEventListener("click", () => dom.options.showModal());
+
+if (document.fullscreenEnabled) {
+  dom.fullscreen.hidden = false;
+  dom.fullscreen.addEventListener("click", async () => {
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else await document.documentElement.requestFullscreen();
+    } catch {
+      dom.fullscreen.title = "Le navigateur refuse le plein écran";
+    }
+  });
+  document.addEventListener("fullscreenchange", () => {
+    const label = document.fullscreenElement ? "Quitter le plein écran" : "Plein écran";
+    dom.fullscreen.title = label;
+    dom.fullscreen.setAttribute("aria-label", label);
+  });
+}
 
 for (const photo of media.filter(item => item.status === "demo_asset")) {
   const license = licenses[photo.license];

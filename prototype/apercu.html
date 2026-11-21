@@ -3,66 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111c20">
   <title>Battle Ref Arena — Plateau de combat</title>
   <link rel="stylesheet" href="arena.css">
   <script src="catalogue/apercu-data.js" defer></script>
   <script src="arena.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <a href="apercu.html" aria-label="Battle Ref Arena, plateau">BATTLE REF <span>ARENA</span></a>
-      <span class="scene-label">Démonstration</span>
-    </div>
-    <nav class="settings" aria-label="Options du plateau">
-      <a href="#catalogue">Catalogue</a>
-      <a href="#credits">Crédits</a>
-      <button id="son" type="button" aria-pressed="false">Activer le son</button>
-      <label class="volume"><span>Volume</span><input id="volume" type="range" min="0" max="100" value="35"></label>
-    </nav>
-  </header>
-  <main class="layout">
-    <section class="arena" aria-label="Plateau de combat">
-      <div class="table">
-        <header class="team enemy">
-          <h1>Adversaire</h1>
-          <div class="team-score">
-            <meter aria-label="PV adverses" min="0" max="18" value="12">12 sur 18</meter>
-            <span class="life"><b>12</b> PV</span>
-          </div>
-        </header>
+  <main class="battle" aria-label="Plateau de combat">
+    <header class="battle-header">
+      <h1 class="wordmark">Battle Ref <span>Arena</span></h1>
+      <nav class="game-menu" aria-label="Commandes de la démo">
+        <button class="metal-button" type="button" id="show-catalogue">Cartes</button>
+        <button class="metal-button" type="button" id="show-options">Options</button>
+        <button class="metal-button fullscreen" type="button" id="fullscreen" aria-label="Plein écran" title="Plein écran" hidden>⛶</button>
+      </nav>
+    </header>
+
+    <section class="field" aria-label="Terrain">
+      <div class="ranks enemy">
+        <div class="team">
+          <span class="team-name">Adversaire</span>
+          <span class="life" aria-label="12 points de vie adverses"><b>12</b><span>PV</span></span>
+        </div>
         <div class="lane" id="ennemi" aria-label="Personnages adverses"></div>
-        <div class="centerline" aria-label="Votre tour, tour 5">
-          <span aria-hidden="true"></span><strong>Tour 5</strong><span aria-hidden="true"></span>
+      </div>
+      <div class="turn" aria-label="Tour 5, à vous de jouer"><span>Tour 5</span></div>
+      <div class="ranks ally">
+        <div class="team">
+          <span class="team-name">Votre camp</span>
+          <span class="life" aria-label="Vos points de vie, 15"><b>15</b><span>PV</span></span>
         </div>
         <div class="lane" id="allie" aria-label="Vos personnages"></div>
-        <footer class="team ally">
-          <h2>Votre camp <small>À vous de jouer</small></h2>
-          <div class="team-score">
-            <meter aria-label="Vos PV" min="0" max="18" value="15">15 sur 18</meter>
-            <span class="life"><b>15</b> PV</span>
-          </div>
-        </footer>
       </div>
-      <section class="hand" aria-labelledby="hand-heading">
-        <div class="hand-head">
-          <h2 id="hand-heading">En main</h2>
-          <span class="energy" aria-label="Énergie disponible"><b id="energy">4</b> / 5 ⚡</span>
-        </div>
-        <div class="lane hand-cards" id="main" aria-label="Cartes en main"></div>
-      </section>
+      <div class="event" id="event" aria-atomic="true" role="status"></div>
     </section>
-    <aside class="sidebar" aria-labelledby="selection-heading">
-      <h2 id="selection-heading">Carte sélectionnée</h2>
-      <div id="detail"></div>
-      <p id="event" class="event" role="status">Sélectionnez une carte pour l’inspecter.</p>
-      <button class="activate" type="button" id="activate" disabled>Jouer la Ref</button>
-      <button class="reset" type="button" id="reset">Réinitialiser la scène</button>
-    </aside>
+
+    <section class="command" aria-label="Votre tour">
+      <div class="energy-meter" aria-label="Énergie disponible">
+        <span class="energy-caption">Énergie</span>
+        <span class="energy-gems" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="energy-count"><b id="energy">4</b> / 5</span>
+      </div>
+      <div class="lane hand-cards" id="main" aria-label="Cartes en main"></div>
+      <button class="metal-button activate" type="button" id="activate" disabled>Jouer la Ref</button>
+    </section>
   </main>
-  <section class="gallery" id="catalogue" aria-labelledby="catalogue-heading">
-    <details><summary id="catalogue-heading">Catalogue des 15 cartes</summary><div id="gallery" class="gallery-grid"></div></details>
-  </section>
-  <footer class="credits" id="credits"><h2>Crédits des photographies</h2><ul id="credit-list"></ul></footer>
+
+  <dialog class="game-dialog inspector" id="inspector" aria-labelledby="selection-heading">
+    <header class="dialog-header">
+      <h2 id="selection-heading">Carte sélectionnée</h2>
+      <form method="dialog"><button class="metal-button close" aria-label="Fermer la carte" autofocus>×</button></form>
+    </header>
+    <div id="detail"></div>
+    <button class="metal-button activate" type="button" id="activate-card" disabled>Jouer la Ref</button>
+  </dialog>
+
+  <dialog class="game-dialog catalogue" id="catalogue" aria-labelledby="catalogue-heading">
+    <header class="dialog-header">
+      <h2 id="catalogue-heading">Catalogue des cartes</h2>
+      <form method="dialog"><button class="metal-button close" aria-label="Fermer le catalogue" autofocus>×</button></form>
+    </header>
+    <div class="gallery-grid" id="gallery"></div>
+  </dialog>
+
+  <dialog class="game-dialog options" id="options" aria-labelledby="options-heading">
+    <header class="dialog-header">
+      <h2 id="options-heading">Options</h2>
+      <form method="dialog"><button class="metal-button close" aria-label="Fermer les options" autofocus>×</button></form>
+    </header>
+    <div class="option-controls">
+      <button class="metal-button" id="son" type="button" aria-pressed="false">Activer le son</button>
+      <label class="volume">Volume <input id="volume" type="range" min="0" max="100" value="35"></label>
+      <button class="metal-button" type="button" id="reset">Rejouer la scène</button>
+    </div>
+    <p class="detail-note" id="audio-status" role="status" hidden>Le son est bloqué par le navigateur.</p>
+    <details class="credits" id="credits"><summary>Crédits des photographies</summary><ul id="credit-list"></ul></details>
+  </dialog>
 </body>
 </html>

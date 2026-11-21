@@ -1,6 +1,6 @@
 # Battle Ref Arena · prototype
 
-Ouvrir `apercu.html` dans un navigateur. Le dossier fonctionne localement sans compilation ni connexion. Cliquer sur « Jouer la Ref » dans l’inspecteur pour déclencher la scène. L’onglet Catalogue permet d’afficher les 15 fiches dans leur cadre graphique.
+Ouvrir `apercu.html` dans un navigateur. Le dossier fonctionne localement sans compilation ni connexion. Le Théâtre des Échos occupe tout l’écran. Cliquer sur une carte pour l’examiner, ou sur « Jouer la Ref » pour déclencher la scène. Le bouton Cartes ouvre les 15 fiches et les crédits photo se trouvent dans Options.
 
 - [Aperçu du plateau](apercu.html) et [capture PNG du plateau](plateau.png).
 - [Directions visuelles](directions.html) et [planche PNG](directions.png).
