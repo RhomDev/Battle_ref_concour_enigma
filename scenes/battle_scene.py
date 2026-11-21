@@ -18,6 +18,9 @@ ARENA_HEIGHT = 1054
 SHADOW = (9, 16, 21)
 METAL = (23, 36, 40)
 METAL_EDGE = (119, 94, 61)
+HEALTH_COLOR = (255, 167, 153)
+DEMO_PLAYER_HP = 15
+DEMO_OPPONENT_HP = 12
 
 
 class BattleScene:
@@ -25,8 +28,8 @@ class BattleScene:
         self.menu = menu
         self.game = menu.game
         self.back_rect = pygame.Rect(MARGIN, 28, 146, 62)
-        self.pass_rect = pygame.Rect(WIDTH - MARGIN - 246, HEIGHT - 112, 246, 80)
-        self.energy_rect = pygame.Rect(MARGIN, self.pass_rect.top, 246, self.pass_rect.height)
+        self.pass_rect = pygame.Rect(WIDTH - MARGIN - 184, self.back_rect.y, 184, self.back_rect.height)
+        self.energy_rect = pygame.Rect((WIDTH - 246) // 2, HEIGHT - 112, 246, 80)
         self.button_font = pygame.font.SysFont("arial", 27, bold=True)
         self.pass_font = pygame.font.SysFont("arial", 34, bold=True)
         self.pointer = (-1, -1)
@@ -55,14 +58,19 @@ class BattleScene:
         )
 
         plaque = pygame.image.load(ROOT / "asset/board/plaque.webp")
-        for text, size, center_y in (
-            ("Adversaire", (264, 88), opponent_slot.top - 44),
-            ("Vous", (192, 64), player_slot.bottom + 33),
+        for name, hp, size, center_y in (
+            ("Adversaire", DEMO_OPPONENT_HP, (384, 88), opponent_slot.top - 44),
+            ("Vous", DEMO_PLAYER_HP, (264, 64), player_slot.bottom + 33),
         ):
             plate = pygame.transform.smoothscale(plaque, size)
-            center = (WIDTH // 2, center_y)
-            board.blit(plate, plate.get_rect(center=center))
-            self.draw_label(board, text, self.button_font, INK, center)
+            board.blit(plate, plate.get_rect(center=(WIDTH // 2, center_y)))
+            label = self.button_font.render(name, True, INK)
+            health = self.button_font.render(f"{hp} PV", True, HEALTH_COLOR)
+            gap = 16
+            left = (WIDTH - label.get_width() - gap - health.get_width()) // 2
+            label_rect = label.get_rect(midleft=(left, center_y))
+            board.blit(label, label_rect)
+            board.blit(health, health.get_rect(midleft=(label_rect.right + gap, center_y)))
 
         card_height = round(HAND_CARD_WIDTH * CARD_HEIGHT_RATIO)
         hand_top = HEIGHT - HAND_BOTTOM_MARGIN - card_height
@@ -72,7 +80,8 @@ class BattleScene:
             x = hand_left + index * (HAND_CARD_WIDTH + HAND_CARD_GAP)
             card_view.draw(board, pygame.Rect(x, hand_top, HAND_CARD_WIDTH, card_height), card)
 
-        pygame.draw.line(board, METAL_EDGE, (MARGIN, self.pass_rect.top - 13), (WIDTH - MARGIN, self.pass_rect.top - 13))
+        footer_y = self.energy_rect.top - 13
+        pygame.draw.line(board, METAL_EDGE, (MARGIN, footer_y), (WIDTH - MARGIN, footer_y))
         self.draw_energy(board)
         return board
 
