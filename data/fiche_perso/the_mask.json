@@ -9,10 +9,10 @@
   },
 
   "celebrate": 0,
-  "rarety":0,
+  "rarity":0,
 
   "weakness": ["the_mask"],
-  "strong": 0,
+  "strength": 0,
   "combination":["the_mask"]
 
 
