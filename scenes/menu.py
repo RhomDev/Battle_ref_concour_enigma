@@ -1,449 +1,143 @@
-
 import pygame
-from config import WIDTH, HEIGHT
-from gameplay.card import Card_Item
-from ui.Card_View import CardView
-from scenes.media_collection import MediaCollectionScene
+
+from config import HEIGHT, WIDTH
+from core.asset_manager import ROOT
+from scenes.media_collection import GOLD, INK, MediaCollectionScene
+
+
+BACKGROUND = (20, 24, 36)
+PANEL = (29, 35, 51)
+PANEL_HOVER = (39, 48, 65)
+BORDER = (59, 67, 83)
+MUTED = (166, 173, 189)
 
 
 class MenuScene:
     def __init__(self, game):
         self.game = game
+        self.background = self.make_background()
+        self.font_title = pygame.font.SysFont("arial", 88, bold=True)
+        self.font_play = pygame.font.SysFont("arial", 43, bold=True)
+        self.font_button = pygame.font.SysFont("arial", 30, bold=True)
+        self.font_small = pygame.font.SysFont("arial", 24)
 
-        # Couleurs
-        self.BACKGROUND = (20, 24, 36)
-        self.PANEL = (29, 35, 51)
-        self.BUTTON = (43, 53, 75)
-        self.BUTTON_HOVER = (65, 88, 125)
-        self.WHITE = (240, 243, 250)
-        self.GRAY = (155, 165, 185)
-        self.ACCENT = (65, 170, 220)
-        self.GREEN = (65, 190, 130)
+        margin = 36
+        content_width = WIDTH - 2 * margin
+        column_width = (content_width - 16) // 2
+        self.play_rect = pygame.Rect(margin, 694, content_width, 132)
+        self.characters_rect = pygame.Rect(margin, 922, column_width, 144)
+        self.references_rect = self.characters_rect.move(column_width + 16, 0)
+        self.quit_rect = pygame.Rect(0, 0, 180, 64)
+        self.quit_rect.midbottom = (WIDTH // 2, HEIGHT - 48)
+        self.mouse_pos = (-1, -1)
 
-        # Polices
-        self.font_title = pygame.font.SysFont(
-            "arial", max(20, int(HEIGHT * 0.045)), bold=True
-        )
-        self.font_button = pygame.font.SysFont(
-            "arial", max(18, int(HEIGHT * 0.033)), bold=True
-        )
-        self.font_small = pygame.font.SysFont(
-            "arial", max(15, int(HEIGHT * 0.025))
-        )
+    @staticmethod
+    def make_background():
+        background = pygame.Surface((WIDTH, HEIGHT))
+        background.fill(BACKGROUND)
+        try:
+            arena = pygame.image.load(ROOT / "asset/board/theatre-des-echos.webp")
+        except (OSError, pygame.error):
+            return background
 
-        # Dimensions générales
-        self.panel = pygame.Rect(
-            int(WIDTH * 0.055),
-            int(HEIGHT * 0.04),
-            int(WIDTH * 0.89),
-            int(HEIGHT * 0.92)
-        )
+        hero_height = 724
+        scale = max(WIDTH / arena.get_width(), hero_height / arena.get_height())
+        size = (round(arena.get_width() * scale), round(arena.get_height() * scale))
+        arena = pygame.transform.smoothscale(arena, size)
+        background.blit(arena, ((WIDTH - size[0]) // 2, (hero_height - size[1]) // 2))
 
-        # Informations du joueur
-        self.pseudo = "JOUEUR"
-        self.niveau = "NIVEAU 1"
-
-        self.pseudo_rect = pygame.Rect(
-            int(WIDTH * 0.075),
-            int(HEIGHT * 0.055),
-            int(WIDTH * 0.37),
-            int(HEIGHT * 0.105)
-        )
-
-        self.niveau_rect = pygame.Rect(
-            int(WIDTH * 0.555),
-            int(HEIGHT * 0.055),
-            int(WIDTH * 0.37),
-            int(HEIGHT * 0.105)
-        )
-
-        # Photo de profil
-        self.profile_center = (
-            WIDTH // 2,
-            int(HEIGHT * 0.365)
-        )
-
-        self.profile_radius = int(min(WIDTH * 0.13, HEIGHT * 0.17))
-
-        self.plus_center = (
-            self.profile_center[0] + int(self.profile_radius * 0.78),
-            self.profile_center[1] - int(self.profile_radius * 0.78)
-        )
-
-        self.plus_radius = max(20, int(HEIGHT * 0.038))
-
-        self.plus_rect = pygame.Rect(
-            self.plus_center[0] - self.plus_radius,
-            self.plus_center[1] - self.plus_radius,
-            self.plus_radius * 2,
-            self.plus_radius * 2
-        )
-
-        # Boutons principaux
-        button_width = int(WIDTH * 0.39)
-        button_height = int(HEIGHT * 0.105)
-
-        left_x = int(WIDTH * 0.10)
-        right_x = int(WIDTH * 0.51)
-
-        row1_y = int(HEIGHT * 0.59)
-        row2_y = int(HEIGHT * 0.76)
-
-        self.buttons = {
-            "GAME": pygame.Rect(
-                left_x, row1_y, button_width, button_height
-            ),
-
-            "PERSONNAGE": pygame.Rect(
-                right_x, row1_y, button_width, button_height
-            ),
-
-            "REF": pygame.Rect(
-                left_x, row2_y, button_width, button_height
-            ),
-
-            "BOOSTER": pygame.Rect(
-                right_x, row2_y, button_width, button_height
-            ),
-
-            "QUITTER": pygame.Rect(
-                right_x, row2_y + 100, button_width, button_height
-            )
-        }
-
-
-
-        # Animation
-        self.hover_scale = {name: 0.0 for name in self.buttons}
-
-        # Carte temporaire d'aperçu
-        self.card = Card_Item("barbie.json", "card_perso")
-        self.card_view = CardView()
-        self.preview_card_rect = pygame.Rect(
-            int(WIDTH * 0.39),
-            int(HEIGHT * 0.18),
-            int(WIDTH * 0.22),
-            int(HEIGHT * 0.36)
-        )
-
-    # -------------------------------------------------
-    # CONVERSION DES COORDONNEES SOURIS
-    # -------------------------------------------------
+        shade = pygame.Surface((WIDTH, hero_height), pygame.SRCALPHA)
+        for y in range(hero_height):
+            title_shade = 244 * (1 - min(1, y / 433))
+            bottom_shade = 255 * max(0, (y - 436) / (hero_height - 1 - 436))
+            alpha = round(max(title_shade, bottom_shade))
+            pygame.draw.line(shade, (*BACKGROUND, alpha), (0, y), (WIDTH - 1, y))
+        background.blit(shade, (0, 0))
+        return background
 
     def to_canvas_position(self, pos):
-        """
-        Convertit les coordonnées de la fenêtre
-        vers celles du canvas logique.
-        """
-
         window_w, window_h = self.game.screen.get_size()
-
-        scale = min(
-            window_w / WIDTH,
-            window_h / HEIGHT
+        scale = min(window_w / WIDTH, window_h / HEIGHT)
+        canvas_w = max(1, int(WIDTH * scale))
+        canvas_h = max(1, int(HEIGHT * scale))
+        offset_x = (window_w - canvas_w) // 2
+        offset_y = (window_h - canvas_h) // 2
+        return (
+            (pos[0] - offset_x) * WIDTH // canvas_w,
+            (pos[1] - offset_y) * HEIGHT // canvas_h,
         )
-
-        offset_x = (window_w - WIDTH * scale) / 2
-        offset_y = (window_h - HEIGHT * scale) / 2
-
-        x = (pos[0] - offset_x) / scale
-        y = (pos[1] - offset_y) / scale
-
-        return int(x), int(y)
-
-    # -------------------------------------------------
-    # GESTION DES EVENEMENTS
-    # -------------------------------------------------
 
     def handle_event(self, event):
-
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            if event.button == 1:
-
-                mouse_pos = self.to_canvas_position(event.pos)
-
-                # Bouton GAME
-                if self.buttons["GAME"].collidepoint(mouse_pos):
-                    self.open_game()
-
-                # Bouton PERSONNAGE
-                elif self.buttons["PERSONNAGE"].collidepoint(mouse_pos):
-                    self.open_personnages()
-
-                # Bouton REF
-                elif self.buttons["REF"].collidepoint(mouse_pos):
-                    self.open_references()
-
-                # Bouton QUITTER
-                elif self.buttons["QUITTER"].collidepoint(mouse_pos):
-                    self.game.running = False
-
-                # Ajouter une image de profil
-                elif self.plus_rect.collidepoint(mouse_pos):
-                    self.add_profile_image()
-
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_ESCAPE:
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            self.game.running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            mouse = self.to_canvas_position(event.pos)
+            if self.characters_rect.collidepoint(mouse):
+                self.game.change_scene(MediaCollectionScene(self, "character"))
+            elif self.references_rect.collidepoint(mouse):
+                self.game.change_scene(MediaCollectionScene(self, "ref"))
+            elif self.quit_rect.collidepoint(mouse):
                 self.game.running = False
 
-    # -------------------------------------------------
-    # ACTIONS DES BOUTONS
-    # -------------------------------------------------
-
-    def open_game(self):
-        print("Lancement du jeu")
-
-        # TODO :
-        # Ajouter ici le changement vers BattleScene.
-
-    def open_personnages(self):
-        self.game.change_scene(MediaCollectionScene(self, "character"))
-
-    def open_references(self):
-        self.game.change_scene(MediaCollectionScene(self, "ref"))
-
-    def add_profile_image(self):
-        print("Ajout d'une image de profil")
-
-        # TODO :
-        # Ajouter un système de sélection d'image.
-
-    def open_booster(self):
-        self.game.change_scene(BoosterScene(self.game))
-    # -------------------------------------------------
-    # UPDATE
-    # -------------------------------------------------
-
     def update(self, dt):
+        self.mouse_pos = self.to_canvas_position(pygame.mouse.get_pos())
 
-        mouse_pos = self.to_canvas_position(
-            pygame.mouse.get_pos()
-        )
+    @staticmethod
+    def draw_centered(surface, text, font, color, center):
+        label = font.render(text, True, color)
+        surface.blit(label, label.get_rect(center=center))
 
-        # Animation de survol des boutons
-        for name, rect in self.buttons.items():
+    def draw_collection_button(self, surface, rect, label):
+        hovered = rect.collidepoint(self.mouse_pos)
+        pygame.draw.rect(surface, PANEL_HOVER if hovered else PANEL, rect, border_radius=14)
+        pygame.draw.rect(surface, GOLD if hovered else BORDER, rect, width=2, border_radius=14)
 
-            if rect.collidepoint(mouse_pos):
-                target = 1.0
-            else:
-                target = 0.0
+        icon = pygame.Rect(rect.left + 27, rect.top + 22, 23, 33)
+        if rect == self.characters_rect:
+            for offset in (12, 6):
+                pygame.draw.rect(surface, BORDER, icon.move(offset, 0), width=2, border_radius=4)
+        pygame.draw.rect(surface, PANEL, icon, border_radius=4)
+        pygame.draw.rect(surface, GOLD, icon, width=2, border_radius=4)
+        if rect == self.references_rect:
+            x, y = icon.center
+            bolt = [(x + 2, y - 9), (x - 4, y), (x + 4, y), (x - 2, y + 9)]
+            pygame.draw.lines(surface, GOLD, False, bolt, 2)
 
-            self.hover_scale[name] += (
-                target - self.hover_scale[name]
-            ) * min(1.0, dt * 10)
-
-    # -------------------------------------------------
-    # DESSIN DES ELEMENTS
-    # -------------------------------------------------
-
-    def draw_text_center(self, surface, text, font, color, rect):
-
-        rendered = font.render(text, True, color)
-
-        text_rect = rendered.get_rect(
-            center=rect.center
-        )
-
-        surface.blit(rendered, text_rect)
-
-    def draw_header(self, surface):
-
-        # Fond du pseudo
-        pygame.draw.rect(
-            surface,
-            self.BUTTON,
-            self.pseudo_rect,
-            border_radius=12
-        )
-
-        # Fond du niveau
-        pygame.draw.rect(
-            surface,
-            self.BUTTON,
-            self.niveau_rect,
-            border_radius=12
-        )
-
-        pygame.draw.rect(
-            surface,
-            self.GRAY,
-            self.pseudo_rect,
-            2,
-            border_radius=12
-        )
-
-        pygame.draw.rect(
-            surface,
-            self.GRAY,
-            self.niveau_rect,
-            2,
-            border_radius=12
-        )
-
-        self.draw_text_center(
-            surface,
-            self.pseudo,
-            self.font_title,
-            self.WHITE,
-            self.pseudo_rect
-        )
-
-        self.draw_text_center(
-            surface,
-            self.niveau,
-            self.font_title,
-            self.WHITE,
-            self.niveau_rect
-        )
-
-    def draw_profile(self, surface):
-
-        # Ombre
-        pygame.draw.circle(
-            surface,
-            (12, 16, 26),
-            (self.profile_center[0] + 5,
-             self.profile_center[1] + 7),
-            self.profile_radius
-        )
-
-        # Fond du profil
-        pygame.draw.circle(
-            surface,
-            self.BUTTON,
-            self.profile_center,
-            self.profile_radius
-        )
-
-        # Silhouette du joueur
-        head_radius = int(self.profile_radius * 0.23)
-
-        pygame.draw.circle(
-            surface,
-            self.GRAY,
-            (
-                self.profile_center[0],
-                self.profile_center[1] - int(self.profile_radius * 0.25)
-            ),
-            head_radius
-        )
-
-        body_rect = pygame.Rect(
-            self.profile_center[0] - int(self.profile_radius * 0.48),
-            self.profile_center[1] + int(self.profile_radius * 0.08),
-            int(self.profile_radius * 0.96),
-            int(self.profile_radius * 0.62)
-        )
-
-        pygame.draw.ellipse(
-            surface,
-            self.GRAY,
-            body_rect
-        )
-
-        # Contour du profil
-        pygame.draw.circle(
-            surface,
-            self.ACCENT,
-            self.profile_center,
-            self.profile_radius,
-            4
-        )
-
-        # Bouton +
-        pygame.draw.circle(
-            surface,
-            self.GREEN,
-            self.plus_center,
-            self.plus_radius
-        )
-
-        pygame.draw.circle(
-            surface,
-            self.WHITE,
-            self.plus_center,
-            self.plus_radius,
-            3
-        )
-
-        plus = self.font_title.render(
-            "+", True, self.WHITE
-        )
-
-        surface.blit(
-            plus,
-            plus.get_rect(center=self.plus_center)
-        )
-
-    def draw_buttons(self, surface):
-
-        for name, rect in self.buttons.items():
-
-            hover = self.hover_scale[name]
-
-            # Interpolation de la couleur
-            color = tuple(
-                int(self.BUTTON[i] +
-                    (self.BUTTON_HOVER[i] - self.BUTTON[i]) * hover)
-                for i in range(3)
-            )
-
-            # Légère mise en avant au survol
-            expanded = rect.inflate(
-                int(hover * 4),
-                int(hover * 4)
-            )
-
-            pygame.draw.rect(
-                surface,
-                color,
-                expanded,
-                border_radius=14
-            )
-
-            pygame.draw.rect(
-                surface,
-                self.ACCENT if hover > 0.1 else self.GRAY,
-                expanded,
-                2,
-                border_radius=14
-            )
-
-            self.draw_text_center(
-                surface,
-                name,
-                self.font_button,
-                self.WHITE,
-                expanded
-            )
-
-    # -------------------------------------------------
-    # DRAW
-    # -------------------------------------------------
+        title = self.font_button.render(label, True, INK)
+        surface.blit(title, title.get_rect(midleft=(rect.left + 26, rect.top + 97)))
+        x, y = rect.right - 31, rect.top + 97
+        chevron = [(x - 4, y - 6), (x + 2, y), (x - 4, y + 6)]
+        pygame.draw.lines(surface, GOLD if hovered else MUTED, False, chevron, 2)
 
     def draw(self, surface):
+        surface.blit(self.background, (0, 0))
+        center_x = WIDTH // 2
+        self.draw_centered(surface, "BATTLE REF", self.font_title, INK, (center_x, 145))
+        subtitle = self.font_button.render("ARENA", True, GOLD)
+        subtitle_rect = subtitle.get_rect(center=(center_x, 216))
+        surface.blit(subtitle, subtitle_rect)
+        left_line = subtitle_rect.left - 16
+        right_line = subtitle_rect.right + 16
+        pygame.draw.line(surface, GOLD, (left_line - 49, 216), (left_line, 216), 2)
+        pygame.draw.line(surface, GOLD, (right_line, 216), (right_line + 49, 216), 2)
 
-        # Fond général
-        surface.fill(self.BACKGROUND)
-
-        # Panneau principal
-        pygame.draw.rect(
-            surface,
-            self.PANEL,
-            self.panel,
-            border_radius=22
+        pygame.draw.rect(surface, PANEL, self.play_rect, border_radius=14)
+        pygame.draw.rect(surface, BORDER, self.play_rect, width=2, border_radius=14)
+        self.draw_centered(surface, "Jouer", self.font_play, MUTED, (center_x, self.play_rect.top + 42))
+        self.draw_centered(
+            surface, "Partie indisponible", self.font_small, MUTED, (center_x, self.play_rect.top + 94)
         )
 
-        pygame.draw.rect(
-            surface,
-            (65, 78, 105),
-            self.panel,
-            3,
-            border_radius=22
-        )
+        heading = self.font_button.render("Collection", True, GOLD)
+        heading_rect = heading.get_rect(midleft=(self.characters_rect.left, 879))
+        surface.blit(heading, heading_rect)
+        pygame.draw.line(surface, BORDER, (heading_rect.right + 20, 879), (self.references_rect.right, 879), 2)
+        self.draw_collection_button(surface, self.characters_rect, "Personnages")
+        self.draw_collection_button(surface, self.references_rect, "Références")
 
-        # Eléments du menu
-        self.draw_header(surface)
-        self.draw_profile(surface)
-        self.draw_buttons(surface)
-        self.card_view.draw(surface, self.preview_card_rect, self.card)
+        quit_hovered = self.quit_rect.collidepoint(self.mouse_pos)
+        if quit_hovered:
+            pygame.draw.rect(surface, PANEL_HOVER, self.quit_rect, border_radius=12)
+        self.draw_centered(
+            surface, "Quitter", self.font_small, INK if quit_hovered else MUTED, self.quit_rect.center
+        )
