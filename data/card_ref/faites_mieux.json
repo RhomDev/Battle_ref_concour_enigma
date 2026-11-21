@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "faites_mieux",
+  "name": "Faites mieux !",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Discours de Jean-Luc Mélenchon au soir du premier tour",
+    "year": 2022,
+    "sources": [
+      "https://melenchon.fr/2022/04/10/1er-tour-jean-luc-melenchon-prend-la-parole/"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "faites_mieux_source"
+  ],
+  "cost": 3,
+  "text": "Donnez 1 Bouclier à chaque allié. Avec Mélenchon en jeu, donnez-en 2 à chacun.",
+  "strength": "Protège plusieurs Personnages en une action.",
+  "weakness": "Demande plusieurs alliés pour être rentable.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "ally_characters",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

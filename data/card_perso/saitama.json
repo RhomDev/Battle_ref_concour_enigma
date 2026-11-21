@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "id": "saitama",
+  "name": "Saitama",
+  "kind": "character",
+  "category": "anime",
+  "origin": {
+    "work": "One-Punch Man",
+    "year": 2015,
+    "sources": [
+      "https://onepunchman-anime.net/character/"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "saitama_source"
+  ],
+  "text": "Déploiement · Gagne Garde.",
+  "strength": "Protège son camp dès son arrivée.",
+  "weakness": "La Garde concentre les attaques adverses sur lui.",
+  "cost": 5,
+  "stats": {
+    "hp": 6
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "self"
+        }
+      ]
+    }
+  ]
+}

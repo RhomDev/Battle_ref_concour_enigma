@@ -1,21 +1,23 @@
 # Battle Ref Arena · prototype
 
-Ouvrir `apercu.html` dans un navigateur. Le dossier fonctionne localement sans compilation ni connexion. Cliquer sur « Piocher · 1 ⚡ » pour commencer le tour guidé ou sur une carte pour l’examiner. Le bouton Cartes ouvre les 15 fiches et les crédits photo se trouvent dans Options.
+Ouvrir [`../apercu/index.html`](../apercu/index.html) dans un navigateur. La scène guidée et les médias locaux fonctionnent hors ligne. Cliquer sur « Piocher · 1 ⚡ » pour commencer le tour ou sur une carte pour l’examiner. Le bouton Cartes ouvre le catalogue et permet de chercher par nom, œuvre ou Personnage associé. Options donne accès aux crédits et au volume.
 
-- [Aperçu du plateau](apercu.html) et [capture PNG de la première démo](plateau.png).
-- [Directions visuelles](directions.html) et [planche PNG](directions.png).
-- Cartes en PNG dans [exemples/](exemples/) · [Donald Trump](exemples/personnage-trump.png), [Emmanuel Macron](exemples/personnage-macron.png), [PSY](exemples/personnage-psy.png), [Poudre de perlimpinpin](exemples/ref-perlimpinpin.png), [Y.M.C.A.](exemples/ref-ymca.png), [Canzoni preferite](exemples/ref-jojo.png), [Touche pas à ma Bulma !](exemples/ref-bulma.png) et [Sssplendide !](exemples/ref-mask.png).
+Cet aperçu sert de référence au développement du jeu en **Python avec Pygame**. Les consignes de portage sont dans [AGENTS.md](../AGENTS.md).
+
+- [Aperçu du plateau](../apercu/index.html) et [capture PNG de la première démo](../asset/image/maquettes/plateau.png).
+- [Directions visuelles](directions.html) et [planche PNG](../asset/image/maquettes/directions.png).
+- [Premières maquettes de cartes en PNG](../asset/image/maquettes/) et [leurs crédits historiques](docs/recherche.md#crédits-des-premières-maquettes).
 - [Recherche culturelle et état des médias](docs/recherche.md).
 - [Audit, règles, dix synergies, architecture, pipeline et roadmap](docs/conception.md).
-- [Prompts du plateau et des cadres](docs/prompts-cadres.md), maîtres PNG et dérivés WebP dans `assets/frames/`, fond illustré dans `assets/board/`.
-- [Cartes](catalogue/cartes.json), fiches JSON individuelles dans `catalogue/fiches/`, [synergies](catalogue/synergies.json), [médias et crédits](catalogue/medias.json).
-- Schémas JSON pour les [cartes](schemas/carte.schema.json), les [synergies](schemas/synergie.schema.json) et les [médias](schemas/media.schema.json).
+- [Prompts du plateau et des cadres](docs/prompts-cadres.md), maîtres PNG et dérivés WebP dans `../asset/frames/`, fond illustré dans `../asset/board/`.
+- [Cartes compilées](../data/cartes.json), [fiches éditables](../data/README.md), [synergies](../data/synergies.json), [médias et crédits](../data/medias.json).
+- Schémas JSON pour les [cartes](../data/schemas/carte.schema.json), les [synergies](../data/schemas/synergie.schema.json) et les [médias](../data/schemas/media.schema.json).
 
-Avec 5 énergies, la scène propose de piocher Otis pour 1, de le déployer pour 2 auprès de Perceval, puis de jouer Y.M.C.A. pour 2. Trump amplifie la Ref et Vegeta protège le joueur adverse. Le [détail du tour](docs/conception.md#exemple-de-tour) donne les valeurs après chaque action. Le signal sonore original est facultatif. Les cinq Refs ont une photographie locale. Les photos de cosplay illustrent les Refs dont les extraits restent à autoriser. Les légendes distinguent les photos d’illustration des scènes d’origine.
+Avec 5 énergies, la scène propose de piocher Macron pour 1, de le déployer pour 2, puis de jouer Y.M.C.A. pour 2. Trump amplifie la Ref et Vegeta protège le joueur adverse. À la résolution, la projection diffuse six secondes de la vraie danse de Trump à Norfolk. Si le son est activé dans Options, elle joue aussi six secondes de l’enregistrement original des Village People depuis le MP3 local.
 
-La [capture du plateau](plateau.png) et les exports PNG de Y.M.C.A., Bulma et The Mask incluent des photographies CC BY-SA 2.0. Ces composites sont distribués sous la même licence. Les crédits et les sources figurent dans le [registre média](catalogue/medias.json). [Licence CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+Dans le catalogue, **Tester les médias** lit les fichiers disponibles sur la carte. Les fiches de Vegeta et de Mista affichent les visuels officiels des séries. Les fiches donnent accès aux fichiers téléchargeables et aux pages de leur diffuseur.
 
-Les polices Barlow Condensed et Instrument Sans sont servies localement. Leurs licences sont dans [assets/fonts/](assets/fonts/).
+Les polices Barlow Condensed et Instrument Sans sont servies localement. Leurs licences sont dans [asset/fonts/](../asset/fonts/).
 
 Pour modifier les données, éditer les fiches individuelles, les synergies ou le registre média. Python 3 et `jsonschema` sont nécessaires pour contrôler les données et reconstruire le catalogue agrégé et l’instantané JavaScript.
 

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "id": "mista",
+  "name": "Guido Mista",
+  "kind": "character",
+  "category": "anime",
+  "origin": {
+    "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 7",
+    "year": 2018,
+    "sources": [
+      "https://jojo-animation.com/character/04.php",
+      "https://www.crunchyroll.com/watch/GYXJ1KM76/six-bullets-appears-part-1",
+      "https://jojo-animation.com/story/007.php"
+    ]
+  },
+  "cost": 3,
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
+  "weakness": "Son Bouclier de départ est limité.",
+  "visual": "spotlight",
+  "media": [
+    "mista_anime",
+    "jojo_scene",
+    "jojo_stills"
+  ],
+  "abilities": [
+    {
+      "id": "sex_pistols",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

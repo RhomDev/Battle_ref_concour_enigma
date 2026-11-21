@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "barbie",
+  "name": "Barbie",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://www.youtube.com/watch?v=GRyt3Ov4zz0"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "barbie_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 3,
+  "stats": {
+    "hp": 4
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

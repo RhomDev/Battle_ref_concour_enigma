@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "giorno_soigne_mista",
+  "name": "T’as rien vu, Narancia",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 19",
+    "year": 2019,
+    "sources": [
+      "https://jojo-animation.com/story/019.php"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "giorno_soigne_mista_source"
+  ],
+  "cost": 1,
+  "text": "Soignez 2 PV d’un allié. Avec Mista en jeu, soignez 3 PV.",
+  "strength": "Maintient un allié blessé en jeu.",
+  "weakness": "Demande un allié blessé pour tirer parti du soin.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "heal",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

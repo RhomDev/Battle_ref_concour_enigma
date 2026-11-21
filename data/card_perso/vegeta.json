@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "id": "vegeta",
+  "name": "Vegeta",
+  "kind": "character",
+  "category": "anime",
+  "origin": {
+    "work": "Dragon Ball Super, épisode 7",
+    "year": 2015,
+    "sources": [
+      "https://www.toei-anim.co.jp/tv/dragon_s/chara/04.html",
+      "https://lineup.toei-anim.co.jp/ja/tv/dragon_super/episode/7/",
+      "https://www.youtube.com/watch?v=Imr6cbh0cXw"
+    ]
+  },
+  "cost": 5,
+  "text": "Déploiement · Gagne Garde et 1 Bouclier.",
+  "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
+  "weakness": "Son déploiement demande beaucoup d’énergie.",
+  "visual": "pulse",
+  "media": [
+    "vegeta_anime",
+    "bulma_scene",
+    "bulma_trailer"
+  ],
+  "abilities": [
+    {
+      "id": "fierte",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "self"
+        },
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "hp": 5
+  }
+}

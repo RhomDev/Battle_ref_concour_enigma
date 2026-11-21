@@ -1,6 +1,6 @@
 # Battle Ref Arena · Audit et conception
 
-## Audit de main
+## Audit initial
 
 Dépôt [RhomDev/Battle_ref_concour_enigma](https://github.com/RhomDev/Battle_ref_concour_enigma), branche `main`, commit local et distant `bc1010c208b8986a7773712b7d630793f05effbd` vérifiés avec Git. Une branche distante a été listée. Le dossier de livraison est externe au dépôt.
 
@@ -19,14 +19,14 @@ Migration proposée dans une future branche. Déplacer les fiches d’origine et
 
 ## Direction graphique retenue
 
-Le **Théâtre des Échos** est un amphithéâtre en perspective, éclairé par des projecteurs de bronze. Les deux camps prennent place de part et d’autre de la gravure qui divise le terrain. Les PV, le tour et les gemmes d’énergie apparaissent dans des plaques de bronze, avec la main en éventail au premier plan. L’inspection des cartes, le catalogue et les options s’ouvrent en surimpression. [Planche graphique](../directions.html)
+La **table de projection** associe un tapis bordeaux et des bobines de pellicule en périphérie. Les deux rangées de cartes séparent les camps. Les PV, le tour et les gemmes d’énergie apparaissent dans des plaques de bronze, avec la main en éventail au premier plan. L’inspection des cartes, le catalogue et les options s’ouvrent en surimpression. [Planche graphique](../directions.html)
 
 Les deux cadres PNG de 1 024 × 1 536 px ont été générés avec une fenêtre réellement transparente. Les WebP alpha de 660 × 990 px servent au jeu. L’interface place la photo derrière le cadre puis ajoute le texte et les statistiques devant. Les pourcentages de la fenêtre et du médaillon vivent dans la feuille de style.
 
 - **Personnage.** Bordeaux et angles biseautés. Le coût apparaît dans le médaillon. Le bandeau inférieur accueille l’univers, l’effet, les PV et les états de protection. En combat, la fiche agrandie donne le détail de la règle.
 - **Ref.** Vert profond et or, avec perforations latérales et encoches de ticket. Les cinq cartes ont une photographie locale. Sur la fiche, le bas présente la règle et la catégorie. Les médias de substitution sont identifiés sous la carte et dans les crédits.
 - **Rareté.** Différée au-delà du premier playtest.
-- **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. L’arène générée est stockée en WebP à 1 672 × 941 px. La plaque de statut réutilise un WebP avec alpha.
+- **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. Le fond de la table de projection est un WebP de 1 560 × 780 px. La plaque de statut réutilise un WebP avec alpha.
 
 ## Règles proposées
 
@@ -101,17 +101,11 @@ Chaque révélation apparaît en bandeau, entre dans un journal consultable, et 
 
 **Trois plans de jeu.** Danse prépare un tour d’attaque en largeur avec PSY, Trump et Y.M.C.A. Garde met Vegeta sous protection et crée une menace d’ultime. Contrôle par Macron, Poudre et Creeper ouvre les cibles et casse les bonus. Otis protège, Perceval et Rick renouvellent la main, The Mask sert de menace intermédiaire et Mista finit les blessés. L’équilibrage reste une hypothèse. Mesurer taux de victoire en premier, longueur de partie, avantage de tempo à 1/2/3 énergies, synergies visibles par partie et unités qui gardent trop longtemps.
 
-## Web ou Python
+## Architecture Python et Pygame
 
-| Critère | Web statique avec TypeScript | Python avec Pygame |
-|---|---|---|
-| Départ | Interface racontable au jury avec HTML/CSS et fichiers de données. Un prototype d’écran est livré. | Les classes actuelles fournissent quelques exemples de champs et de blit. Il faut créer la boucle de jeu et réparer le chargement. |
-| Cartes | Composants de données, CSS, clavier et mise à l’échelle native. | Chaque mise en page, texte, mise à l’échelle et interaction demande du code de dessin et d’événement. |
-| GIF + son | Image animée ou vidéo, lecture événementielle, gestion du son et mode mouvement réduit via navigateur. | Décodage ou préparation des trames GIF, lecture via mixer, réglages et lifecycle à gérer. |
-| Combat | Fonction TS pure, tests Node et navigateur. Même moteur pour le duel local et un bot éventuel. | Python convient pour un moteur pur et des simulations. Partager la logique de combat avec un frontend Web demande une interface supplémentaire. |
-| Jury | Ouvrir une version statique hors ligne ou via hébergement dès autorisation. | Préparer un environnement ou un exécutable par plateforme et tester le plein écran. |
+Le jeu de bureau cible Python 3 et Pygame. Pygame gère la fenêtre, le rendu de la table et des cartes, les entrées et l’audio. Le moteur de combat reste un module Python indépendant pour permettre des tests déterministes sans fenêtre. Le prototype HTML sert de référence pour la composition et l’inspection des cartes.
 
-**Choix.** Web TypeScript, build statique, UI HTML/CSS. Le duel local se joue sur une machine. Les outils d’import et de recherche peuvent rester en Python. Commencer avec le DOM et un composant de carte partagé. Ajouter une bibliothèque UI selon les habitudes de l’équipe quand l’état de l’interface se complexifie.
+Structure proposée une fois le portage démarré.
 
 ```text
 data/
@@ -124,7 +118,7 @@ src/
   engine/                   # state, commands, rules, effects, events, shuffle
   ui/                       # Board, Card, Inspector, EventLog
   media/                    # Politique de chargement, player, AudioBus
-public/
+assets/
   media/{images,clips,sfx}/
   templates/                # PNG maîtres en archive, WebP runtime
 tools/{research,import,validate,preview}/
@@ -135,14 +129,14 @@ legacy/python/
 
 Conventions. ID et fichiers de données en `snake_case` ASCII, labels français avec ponctuation, chemins relatifs POSIX, noms de propriétés en `camelCase`. Les fiches individuelles constituent la source maître lors de l’intégration. Le snapshot agrégé est généré au build. Les JSON de la livraison exposent déjà ces deux représentations. `schemaVersion` permet de versionner les entrées. Garder trois schémas indépendants pour carte, synergie et média. Valider aussi les références croisées, le typage des cibles et la compatibilité des opérations avec les événements. Une session identifie chaque unité par un ID d’instance. Les IDs catalogue servent à construire les matchs, les cibles et les journaux.
 
-Moteur recommandé. `applyCommand(state, command) → {state, events}`. Commandes `Summon`, `CastRef`, `Draw` et `EndTurn`. Un registre d’opérations implémente une fois par famille `damage`, `heal`, `shield`, `dispel` et `guard`. Les faits du combat sont portés par les événements. L’UI observe les événements pour l’animation, les crédits et le journal de découverte.
+Le moteur prévu utilise `apply_command(state, command)` et renvoie l’état résultant et les événements. Les commandes du prototype sont `Summon`, `CastRef`, `Draw` et `EndTurn`. Un registre d’opérations implémente une fois par famille `damage`, `heal`, `shield`, `dispel` et `guard`. Les faits du combat sont portés par les événements. L’UI observe les événements pour l’animation, les crédits et le journal de découverte.
 
 ## Intégration automatique des médias
 
 1. Dans une fiche, inscrire les IDs des médias candidats, par format. Dans le registre, conserver URL de source, auteur, titulaire ou interlocuteur, licence et autres restrictions. Une URL d’origine autorise le repérage et la vérification.
 2. Après confirmation de l’usage précis, l’importeur télécharge en préparation depuis une URL autorisée, contrôle type et dimensions, calcule SHA-256 et crée un dérivé d’affichage. Ajouter URL du fichier, date de récupération, fichier de preuve, contexte d’usage, état d’autorisation et point focal `x,y` au registre de production. Réserver les extraits avec un minutage précis par version et doublage.
 3. Le build publie seulement les fichiers marqués admissibles à l’usage visé et leurs crédits. Les médias d’identification dont l’usage reste à vérifier restent dans le catalogue de recherche. Si une photo de remplacement est utilisée, documenter la différence avec la scène originale.
-4. Le composant carte pose par couches le fond, la photo recadrée `object-fit: cover`, le PNG/WebP alpha du type de carte, les icônes d’état, les champs texte/statistiques du JSON et enfin l’animation transitoire. En cas de fichier absent, remplacer son rectangle par un motif de la famille de carte. Les données de combat n’attendent jamais le téléchargement d’une image.
+4. Le composant carte pose par couches le fond, la photo mise à l’échelle puis recadrée dans la fenêtre, le cadre PNG ou WebP avec alpha, les icônes d’état, les champs texte/statistiques du JSON et enfin l’animation transitoire. En cas de fichier absent, remplacer son rectangle par un motif de la famille de carte. Les données de combat n’attendent jamais le téléchargement d’une image.
 5. Afficher un poster statique. Après `RefResolved` ou `SynergyDiscovered`, ouvrir un seul lecteur au premier plan pour 1 à 2 secondes. Privilégier MP4/WebM muet pour une scène compressée, utiliser GIF ou WebP animé quand c’est le seul format admissible, monter l’élément animé uniquement pendant la séquence, puis le retirer. Avec mouvement réduit, afficher poster et libellé. Objectif pour un clip de référence < 700 Ko en format vidéo à 480p. Mettre les fichiers locaux à nom haché en cache et précharger seulement ceux de la main ou du jeu de démo.
 6. Relier `CharacterSummoned`, `RefResolved`, `SynergyDiscovered` et `MatchEnded` à des cues dédiés. Initialiser l’audio au clic « Activer le son ». Appliquer volume et mute dans un bus commun, interrompre un effet obsolète et tolérer un refus de lecture. La maquette contient un signal sonore original synthétisé pour une découverte, avec volume et activation. [Règles d’autoplay MDN](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay)
 

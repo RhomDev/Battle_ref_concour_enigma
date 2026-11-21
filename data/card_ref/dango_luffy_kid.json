@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "dango_luffy_kid",
+  "name": "Le concours de dango",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "One Piece, épisode 919",
+    "year": 2020,
+    "sources": [
+      "https://one-piece.com/anime/o5305/index.html"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "dango_luffy_kid_source"
+  ],
+  "cost": 1,
+  "text": "Soignez 2 PV d’un allié. Avec Monkey D. Luffy en jeu, soignez 3 PV.",
+  "strength": "Maintient un allié blessé en jeu.",
+  "weakness": "Demande un allié blessé pour tirer parti du soin.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "heal",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

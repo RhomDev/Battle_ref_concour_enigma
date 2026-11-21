@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "claquement_de_thanos",
+  "name": "Le claquement de Thanos",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Avengers: Infinity War",
+    "year": 2018,
+    "sources": [
+      "https://www.youtube.com/watch?v=8BLyXCJis_I"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "claquement_de_thanos_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Thanos en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

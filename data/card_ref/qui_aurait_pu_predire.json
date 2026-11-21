@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "qui_aurait_pu_predire",
+  "name": "Qui aurait pu prédire ?",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Vœux présidentiels du 31 décembre 2022",
+    "year": 2022,
+    "sources": [
+      "https://www.elysee.fr/emmanuel-macron/2022/12/31/voeux-2023-aux-francais"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "qui_aurait_pu_predire_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Macron en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

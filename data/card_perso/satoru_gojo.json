@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "satoru_gojo",
+  "name": "Satoru Gojo",
+  "kind": "character",
+  "category": "anime",
+  "origin": {
+    "work": "Jujutsu Kaisen",
+    "year": 2020,
+    "sources": [
+      "https://jujutsukaisen.jp/character/shibuyajihen.php"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "satoru_gojo_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 4,
+  "stats": {
+    "hp": 5
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

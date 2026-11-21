@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "gojo_elu",
+  "name": "The Honored One",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "Jujutsu Kaisen, épisode 28",
+    "year": 2023,
+    "sources": [
+      "https://jujutsukaisen.jp/episodes/28.php"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "gojo_elu_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Gojo en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

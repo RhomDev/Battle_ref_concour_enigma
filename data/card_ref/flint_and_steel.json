@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "flint_and_steel",
+  "name": "Flint and Steel !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "A Minecraft Movie",
+    "year": 2025,
+    "sources": [
+      "https://clip.cafe/a-minecraft-movie-2025/flint-and-steel/"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "flint_and_steel_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Steve en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre l’accès à une cible protégée.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

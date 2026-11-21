@@ -1,0 +1,2119 @@
+[
+  {
+    "id": "vegeta_anime",
+    "kind": "image",
+    "sourceUrl": "https://www.toei-anim.co.jp/tv/dragon_s/chara/04.html",
+    "creator": "Akira Toriyama / Shueisha / Fuji TV / Yomiko / Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "Modèle animé publié par Toei Animation. Référence pour le portrait du Personnage.",
+    "status": "reference_only",
+    "caption": "Vegeta · visuel officiel de Dragon Ball Super",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/vegeta-anime.webp",
+        "assetUrl": "https://www.toei-anim.co.jp/tv/dragon_s/assets/img/chara/vejita/img01.png",
+        "caption": "Vegeta · visuel officiel de Dragon Ball Super"
+      }
+    ]
+  },
+  {
+    "id": "bulma_scene",
+    "kind": "video",
+    "sourceUrl": "https://lineup.toei-anim.co.jp/ja/tv/dragon_super/episode/7/",
+    "creator": "Toei Animation / Shueisha / Fuji TV",
+    "license": "authorization-required",
+    "restrictions": "Vegeta réagit quand Beerus frappe Bulma, vers la fin de l’épisode. Repère indicatif de l’édition Blu-ray, autour de 20:37.",
+    "status": "reference_only",
+    "caption": "Dragon Ball Super · épisode 7 chez Toei",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/bulma-beerus.webp",
+        "assetUrl": "https://lineup.toei-anim.co.jp/upload/save_image/episode/4031/story_img_3.jpg",
+        "caption": "Dragon Ball Super · épisode 7 chez Toei"
+      }
+    ]
+  },
+  {
+    "id": "bulma_trailer",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=Imr6cbh0cXw",
+    "creator": "Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "Vidéo officielle de promotion de l’épisode. Image, extrait et doublage à autoriser.",
+    "status": "reference_only",
+    "caption": "Bande-annonce officielle de l’épisode 7",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/bulma-bande-annonce.webp",
+        "assetUrl": "https://i.ytimg.com/vi/Imr6cbh0cXw/hqdefault.jpg",
+        "caption": "Bande-annonce officielle de l’épisode 7"
+      }
+    ]
+  },
+  {
+    "id": "demo_touche_pas_bulma",
+    "kind": "audio",
+    "sourceNote": "Création sonore originale pour le prototype",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Montée d’énergie synthétisée pour la démo, sans voix ni extrait de l’animé.",
+    "status": "demo_asset",
+    "localPath": "asset/sound/demo_touche_pas_bulma.mp3",
+    "durationMs": 4800,
+    "caption": "Touche pas à ma Bulma ! · montée d’énergie de démo"
+  },
+  {
+    "id": "bingo_vegeta_source",
+    "kind": "video",
+    "sourceUrl": "https://www.crunchyroll.com/ko/news/latest/2014/7/17/video-dragon-ball-z-battle-of-gods-clips-preview-the-english-dub",
+    "creator": "Akira Toriyama / Shueisha / Toei Animation",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Vegeta improvise un numéro chanté et dansé pour détourner l’attention de Beerus.",
+    "caption": "Vegeta improvise un numéro chanté et dansé pour détourner l’attention de Beerus.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/vegeta-bingo.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=7aM1jL336KY&t=8s",
+        "caption": "Numéro de Vegeta dans le film animé Battle of Gods, extrait republié, 00:08,4–00:16."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/vegeta-bingo.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=7aM1jL336KY&t=8s",
+        "caption": "Numéro de Vegeta dans le film animé Battle of Gods, extrait republié, 00:08,4–00:16.",
+        "durationMs": 7600
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/vegeta-bingo.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=7aM1jL336KY&t=8s",
+        "caption": "Numéro de Vegeta dans le film animé Battle of Gods, extrait republié, 00:08,4–00:16.",
+        "durationMs": 7600
+      }
+    ]
+  },
+  {
+    "id": "takoyaki_vegeta_source",
+    "kind": "video",
+    "sourceUrl": "https://www.toei-anim.co.jp/tv/dragon_s/episode/summary/6/",
+    "creator": "Akira Toriyama / Shueisha / Toei Animation",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Pour calmer Beerus à l’anniversaire de Bulma, Vegeta troque le combat pour les takoyaki.",
+    "caption": "Pour calmer Beerus à l’anniversaire de Bulma, Vegeta troque le combat pour les takoyaki.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/takoyaki-beerus-whis.webp",
+        "assetUrl": "https://lineup.toei-anim.co.jp/upload/save_image/episode/4027/story_img_1.jpg",
+        "caption": "Beerus et Whis devant les takoyaki à l’anniversaire de Bulma, épisode 6."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/takoyaki-teaser.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=jrflsfhnfs4",
+        "caption": "Beerus reçoit les takoyaki dans la bande-annonce officielle de l’épisode 6, de 7,3 s à 11,7 s.",
+        "durationMs": 4400
+      }
+    ]
+  },
+  {
+    "id": "mista_anime",
+    "kind": "image",
+    "sourceUrl": "https://jojo-animation.com/character/04.php",
+    "creator": "David Production / Hirohiko Araki / Shueisha / comité de production Golden Wind",
+    "license": "authorization-required",
+    "restrictions": "Visuel officiel du Personnage dans la version animée.",
+    "status": "reference_only",
+    "caption": "Guido Mista · portrait de Golden Wind",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/mista-anime.webp",
+        "assetUrl": "https://jojo-animation.com/character/img/04/img_chara.png",
+        "caption": "Guido Mista · portrait de Golden Wind"
+      }
+    ]
+  },
+  {
+    "id": "jojo_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.crunchyroll.com/watch/GYXJ1KM76/six-bullets-appears-part-1",
+    "creator": "David Production / Shueisha / comité de production Golden Wind / Crunchyroll (diffusion)",
+    "license": "authorization-required",
+    "restrictions": "Danse de Narancia, Mista et Fugo. Repère indicatif selon le montage. Le GIF et l’extrait restent soumis à autorisation.",
+    "status": "reference_only",
+    "caption": "Golden Wind · épisode 7, danse vers 5 min 28 s"
+  },
+  {
+    "id": "jojo_stills",
+    "kind": "image",
+    "sourceUrl": "https://jojo-animation.com/story/007.php",
+    "creator": "David Production / Shueisha / comité de production Golden Wind",
+    "license": "authorization-required",
+    "restrictions": "Page de l’épisode avec synopsis, visuels et crédits.",
+    "status": "reference_only",
+    "caption": "Golden Wind · visuels officiels de l’épisode 7",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/danse-narancia-mista-fugo.webp",
+        "assetUrl": "https://jojo-animation.com/story/img/007/img_04.jpg",
+        "caption": "Golden Wind · visuels officiels de l’épisode 7"
+      }
+    ]
+  },
+  {
+    "id": "jojo_music",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=GTuX8kohqSU",
+    "creator": "Yugo Kanno (composition) / Daisuke Hasegawa (paroles et voix) / Warner Bros. Entertainment",
+    "license": "authorization-required",
+    "restrictions": "Enregistrement officiel distribué par NexTone. La composition et le master sont soumis à des droits distincts.",
+    "status": "reference_only",
+    "caption": "Canzoni preferite · piste 18 de la bande originale",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/canzoni-preferite-apercu.mp3",
+        "assetUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/ad/de/dcaddec0-60c9-7bf3-9c04-a05c129f763e/mzaf_12194759979523376773.plus.aac.p.m4a",
+        "caption": "Canzoni preferite · piste 18 de la bande originale",
+        "durationMs": 29910
+      }
+    ]
+  },
+  {
+    "id": "demo_danse_jojo",
+    "kind": "audio",
+    "sourceNote": "Création sonore originale pour le prototype",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Rythme synthétisé pour la démo, sans extrait de l’animé ni de la bande originale.",
+    "status": "demo_asset",
+    "localPath": "asset/sound/demo_danse_jojo.mp3",
+    "durationMs": 7900,
+    "caption": "Canzoni preferite · rythme de démo"
+  },
+  {
+    "id": "quatre_cartouches_source",
+    "kind": "video",
+    "sourceUrl": "https://jojo-animation.com/story/008.php",
+    "creator": "Hirohiko Araki / Shueisha / David Production / Comité de production Golden Wind",
+    "license": "authorization-required",
+    "restrictions": "Face à Sale, Mista découvre qu’il ne lui reste que quatre cartouches, son chiffre porte-malheur.",
+    "status": "reference_only",
+    "caption": "Face à Sale, Mista découvre qu’il ne lui reste que quatre cartouches, son chiffre porte-malheur.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/mista-quatre-cartouches.webp",
+        "assetUrl": "https://jojo-animation.com/story/img/008/img_04.jpg",
+        "caption": "Face à Sale, Mista découvre qu’il ne lui reste que quatre cartouches, son chiffre porte-malheur."
+      }
+    ]
+  },
+  {
+    "id": "giorno_soigne_mista_source",
+    "kind": "video",
+    "sourceUrl": "https://jojo-animation.com/story/019.php",
+    "creator": "Hirohiko Araki / Shueisha / David Production / comité Golden Wind",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Narancia surprend Giorno en train de soigner Mista et interprète la scène de travers.",
+    "caption": "Narancia surprend Giorno en train de soigner Mista et interprète la scène de travers.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/jojo-narancia-surprend-mista.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=Ei9NwV3hE0Y&t=16s",
+        "caption": "Narancia aperçoit Giorno en train de soigner Mista, épisode 19. Extrait animé republié."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/jojo-narancia-surprend-mista.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=Ei9NwV3hE0Y&t=16s",
+        "caption": "Narancia aperçoit Giorno en train de soigner Mista, épisode 19. Extrait animé republié.",
+        "durationMs": 3300
+      }
+    ]
+  },
+  {
+    "id": "luffy_source",
+    "kind": "image",
+    "sourceUrl": "https://one-piece.com/character/luffy/index.html",
+    "creator": "Eiichiro Oda / Shueisha / Fuji TV / Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "Fiche officielle du capitaine de l’équipage du Chapeau de paille.",
+    "status": "reference_only",
+    "caption": "Fiche officielle du capitaine de l’équipage du Chapeau de paille.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/luffy-anime.webp",
+        "assetUrl": "https://one-piece.com/o/assets/images/anime/character/data/luffy/img.jpg",
+        "caption": "Fiche officielle du capitaine de l’équipage du Chapeau de paille."
+      }
+    ]
+  },
+  {
+    "id": "gear_fifth_source",
+    "kind": "video",
+    "sourceUrl": "https://one-piece.com/anime/62947/index.html",
+    "creator": "Eiichiro Oda / Shueisha / Fuji TV / Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "À Wano, Luffy s’éveille au Gear 5 et transforme son duel contre Kaido en combat burlesque.",
+    "status": "reference_only",
+    "caption": "À Wano, Luffy s’éveille au Gear 5 et transforme son duel contre Kaido en combat burlesque.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/luffy-gear-5.webp",
+        "assetUrl": "https://one-piece.com/img/anime/tvanime_1071_1.png",
+        "caption": "À Wano, Luffy s’éveille au Gear 5 et transforme son duel contre Kaido en combat burlesque."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/luffy-gear-5.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=yaXu9XrvhhM",
+        "caption": "Luffy déploie le Gear 5 face à Kaido, de 23,5 s à 34,5 s dans l’extrait Crunchyroll.",
+        "durationMs": 11000
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/luffy-gear-5-ja.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=yaXu9XrvhhM",
+        "caption": "Dialogue japonais et son de la même scène, extrait Crunchyroll.",
+        "durationMs": 11000
+      }
+    ]
+  },
+  {
+    "id": "dango_luffy_kid_source",
+    "kind": "video",
+    "sourceUrl": "https://one-piece.com/anime/o5305/index.html",
+    "creator": "Eiichiro Oda / Shueisha / Fuji TV / Toei Animation",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Luffy et Kid transportent des blocs pour gagner tellement de dango que la réserve de la prison est vidée.",
+    "caption": "Luffy et Kid transportent des blocs pour gagner tellement de dango que la réserve de la prison est vidée.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/luffy-kid-dango.webp",
+        "assetUrl": "https://one-piece.com/o/assets/uploads/tvstory/20200204/5e6ccca193ac7d0c9ba54203a1528c8d.jpg",
+        "caption": "Luffy et Kid se défient au bagne d’Udon, épisode 919."
+      }
+    ]
+  },
+  {
+    "id": "lucci_luffy_lunettes_source",
+    "kind": "video",
+    "sourceUrl": "https://one-piece.com/anime/66425/index.html",
+    "creator": "Eiichiro Oda / Shueisha / Fuji TV / Toei Animation",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "En Gear 5, Luffy tire des lunettes de ses cheveux avant de foncer sur Lucci à Egghead.",
+    "caption": "En Gear 5, Luffy tire des lunettes de ses cheveux avant de foncer sur Lucci à Egghead.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/luffy-lunettes-dawn-rocket.webp",
+        "assetUrl": "https://one-piece.com/img/anime/tvanime_1101_2.png",
+        "caption": "Luffy porte ses lunettes pour le Dawn Rocket face à Lucci, épisode 1101."
+      }
+    ]
+  },
+  {
+    "id": "saitama_source",
+    "kind": "video",
+    "sourceUrl": "https://onepunchman-anime.net/character/",
+    "creator": "ONE / Yusuke Murata / Shueisha / Madhouse / comité One-Punch Man",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le héros chauve en costume jaune et cape blanche dans l’anime.",
+    "caption": "Le héros chauve en costume jaune et cape blanche dans l’anime.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/saitama-anime.webp",
+        "assetUrl": "https://onepunchman-anime.net/news/wp-content/uploads/2025/09/88523dd80eed09ab8779fc5c517fb0ea-566x800.jpg",
+        "caption": "Visuel officiel de Saitama en costume de héros dans l’anime One-Punch Man."
+      }
+    ]
+  },
+  {
+    "id": "saitama_ok_source",
+    "kind": "video",
+    "sourceUrl": "https://onepunchman-anime.net/goods/bd/bd_6.php",
+    "creator": "ONE / Yusuke Murata / Shueisha / Madhouse / comité One-Punch Man",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Saitama répond d’un « OK » impassible à Boros après son discours grandiloquent.",
+    "caption": "Saitama répond d’un « OK » impassible à Boros après son discours grandiloquent.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/saitama-ok-boros.webp",
+        "assetUrl": "https://onepunchman-anime.net/news/wp-content/uploads/2025/08/11_06.jpg",
+        "caption": "Boros s’adresse à Saitama dans l’épisode 11, avant la réponse impassible."
+      }
+    ]
+  },
+  {
+    "id": "saitama_moustique_source",
+    "kind": "video",
+    "sourceUrl": "https://onepunchman-anime.net/goods/bd/bd_1.php",
+    "creator": "ONE / Yusuke Murata / Shueisha / Madhouse / comité One-Punch Man",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "L’homme qui gagne en un coup échoue à attraper le moustique qui l’agace.",
+    "caption": "L’homme qui gagne en un coup échoue à attraper le moustique qui l’agace.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/saitama-vs-moustique.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=-DliQDMPkn4&t=24s",
+        "caption": "Saitama tente d’écraser le moustique, épisode 2, extrait animé republié."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/saitama-vs-moustique.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=-DliQDMPkn4&t=24s",
+        "caption": "Saitama tente d’écraser le moustique, épisode 2, extrait animé republié.",
+        "durationMs": 8800
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/saitama-vs-moustique.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=-DliQDMPkn4&t=24s",
+        "caption": "Saitama tente d’écraser le moustique, épisode 2, extrait animé republié.",
+        "durationMs": 8800
+      }
+    ]
+  },
+  {
+    "id": "saitama_promos_source",
+    "kind": "video",
+    "sourceUrl": "https://onepunchman-anime.net/news/archives/7587",
+    "creator": "ONE / Yusuke Murata / Shueisha / Madhouse / comité One-Punch Man",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Face à Carnage Kabuto, Saitama se rappelle soudain les promotions du supermarché.",
+    "caption": "Face à Carnage Kabuto, Saitama se rappelle soudain les promotions du supermarché.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/saitama-promos.webp",
+        "assetUrl": "https://onepunchman-anime.net/news/wp-content/uploads/2025/08/03_06.jpg",
+        "caption": "Saitama face à Carnage Kabuto dans l’épisode 3, le jour des promotions."
+      }
+    ]
+  },
+  {
+    "id": "satoru_gojo_source",
+    "kind": "video",
+    "sourceUrl": "https://jujutsukaisen.jp/character/shibuyajihen.php",
+    "creator": "Gege Akutami / Shueisha / MAPPA / comité Jujutsu Kaisen",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Portrait officiel de Gojo, professeur à l’école d’exorcisme de Tokyo.",
+    "caption": "Portrait officiel de Gojo, professeur à l’école d’exorcisme de Tokyo.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/satoru-gojo-anime.webp",
+        "assetUrl": "https://jujutsukaisen.jp/images/chara_category1/chara_detail7.png",
+        "caption": "Portrait officiel de Gojo, professeur à Tokyo dans Jujutsu Kaisen."
+      }
+    ]
+  },
+  {
+    "id": "gojo_t_es_faible_source",
+    "kind": "video",
+    "sourceUrl": "https://jujutsukaisen.jp/episodes/07.php",
+    "creator": "Gege Akutami / Shueisha / MAPPA / comité Jujutsu Kaisen",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Gojo provoque Jogo avec un sourire pendant que le fléau est incapable de le toucher.",
+    "caption": "Gojo provoque Jogo avec un sourire pendant que le fléau est incapable de le toucher.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/gojo-jogo.webp",
+        "assetUrl": "https://jujutsukaisen.jp/images/episodes/7-2.jpg",
+        "caption": "Gojo provoque Jogo durant le duel de l’épisode 7."
+      }
+    ]
+  },
+  {
+    "id": "gojo_domaine_source",
+    "kind": "video",
+    "sourceUrl": "https://jujutsukaisen.jp/episodes/33.php",
+    "creator": "Gege Akutami / Shueisha / MAPPA / comité Jujutsu Kaisen",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Gojo ouvre brièvement son extension de territoire dans la station bondée de Shibuya.",
+    "caption": "Gojo ouvre brièvement son extension de territoire dans la station bondée de Shibuya.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/gojo-domaine-shibuya.webp",
+        "assetUrl": "https://jujutsukaisen.jp/images/episodes/33-1.jpg",
+        "caption": "Gojo ouvre son territoire dans la station de Shibuya, épisode 33."
+      }
+    ]
+  },
+  {
+    "id": "gojo_elu_source",
+    "kind": "video",
+    "sourceUrl": "https://jujutsukaisen.jp/episodes/28.php",
+    "creator": "Gege Akutami / Shueisha / MAPPA / comité Jujutsu Kaisen",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Gojo s’élève dans les airs devant Toji après avoir maîtrisé la technique d’inversion.",
+    "caption": "Gojo s’élève dans les airs devant Toji après avoir maîtrisé la technique d’inversion.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/gojo-contre-toji.webp",
+        "assetUrl": "https://jujutsukaisen.jp/images/episodes/28-4.jpg",
+        "caption": "Gojo face à Toji dans sa contre-attaque de l’épisode 28."
+      }
+    ]
+  },
+  {
+    "id": "creeper_scene",
+    "kind": "image",
+    "sourceUrl": "https://www.minecraft.net/en-us/article/choose-your-chaos",
+    "creator": "Mojang Studios / Microsoft",
+    "license": "authorization-required",
+    "restrictions": "Voir la section « Try and find it! » pour la capture d’écran du Creeper. Conditions Mojang applicables aux ressources du jeu.",
+    "status": "reference_only",
+    "caption": "Minecraft · capture du Creeper en jeu par Mojang",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/creeper-jeu.webp",
+        "assetUrl": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/game-characters/mob-creeper.jpg?v=1718378940615",
+        "caption": "Creeper · visuel du personnage dans Minecraft publié par Mojang"
+      }
+    ]
+  },
+  {
+    "id": "creeper_aw_man_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=cPJUBQd-PNM",
+    "creator": "CaptainSparklez / TryHardNinja",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le Creeper du clip Minecraft ouvre la parodie de CaptainSparklez et TryHardNinja qui a donné naissance au mème chanté.",
+    "caption": "Le Creeper du clip Minecraft ouvre la parodie de CaptainSparklez et TryHardNinja qui a donné naissance au mème chanté.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/creeper_aw_man.webp",
+        "assetUrl": "https://i.ytimg.com/vi/cPJUBQd-PNM/hqdefault.jpg",
+        "caption": "Image de publication du clip original Revenge de CaptainSparklez et TryHardNinja."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/creeper_aw_man.mp3",
+        "assetUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/4d/72/6e4d72c3-8234-642c-c780-3f4e0aa8d959/mzaf_621839340691271782.plus.aac.p.m4a",
+        "caption": "Revenge, CaptainSparklez et TryHardNinja. Six secondes de l’aperçu officiel iTunes.",
+        "durationMs": 6008
+      }
+    ]
+  },
+  {
+    "id": "creeper_sifflement_source",
+    "kind": "video",
+    "sourceUrl": "https://www.minecraft.net/en-us/article/meet-creeper",
+    "creator": "Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dans Minecraft, un bref sifflement annonce l’explosion du Creeper quand il s’est approché du joueur.",
+    "caption": "Dans Minecraft, un bref sifflement annonce l’explosion du Creeper quand il s’est approché du joueur.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/creeper-grotte.webp",
+        "assetUrl": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/1.1.1.1_PNG.png?v=1781007818713",
+        "caption": "Creeper dans une grotte, photogramme de jeu publié par Mojang"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/creeper-psssht-original.mp3",
+        "assetUrl": "https://resources.download.minecraft.net/b9/b9a550ba1e028c027557572aeb928b760864efe4",
+        "caption": "Sifflement original du Creeper · Minecraft Java 1.21.5, random/fuse.ogg",
+        "durationMs": 2840
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/creeper-fuse.mp3",
+        "assetUrl": "https://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2",
+        "caption": "Sifflement original du Creeper, événement entity.creeper.primed de Minecraft Java.",
+        "durationMs": 2873
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/creeper-explode.mp3",
+        "assetUrl": "https://resources.download.minecraft.net/cd/cd46e41023887558b134547e28327de6e7df189a",
+        "caption": "Son original Minecraft Java, variante random/explode1.",
+        "durationMs": 2534
+      }
+    ]
+  },
+  {
+    "id": "rouge_among_us_source",
+    "kind": "video",
+    "sourceUrl": "https://www.innersloth.com/press-kit-among-us/",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le petit astronaute rouge d’Among Us, avec son scaphandre et sa visière d’origine.",
+    "caption": "Le petit astronaute rouge d’Among Us, avec son scaphandre et sa visière d’origine.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/rouge_among_us.webp",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "L’astronaute rouge dans l’écran Chut du jeu original, visible dans la bande-annonce de sortie Innersloth."
+      }
+    ]
+  },
+  {
+    "id": "rouge_est_sus_source",
+    "kind": "video",
+    "sourceUrl": "https://www.innersloth.com/games/among-us/",
+    "creator": "Innersloth (jeu d’origine)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Les joueurs débattent pour trouver l’Imposteur. Le mème transforme le simple fait d’être Rouge en raison de le soupçonner.",
+    "caption": "Les joueurs débattent pour trouver l’Imposteur. Le mème transforme le simple fait d’être Rouge en raison de le soupçonner.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/rouge_est_sus.webp",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_17be75e178e3520c986504504ada8535de19cc0d.1920x1080.jpg?t=1793821899",
+        "caption": "Capture d’un débat de partie, publiée par Innersloth sur Steam."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/rouge_est_sus.gif",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "Le vote et les messages des joueurs dans la bande-annonce de sortie.",
+        "durationMs": 3000
+      }
+    ]
+  },
+  {
+    "id": "silence_among_us_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=NSJ4cESNQfE",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "L’écran au début d’une partie montre l’astronaute rouge poser un doigt devant sa visière.",
+    "caption": "L’écran au début d’une partie montre l’astronaute rouge poser un doigt devant sa visière.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/silence_among_us.webp",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "Écran Chut dans la bande-annonce de sortie d’Among Us."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/silence_among_us.gif",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "Transition originale vers l’écran Chut, 13,4 à 15,1 s de la bande-annonce de sortie.",
+        "durationMs": 1700
+      }
+    ]
+  },
+  {
+    "id": "reunion_urgence_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=NSJ4cESNQfE",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "La pression du bouton interrompt la partie et ouvre le débat sur l’identité de l’Imposteur.",
+    "caption": "La pression du bouton interrompt la partie et ouvre le débat sur l’identité de l’Imposteur.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/reunion_urgence.webp",
+        "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_a1872c1c594ad4e5885d248516919d85243d9c1f.1920x1080.jpg?t=1793821899",
+        "caption": "Écran Réunion d’urgence dans la capture originale publiée par Innersloth sur Steam."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/reunion_urgence.gif",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "La table de réunion, l’alerte et le vote dans la bande-annonce de sortie.",
+        "durationMs": 3500
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/reunion_urgence.mp3",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/192206/43dae26ff3a8974bb7ec4a1550f0f6c4a692f988/1750599336/hls_264_master.m3u8?t=1684189588",
+        "caption": "Son de l’alerte Réunion d’urgence dans la bande-annonce de sortie.",
+        "durationMs": 2040
+      }
+    ]
+  },
+  {
+    "id": "vent_among_us_source",
+    "kind": "video",
+    "sourceUrl": "https://www.innersloth.com/games/among-us/",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dans le jeu d’origine, l’Imposteur peut filer dans les conduits de ventilation, parfois sous les yeux d’un témoin.",
+    "caption": "Dans le jeu d’origine, l’Imposteur peut filer dans les conduits de ventilation, parfois sous les yeux d’un témoin.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/vent_among_us.webp",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/528132/fc1a92c9ff1e4ec24d9a71a880db04f59c0e3ce0/1750599423/hls_264_master.m3u8?t=1684189580",
+        "caption": "Le conduit ouvert dans la cinématique originale du mode Cache-cache, publiée par Innersloth sur Steam."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/vent_among_us.gif",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/528132/fc1a92c9ff1e4ec24d9a71a880db04f59c0e3ce0/1750599423/hls_264_master.m3u8?t=1684189580",
+        "caption": "Bleu se glisse dans le conduit dans la cinématique originale du mode Cache-cache (42,45–44,60 s).",
+        "durationMs": 2160
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/vent_among_us.mp3",
+        "assetUrl": "https://video.akamai.steamstatic.com/store_trailers/945360/528132/fc1a92c9ff1e4ec24d9a71a880db04f59c0e3ce0/1750599423/hls_264_master.m3u8?t=1684189580",
+        "caption": "Bande-son du passage par le conduit dans la bande-annonce officielle.",
+        "durationMs": 2184
+      }
+    ]
+  },
+  {
+    "id": "jonesy_source",
+    "kind": "video",
+    "sourceUrl": "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Jonesy le premier, la tenue classique blonde de Fortnite.",
+    "caption": "Jonesy le premier, la tenue classique blonde de Fortnite.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/jonesy.webp",
+        "assetUrl": "https://fortnite-api.com/images/cosmetics/br/cid_883_athena_commando_m_chonejonesy/featured.png",
+        "caption": "Rendu original de la tenue Jonesy le premier, ressource de Fortnite archivée par Fortnite-API."
+      }
+    ]
+  },
+  {
+    "id": "fortnite_default_dance_source",
+    "kind": "video",
+    "sourceUrl": "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dance Moves, la danse équipée par défaut à l’époque du premier chapitre, est devenue un mème. La source Epic identifie la tenue et l’index de jeu documente l’émote.",
+    "caption": "Dance Moves, la danse équipée par défaut à l’époque du premier chapitre, est devenue un mème. La source Epic identifie la tenue et l’index…",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/fortnite_default_dance.webp",
+        "assetUrl": "https://fortnite-api.com/images/cosmetics/br/eid_dancemoves/icon.png",
+        "caption": "Icône originale de l’émote Dance Moves."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/fortnite_default_dance.gif",
+        "assetUrl": "https://media1.tenor.com/m/17pFKrJQR4AAAAAd/default-dance-fortnite.gif",
+        "caption": "Boucle recadrée depuis une captation de Fortnite. Jonesy exécute l’émote originale Dance Moves.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "fortnite_floss_source",
+    "kind": "video",
+    "sourceUrl": "https://www.fortnite.com/news/fortnite-battle-royale-season-2-battle-pass-is-here",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "L’émote de la saison 2 où les bras passent de part et d’autre des hanches, dans le jeu d’origine.",
+    "caption": "L’émote de la saison 2 où les bras passent de part et d’autre des hanches, dans le jeu d’origine.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/fortnite_floss.webp",
+        "assetUrl": "https://fortnite-api.com/images/cosmetics/br/eid_floss/icon.png",
+        "caption": "Icône originale de l’émote Floss."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/fortnite_floss.gif",
+        "assetUrl": "https://media1.tenor.com/m/VNTlqCIiGJsAAAAC/floss-fortnite.gif",
+        "caption": "Boucle provenant d’une captation de Fortnite. Un personnage exécute l’émote originale Floss.",
+        "durationMs": 1830
+      }
+    ]
+  },
+  {
+    "id": "fortnite_take_the_l_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=jGqDVknzX3o",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "L’émote de la saison 3 combine un L sur le front et des coups de pied alternés.",
+    "caption": "L’émote de la saison 3 combine un L sur le front et des coups de pied alternés.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/fortnite_take_the_l.webp",
+        "assetUrl": "https://fortnite-api.com/images/cosmetics/br/eid_takethel/icon.png",
+        "caption": "Icône originale de l’émote Take the L."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/fortnite_take_the_l.gif",
+        "assetUrl": "https://media1.tenor.com/m/06_5vgjVXxoAAAAC/take-the-l-losser-dance.gif",
+        "caption": "Boucle issue d’une captation de Fortnite, recadrée autour du personnage et de l’émote Take the L.",
+        "durationMs": 1410
+      }
+    ]
+  },
+  {
+    "id": "franklin_clinton_source",
+    "kind": "video",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/25o2411819aok8/original-gtav-artwork-michael-franklin-trevor.html",
+    "creator": "Rockstar North / Rockstar Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Franklin Clinton, protagoniste de Grand Theft Auto V, dans l’illustration originale de Rockstar.",
+    "caption": "Franklin Clinton, protagoniste de Grand Theft Auto V, dans l’illustration originale de Rockstar.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/franklin_clinton.webp",
+        "assetUrl": "https://i.ytimg.com/vi/8vtu8ZVaXq0/maxresdefault.jpg",
+        "caption": "Franklin Clinton dans la scène d’origine de Grand Theft Auto V."
+      }
+    ]
+  },
+  {
+    "id": "lamar_roast_source",
+    "kind": "video",
+    "sourceUrl": "https://www.rockstargames.com/gta-v",
+    "creator": "Rockstar North / Rockstar Games / Shawn Fonteno et Gerald Slink Johnson (voix)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dans la scène de fin de la mission Franklin and Lamar, Lamar demande à entrer chez Franklin puis se moque de sa coupe de cheveux. La vidéo secondaire est une captation du jeu, sans réinterprétation filmée.",
+    "caption": "Dans la scène de fin de la mission Franklin and Lamar, Lamar demande à entrer chez Franklin puis se moque de sa coupe de cheveux. La vidéo…",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/lamar_roast.webp",
+        "assetUrl": "https://i.ytimg.com/vi/8vtu8ZVaXq0/maxresdefault.jpg",
+        "caption": "Franklin et Lamar dans la scène d’origine devant la maison de Franklin."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/lamar_roast.gif",
+        "assetUrl": "https://media.tenor.com/s8iYcVEkW9kAAAAM/gta5-franklin.gif",
+        "caption": "Boucle issue de la scène de Grand Theft Auto V. Lamar et Franklin devant la maison de Franklin.",
+        "durationMs": 3830
+      }
+    ]
+  },
+  {
+    "id": "franklin_et_chop_source",
+    "kind": "video",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/ak14o8838kaoa1/original-grand-theft-auto-v-artwork-franklin-chop-on-guard.html",
+    "creator": "Rockstar North / Rockstar Games",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Franklin et Chop prennent la pose dans l’image promotionnelle d’origine, reprise comme format de mème.",
+    "caption": "Franklin et Chop prennent la pose dans l’image promotionnelle d’origine, reprise comme format de mème.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/franklin_et_chop.webp",
+        "assetUrl": "https://images.squarespace-cdn.com/content/v1/5bccd5717788971625e09ffc/1556577767604-8C9DRPVWF53XWNFX0DOR/v_franklin_chop_2048x1536.jpg",
+        "caption": "Illustration promotionnelle originale de Grand Theft Auto V, reprise dans le portfolio des illustrateurs de Rockstar."
+      }
+    ]
+  },
+  {
+    "id": "wheatley_source",
+    "kind": "video",
+    "sourceUrl": "https://www.thinkwithportals.com/",
+    "creator": "Valve / Stephen Merchant (voix originale)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le noyau sphérique bavard de Portal 2 dont l’œil est bleu.",
+    "caption": "Le noyau sphérique bavard de Portal 2 dont l’œil est bleu.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/wheatley.webp",
+        "assetUrl": "https://i1.theportalwiki.net/img/9/94/Wheatley.png",
+        "caption": "Modèle original de Wheatley dans Portal 2, rendu archivé par le wiki."
+      }
+    ]
+  },
+  {
+    "id": "wheatley_toc_toc_source",
+    "kind": "video",
+    "sourceUrl": "https://store.steampowered.com/app/620/Portal_2/",
+    "creator": "Valve / Stephen Merchant (voix originale)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le début du jeu présente Wheatley en train de frapper à la porte de la chambre de Chell.",
+    "caption": "Le début du jeu présente Wheatley en train de frapper à la porte de la chambre de Chell.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/wheatley_toc_toc.mp3",
+        "assetUrl": "https://i1.theportalwiki.net/img/2/2f/Wheatley_openinghello01.wav",
+        "caption": "Voix originale anglaise de Wheatley à la porte de Chell.",
+        "durationMs": 1855
+      },
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/wheatley_toc_toc.webp",
+        "assetUrl": "https://i1.theportalwiki.net/img/8/80/Wheatley_intro_door.jpg",
+        "caption": "Capture du jeu original Portal 2 : Wheatley devant la porte de Chell."
+      }
+    ]
+  },
+  {
+    "id": "wheatley_pas_un_cretin_source",
+    "kind": "video",
+    "sourceUrl": "https://store.steampowered.com/app/620/Portal_2/",
+    "creator": "Valve / Stephen Merchant (voix originale)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Après le transfert de noyau, Wheatley s’emporte quand GLaDOS révèle pourquoi Aperture l’a créé.",
+    "caption": "Après le transfert de noyau, Wheatley s’emporte quand GLaDOS révèle pourquoi Aperture l’a créé.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/wheatley_pas_un_cretin.mp3",
+        "assetUrl": "https://i1.theportalwiki.net/img/b/b2/Wheatley_bw_sp_a2_core_history_response05.wav",
+        "caption": "Voix originale anglaise de Wheatley après le transfert.",
+        "durationMs": 3448
+      },
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/wheatley_pas_un_cretin.webp",
+        "assetUrl": "https://i1.theportalwiki.net/img/e/ec/Wheatley_extract_potatos.jpg",
+        "caption": "Capture du jeu original au moment où Wheatley extrait GLaDOS du noyau sous forme de pomme de terre."
+      }
+    ]
+  },
+  {
+    "id": "wheatley_le_chapitre_source",
+    "kind": "video",
+    "sourceUrl": "https://www.thinkwithportals.com/music.php",
+    "creator": "Valve / Stephen Merchant (voix originale) / Mike Morasky (musique)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Wheatley annonce son piège au chapitre 9, dont le nom et celui du morceau de la bande-son répètent la même blague.",
+    "caption": "Wheatley annonce son piège au chapitre 9, dont le nom et celui du morceau de la bande-son répètent la même blague.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/wheatley_le_chapitre.mp3",
+        "assetUrl": "https://i1.theportalwiki.net/img/a/ab/Wheatley_bw_a4_death_trap01.wav",
+        "caption": "Voix originale anglaise de Wheatley à l’ouverture du chapitre 9.",
+        "durationMs": 2220
+      },
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/wheatley-le-chapitre.webp",
+        "assetUrl": "https://i.ytimg.com/vi/YMVqRMVd6oI/hqdefault.jpg",
+        "caption": "Wheatley et le piège du chapitre 9, capture du jeu original Portal 2."
+      }
+    ]
+  },
+  {
+    "id": "steve_minecraft_film_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY",
+    "creator": "Jared Hess / Jack Black / Warner Bros. Pictures / Legendary Pictures / Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Jack Black en Steve, version du film de 2025.",
+    "caption": "Jack Black en Steve, version du film de 2025.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/steve-minecraft-film.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY&t=47s",
+        "caption": "Steve, interprété par Jack Black · bande-annonce Warner Bros."
+      }
+    ]
+  },
+  {
+    "id": "chicken_jockey_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=EY4h38NaXwU",
+    "creator": "Jared Hess / Jack Black / Warner Bros. Pictures / Legendary Pictures / Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dans l’arène, Steve reconnaît le bébé zombie à dos de poulet. Extrait Warner Bros.",
+    "caption": "Dans l’arène, Steve reconnaît le bébé zombie à dos de poulet. Extrait Warner Bros.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/chicken-jockey.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=EY4h38NaXwU&t=39s",
+        "caption": "Chicken Jockey · extrait Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/chicken-jockey.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=EY4h38NaXwU&t=39s",
+        "caption": "Chicken Jockey · extrait Warner Bros.",
+        "durationMs": 6000
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/chicken-jockey.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=EY4h38NaXwU&t=39s",
+        "caption": "Chicken Jockey · extrait Warner Bros.",
+        "durationMs": 6000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/chicken-jockey.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=EY4h38NaXwU&t=39s",
+        "caption": "Chicken Jockey · extrait Warner Bros.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "i_am_steve_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY",
+    "creator": "Jared Hess / Jack Black / Warner Bros. Pictures / Legendary Pictures / Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Steve se présente à l’équipe. Première bande-annonce officielle Warner Bros.",
+    "caption": "Steve se présente à l’équipe. Première bande-annonce officielle Warner Bros.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/i-am-steve.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY&t=46s",
+        "caption": "I Am Steve · VO de Jack Black"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/i-am-steve.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY&t=46s",
+        "caption": "I Am Steve · VO de Jack Black",
+        "durationMs": 2500
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/i-am-steve.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY&t=46s",
+        "caption": "I Am Steve · VO de Jack Black",
+        "durationMs": 2500
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/i-am-steve.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=PE2YZhcC4NY&t=46s",
+        "caption": "I Am Steve · VO de Jack Black",
+        "durationMs": 2500
+      }
+    ]
+  },
+  {
+    "id": "flint_and_steel_source",
+    "kind": "video",
+    "sourceUrl": "https://clip.cafe/a-minecraft-movie-2025/flint-and-steel/",
+    "creator": "Jared Hess / Jack Black / Warner Bros. Pictures / Legendary Pictures / Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Steve allume le portail. Extrait du film original reproduit par Clip.Cafe.",
+    "caption": "Steve allume le portail. Extrait du film original reproduit par Clip.Cafe.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/flint-and-steel.webp",
+        "assetUrl": "https://clip.cafe/videos/flint-and-steel.mp4",
+        "caption": "Flint and Steel ! · extrait Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/flint-and-steel.mp3",
+        "assetUrl": "https://clip.cafe/videos/flint-and-steel.mp4",
+        "caption": "Flint and Steel ! · extrait Warner Bros.",
+        "durationMs": 2700
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/flint-and-steel.gif",
+        "assetUrl": "https://clip.cafe/videos/flint-and-steel.mp4",
+        "caption": "Flint and Steel ! · extrait Warner Bros.",
+        "durationMs": 2700
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/flint-and-steel.mp4",
+        "assetUrl": "https://clip.cafe/videos/flint-and-steel.mp4",
+        "caption": "Flint and Steel ! · extrait Warner Bros.",
+        "durationMs": 2700
+      }
+    ]
+  },
+  {
+    "id": "steves_lava_chicken_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=iTz5niEWD7w",
+    "creator": "Jared Hess / Jack Black / Warner Bros. Pictures / Legendary Pictures / Mojang Studios",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Steve chante les mérites de son poulet cuit à la lave. Extrait Warner Bros.",
+    "caption": "Steve chante les mérites de son poulet cuit à la lave. Extrait Warner Bros.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/steves-lava-chicken.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=iTz5niEWD7w&t=108s",
+        "caption": "Steve’s Lava Chicken · extrait Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/steves-lava-chicken.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=iTz5niEWD7w&t=108s",
+        "caption": "Steve’s Lava Chicken · extrait Warner Bros.",
+        "durationMs": 6500
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/steves-lava-chicken.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=iTz5niEWD7w&t=108s",
+        "caption": "Steve’s Lava Chicken · extrait Warner Bros.",
+        "durationMs": 6500
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/steves-lava-chicken.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=iTz5niEWD7w&t=108s",
+        "caption": "Steve’s Lava Chicken · extrait Warner Bros.",
+        "durationMs": 6500
+      }
+    ]
+  },
+  {
+    "id": "barbie_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Margot Robbie",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Margot Robbie en Barbie dans le film de Greta Gerwig.",
+    "caption": "Margot Robbie en Barbie dans le film de Greta Gerwig.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/barbie.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=85s",
+        "caption": "Margot Robbie joue Barbie · bande-annonce Warner Bros."
+      }
+    ]
+  },
+  {
+    "id": "hi_barbie_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Margot Robbie",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Les Barbie se saluent à Barbie Land. Deuxième bande-annonce officielle.",
+    "caption": "Les Barbie se saluent à Barbie Land. Deuxième bande-annonce officielle.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/hi-barbie.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=13s",
+        "caption": "Hi, Barbie ! · bande-annonce Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/hi-barbie.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=13s",
+        "caption": "Hi, Barbie ! · bande-annonce Warner Bros.",
+        "durationMs": 7500
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/hi-barbie.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=13s",
+        "caption": "Hi, Barbie ! · bande-annonce Warner Bros.",
+        "durationMs": 7500
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/hi-barbie.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=13s",
+        "caption": "Hi, Barbie ! · bande-annonce Warner Bros.",
+        "durationMs": 7500
+      }
+    ]
+  },
+  {
+    "id": "penser_a_la_mort_source",
+    "kind": "video",
+    "sourceUrl": "https://clip.cafe/barbie-2023/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just/",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Margot Robbie",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "La question de Barbie interrompt la danse. Extrait du film original reproduit par Clip.Cafe.",
+    "caption": "La question de Barbie interrompt la danse. Extrait du film original reproduit par Clip.Cafe.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/penser-a-la-mort.webp",
+        "assetUrl": "https://clip.cafe/videos/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just.mp4",
+        "caption": "La question de Barbie interrompt la danse · extrait du film"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/penser-a-la-mort.mp3",
+        "assetUrl": "https://clip.cafe/videos/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just.mp4",
+        "caption": "La question de Barbie interrompt la danse · extrait du film",
+        "durationMs": 4000
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/penser-a-la-mort.gif",
+        "assetUrl": "https://clip.cafe/videos/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just.mp4",
+        "caption": "La question de Barbie interrompt la danse · extrait du film",
+        "durationMs": 4000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/penser-a-la-mort.mp4",
+        "assetUrl": "https://clip.cafe/videos/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just.mp4",
+        "caption": "La question de Barbie interrompt la danse · extrait du film",
+        "durationMs": 4000
+      }
+    ]
+  },
+  {
+    "id": "rollers_de_venice_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=pBk4NYhWNMM",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Margot Robbie et Ryan Gosling",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Barbie et Ken, en tenues fluo et patins à roulettes, arrivent à Venice Beach.",
+    "caption": "Barbie et Ken, en tenues fluo et patins à roulettes, arrivent à Venice Beach.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/rollers-de-venice.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=pBk4NYhWNMM&t=92s",
+        "caption": "Barbie et Ken en rollers · bande-annonce Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/rollers-de-venice.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=pBk4NYhWNMM&t=92s",
+        "caption": "Barbie et Ken en rollers · bande-annonce Warner Bros.",
+        "durationMs": 5800
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/rollers-de-venice.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=pBk4NYhWNMM&t=92s",
+        "caption": "Barbie et Ken en rollers · bande-annonce Warner Bros.",
+        "durationMs": 5800
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/rollers-de-venice.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=pBk4NYhWNMM&t=92s",
+        "caption": "Barbie et Ken en rollers · bande-annonce Warner Bros.",
+        "durationMs": 5800
+      }
+    ]
+  },
+  {
+    "id": "ken_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=467B06wsp30",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Ryan Gosling",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Ryan Gosling en Ken dans la comédie musicale de Barbie.",
+    "caption": "Ryan Gosling en Ken dans la comédie musicale de Barbie.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ken.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=467B06wsp30&t=27s",
+        "caption": "Ryan Gosling interprète Ken · extrait Warner Bros."
+      }
+    ]
+  },
+  {
+    "id": "im_just_ken_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=467B06wsp30",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Ryan Gosling / Mark Ronson et Andrew Wyatt",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Ken chante et les Kens dansent. Extrait officiel du film.",
+    "caption": "Ken chante et les Kens dansent. Extrait officiel du film.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/im-just-ken.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=467B06wsp30&t=28s",
+        "caption": "I’m Just Ken · chant original de Ryan Gosling"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/im-just-ken.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=467B06wsp30&t=28s",
+        "caption": "I’m Just Ken · chant original de Ryan Gosling",
+        "durationMs": 6300
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/im-just-ken.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=467B06wsp30&t=28s",
+        "caption": "I’m Just Ken · chant original de Ryan Gosling",
+        "durationMs": 6300
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/im-just-ken.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=467B06wsp30&t=28s",
+        "caption": "I’m Just Ken · chant original de Ryan Gosling",
+        "durationMs": 6300
+      }
+    ]
+  },
+  {
+    "id": "mojo_dojo_casa_house_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=pHPogYMl_FA",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Ryan Gosling / TNT (diffusion)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Ken rebaptise la maison de Barbie. Extrait officiel TNT.",
+    "caption": "Ken rebaptise la maison de Barbie. Extrait officiel TNT.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/mojo-dojo-casa-house.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=pHPogYMl_FA&t=78s",
+        "caption": "Mojo Dojo Casa House · extrait TNT"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/mojo-dojo-casa-house.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=pHPogYMl_FA&t=78s",
+        "caption": "Mojo Dojo Casa House · extrait TNT",
+        "durationMs": 6200
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/mojo-dojo-casa-house.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=pHPogYMl_FA&t=78s",
+        "caption": "Mojo Dojo Casa House · extrait TNT",
+        "durationMs": 6200
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/mojo-dojo-casa-house.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=pHPogYMl_FA&t=78s",
+        "caption": "Mojo Dojo Casa House · extrait TNT",
+        "durationMs": 6200
+      }
+    ]
+  },
+  {
+    "id": "beach_off_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0",
+    "creator": "Greta Gerwig / Warner Bros. Pictures / Mattel Films / Ryan Gosling et Simu Liu",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Les Kens se défient sur la plage. Deuxième bande-annonce officielle.",
+    "caption": "Les Kens se défient sur la plage. Deuxième bande-annonce officielle.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/beach-off.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=84s",
+        "caption": "Beach off ! · bande-annonce Warner Bros."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/beach-off.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=84s",
+        "caption": "Beach off ! · bande-annonce Warner Bros.",
+        "durationMs": 6000
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/beach-off.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=84s",
+        "caption": "Beach off ! · bande-annonce Warner Bros.",
+        "durationMs": 6000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/beach-off.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=GRyt3Ov4zz0&t=84s",
+        "caption": "Beach off ! · bande-annonce Warner Bros.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "thanos_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I",
+    "creator": "Marvel Studios / Disney / Anthony et Joe Russo / Josh Brolin",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Josh Brolin en Thanos dans Avengers: Infinity War. Extrait Marvel Entertainment.",
+    "caption": "Josh Brolin en Thanos dans Avengers: Infinity War. Extrait Marvel Entertainment.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/thanos.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I&t=95s",
+        "caption": "Thanos · extrait Marvel Entertainment"
+      }
+    ]
+  },
+  {
+    "id": "claquement_de_thanos_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I",
+    "creator": "Marvel Studios / Disney / Anthony et Joe Russo / Josh Brolin",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Thanos claque des doigts avec le Gant de l’infini. Extrait officiel Marvel.",
+    "caption": "Thanos claque des doigts avec le Gant de l’infini. Extrait officiel Marvel.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/claquement-de-thanos.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I&t=74s",
+        "caption": "Le claquement de doigts · extrait Marvel Entertainment"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/claquement-de-thanos.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I&t=74s",
+        "caption": "Le claquement de doigts · extrait Marvel Entertainment",
+        "durationMs": 5000
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/claquement-de-thanos.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I&t=74s",
+        "caption": "Le claquement de doigts · extrait Marvel Entertainment",
+        "durationMs": 5000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/claquement-de-thanos.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=8BLyXCJis_I&t=74s",
+        "caption": "Le claquement de doigts · extrait Marvel Entertainment",
+        "durationMs": 5000
+      }
+    ]
+  },
+  {
+    "id": "inevitable_thanos_source",
+    "kind": "video",
+    "sourceUrl": "https://disneystudiosawards.s3.amazonaws.com/avengers-endgame/Avengers_Endgame.pdf",
+    "creator": "Marvel Studios / Disney / Anthony et Joe Russo / Josh Brolin",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dernier face-à-face de Thanos et Tony Stark. Scénario officiel Disney, réplique dans la séquence finale.",
+    "caption": "Dernier face-à-face de Thanos et Tony Stark. Scénario officiel Disney, réplique dans la séquence finale.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/inevitable-thanos.webp",
+        "assetUrl": "https://clip.cafe/videos/i-am-inevitable.mp4",
+        "caption": "I Am Inevitable · VO de Josh Brolin (Clip.Cafe)"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/inevitable-thanos.mp3",
+        "assetUrl": "https://clip.cafe/videos/i-am-inevitable.mp4",
+        "caption": "I Am Inevitable · VO de Josh Brolin (Clip.Cafe)",
+        "durationMs": 4300
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/inevitable-thanos.gif",
+        "assetUrl": "https://clip.cafe/videos/i-am-inevitable.mp4",
+        "caption": "I Am Inevitable · VO de Josh Brolin (Clip.Cafe)",
+        "durationMs": 4300
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/inevitable-thanos.mp4",
+        "assetUrl": "https://clip.cafe/videos/i-am-inevitable.mp4",
+        "caption": "I Am Inevitable · VO de Josh Brolin (Clip.Cafe)",
+        "durationMs": 4300
+      }
+    ]
+  },
+  {
+    "id": "parfaitement_equilibre_source",
+    "kind": "video",
+    "sourceUrl": "https://www.marvel.com/movies/avengers-infinity-war",
+    "creator": "Marvel Studios / Disney / Anthony et Joe Russo / Josh Brolin",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Dans le souvenir de Gamora enfant, Thanos met en équilibre une dague à deux lames. Film original Marvel.",
+    "caption": "Dans le souvenir de Gamora enfant, Thanos met en équilibre une dague à deux lames. Film original Marvel.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/parfaitement-equilibre.webp",
+        "assetUrl": "https://clip.cafe/videos/wheres-mother.mp4",
+        "caption": "Thanos et Gamora · extrait original du film (Clip.Cafe)"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/parfaitement-equilibre.mp3",
+        "assetUrl": "https://clip.cafe/videos/wheres-mother.mp4",
+        "caption": "Thanos et Gamora · extrait original du film (Clip.Cafe)",
+        "durationMs": 7250
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/parfaitement-equilibre.gif",
+        "assetUrl": "https://clip.cafe/videos/wheres-mother.mp4",
+        "caption": "Thanos et Gamora · extrait original du film (Clip.Cafe)",
+        "durationMs": 7250
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/parfaitement-equilibre.mp4",
+        "assetUrl": "https://clip.cafe/videos/wheres-mother.mp4",
+        "caption": "Thanos et Gamora · extrait original du film (Clip.Cafe)",
+        "durationMs": 7250
+      }
+    ]
+  },
+  {
+    "id": "chat_potte_source",
+    "kind": "video",
+    "sourceUrl": "https://www.dreamworks.com/movies/puss-in-boots-the-last-wish",
+    "creator": "DreamWorks Animation / Universal Pictures / Joel Crawford / Antonio Banderas",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le Chat Potté dans Le Dernier Vœu, galerie et bande-annonce DreamWorks.",
+    "caption": "Le Chat Potté dans Le Dernier Vœu, galerie et bande-annonce DreamWorks.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/chat-potte.webp",
+        "assetUrl": "https://www.dreamworks.com/storage/cms-uploads/puss-in-boots-the-last-wish-gallery-01.jpg",
+        "caption": "Le Chat Potté · photogramme de la galerie officielle DreamWorks"
+      }
+    ]
+  },
+  {
+    "id": "sifflement_de_la_mort_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s",
+    "creator": "DreamWorks Animation / Universal Pictures / Joel Crawford / Antonio Banderas / Wagner Moura",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le Loup siffle en entrant dans l’auberge. Extrait du film VO recadré en vertical et sous-titré par le diffuseur de la vidéo.",
+    "caption": "Le Loup siffle en entrant dans l’auberge. Extrait du film VO recadré en vertical et sous-titré par le diffuseur de la vidéo.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/sifflement-de-la-mort.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s",
+        "caption": "Le Loup siffle en entrant dans l’auberge · extrait du film"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/sifflement-de-la-mort.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s",
+        "caption": "Le Loup siffle en entrant dans l’auberge · extrait du film",
+        "durationMs": 7500
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/sifflement-de-la-mort.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s",
+        "caption": "Le Loup siffle en entrant dans l’auberge · extrait du film",
+        "durationMs": 7500
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/sifflement-de-la-mort.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s",
+        "caption": "Le Loup siffle en entrant dans l’auberge · extrait du film",
+        "durationMs": 7500
+      }
+    ]
+  },
+  {
+    "id": "la_derniere_vie_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s",
+    "creator": "DreamWorks Animation / Universal Pictures / Joel Crawford / Antonio Banderas",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Le médecin annonce sa dernière vie au Chat Potté. Extrait du film VO recadré en vertical et sous-titré par le diffuseur de la vidéo.",
+    "caption": "Le médecin annonce sa dernière vie au Chat Potté. Extrait du film VO recadré en vertical et sous-titré par le diffuseur de la vidéo.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/la-derniere-vie.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s",
+        "caption": "Le Chat Potté n’a plus qu’une vie · extrait original du duel"
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/la-derniere-vie.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s",
+        "caption": "Le Chat Potté n’a plus qu’une vie · extrait original du duel",
+        "durationMs": 5900
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/la-derniere-vie.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s",
+        "caption": "Le Chat Potté n’a plus qu’une vie · extrait original du duel",
+        "durationMs": 5900
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/la-derniere-vie.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s",
+        "caption": "Le Chat Potté n’a plus qu’une vie · extrait original du duel",
+        "durationMs": 5900
+      }
+    ]
+  },
+  {
+    "id": "debate_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=wXD6ZT9InxQ",
+    "creator": "TF1 / France 2 (captation) / LCI (publication)",
+    "license": "authorization-required",
+    "restrictions": "Extrait du débat original publié par LCI le 5 mai 2017. Le visuel et le son proviennent de la même captation.",
+    "status": "reference_only",
+    "caption": "Débat du 3 mai 2017 · extrait « poudre de perlimpinpin »",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/macron-poudre-scene.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=wXD6ZT9InxQ&t=86s",
+        "caption": "Poudre de perlimpinpin · débat de 2017 · extrait LCI"
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/macron-poudre-scene.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=wXD6ZT9InxQ&t=86s",
+        "caption": "Poudre de perlimpinpin · débat de 2017 · extrait LCI",
+        "durationMs": 3700
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/macron-poudre-scene.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=wXD6ZT9InxQ&t=86s",
+        "caption": "Poudre de perlimpinpin · débat de 2017 · extrait LCI",
+        "durationMs": 3700
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/macron-poudre-vo.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=wXD6ZT9InxQ&t=86s",
+        "caption": "Voix originale du débat, LCI · 01:26,40–01:30,10",
+        "durationMs": 3700
+      }
+    ]
+  },
+  {
+    "id": "demo_perlimpinpin",
+    "kind": "audio",
+    "sourceNote": "Création sonore originale pour le prototype",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Souffle synthétisé pour la démo, sans voix ni extrait du débat.",
+    "status": "demo_asset",
+    "localPath": "asset/sound/ref-perlimpinpin-demo.mp3",
+    "durationMs": 1160,
+    "caption": "Poudre de perlimpinpin · souffle de démo"
+  },
+  {
+    "id": "traverse_la_rue_source",
+    "kind": "video",
+    "sourceUrl": "https://www.tf1info.fr/politique/video-macron-je-traverse-la-rue-je-vous-en-trouve-un-emploi-a-l-elysee-le-president-fait-la-lecon-a-un-jeune-horticulteur-chomeur-2098519.html",
+    "creator": "TF1 Info (publication de la captation)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "La réplique à un jeune horticulteur transforme le passage piéton en mème.",
+    "caption": "La réplique à un jeune horticulteur transforme le passage piéton en mème.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/macron-traverse-la-rue.webp",
+        "assetUrl": "https://photos.tf1info.fr/images/1280/720/macron-a-un-jeune-sans-emploi-vous-faites-une-rue-en-sortant-je-suis-sur-qu-un-sur-deux-recrute-20180915-1821-59e365-0@1x.jpeg?overlayImage=YXJjaGl2ZS0yMDE4LnBuZw==&overlayWidth=18&overlayGravity=northwest&s=d45aba",
+        "caption": "Captation de la rencontre à l’Élysée, 15 septembre 2018, publiée par TF1 Info."
+      },
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/macron-traverse-extrait.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=bmmHjFcrl4Y&t=59s",
+        "caption": "Macron face au jeune horticulteur, captation de 2018, 00:59,4–01:04,8."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/macron-traverse-extrait.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=bmmHjFcrl4Y&t=59s",
+        "caption": "Macron face au jeune horticulteur, captation de 2018, 00:59,4–01:04,8.",
+        "durationMs": 5400
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/macron-traverse-extrait.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=bmmHjFcrl4Y&t=59s",
+        "caption": "Macron face au jeune horticulteur, captation de 2018, 00:59,4–01:04,8.",
+        "durationMs": 5400
+      }
+    ]
+  },
+  {
+    "id": "qui_aurait_pu_predire_source",
+    "kind": "video",
+    "sourceUrl": "https://www.elysee.fr/emmanuel-macron/2022/12/31/voeux-2023-aux-francais",
+    "creator": "Présidence de la République",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "La question rhétorique des vœux est devenue une réponse ironique à un événement prévisible.",
+    "caption": "La question rhétorique des vœux est devenue une réponse ironique à un événement prévisible.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/macron-qui-aurait-pu-predire.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=KwxVWvqlsio&t=148s",
+        "caption": "Extrait des vœux de l’Élysée, 02:27,8–02:36."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/macron-qui-aurait-pu-predire.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=KwxVWvqlsio&t=148s",
+        "caption": "Extrait des vœux de l’Élysée, 02:27,8–02:36.",
+        "durationMs": 8200
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/macron-qui-aurait-pu-predire.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=KwxVWvqlsio&t=148s",
+        "caption": "Extrait des vœux de l’Élysée, 02:27,8–02:36.",
+        "durationMs": 8200
+      }
+    ]
+  },
+  {
+    "id": "jadore_la_bagnole_source",
+    "kind": "video",
+    "sourceUrl": "https://www.elysee.fr/emmanuel-macron/2023/09/24/20h-linterview-du-president-emmanuel-macron-sur-tf1-et-france-2",
+    "creator": "TF1 / France 2 / Présidence de la République",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Macron ponctue sa réponse sur les transports d’une déclaration d’amour à la bagnole.",
+    "caption": "Macron ponctue sa réponse sur les transports d’une déclaration d’amour à la bagnole.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/macron-jadore-la-bagnole.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=VBQRUEGDVoI&t=1422s",
+        "caption": "Interview publiée par l’Élysée, 23:42–23:51."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/macron-jadore-la-bagnole.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=VBQRUEGDVoI&t=1422s",
+        "caption": "Interview publiée par l’Élysée, 23:42–23:51.",
+        "durationMs": 9000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/macron-jadore-la-bagnole.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=VBQRUEGDVoI&t=1422s",
+        "caption": "Interview publiée par l’Élysée, 23:42–23:51.",
+        "durationMs": 9000
+      }
+    ]
+  },
+  {
+    "id": "ymca_photo",
+    "kind": "image",
+    "sourceUrl": "https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call",
+    "creator": "MC1 Anderson W. Branch / U.S. Navy",
+    "license": "PD-USGov",
+    "restrictions": "Photo de la danse lors des 250 ans de l’U.S. Navy, à Norfolk le 5 octobre 2025. Redimensionnée et convertie en WebP.",
+    "status": "demo_asset",
+    "localPath": "asset/image/catalogue/ymca-navy.webp",
+    "caption": "Trump danse sur Y.M.C.A. à Norfolk le 5 octobre 2025",
+    "focalPoint": {
+      "x": 57,
+      "y": 25
+    }
+  },
+  {
+    "id": "trump_dance_scene",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=4swzg3NV9tI",
+    "creator": "FOX 13 News (publication de la captation) / Village People (musique)",
+    "license": "authorization-required",
+    "restrictions": "Captation et morceau de 1978 à traiter séparément.",
+    "status": "reference_only",
+    "caption": "Danse de meeting · captation de FOX 13 News",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/music-trump-dance.webp",
+        "assetUrl": "https://i.ytimg.com/vi/4swzg3NV9tI/1.jpg",
+        "caption": "Donald Trump dans la captation FOX 13 News de son meeting."
+      }
+    ]
+  },
+  {
+    "id": "ymca_navy_dance",
+    "kind": "gif",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trump_Dance_with_the_Navy_Sailors.webm",
+    "creator": "Margo Martin / Maison-Blanche",
+    "license": "PD-USGov",
+    "restrictions": "Captation du 5 octobre 2025 à Norfolk. Extrait vidéo 00:00–00:06, recadré et converti en GIF muet.",
+    "status": "demo_asset",
+    "localPath": "asset/gif/ymca-dance.gif",
+    "durationMs": 6000,
+    "caption": "Trump danse à Norfolk · 5 octobre 2025"
+  },
+  {
+    "id": "ymca_audio_original",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=qBTJkfuC5Ds",
+    "creator": "Village People / Jacques Morali, Henri Belolo et Victor Willis",
+    "license": "authorization-required",
+    "restrictions": "Enregistrement original de 1978, proposé à l’écoute sur la chaîne officielle.",
+    "status": "reference_only",
+    "caption": "Village People · enregistrement original de Y.M.C.A.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ymca-original-1978.mp3",
+        "assetUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/ff/36/d7ff36ab-3756-079a-5f12-3fa616e95a64/mzaf_2805463762976087995.plus.aac.p.m4a",
+        "caption": "Village People — YMCA (Original Version 1978), 07–13 s de l’aperçu officiel iTunes.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "demo_ymca",
+    "kind": "audio",
+    "sourceNote": "Création sonore originale pour le prototype",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Rythme de danse original synthétisé pour la démo, sans mélodie ni extrait du morceau des Village People.",
+    "status": "demo_asset",
+    "localPath": "asset/sound/ymca_demo.mp3",
+    "durationMs": 6000,
+    "caption": "Y.M.C.A. · musique de démo"
+  },
+  {
+    "id": "ymca_original",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=CS9OO0S5w2k",
+    "creator": "Village People / Jacques Morali, Henri Belolo et Victor Willis",
+    "license": "authorization-required",
+    "restrictions": "Le clip et le morceau d’origine sont à consulter chez leur diffuseur. Master, composition et images ont leurs propres droits.",
+    "status": "reference_only",
+    "caption": "Village People · clip officiel de Y.M.C.A. (1978)",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/music-ymca-original.webp",
+        "assetUrl": "https://i.ytimg.com/vi/CS9OO0S5w2k/hqdefault.jpg",
+        "caption": "Les Village People dans le clip original de Y.M.C.A. (1978)."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ymca-original-1978.mp3",
+        "assetUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/ff/36/d7ff36ab-3756-079a-5f12-3fa616e95a64/mzaf_2805463762976087995.plus.aac.p.m4a",
+        "caption": "Village People — YMCA (Original Version 1978), 07–13 s de l’aperçu officiel iTunes.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "wrong_trump_source",
+    "kind": "video",
+    "sourceUrl": "https://www.pbs.org/video/watch-the-full-first-presidential-debate-1482193176/",
+    "creator": "NBC / PBS NewsHour",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Trump assène un « Wrong » devenu une façon de couper la parole en GIF.",
+    "caption": "Trump assène un « Wrong » devenu une façon de couper la parole en GIF.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/trump-wrong-debat.webp",
+        "assetUrl": "https://image.pbs.org/video-assets/pbs/newshour/239750/images/mezzanine_434.jpg?focalcrop=1200x630x50x10&format=auto",
+        "caption": "Archive PBS du débat Clinton–Trump du 26 septembre 2016."
+      }
+    ]
+  },
+  {
+    "id": "covfefe_source",
+    "kind": "image",
+    "sourceUrl": "https://www.presidency.ucsb.edu/documents/tweets-may-31-2017",
+    "creator": "Donald Trump / The American Presidency Project (archive)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Une phrase laissée en suspens donne naissance à « covfefe », le mot que personne ne savait définir.",
+    "caption": "Une phrase laissée en suspens donne naissance à « covfefe », le mot que personne ne savait définir.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/trump-covfefe.webp",
+        "assetUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Covfefe.png",
+        "caption": "Capture du tweet original, texte archivé."
+      }
+    ]
+  },
+  {
+    "id": "francois_hollande_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=xyH_MRJ1C0s",
+    "creator": "TF1 / France 2 / INA (archive)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "François Hollande tel qu’il apparaît dans l’archive INA du débat de 2012.",
+    "caption": "François Hollande tel qu’il apparaît dans l’archive INA du débat de 2012.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/hollande-moi-president.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=53b-pBPvjmA&t=22s",
+        "caption": "Archive originale du débat, 00:22,6–00:30,2."
+      }
+    ]
+  },
+  {
+    "id": "moi_president_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=53b-pBPvjmA",
+    "creator": "TF1 / France 2",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "L’anaphore de Hollande est reprise en boucle dans les détournements du débat.",
+    "caption": "L’anaphore de Hollande est reprise en boucle dans les détournements du débat.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/hollande-moi-president.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=53b-pBPvjmA&t=22s",
+        "caption": "Archive originale du débat, 00:22,6–00:30,2."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/hollande-moi-president.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=53b-pBPvjmA&t=22s",
+        "caption": "Archive originale du débat, 00:22,6–00:30,2.",
+        "durationMs": 7600
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/hollande-moi-president.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=53b-pBPvjmA&t=22s",
+        "caption": "Archive originale du débat, 00:22,6–00:30,2.",
+        "durationMs": 7600
+      }
+    ]
+  },
+  {
+    "id": "arreter_la_pluie_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=EJa608PrJGs",
+    "creator": "TF1 / 6Medias (publication)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Hollande répond aux plaisanteries sur ses apparitions sous la pluie.",
+    "caption": "Hollande répond aux plaisanteries sur ses apparitions sous la pluie.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/hollande-arreter-la-pluie.webp",
+        "assetUrl": "https://i.ytimg.com/vi/EJa608PrJGs/hqdefault.jpg",
+        "caption": "Hollande dans l’intervention originale du 6 novembre 2014."
+      }
+    ]
+  },
+  {
+    "id": "jean_luc_melenchon_source",
+    "kind": "video",
+    "sourceUrl": "https://www.tf1info.fr/politique/video-quotidien-barthes-melenchon-la-republique-c-est-moi-la-colere-noire-du-depute-lors-d-une-perquisition-au-siege-de-la-france-insoumise-2101666.html",
+    "creator": "Quotidien / TMC / Groupe TF1",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Mélenchon face aux policiers dans la captation de Quotidien.",
+    "caption": "Mélenchon face aux policiers dans la captation de Quotidien.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/melenchon-la-republique.webp",
+        "assetUrl": "https://photos.tf1info.fr/images/1280/720/perquisitions-surrealistes-chez-jean-luc-melenchon-et-au-siege-de-la-france-insoumise-ed4092-0@1x.jpeg?overlayImage=YXJjaGl2ZS0yMDE4LnBuZw==&overlayWidth=18&overlayGravity=northwest&s=d45aba",
+        "caption": "Captation de Quotidien publiée par TF1 Info, octobre 2018."
+      }
+    ]
+  },
+  {
+    "id": "la_republique_cest_moi_source",
+    "kind": "video",
+    "sourceUrl": "https://www.tf1info.fr/politique/video-quotidien-barthes-melenchon-la-republique-c-est-moi-la-colere-noire-du-depute-lors-d-une-perquisition-au-siege-de-la-france-insoumise-2101666.html",
+    "creator": "Quotidien / TMC / Groupe TF1",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Une déclaration en pleine altercation se transforme en réaction disproportionnée sur Internet.",
+    "caption": "Une déclaration en pleine altercation se transforme en réaction disproportionnée sur Internet.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/melenchon-la-republique.webp",
+        "assetUrl": "https://photos.tf1info.fr/images/1280/720/perquisitions-surrealistes-chez-jean-luc-melenchon-et-au-siege-de-la-france-insoumise-ed4092-0@1x.jpeg?overlayImage=YXJjaGl2ZS0yMDE4LnBuZw==&overlayWidth=18&overlayGravity=northwest&s=d45aba",
+        "caption": "Captation de Quotidien publiée par TF1 Info, octobre 2018."
+      }
+    ]
+  },
+  {
+    "id": "faites_mieux_source",
+    "kind": "video",
+    "sourceUrl": "https://melenchon.fr/2022/04/10/1er-tour-jean-luc-melenchon-prend-la-parole/",
+    "creator": "Jean-Luc Mélenchon / La France insoumise",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "La formule finale du discours est reprise sur TikTok comme un défi.",
+    "caption": "La formule finale du discours est reprise sur TikTok comme un défi.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/melenchon-faites-mieux.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=izCL2pR8UCE&t=540s",
+        "caption": "Extrait du discours officiel du 10 avril 2022, 09:00,5–09:06,5."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/melenchon-faites-mieux.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=izCL2pR8UCE&t=540s",
+        "caption": "Extrait du discours officiel du 10 avril 2022, 09:00,5–09:06,5.",
+        "durationMs": 6000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/melenchon-faites-mieux.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=izCL2pR8UCE&t=540s",
+        "caption": "Extrait du discours officiel du 10 avril 2022, 09:00,5–09:06,5.",
+        "durationMs": 6000
+      }
+    ]
+  },
+  {
+    "id": "joe_biden_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=wW1lY5jFNcQ",
+    "creator": "C-SPAN / Commission on Presidential Debates",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Joe Biden lors du débat du 29 septembre 2020.",
+    "caption": "Joe Biden lors du débat du 29 septembre 2020.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/biden-shut-up-man.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=6e3bu4nP23Y&t=5s",
+        "caption": "Échange original du débat du 29 septembre 2020, 00:05–00:12."
+      }
+    ]
+  },
+  {
+    "id": "shut_up_man_source",
+    "kind": "video",
+    "sourceUrl": "https://www.youtube.com/watch?v=6e3bu4nP23Y",
+    "creator": "Captation du débat / The Guardian (extrait)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "À force d’être interrompu, Biden abandonne le jargon du débat et demande à Trump de se taire.",
+    "caption": "À force d’être interrompu, Biden abandonne le jargon du débat et demande à Trump de se taire.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/biden-shut-up-man.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=6e3bu4nP23Y&t=5s",
+        "caption": "Échange original du débat du 29 septembre 2020, 00:05–00:12."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/biden-shut-up-man.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=6e3bu4nP23Y&t=5s",
+        "caption": "Échange original du débat du 29 septembre 2020, 00:05–00:12.",
+        "durationMs": 7000
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/biden-shut-up-man.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=6e3bu4nP23Y&t=5s",
+        "caption": "Échange original du débat du 29 septembre 2020, 00:05–00:12.",
+        "durationMs": 7000
+      }
+    ]
+  },
+  {
+    "id": "dark_brandon_source",
+    "kind": "image",
+    "sourceUrl": "https://x.com/JoeBiden/status/1756888470599967000",
+    "creator": "Joe Biden / équipe de campagne (publication originale)",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Biden reprend le mème de ses yeux laser pour plaisanter après la finale du Super Bowl.",
+    "caption": "Biden reprend le mème de ses yeux laser pour plaisanter après la finale du Super Bowl.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/dark-brandon.webp",
+        "assetUrl": "https://i.kym-cdn.com/photos/images/newsfeed/002/754/478/570.png",
+        "caption": "Image publiée par Joe Biden le 11 février 2024, recadrée depuis la capture du post."
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "fortnite_floss",
+  "name": "Floss",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Fortnite Battle Royale — Passe de combat de la saison 2",
+    "year": 2017,
+    "sources": [
+      "https://www.fortnite.com/news/fortnite-battle-royale-season-2-battle-pass-is-here"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "fortnite_floss_source"
+  ],
+  "tags": [
+    "dance"
+  ],
+  "cost": 2,
+  "text": "Danse · Donnez 2 Boucliers à un allié. Avec Jonesy en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

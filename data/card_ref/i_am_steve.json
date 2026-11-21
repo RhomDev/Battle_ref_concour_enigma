@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "i_am_steve",
+  "name": "I Am Steve",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "A Minecraft Movie",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=PE2YZhcC4NY"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "i_am_steve_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Steve en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

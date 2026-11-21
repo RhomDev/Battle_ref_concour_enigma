@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "lucci_luffy_lunettes",
+  "name": "Les lunettes sorties de nulle part",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "One Piece, épisode 1101",
+    "year": 2024,
+    "sources": [
+      "https://one-piece.com/anime/66425/index.html"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "lucci_luffy_lunettes_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Monkey D. Luffy en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

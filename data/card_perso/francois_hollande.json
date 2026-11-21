@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "francois_hollande",
+  "name": "François Hollande",
+  "kind": "character",
+  "category": "politique",
+  "origin": {
+    "work": "Débat présidentiel Hollande–Sarkozy",
+    "year": 2012,
+    "sources": [
+      "https://www.youtube.com/watch?v=xyH_MRJ1C0s"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "francois_hollande_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 2,
+  "stats": {
+    "hp": 3
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

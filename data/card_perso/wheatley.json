@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "wheatley",
+  "name": "Wheatley",
+  "kind": "character",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Portal 2",
+    "year": 2011,
+    "sources": [
+      "https://www.thinkwithportals.com/"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "wheatley_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 2,
+  "stats": {
+    "hp": 3
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "fortnite_default_dance",
+  "name": "Danse par défaut",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Fortnite Battle Royale — Dance Moves",
+    "year": 2017,
+    "sources": [
+      "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20",
+      "https://fortnite.gg/cosmetics?id=3740&type=emote"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "fortnite_default_dance_source"
+  ],
+  "tags": [
+    "dance"
+  ],
+  "cost": 3,
+  "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Jonesy en jeu, donnez-en 2 à chacun.",
+  "strength": "Protège plusieurs Personnages en une action.",
+  "weakness": "Demande plusieurs alliés pour être rentable.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "ally_characters",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

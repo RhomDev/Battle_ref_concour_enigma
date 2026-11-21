@@ -1,6 +1,8 @@
 
 import pygame
 from config import WIDTH, HEIGHT
+from scenes.booster import BoosterScene
+from scenes.media_collection import MediaCollectionScene
 
 
 class MenuScene:
@@ -99,8 +101,12 @@ class MenuScene:
                 left_x, row2_y, button_width, button_height
             ),
 
-            "QUITTER": pygame.Rect(
+            "BOOSTER": pygame.Rect(
                 right_x, row2_y, button_width, button_height
+            ),
+
+            "QUITTER": pygame.Rect(
+                right_x, row2_y + 100, button_width, button_height
             )
         }
 
@@ -155,6 +161,9 @@ class MenuScene:
                 elif self.buttons["REF"].collidepoint(mouse_pos):
                     self.open_references()
 
+                # Bouton BOOSTER
+                elif self.buttons["BOOSTER"].collidepoint(mouse_pos):
+                    self.open_booster()
                 # Bouton QUITTER
                 elif self.buttons["QUITTER"].collidepoint(mouse_pos):
                     self.game.running = False
@@ -178,16 +187,10 @@ class MenuScene:
         # Ajouter ici le changement vers BattleScene.
 
     def open_personnages(self):
-        print("Ouverture de la collection de personnages")
-
-        # TODO :
-        # Ajouter ici le changement vers CollectionPersoScene.
+        self.game.change_scene(MediaCollectionScene(self, "character"))
 
     def open_references(self):
-        print("Ouverture de la collection de références")
-
-        # TODO :
-        # Ajouter ici le changement vers CollectionScene.
+        self.game.change_scene(MediaCollectionScene(self, "ref"))
 
     def add_profile_image(self):
         print("Ajout d'une image de profil")
@@ -195,6 +198,8 @@ class MenuScene:
         # TODO :
         # Ajouter un système de sélection d'image.
 
+    def open_booster(self):
+        self.game.change_scene(BoosterScene(self.game))
     # -------------------------------------------------
     # UPDATE
     # -------------------------------------------------

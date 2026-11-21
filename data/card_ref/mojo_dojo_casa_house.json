@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "mojo_dojo_casa_house",
+  "name": "Mojo Dojo Casa House",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://www.youtube.com/watch?v=pHPogYMl_FA"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "mojo_dojo_casa_house_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Ken en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

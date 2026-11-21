@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "id": "trump",
+  "name": "Donald Trump",
+  "kind": "character",
+  "category": "politique",
+  "origin": {
+    "work": "Donald Trump danse à Norfolk · 250 ans de l’U.S. Navy",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=4swzg3NV9tI",
+      "https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call"
+    ]
+  },
+  "cost": 3,
+  "text": "Gagne 1 Bouclier par Ref Danse jouée par votre camp.",
+  "strength": "Renforce Y.M.C.A. et peut regagner du Bouclier.",
+  "weakness": "Dépend des Refs Danse pour renouveler sa protection.",
+  "visual": "spotlight",
+  "media": [
+    "ymca_photo",
+    "trump_dance_scene"
+  ],
+  "abilities": [
+    {
+      "id": "encore",
+      "timing": "ally_dance_ref_resolved",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

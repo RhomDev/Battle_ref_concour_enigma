@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "id": "moi_president",
+  "name": "Moi président…",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Débat présidentiel Hollande–Sarkozy",
+    "year": 2012,
+    "sources": [
+      "https://www.youtube.com/watch?v=53b-pBPvjmA",
+      "https://www.youtube.com/watch?v=xyH_MRJ1C0s"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "moi_president_source"
+  ],
+  "cost": 3,
+  "text": "Donnez 1 Bouclier à chaque allié. Avec Hollande en jeu, donnez-en 2 à chacun.",
+  "strength": "Protège plusieurs Personnages en une action.",
+  "weakness": "Demande plusieurs alliés pour être rentable.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "ally_characters",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "beach_off",
+  "name": "Beach-off !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://www.youtube.com/watch?v=GRyt3Ov4zz0"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "beach_off_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Ken en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

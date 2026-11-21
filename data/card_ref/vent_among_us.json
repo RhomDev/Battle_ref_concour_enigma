@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "vent_among_us",
+  "name": "Il a pris le conduit",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Among Us",
+    "year": 2018,
+    "sources": [
+      "https://www.innersloth.com/games/among-us/"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "vent_among_us_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Rouge en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

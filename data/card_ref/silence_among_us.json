@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "silence_among_us",
+  "name": "Chut !",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Among Us",
+    "year": 2018,
+    "sources": [
+      "https://www.youtube.com/watch?v=NSJ4cESNQfE"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "silence_among_us_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Rouge en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

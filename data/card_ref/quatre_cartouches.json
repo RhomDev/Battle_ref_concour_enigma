@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "quatre_cartouches",
+  "name": "Il reste quatre cartouches",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 8",
+    "year": 2018,
+    "sources": [
+      "https://jojo-animation.com/story/008.php"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "quatre_cartouches_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant un échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

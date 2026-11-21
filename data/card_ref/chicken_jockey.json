@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "chicken_jockey",
+  "name": "Chicken Jockey !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "A Minecraft Movie",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=EY4h38NaXwU"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "chicken_jockey_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Steve en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "luffy",
+  "name": "Monkey D. Luffy",
+  "kind": "character",
+  "category": "anime",
+  "origin": {
+    "work": "One Piece",
+    "year": 1999,
+    "sources": [
+      "https://one-piece.com/character/luffy/index.html"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "luffy_source"
+  ],
+  "cost": 3,
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse un premier dégât dès son arrivée.",
+  "weakness": "S’expose quand son Bouclier est retiré.",
+  "stats": {
+    "hp": 4
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

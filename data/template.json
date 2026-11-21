@@ -1,33 +1,32 @@
 {
-  "schemaVersion": 0,
-  "id": "",
-  "name": "",
-  "kind": "",
-  "category": "",
-
-  "cost": 0,
-  "text": "",
-  "strength": "",
-  "weakness": "",
-
-    // affichage music et image ou gif
+  "schemaVersion": 2,
+  "id": "nom_de_la_ref",
+  "name": "Nom de la Ref",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Œuvre d’origine et scène",
+    "year": 2023,
+    "sources": ["https://example.org/"]
+  },
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié.",
+  "strength": "Protège un allié exposé.",
+  "weakness": "Demande un allié en jeu.",
+  "visual": "subtitle",
   "media": [],
-
   "abilities": [
     {
-      "id": "",
-      "timing": "",
-      "targeting": "",
+      "id": "protection",
+      "timing": "cast",
+      "targeting": "ally_character",
       "effects": [
         {
-          "op": "",
-          "target": "",
-          "amount": 0
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
         }
       ]
     }
-  ],
-  "tags": [
-    "dance"
   ]
 }

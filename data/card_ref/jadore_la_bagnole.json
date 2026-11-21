@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "jadore_la_bagnole",
+  "name": "J’adore la bagnole",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Entretien télévisé du 24 septembre 2023",
+    "year": 2023,
+    "sources": [
+      "https://www.elysee.fr/emmanuel-macron/2023/09/24/20h-linterview-du-president-emmanuel-macron-sur-tf1-et-france-2"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "jadore_la_bagnole_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Macron en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

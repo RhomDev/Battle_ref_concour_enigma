@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "penser_a_la_mort",
+  "name": "Vous pensez parfois à la mort ?",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://clip.cafe/barbie-2023/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just/"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "penser_a_la_mort_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Barbie en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre l’accès à une cible protégée.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

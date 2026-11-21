@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "franklin_clinton",
+  "name": "Franklin Clinton",
+  "kind": "character",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Grand Theft Auto V",
+    "year": 2013,
+    "sources": [
+      "https://www.rockstargames.com/newswire/article/25o2411819aok8/original-gtav-artwork-michael-franklin-trevor.html"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "franklin_clinton_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 2,
+  "stats": {
+    "hp": 4
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

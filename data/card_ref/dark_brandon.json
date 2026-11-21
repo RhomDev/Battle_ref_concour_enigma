@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "id": "dark_brandon",
+  "name": "Dark Brandon",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Publication de Joe Biden après le Super Bowl LVIII",
+    "year": 2024,
+    "sources": [
+      "https://x.com/JoeBiden/status/1756888470599967000",
+      "https://www.cbsnews.com/news/biden-dark-brandon-meme-chiefs-super-bowl-taylor-swift/"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "dark_brandon_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Biden en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

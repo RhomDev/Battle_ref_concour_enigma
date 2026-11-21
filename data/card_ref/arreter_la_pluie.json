@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "arreter_la_pluie",
+  "name": "Comme si je pouvais arrêter la pluie",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Intervention télévisée du 6 novembre 2014",
+    "year": 2014,
+    "sources": [
+      "https://www.youtube.com/watch?v=EJa608PrJGs"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "arreter_la_pluie_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Hollande en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

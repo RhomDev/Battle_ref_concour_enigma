@@ -1,0 +1,2910 @@
+[
+  {
+    "schemaVersion": 2,
+    "id": "creeper",
+    "name": "Creeper",
+    "kind": "character",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Minecraft · version sortie en 2011",
+      "year": 2011,
+      "sources": [
+        "https://www.minecraft.net/en-us/article/choose-your-chaos"
+      ]
+    },
+    "cost": 2,
+    "text": "K.-O. · Donne 1 Bouclier aux autres alliés.",
+    "strength": "Protège le reste du plateau quand il est éliminé.",
+    "weakness": "Sa protection exige d’autres Personnages en jeu.",
+    "visual": "pixel",
+    "media": [
+      "creeper_scene"
+    ],
+    "abilities": [
+      {
+        "id": "psssht",
+        "timing": "defeated",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "hp": 2
+    }
+  },
+  {
+    "schemaVersion": 2,
+    "id": "francois_hollande",
+    "name": "François Hollande",
+    "kind": "character",
+    "category": "politique",
+    "origin": {
+      "work": "Débat présidentiel Hollande–Sarkozy",
+      "year": 2012,
+      "sources": [
+        "https://www.youtube.com/watch?v=xyH_MRJ1C0s"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "francois_hollande_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 2,
+    "stats": {
+      "hp": 3
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "franklin_clinton",
+    "name": "Franklin Clinton",
+    "kind": "character",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Grand Theft Auto V",
+      "year": 2013,
+      "sources": [
+        "https://www.rockstargames.com/newswire/article/25o2411819aok8/original-gtav-artwork-michael-franklin-trevor.html"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "franklin_clinton_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 2,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "ken",
+    "name": "Ken",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=467B06wsp30"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "ken_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 2,
+    "stats": {
+      "hp": 3
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "macron",
+    "name": "Emmanuel Macron",
+    "kind": "character",
+    "category": "politique",
+    "origin": {
+      "work": "Débat présidentiel de l’entre-deux-tours",
+      "year": 2017,
+      "sources": [
+        "https://www.youtube.com/watch?v=wXD6ZT9InxQ",
+        "https://www.youtube.com/watch?v=FIJpp_TZC6k"
+      ]
+    },
+    "cost": 2,
+    "text": "À l’arrivée · Dissipation ennemie facultative.",
+    "strength": "Ouvre une cible protégée et renforce Poudre de perlimpinpin.",
+    "weakness": "Sa dissipation exige une cible protégée.",
+    "visual": "powder",
+    "media": [
+      "debate_scene"
+    ],
+    "abilities": [
+      {
+        "id": "debunk",
+        "timing": "summoned",
+        "targeting": "optional_enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 2,
+    "id": "wheatley",
+    "name": "Wheatley",
+    "kind": "character",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Portal 2",
+      "year": 2011,
+      "sources": [
+        "https://www.thinkwithportals.com/"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "wheatley_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 2,
+    "stats": {
+      "hp": 3
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "barbie",
+    "name": "Barbie",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=GRyt3Ov4zz0"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "barbie_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "chat_potte",
+    "name": "Le Chat Potté",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Puss in Boots: The Last Wish",
+      "year": 2022,
+      "sources": [
+        "https://www.dreamworks.com/movies/puss-in-boots-the-last-wish"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "chat_potte_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "jean_luc_melenchon",
+    "name": "Jean-Luc Mélenchon",
+    "kind": "character",
+    "category": "politique",
+    "origin": {
+      "work": "Images de Quotidien lors de la perquisition",
+      "year": 2018,
+      "sources": [
+        "https://www.tf1info.fr/politique/video-quotidien-barthes-melenchon-la-republique-c-est-moi-la-colere-noire-du-depute-lors-d-une-perquisition-au-siege-de-la-france-insoumise-2101666.html"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "jean_luc_melenchon_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "joe_biden",
+    "name": "Joe Biden",
+    "kind": "character",
+    "category": "politique",
+    "origin": {
+      "work": "Premier débat présidentiel Biden–Trump",
+      "year": 2020,
+      "sources": [
+        "https://www.youtube.com/watch?v=wW1lY5jFNcQ"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "joe_biden_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "jonesy",
+    "name": "Jonesy",
+    "kind": "character",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Fortnite Battle Royale",
+      "year": 2017,
+      "sources": [
+        "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "jonesy_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "luffy",
+    "name": "Monkey D. Luffy",
+    "kind": "character",
+    "category": "anime",
+    "origin": {
+      "work": "One Piece",
+      "year": 1999,
+      "sources": [
+        "https://one-piece.com/character/luffy/index.html"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "luffy_source"
+    ],
+    "cost": 3,
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse un premier dégât dès son arrivée.",
+    "weakness": "S’expose quand son Bouclier est retiré.",
+    "stats": {
+      "hp": 4
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "mista",
+    "name": "Guido Mista",
+    "kind": "character",
+    "category": "anime",
+    "origin": {
+      "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 7",
+      "year": 2018,
+      "sources": [
+        "https://jojo-animation.com/character/04.php",
+        "https://www.crunchyroll.com/watch/GYXJ1KM76/six-bullets-appears-part-1",
+        "https://jojo-animation.com/story/007.php"
+      ]
+    },
+    "cost": 3,
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse dès son arrivée et renforce Canzoni preferite.",
+    "weakness": "Son Bouclier de départ est limité.",
+    "visual": "spotlight",
+    "media": [
+      "mista_anime",
+      "jojo_scene",
+      "jojo_stills"
+    ],
+    "abilities": [
+      {
+        "id": "sex_pistols",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 2,
+    "id": "rouge_among_us",
+    "name": "Rouge",
+    "kind": "character",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Among Us",
+      "year": 2018,
+      "sources": [
+        "https://www.innersloth.com/press-kit-among-us/"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "rouge_among_us_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 3,
+    "stats": {
+      "hp": 3
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "trump",
+    "name": "Donald Trump",
+    "kind": "character",
+    "category": "politique",
+    "origin": {
+      "work": "Donald Trump danse à Norfolk · 250 ans de l’U.S. Navy",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=4swzg3NV9tI",
+        "https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call"
+      ]
+    },
+    "cost": 3,
+    "text": "Gagne 1 Bouclier par Ref Danse jouée par votre camp.",
+    "strength": "Renforce Y.M.C.A. et peut regagner du Bouclier.",
+    "weakness": "Dépend des Refs Danse pour renouveler sa protection.",
+    "visual": "spotlight",
+    "media": [
+      "ymca_photo",
+      "trump_dance_scene"
+    ],
+    "abilities": [
+      {
+        "id": "encore",
+        "timing": "ally_dance_ref_resolved",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 2,
+    "id": "satoru_gojo",
+    "name": "Satoru Gojo",
+    "kind": "character",
+    "category": "anime",
+    "origin": {
+      "work": "Jujutsu Kaisen",
+      "year": 2020,
+      "sources": [
+        "https://jujutsukaisen.jp/character/shibuyajihen.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "satoru_gojo_source"
+    ],
+    "text": "Déploiement · Gagne 1 Bouclier.",
+    "strength": "Encaisse une première attaque.",
+    "weakness": "Sa protection initiale est limitée.",
+    "cost": 4,
+    "stats": {
+      "hp": 5
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "steve_minecraft_film",
+    "name": "Steve",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "A Minecraft Movie",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=PE2YZhcC4NY"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "steve_minecraft_film_source"
+    ],
+    "text": "Déploiement · Gagne Garde.",
+    "strength": "Protège son camp dès son arrivée.",
+    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "cost": 4,
+    "stats": {
+      "hp": 5
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "saitama",
+    "name": "Saitama",
+    "kind": "character",
+    "category": "anime",
+    "origin": {
+      "work": "One-Punch Man",
+      "year": 2015,
+      "sources": [
+        "https://onepunchman-anime.net/character/"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "saitama_source"
+    ],
+    "text": "Déploiement · Gagne Garde.",
+    "strength": "Protège son camp dès son arrivée.",
+    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "cost": 5,
+    "stats": {
+      "hp": 6
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "thanos",
+    "name": "Thanos",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Avengers: Infinity War",
+      "year": 2018,
+      "sources": [
+        "https://www.youtube.com/watch?v=8BLyXCJis_I"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "thanos_source"
+    ],
+    "text": "Déploiement · Gagne Garde.",
+    "strength": "Protège son camp dès son arrivée.",
+    "weakness": "La Garde concentre les attaques adverses sur lui.",
+    "cost": 5,
+    "stats": {
+      "hp": 6
+    },
+    "abilities": [
+      {
+        "id": "deploiement",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "vegeta",
+    "name": "Vegeta",
+    "kind": "character",
+    "category": "anime",
+    "origin": {
+      "work": "Dragon Ball Super, épisode 7",
+      "year": 2015,
+      "sources": [
+        "https://www.toei-anim.co.jp/tv/dragon_s/chara/04.html",
+        "https://lineup.toei-anim.co.jp/ja/tv/dragon_super/episode/7/",
+        "https://www.youtube.com/watch?v=Imr6cbh0cXw"
+      ]
+    },
+    "cost": 5,
+    "text": "Déploiement · Gagne Garde et 1 Bouclier.",
+    "strength": "Protège votre camp et renforce Touche pas à ma Bulma !",
+    "weakness": "Son déploiement demande beaucoup d’énergie.",
+    "visual": "pulse",
+    "media": [
+      "vegeta_anime",
+      "bulma_scene",
+      "bulma_trailer"
+    ],
+    "abilities": [
+      {
+        "id": "fierte",
+        "timing": "summoned",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "self"
+          },
+          {
+            "op": "shield",
+            "target": "self",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 2,
+    "id": "covfefe",
+    "name": "Covfefe",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Tweet de Donald Trump du 31 mai 2017",
+      "year": 2017,
+      "sources": [
+        "https://www.presidency.ucsb.edu/documents/tweets-may-31-2017",
+        "https://commons.wikimedia.org/wiki/File:Covfefe.png"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "covfefe_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Trump en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "dango_luffy_kid",
+    "name": "Le concours de dango",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One Piece, épisode 919",
+      "year": 2020,
+      "sources": [
+        "https://one-piece.com/anime/o5305/index.html"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "dango_luffy_kid_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Monkey D. Luffy en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "flint_and_steel",
+    "name": "Flint and Steel !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "A Minecraft Movie",
+      "year": 2025,
+      "sources": [
+        "https://clip.cafe/a-minecraft-movie-2025/flint-and-steel/"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "flint_and_steel_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Steve en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "fortnite_take_the_l",
+    "name": "Take the L",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Fortnite Battle Royale — Passe de combat de la saison 3",
+      "year": 2018,
+      "sources": [
+        "https://www.youtube.com/watch?v=jGqDVknzX3o",
+        "https://www.fortnite.com/news/new-see-confrontational-emotes-setting-in-fortnite"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "fortnite_take_the_l_source"
+    ],
+    "tags": [
+      "dance"
+    ],
+    "cost": 1,
+    "text": "Danse · Dissipez les protections d’un ennemi. Avec Jonesy en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "gear_fifth",
+    "name": "Gear 5",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One Piece, épisode 1071",
+      "year": 2023,
+      "sources": [
+        "https://one-piece.com/anime/62947/index.html"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "gear_fifth_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Monkey D. Luffy en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre une cible protégée aux attaques suivantes.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "giorno_soigne_mista",
+    "name": "T’as rien vu, Narancia",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 19",
+      "year": 2019,
+      "sources": [
+        "https://jojo-animation.com/story/019.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "giorno_soigne_mista_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Mista en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "gojo_t_es_faible",
+    "name": "Parce que t’es faible",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Jujutsu Kaisen, épisode 7",
+      "year": 2020,
+      "sources": [
+        "https://jujutsukaisen.jp/episodes/07.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "gojo_t_es_faible_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Gojo en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "hi_barbie",
+    "name": "Hi, Barbie !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=GRyt3Ov4zz0"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "hi_barbie_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Barbie en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "la_derniere_vie",
+    "name": "La dernière vie",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Puss in Boots: The Last Wish",
+      "year": 2022,
+      "sources": [
+        "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=16s"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "la_derniere_vie_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Le Chat Potté en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "lamar_roast",
+    "name": "La coupe de Franklin",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Grand Theft Auto V — Franklin and Lamar",
+      "year": 2013,
+      "sources": [
+        "https://www.rockstargames.com/gta-v",
+        "https://www.youtube.com/watch?v=8vtu8ZVaXq0"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "lamar_roast_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Franklin en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "parfaitement_equilibre",
+    "name": "Parfaitement équilibré",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Avengers: Infinity War",
+      "year": 2018,
+      "sources": [
+        "https://www.marvel.com/movies/avengers-infinity-war"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "parfaitement_equilibre_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Thanos en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "penser_a_la_mort",
+    "name": "Vous pensez parfois à la mort ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://clip.cafe/barbie-2023/you-guys-ever-think-about-dyingneedle-scratches-record-music-chatter-halti-dont-know-why-i-just/"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "penser_a_la_mort_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Barbie en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "perlimpinpin",
+    "name": "Poudre de perlimpinpin",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Débat présidentiel de l’entre-deux-tours",
+      "year": 2017,
+      "sources": [
+        "https://www.youtube.com/watch?v=wXD6ZT9InxQ",
+        "https://www.youtube.com/watch?v=FIJpp_TZC6k"
+      ]
+    },
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui ensuite 2 dégâts.",
+    "strength": "Ouvre un Personnage protégé avant d’appliquer les dégâts bonus.",
+    "weakness": "L’amplification demande que Macron soit en jeu.",
+    "visual": "powder",
+    "media": [
+      "debate_scene",
+      "demo_perlimpinpin"
+    ],
+    "abilities": [
+      {
+        "id": "poudre",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "rouge_est_sus",
+    "name": "Rouge est sus",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Among Us",
+      "year": 2020,
+      "sources": [
+        "https://www.innersloth.com/games/among-us/"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "rouge_est_sus_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Rouge en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "saitama_ok",
+    "name": "OK.",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One-Punch Man, épisode 11",
+      "year": 2015,
+      "sources": [
+        "https://onepunchman-anime.net/goods/bd/bd_6.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "saitama_ok_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Saitama en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "saitama_promos",
+    "name": "C’est le jour des promos !",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One-Punch Man, épisode 3",
+      "year": 2015,
+      "sources": [
+        "https://onepunchman-anime.net/news/archives/7587"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "saitama_promos_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Saitama en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "shut_up_man",
+    "name": "Will you shut up, man?",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Premier débat présidentiel Biden–Trump",
+      "year": 2020,
+      "sources": [
+        "https://www.youtube.com/watch?v=6e3bu4nP23Y",
+        "https://www.pbs.org/newshour/show/heckled-by-trump-biden-calls-fiery-debate-a-national-embarrassment"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "shut_up_man_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Biden en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "sifflement_de_la_mort",
+    "name": "Le sifflement du Loup",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Puss in Boots: The Last Wish",
+      "year": 2022,
+      "sources": [
+        "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "sifflement_de_la_mort_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Le Chat Potté en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "steves_lava_chicken",
+    "name": "Steve’s Lava Chicken",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "A Minecraft Movie",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=iTz5niEWD7w"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "steves_lava_chicken_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Steve en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "takoyaki_vegeta",
+    "name": "Takoyaki de la dernière chance",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Dragon Ball Super, épisode 6",
+      "year": 2015,
+      "sources": [
+        "https://www.toei-anim.co.jp/tv/dragon_s/episode/summary/6/"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "takoyaki_vegeta_source"
+    ],
+    "cost": 1,
+    "text": "Soignez 2 PV d’un allié. Avec Vegeta en jeu, soignez 3 PV.",
+    "strength": "Maintient un allié blessé en jeu.",
+    "weakness": "Demande un allié blessé pour tirer parti du soin.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "heal",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "traverse_la_rue",
+    "name": "Je traverse la rue",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Journées européennes du patrimoine à l’Élysée",
+      "year": 2018,
+      "sources": [
+        "https://www.tf1info.fr/politique/video-macron-je-traverse-la-rue-je-vous-en-trouve-un-emploi-a-l-elysee-le-president-fait-la-lecon-a-un-jeune-horticulteur-chomeur-2098519.html"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "traverse_la_rue_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "wheatley_pas_un_cretin",
+    "name": "Je ne suis pas idiot !",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Portal 2 — The Escape",
+      "year": 2011,
+      "sources": [
+        "https://store.steampowered.com/app/620/Portal_2/",
+        "https://theportalwiki.com/wiki/Wheatley_voice_lines"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "wheatley_pas_un_cretin_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Wheatley en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "wrong_trump",
+    "name": "Wrong !",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Premier débat présidentiel Clinton–Trump",
+      "year": 2016,
+      "sources": [
+        "https://www.pbs.org/video/watch-the-full-first-presidential-debate-1482193176/",
+        "https://www.youtube.com/watch?v=7BGYYaaLrTc"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "wrong_trump_source"
+    ],
+    "cost": 1,
+    "text": "Dissipez les protections d’un ennemi. Avec Trump en jeu, infligez-lui aussi 1 dégât.",
+    "strength": "Ouvre l’accès à une cible protégée.",
+    "weakness": "Demande un Personnage adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy_character",
+        "effects": [
+          {
+            "op": "dispel",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "arreter_la_pluie",
+    "name": "Comme si je pouvais arrêter la pluie",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Intervention télévisée du 6 novembre 2014",
+      "year": 2014,
+      "sources": [
+        "https://www.youtube.com/watch?v=EJa608PrJGs"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "arreter_la_pluie_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Hollande en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "beach_off",
+    "name": "Beach-off !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=GRyt3Ov4zz0"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "beach_off_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Ken en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "bingo_vegeta",
+    "name": "Le bingo de Vegeta",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Dragon Ball Z : Battle of Gods",
+      "year": 2013,
+      "sources": [
+        "https://www.crunchyroll.com/ko/news/latest/2014/7/17/video-dragon-ball-z-battle-of-gods-clips-preview-the-english-dub"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "bingo_vegeta_source"
+    ],
+    "tags": [
+      "dance"
+    ],
+    "cost": 2,
+    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "chicken_jockey",
+    "name": "Chicken Jockey !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "A Minecraft Movie",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=EY4h38NaXwU"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "chicken_jockey_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Steve en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "claquement_de_thanos",
+    "name": "Le claquement de Thanos",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Avengers: Infinity War",
+      "year": 2018,
+      "sources": [
+        "https://www.youtube.com/watch?v=8BLyXCJis_I"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "claquement_de_thanos_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Thanos en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "creeper_aw_man",
+    "name": "Creeper, Aw Man",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Revenge (Minecraft Creeper Song)",
+      "year": 2011,
+      "sources": [
+        "https://www.youtube.com/watch?v=cPJUBQd-PNM"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "creeper_aw_man_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "creeper_sifflement",
+    "name": "Sss… BOUM",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Minecraft",
+      "year": 2011,
+      "sources": [
+        "https://www.minecraft.net/en-us/article/meet-creeper"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "creeper_sifflement_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "danse_jojo",
+    "name": "Canzoni preferite",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Golden Wind, épisode 7 · Danse du trio",
+      "year": 2018,
+      "sources": [
+        "https://www.crunchyroll.com/watch/GYXJ1KM76/six-bullets-appears-part-1",
+        "https://jojo-animation.com/story/007.php",
+        "https://www.youtube.com/watch?v=GTuX8kohqSU",
+        "https://jojo-animation.com/music/2018/10/bm01.php"
+      ]
+    },
+    "cost": 2,
+    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+    "strength": "Protège une carte clé dès que la Ref est jouée.",
+    "weakness": "Demande un Personnage allié à protéger.",
+    "visual": "spotlight",
+    "media": [
+      "jojo_scene",
+      "jojo_stills",
+      "jojo_music",
+      "demo_danse_jojo"
+    ],
+    "abilities": [
+      {
+        "id": "choregraphie",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "dance"
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "dark_brandon",
+    "name": "Dark Brandon",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Publication de Joe Biden après le Super Bowl LVIII",
+      "year": 2024,
+      "sources": [
+        "https://x.com/JoeBiden/status/1756888470599967000",
+        "https://www.cbsnews.com/news/biden-dark-brandon-meme-chiefs-super-bowl-taylor-swift/"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "dark_brandon_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Biden en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "fortnite_floss",
+    "name": "Floss",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Fortnite Battle Royale — Passe de combat de la saison 2",
+      "year": 2017,
+      "sources": [
+        "https://www.fortnite.com/news/fortnite-battle-royale-season-2-battle-pass-is-here"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "fortnite_floss_source"
+    ],
+    "tags": [
+      "dance"
+    ],
+    "cost": 2,
+    "text": "Danse · Donnez 2 Boucliers à un allié. Avec Jonesy en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "franklin_et_chop",
+    "name": "Chop fait le guet",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Grand Theft Auto V — Franklin & Chop on Guard",
+      "year": 2013,
+      "sources": [
+        "https://www.rockstargames.com/newswire/article/ak14o8838kaoa1/original-grand-theft-auto-v-artwork-franklin-chop-on-guard.html"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "franklin_et_chop_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Franklin en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "gojo_domaine",
+    "name": "0,2 seconde de territoire",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Jujutsu Kaisen, épisode 33",
+      "year": 2023,
+      "sources": [
+        "https://jujutsukaisen.jp/episodes/33.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "gojo_domaine_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Gojo en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "gojo_elu",
+    "name": "The Honored One",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Jujutsu Kaisen, épisode 28",
+      "year": 2023,
+      "sources": [
+        "https://jujutsukaisen.jp/episodes/28.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "gojo_elu_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Gojo en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "i_am_steve",
+    "name": "I Am Steve",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "A Minecraft Movie",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=PE2YZhcC4NY"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "i_am_steve_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Steve en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "inevitable_thanos",
+    "name": "I Am Inevitable",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Avengers: Endgame",
+      "year": 2019,
+      "sources": [
+        "https://disneystudiosawards.s3.amazonaws.com/avengers-endgame/Avengers_Endgame.pdf"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "inevitable_thanos_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Thanos en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "jadore_la_bagnole",
+    "name": "J’adore la bagnole",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Entretien télévisé du 24 septembre 2023",
+      "year": 2023,
+      "sources": [
+        "https://www.elysee.fr/emmanuel-macron/2023/09/24/20h-linterview-du-president-emmanuel-macron-sur-tf1-et-france-2"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "jadore_la_bagnole_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Macron en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "la_republique_cest_moi",
+    "name": "La République, c’est moi !",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Captation de Quotidien le 16 octobre 2018",
+      "year": 2018,
+      "sources": [
+        "https://www.tf1info.fr/politique/video-quotidien-barthes-melenchon-la-republique-c-est-moi-la-colere-noire-du-depute-lors-d-une-perquisition-au-siege-de-la-france-insoumise-2101666.html"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "la_republique_cest_moi_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Mélenchon en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "lucci_luffy_lunettes",
+    "name": "Les lunettes sorties de nulle part",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One Piece, épisode 1101",
+      "year": 2024,
+      "sources": [
+        "https://one-piece.com/anime/66425/index.html"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "lucci_luffy_lunettes_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Monkey D. Luffy en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "mojo_dojo_casa_house",
+    "name": "Mojo Dojo Casa House",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=pHPogYMl_FA"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "mojo_dojo_casa_house_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Ken en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "quatre_cartouches",
+    "name": "Il reste quatre cartouches",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "JoJo’s Bizarre Adventure: Golden Wind, épisode 8",
+      "year": 2018,
+      "sources": [
+        "https://jojo-animation.com/story/008.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "quatre_cartouches_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant un échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "qui_aurait_pu_predire",
+    "name": "Qui aurait pu prédire ?",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Vœux présidentiels du 31 décembre 2022",
+      "year": 2022,
+      "sources": [
+        "https://www.elysee.fr/emmanuel-macron/2022/12/31/voeux-2023-aux-francais"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "qui_aurait_pu_predire_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Macron en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "rollers_de_venice",
+    "name": "Rollers de Venice Beach",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=pBk4NYhWNMM"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "rollers_de_venice_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Barbie en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "saitama_moustique",
+    "name": "Le moustique invincible",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "One-Punch Man, épisode 2",
+      "year": 2015,
+      "sources": [
+        "https://onepunchman-anime.net/goods/bd/bd_1.php"
+      ]
+    },
+    "visual": "pulse",
+    "media": [
+      "saitama_moustique_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Saitama en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "silence_among_us",
+    "name": "Chut !",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Among Us",
+      "year": 2018,
+      "sources": [
+        "https://www.youtube.com/watch?v=NSJ4cESNQfE"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "silence_among_us_source"
+    ],
+    "cost": 2,
+    "text": "Donnez Garde et 1 Bouclier à un allié. Avec Rouge en jeu, donnez-lui 2 Boucliers.",
+    "strength": "Intercepte les attaques avec un allié choisi.",
+    "weakness": "Expose cet allié aux attaques adverses.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "guard",
+            "target": "chosen"
+          },
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "vent_among_us",
+    "name": "Il a pris le conduit",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Among Us",
+      "year": 2018,
+      "sources": [
+        "https://www.innersloth.com/games/among-us/"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "vent_among_us_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Rouge en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "wheatley_le_chapitre",
+    "name": "Un chapitre bien nommé",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Portal 2 — The Part Where He Kills You",
+      "year": 2011,
+      "sources": [
+        "https://www.thinkwithportals.com/music.php",
+        "https://theportalwiki.com/wiki/Wheatley_voice_lines"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "wheatley_le_chapitre_source"
+    ],
+    "cost": 2,
+    "text": "Infligez 2 dégâts à une cible adverse. Avec Wheatley en jeu, infligez 3 dégâts.",
+    "strength": "Peut achever une cible affaiblie.",
+    "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "wheatley_toc_toc",
+    "name": "Y a quelqu’un ?",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Portal 2 — The Courtesy Call",
+      "year": 2011,
+      "sources": [
+        "https://store.steampowered.com/app/620/Portal_2/",
+        "https://theportalwiki.com/wiki/Wheatley_voice_lines"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "wheatley_toc_toc_source"
+    ],
+    "cost": 2,
+    "text": "Donnez 2 Boucliers à un allié. Avec Wheatley en jeu, donnez-en 3.",
+    "strength": "Protège un allié avant l’échange.",
+    "weakness": "Demande un allié en jeu.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "ymca",
+    "name": "Y.M.C.A.",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Danse sur Y.M.C.A. (1978) · 250 ans de l’U.S. Navy",
+      "year": 2025,
+      "sources": [
+        "https://www.youtube.com/watch?v=4swzg3NV9tI",
+        "https://www.youtube.com/watch?v=CS9OO0S5w2k",
+        "https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call",
+        "https://x.com/MargoMartin47/status/1974971441583190436",
+        "https://www.youtube.com/watch?v=qBTJkfuC5Ds"
+      ]
+    },
+    "cost": 2,
+    "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
+    "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
+    "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
+    "visual": "spotlight",
+    "media": [
+      "ymca_photo",
+      "ymca_navy_dance",
+      "ymca_audio_original",
+      "demo_ymca",
+      "trump_dance_scene",
+      "ymca_original"
+    ],
+    "abilities": [
+      {
+        "id": "chorus",
+        "timing": "cast",
+        "targeting": "enemy",
+        "effects": [
+          {
+            "op": "damage",
+            "target": "chosen",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "dance"
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "faites_mieux",
+    "name": "Faites mieux !",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Discours de Jean-Luc Mélenchon au soir du premier tour",
+      "year": 2022,
+      "sources": [
+        "https://melenchon.fr/2022/04/10/1er-tour-jean-luc-melenchon-prend-la-parole/"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "faites_mieux_source"
+    ],
+    "cost": 3,
+    "text": "Donnez 1 Bouclier à chaque allié. Avec Mélenchon en jeu, donnez-en 2 à chacun.",
+    "strength": "Protège plusieurs Personnages en une action.",
+    "weakness": "Demande plusieurs alliés pour être rentable.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "fortnite_default_dance",
+    "name": "Danse par défaut",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Fortnite Battle Royale — Dance Moves",
+      "year": 2017,
+      "sources": [
+        "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20",
+        "https://fortnite.gg/cosmetics?id=3740&type=emote"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "fortnite_default_dance_source"
+    ],
+    "tags": [
+      "dance"
+    ],
+    "cost": 3,
+    "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Jonesy en jeu, donnez-en 2 à chacun.",
+    "strength": "Protège plusieurs Personnages en une action.",
+    "weakness": "Demande plusieurs alliés pour être rentable.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "im_just_ken",
+    "name": "I’m Just Ken",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Barbie",
+      "year": 2023,
+      "sources": [
+        "https://www.youtube.com/watch?v=467B06wsp30"
+      ]
+    },
+    "visual": "subtitle",
+    "media": [
+      "im_just_ken_source"
+    ],
+    "tags": [
+      "dance"
+    ],
+    "cost": 3,
+    "text": "Danse · Donnez 1 Bouclier à chaque allié. Avec Ken en jeu, donnez-en 2 à chacun.",
+    "strength": "Protège plusieurs Personnages en une action.",
+    "weakness": "Demande plusieurs alliés pour être rentable.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "moi_president",
+    "name": "Moi président…",
+    "kind": "ref",
+    "category": "politique",
+    "origin": {
+      "work": "Débat présidentiel Hollande–Sarkozy",
+      "year": 2012,
+      "sources": [
+        "https://www.youtube.com/watch?v=53b-pBPvjmA",
+        "https://www.youtube.com/watch?v=xyH_MRJ1C0s"
+      ]
+    },
+    "visual": "powder",
+    "media": [
+      "moi_president_source"
+    ],
+    "cost": 3,
+    "text": "Donnez 1 Bouclier à chaque allié. Avec Hollande en jeu, donnez-en 2 à chacun.",
+    "strength": "Protège plusieurs Personnages en une action.",
+    "weakness": "Demande plusieurs alliés pour être rentable.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "reunion_urgence",
+    "name": "Réunion d’urgence",
+    "kind": "ref",
+    "category": "jeu_video",
+    "origin": {
+      "work": "Among Us",
+      "year": 2018,
+      "sources": [
+        "https://www.youtube.com/watch?v=NSJ4cESNQfE"
+      ]
+    },
+    "visual": "pixel",
+    "media": [
+      "reunion_urgence_source"
+    ],
+    "cost": 3,
+    "text": "Donnez 1 Bouclier à chaque allié. Avec Rouge en jeu, donnez-en 2 à chacun.",
+    "strength": "Protège plusieurs Personnages en une action.",
+    "weakness": "Demande plusieurs alliés pour être rentable.",
+    "abilities": [
+      {
+        "id": "resolution",
+        "timing": "cast",
+        "targeting": "none",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "ally_characters",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "id": "touche_pas_bulma",
+    "name": "Touche pas à ma Bulma !",
+    "kind": "ref",
+    "category": "anime",
+    "origin": {
+      "work": "Dragon Ball Super, épisode 7",
+      "year": 2015,
+      "sources": [
+        "https://lineup.toei-anim.co.jp/ja/tv/dragon_super/episode/7/",
+        "https://www.youtube.com/watch?v=Imr6cbh0cXw",
+        "https://tv.apple.com/fr/episode/touche-pas-a-ma-bulma--la-transformation-enragee-de-vegeta/umc.cmc.6a8hggz1w2z9lcfdnbmcgn067?showId=umc.cmc.4weh63bj14xhxrdlq6em202xa"
+      ]
+    },
+    "cost": 3,
+    "text": "Donnez Garde et 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-lui 4 Boucliers.",
+    "strength": "Met un allié en position de protéger le joueur.",
+    "weakness": "Garde et Bouclier peuvent être dissipés.",
+    "visual": "pulse",
+    "media": [
+      "bulma_scene",
+      "bulma_trailer",
+      "demo_touche_pas_bulma"
+    ],
+    "abilities": [
+      {
+        "id": "replique",
+        "timing": "cast",
+        "targeting": "ally_character",
+        "effects": [
+          {
+            "op": "shield",
+            "target": "chosen",
+            "amount": 2
+          },
+          {
+            "op": "guard",
+            "target": "chosen"
+          }
+        ]
+      }
+    ]
+  }
+]

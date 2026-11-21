@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "id": "danse_jojo",
+  "name": "Canzoni preferite",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "Golden Wind, épisode 7 · Danse du trio",
+    "year": 2018,
+    "sources": [
+      "https://www.crunchyroll.com/watch/GYXJ1KM76/six-bullets-appears-part-1",
+      "https://jojo-animation.com/story/007.php",
+      "https://www.youtube.com/watch?v=GTuX8kohqSU",
+      "https://jojo-animation.com/music/2018/10/bm01.php"
+    ]
+  },
+  "cost": 2,
+  "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+  "strength": "Protège une carte clé dès que la Ref est jouée.",
+  "weakness": "Demande un Personnage allié à protéger.",
+  "visual": "spotlight",
+  "media": [
+    "jojo_scene",
+    "jojo_stills",
+    "jojo_music",
+    "demo_danse_jojo"
+  ],
+  "abilities": [
+    {
+      "id": "choregraphie",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dance"
+  ]
+}

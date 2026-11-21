@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "takoyaki_vegeta",
+  "name": "Takoyaki de la dernière chance",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "Dragon Ball Super, épisode 6",
+    "year": 2015,
+    "sources": [
+      "https://www.toei-anim.co.jp/tv/dragon_s/episode/summary/6/"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "takoyaki_vegeta_source"
+  ],
+  "cost": 1,
+  "text": "Soignez 2 PV d’un allié. Avec Vegeta en jeu, soignez 3 PV.",
+  "strength": "Maintient un allié blessé en jeu.",
+  "weakness": "Demande un allié blessé pour tirer parti du soin.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "heal",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "id": "perlimpinpin",
+  "name": "Poudre de perlimpinpin",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Débat présidentiel de l’entre-deux-tours",
+    "year": 2017,
+    "sources": [
+      "https://www.youtube.com/watch?v=FIJpp_TZC6k",
+      "https://www.youtube.com/watch?v=rCK-7Hki4II"
+    ]
+  },
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui ensuite 2 dégâts.",
+  "strength": "Ouvre un Personnage protégé avant d’appliquer les dégâts bonus.",
+  "weakness": "Sans Macron, seule la dissipation s’applique.",
+  "visual": "powder",
+  "media": [
+    "macron_photo",
+    "debate_scene"
+  ],
+  "abilities": [
+    {
+      "id": "poudre",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

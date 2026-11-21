@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "creeper_sifflement",
+  "name": "Sss… BOUM",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Minecraft",
+    "year": 2011,
+    "sources": [
+      "https://www.minecraft.net/en-us/article/meet-creeper"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "creeper_sifflement_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

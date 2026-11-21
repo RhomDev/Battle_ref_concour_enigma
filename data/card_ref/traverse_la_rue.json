@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "traverse_la_rue",
+  "name": "Je traverse la rue",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Journées européennes du patrimoine à l’Élysée",
+    "year": 2018,
+    "sources": [
+      "https://www.tf1info.fr/politique/video-macron-je-traverse-la-rue-je-vous-en-trouve-un-emploi-a-l-elysee-le-president-fait-la-lecon-a-un-jeune-horticulteur-chomeur-2098519.html"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "traverse_la_rue_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Macron en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre l’accès à une cible protégée.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

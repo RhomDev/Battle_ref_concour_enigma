@@ -1,0 +1,10 @@
+# Dossiers de configuration et fichiers locaux cachés
+**/.*/
+
+# Fichiers Python générés
+__pycache__/
+*.py[cod]
+
+# Environnements virtuels Python
+.venv/
+venv/

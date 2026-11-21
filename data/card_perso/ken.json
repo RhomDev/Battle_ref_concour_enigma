@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "ken",
+  "name": "Ken",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://www.youtube.com/watch?v=467B06wsp30"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "ken_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 2,
+  "stats": {
+    "hp": 3
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

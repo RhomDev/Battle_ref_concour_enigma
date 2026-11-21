@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "gojo_domaine",
+  "name": "0,2 seconde de territoire",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "Jujutsu Kaisen, épisode 33",
+    "year": 2023,
+    "sources": [
+      "https://jujutsukaisen.jp/episodes/33.php"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "gojo_domaine_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Gojo en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

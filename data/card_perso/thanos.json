@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "id": "thanos",
+  "name": "Thanos",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Avengers: Infinity War",
+    "year": 2018,
+    "sources": [
+      "https://www.youtube.com/watch?v=8BLyXCJis_I"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "thanos_source"
+  ],
+  "text": "Déploiement · Gagne Garde.",
+  "strength": "Protège son camp dès son arrivée.",
+  "weakness": "La Garde concentre les attaques adverses sur lui.",
+  "cost": 5,
+  "stats": {
+    "hp": 6
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "self"
+        }
+      ]
+    }
+  ]
+}

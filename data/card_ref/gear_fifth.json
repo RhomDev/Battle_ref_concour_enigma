@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "gear_fifth",
+  "name": "Gear 5",
+  "kind": "ref",
+  "category": "anime",
+  "origin": {
+    "work": "One Piece, épisode 1071",
+    "year": 2023,
+    "sources": [
+      "https://one-piece.com/anime/62947/index.html"
+    ]
+  },
+  "visual": "pulse",
+  "media": [
+    "gear_fifth_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Monkey D. Luffy en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre une cible protégée aux attaques suivantes.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "chat_potte",
+  "name": "Le Chat Potté",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Puss in Boots: The Last Wish",
+    "year": 2022,
+    "sources": [
+      "https://www.dreamworks.com/movies/puss-in-boots-the-last-wish"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "chat_potte_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 3,
+  "stats": {
+    "hp": 4
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

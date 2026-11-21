@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "id": "jonesy",
+  "name": "Jonesy",
+  "kind": "character",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Fortnite Battle Royale",
+    "year": 2017,
+    "sources": [
+      "https://www.fortnite.com/item-shop/outfits/jonesy-the-first-4b19ca20"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "jonesy_source"
+  ],
+  "text": "Déploiement · Gagne 1 Bouclier.",
+  "strength": "Encaisse une première attaque.",
+  "weakness": "Sa protection initiale est limitée.",
+  "cost": 3,
+  "stats": {
+    "hp": 4
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "self",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

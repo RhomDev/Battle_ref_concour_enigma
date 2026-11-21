@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "id": "wheatley_toc_toc",
+  "name": "Y a quelqu’un ?",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Portal 2 — The Courtesy Call",
+    "year": 2011,
+    "sources": [
+      "https://store.steampowered.com/app/620/Portal_2/",
+      "https://theportalwiki.com/wiki/Wheatley_voice_lines"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "wheatley_toc_toc_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Wheatley en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

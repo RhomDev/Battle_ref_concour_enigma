@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "steves_lava_chicken",
+  "name": "Steve’s Lava Chicken",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "A Minecraft Movie",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=iTz5niEWD7w"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "steves_lava_chicken_source"
+  ],
+  "cost": 1,
+  "text": "Soignez 2 PV d’un allié. Avec Steve en jeu, soignez 3 PV.",
+  "strength": "Maintient un allié blessé en jeu.",
+  "weakness": "Demande un allié blessé pour tirer parti du soin.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "heal",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

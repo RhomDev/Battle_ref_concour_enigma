@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "inevitable_thanos",
+  "name": "I Am Inevitable",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Avengers: Endgame",
+    "year": 2019,
+    "sources": [
+      "https://disneystudiosawards.s3.amazonaws.com/avengers-endgame/Avengers_Endgame.pdf"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "inevitable_thanos_source"
+  ],
+  "cost": 2,
+  "text": "Donnez 2 Boucliers à un allié. Avec Thanos en jeu, donnez-en 3.",
+  "strength": "Protège un allié avant l’échange.",
+  "weakness": "Demande un allié en jeu.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

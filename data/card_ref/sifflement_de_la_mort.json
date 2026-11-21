@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "sifflement_de_la_mort",
+  "name": "Le sifflement du Loup",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Puss in Boots: The Last Wish",
+    "year": 2022,
+    "sources": [
+      "https://www.youtube.com/watch?v=7E4YSzxeZNs&t=29s"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "sifflement_de_la_mort_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Le Chat Potté en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre l’accès à une cible protégée.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

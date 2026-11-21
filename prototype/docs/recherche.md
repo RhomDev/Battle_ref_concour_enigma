@@ -1,8 +1,8 @@
 # Recherche culturelle · 35 pistes
 
-Relevé du 21 novembre 2026. **★** indique une piste jouée parmi les 15 cartes. Les niveaux « France », « international », « communauté » et « incertain » estiment le public susceptible de reconnaître la référence. Ce sont des estimations éditoriales, sauf lorsque l’indice est précisé dans la ligne. Les liens permettent de retrouver les visuels et les captations. Les GIF de fans et les extraits de chaînes officielles restent des références de recherche tant que la réutilisation n’est pas documentée.
+Relevé du 21 novembre 2026. **★** indique une piste retenue lors de la première sélection de 15 cartes. Les niveaux « France », « international », « communauté » et « incertain » estiment le public susceptible de reconnaître la référence. Ce sont des estimations éditoriales, sauf lorsque l’indice est précisé dans la ligne. Les liens permettent de retrouver les visuels et les captations.
 
-La colonne « Application et lien » conserve les premières idées de jeu. Les effets actuels figurent dans les [fiches du catalogue](../catalogue/fiches/).
+La colonne « Application et lien » conserve les premières idées de jeu. Pour les effets et les sources du catalogue actuel, consulter les [fiches éditables](../../data/README.md) et le [registre des médias](../../data/medias.json).
 
 | # | Référence et origine | Public et ressort comique | Application et lien | Média / interlocuteur |
 |---|---|---|---|---|
@@ -45,15 +45,19 @@ La colonne « Application et lien » conserve les premières idées de jeu. Les 
 ### Points de provenance à retenir
 
 - **Macron Explosion.** La piste la mieux étayée est le remix techno de Majes, à partir d’une vidéo virale que le producteur évoque dans son entretien. Le premier téléversement et le cadre de la captation restent à authentifier. La boucle de fan peut provenir d’un montage différent. Le prototype garde la Ref du débat, dont la source est certaine. [Entretien avec Majes](https://www.dailymotion.com/video/x8kdimx) · [Single et date](https://music.apple.com/us/album/macron-explosion-single/1682811121)
-- **Vegeta.** Le prototype retient le moment de *Dragon Ball Super* épisode 7, clairement nommé par le diffuseur. L’édition et le minutage du doublage français restent à relever. [Épisode](https://www.crunchyroll.com/watch/GYNQ8NV9Y/how-dare-you-hurt-my-bulma-vegetas-sudden-angry-shift)
-- **JoJo.** Le nom de la musique est *canzoni preferite*. L’équipe réserve une entrée de droits pour la scène et une autre pour le morceau. [Épisode](https://jojo-animation.com/story/007.php) · [Musique et piste 18](https://jojo-animation.com/music/2018/10/bm01.php)
-- **Photos réutilisées dans le dossier.** PSY par AngryJulieMonday, CC BY 2.0. Portrait de Trump par Shealah Craighead, signalé domaine public aux États-Unis. Photo CC0 de Macron au Parlement européen en 2022 par France Diplomatie / MEAE. Les crédits restent visibles. Pour la diffusion du jeu en France, vérifier aussi le droit à l’image et le contexte d’utilisation. [Photo PSY](https://commons.wikimedia.org/wiki/File:Psy_does_Gangnam_Style_at_KIIS_FM_Jingle_Ball_2012.jpg) · [Photo Trump](https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg) · [Photo Macron](https://commons.wikimedia.org/wiki/File:Macron_de_profil.jpg) · [Service Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F32103)
-- **Solutions de repli pour les autres visuels.** Un carton, une typographie et un effet de régie dessinés par l’équipe peuvent porter la Ref pendant la revue des droits. Une photo de cosplay exige une lecture de la licence de la photo et une analyse des droits liés au costume et à la personne photographiée. Une prise son originale ne mobilise pas les droits d’un master tiers. L’usage de la parodie française s’apprécie selon la loi et le contexte de l’œuvre. [Légifrance, CPI L122-5](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048603495/2026-06-12) · [Réutilisation de Commons](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/fr) · [Sons d’impact Kenney](https://kenney.nl/assets/impact-sounds)
+- **Vegeta.** La fiche pointe vers le modèle animé de Toei et la scène de *Dragon Ball Super*, épisode 7. [Visuel officiel](https://www.toei-anim.co.jp/tv/dragon_s/chara/04.html) · [Épisode](https://lineup.toei-anim.co.jp/ja/tv/dragon_super/episode/7/)
+- **JoJo.** *Canzoni preferite* est la piste 18 de la bande originale. La fiche relie la musique au passage de l’épisode 7 et aux visuels de l’animé. [Épisode](https://jojo-animation.com/story/007.php) · [Bande originale](https://jojo-animation.com/music/2018/10/bm01.php)
+- **Y.M.C.A.** Les images locales montrent la vraie danse du 5 octobre 2025 à Norfolk. Le GIF muet utilise les six premières secondes de la captation de Margo Martin. Le MP3 de la Ref reprend six secondes de l’aperçu officiel de l’enregistrement de 1978. [Captation](https://commons.wikimedia.org/wiki/File:Trump_Dance_with_the_Navy_Sailors.webm) · [Photo de l’U.S. Navy](https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call) · [Enregistrement original des Village People](https://www.youtube.com/watch?v=qBTJkfuC5Ds)
 
-### Photographies ajoutées pour les Refs
+### Crédits des premières maquettes
 
-| Carte | Photo d’illustration et attribution |
+Les PNG historiques dans [`asset/image/maquettes/`](../../asset/image/maquettes/) documentent les premières recherches visuelles. Les composites incorporant des photos CC BY-SA 2.0 reprennent cette licence. [Licence CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+
+| Carte | Photo utilisée dans les maquettes |
 |---|---|
+| Donald Trump | Portrait officiel par Shealah Craighead, Maison-Blanche, domaine public aux États-Unis. [Photo source](https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg) |
+| PSY | Concert du KIIS FM Jingle Ball par AngryJulieMonday, CC BY 2.0. [Photo source](https://commons.wikimedia.org/wiki/File:Psy_does_Gangnam_Style_at_KIIS_FM_Jingle_Ball_2012.jpg) |
+| Vegeta | Cosplay de l’Anime Expo 2010, The Conmunity · Pop Culture Geek, CC BY 2.0. [Photo source](https://commons.wikimedia.org/wiki/File:Anime_Expo_2010_-_Vegeta_cosplay_%284836635457%29.jpg) |
 | Poudre de perlimpinpin | Emmanuel Macron au Parlement européen, France Diplomatie / MEAE, CC0 1.0. [Photo source](https://commons.wikimedia.org/wiki/File:Macron_de_profil.jpg) |
 | Y.M.C.A. | Donald Trump danse à la fin d’un meeting à Goodyear en 2020, Gage Skidmore, CC BY-SA 2.0. [Photo source](https://commons.wikimedia.org/wiki/File:Donald_Trump_%2850548264808%29.jpg) |
 | Canzoni preferite | Cosplay de Narancia au Comic World Taiwan 39 en 2015, 玄史生, CC0 1.0. [Photo source](https://commons.wikimedia.org/wiki/File:Cosplayer_of_Narancia_Ghirga_from_JoJo%27s_Bizarre_Adventure_Part_5_20150228.jpg) |

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "id": "ymca",
+  "name": "Y.M.C.A.",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Danse sur Y.M.C.A. (1978) · 250 ans de l’U.S. Navy",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=4swzg3NV9tI",
+      "https://www.youtube.com/watch?v=CS9OO0S5w2k",
+      "https://www.dvidshub.net/image/9355645/titans-sea-navy-250-all-hands-call",
+      "https://x.com/MargoMartin47/status/1974971441583190436",
+      "https://www.youtube.com/watch?v=qBTJkfuC5Ds"
+    ]
+  },
+  "cost": 2,
+  "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
+  "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
+  "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
+  "visual": "spotlight",
+  "media": [
+    "ymca_photo",
+    "ymca_navy_dance",
+    "ymca_audio_original",
+    "demo_ymca",
+    "trump_dance_scene",
+    "ymca_original"
+  ],
+  "abilities": [
+    {
+      "id": "chorus",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "dance"
+  ]
+}

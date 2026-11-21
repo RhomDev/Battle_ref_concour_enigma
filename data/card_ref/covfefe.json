@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "covfefe",
+  "name": "Covfefe",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Tweet de Donald Trump du 31 mai 2017",
+    "year": 2017,
+    "sources": [
+      "https://www.presidency.ucsb.edu/documents/tweets-may-31-2017",
+      "https://commons.wikimedia.org/wiki/File:Covfefe.png"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "covfefe_source"
+  ],
+  "cost": 1,
+  "text": "Dissipez les protections d’un ennemi. Avec Trump en jeu, infligez-lui aussi 1 dégât.",
+  "strength": "Ouvre l’accès à une cible protégée.",
+  "weakness": "Demande un Personnage adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy_character",
+      "effects": [
+        {
+          "op": "dispel",
+          "target": "chosen"
+        }
+      ]
+    }
+  ]
+}

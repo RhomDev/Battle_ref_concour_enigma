@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "la_republique_cest_moi",
+  "name": "La République, c’est moi !",
+  "kind": "ref",
+  "category": "politique",
+  "origin": {
+    "work": "Captation de Quotidien le 16 octobre 2018",
+    "year": 2018,
+    "sources": [
+      "https://www.tf1info.fr/politique/video-quotidien-barthes-melenchon-la-republique-c-est-moi-la-colere-noire-du-depute-lors-d-une-perquisition-au-siege-de-la-france-insoumise-2101666.html"
+    ]
+  },
+  "visual": "powder",
+  "media": [
+    "la_republique_cest_moi_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Mélenchon en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

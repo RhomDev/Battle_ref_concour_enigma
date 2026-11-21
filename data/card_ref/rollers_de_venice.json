@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "rollers_de_venice",
+  "name": "Rollers de Venice Beach",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Barbie",
+    "year": 2023,
+    "sources": [
+      "https://www.youtube.com/watch?v=pBk4NYhWNMM"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "rollers_de_venice_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Barbie en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

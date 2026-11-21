@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "id": "steve_minecraft_film",
+  "name": "Steve",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "A Minecraft Movie",
+    "year": 2025,
+    "sources": [
+      "https://www.youtube.com/watch?v=PE2YZhcC4NY"
+    ]
+  },
+  "visual": "subtitle",
+  "media": [
+    "steve_minecraft_film_source"
+  ],
+  "text": "Déploiement · Gagne Garde.",
+  "strength": "Protège son camp dès son arrivée.",
+  "weakness": "La Garde concentre les attaques adverses sur lui.",
+  "cost": 4,
+  "stats": {
+    "hp": 5
+  },
+  "abilities": [
+    {
+      "id": "deploiement",
+      "timing": "summoned",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "self"
+        }
+      ]
+    }
+  ]
+}

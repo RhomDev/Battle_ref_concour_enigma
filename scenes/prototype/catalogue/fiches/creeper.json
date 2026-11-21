@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "creeper",
+  "name": "Creeper",
+  "kind": "character",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Minecraft",
+    "year": 2009,
+    "sources": [
+      "https://www.minecraft.net/en-us/article/meet-creeper",
+      "https://www.minecraft.net/en-us/usage-guidelines"
+    ]
+  },
+  "cost": 2,
+  "text": "K.-O. · Vos autres Personnages gagnent 1 Bouclier.",
+  "strength": "Protège le reste du plateau quand il est éliminé.",
+  "weakness": "Sa protection exige d’autres Personnages en jeu.",
+  "visual": "pixel",
+  "media": [
+    "creeper_scene"
+  ],
+  "abilities": [
+    {
+      "id": "psssht",
+      "timing": "defeated",
+      "targeting": "none",
+      "effects": [
+        {
+          "op": "shield",
+          "target": "ally_characters",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "hp": 2
+  }
+}

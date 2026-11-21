@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "creeper_aw_man",
+  "name": "Creeper, Aw Man",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Revenge (Minecraft Creeper Song)",
+    "year": 2011,
+    "sources": [
+      "https://www.youtube.com/watch?v=cPJUBQd-PNM"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "creeper_aw_man_source"
+  ],
+  "cost": 2,
+  "text": "Infligez 2 dégâts à une cible adverse. Avec Creeper en jeu, infligez 3 dégâts.",
+  "strength": "Peut achever une cible affaiblie.",
+  "weakness": "Garde peut bloquer l’accès au joueur adverse.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "enemy",
+      "effects": [
+        {
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
+        }
+      ]
+    }
+  ]
+}

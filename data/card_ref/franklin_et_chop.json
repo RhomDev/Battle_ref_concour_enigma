@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "franklin_et_chop",
+  "name": "Chop fait le guet",
+  "kind": "ref",
+  "category": "jeu_video",
+  "origin": {
+    "work": "Grand Theft Auto V — Franklin & Chop on Guard",
+    "year": 2013,
+    "sources": [
+      "https://www.rockstargames.com/newswire/article/ak14o8838kaoa1/original-grand-theft-auto-v-artwork-franklin-chop-on-guard.html"
+    ]
+  },
+  "visual": "pixel",
+  "media": [
+    "franklin_et_chop_source"
+  ],
+  "cost": 2,
+  "text": "Donnez Garde et 1 Bouclier à un allié. Avec Franklin en jeu, donnez-lui 2 Boucliers.",
+  "strength": "Intercepte les attaques avec un allié choisi.",
+  "weakness": "Expose cet allié aux attaques adverses.",
+  "abilities": [
+    {
+      "id": "resolution",
+      "timing": "cast",
+      "targeting": "ally_character",
+      "effects": [
+        {
+          "op": "guard",
+          "target": "chosen"
+        },
+        {
+          "op": "shield",
+          "target": "chosen",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}
