@@ -7,7 +7,8 @@
     "license": "PD-USGov",
     "restrictions": "Portrait officiel (2017). Domaine public aux États-Unis. Redimensionné et converti en WebP. Analyse de l’usage de l’image avant diffusion publique.",
     "status": "demo_asset",
-    "localPath": "assets/media/trump.webp"
+    "localPath": "assets/media/trump.webp",
+    "caption": "Portrait officiel de Donald Trump (2017)"
   },
   {
     "id": "macron_photo",
@@ -21,7 +22,8 @@
     "focalPoint": {
       "x": 50,
       "y": 33
-    }
+    },
+    "caption": "Emmanuel Macron au Parlement européen (2022)"
   },
   {
     "id": "psy_photo",
@@ -31,7 +33,8 @@
     "license": "CC-BY-2.0",
     "restrictions": "Concert de 2012. Redimensionnée et convertie en WebP. L’image peut être cadrée par l’interface. Licence https://creativecommons.org/licenses/by/2.0/",
     "status": "demo_asset",
-    "localPath": "assets/media/psy.webp"
+    "localPath": "assets/media/psy.webp",
+    "caption": "PSY au KIIS FM Jingle Ball (2012)"
   },
   {
     "id": "mask_scene",
@@ -140,5 +143,80 @@
     "license": "authorization-required",
     "restrictions": "Réplique redite par le comédien pour un entretien. Pour une lecture dans le jeu, demander une autorisation de réutilisation.",
     "status": "reference_only"
+  },
+  {
+    "id": "ymca_photo",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald_Trump_%2850548264808%29.jpg",
+    "creator": "Gage Skidmore",
+    "license": "CC-BY-SA-2.0",
+    "restrictions": "Photo du meeting du 28 octobre 2020. Conversion WebP et cadrage à l’affichage sous CC BY-SA 2.0.",
+    "status": "demo_asset",
+    "localPath": "assets/media/ref-ymca.webp",
+    "caption": "Donald Trump danse à la fin d’un meeting à Goodyear (2020)",
+    "focalPoint": {
+      "x": 43,
+      "y": 28
+    }
+  },
+  {
+    "id": "bulma_cosplay",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vegeta_%26_Bulma_cosplayers_%2826893925573%29.jpg",
+    "creator": "Gage Skidmore",
+    "license": "CC-BY-SA-2.0",
+    "restrictions": "Photo sous CC BY-SA 2.0. Conversion WebP et cadrage à l’affichage. La licence concerne la photographie.",
+    "status": "demo_asset",
+    "localPath": "assets/media/ref-bulma.webp",
+    "caption": "Cosplay de Vegeta et Bulma au Phoenix Comicon (2016)",
+    "focalPoint": {
+      "x": 56,
+      "y": 27
+    }
+  },
+  {
+    "id": "narancia_cosplay",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cosplayer_of_Narancia_Ghirga_from_JoJo%27s_Bizarre_Adventure_Part_5_20150228.jpg",
+    "creator": "玄史生",
+    "license": "CC0-1.0",
+    "restrictions": "Photo du Comic World Taiwan 39 sous CC0. Conversion WebP et cadrage à l’affichage. La licence concerne la photographie.",
+    "status": "demo_asset",
+    "localPath": "assets/media/ref-jojo.webp",
+    "caption": "Cosplay de Narancia, un des danseurs de Golden Wind (2015)",
+    "focalPoint": {
+      "x": 50,
+      "y": 16
+    }
+  },
+  {
+    "id": "mask_cosplay",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montreal_Comiccon_2016_-_The_Mask_%2827999721470%29.jpg",
+    "creator": "Pikawil",
+    "license": "CC-BY-SA-2.0",
+    "restrictions": "Photo sous CC BY-SA 2.0. Conversion WebP et cadrage à l’affichage. La licence concerne la photographie.",
+    "status": "demo_asset",
+    "localPath": "assets/media/ref-mask.webp",
+    "caption": "Cosplay de The Mask au Comiccon de Montréal (2016)",
+    "focalPoint": {
+      "x": 55,
+      "y": 12
+    }
+  },
+  {
+    "id": "vegeta_cosplay",
+    "kind": "image",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anime_Expo_2010_-_Vegeta_cosplay_%284836635457%29.jpg",
+    "creator": "The Conmunity · Pop Culture Geek",
+    "license": "CC-BY-2.0",
+    "restrictions": "Photo CC BY 2.0, convertie en WebP et cadrée à l’affichage. La licence concerne la photographie.",
+    "status": "demo_asset",
+    "localPath": "assets/media/vegeta.webp",
+    "caption": "Cosplay de Vegeta à l’Anime Expo (2010)",
+    "focalPoint": {
+      "x": 50,
+      "y": 18
+    }
   }
 ]

@@ -3,6 +3,12 @@ const catalogue = new Map(cards.map(card => [card.id, card]));
 const mediaRegistry = new Map(media.map(item => [item.id, item]));
 const categories = { cinema: "Cinéma", series: "Séries", politique: "Politique", anime: "Animé", musique: "Musique", jeu_video: "Jeu vidéo" };
 const symbols = { pulse: "◈", subtitle: "…", scroll: "¶", spotlight: "▶", rewind: "⏪", powder: "✦", pixel: "▦" };
+const licenses = {
+  "PD-USGov": { label: "domaine public aux États-Unis" },
+  "CC0-1.0": { label: "CC0 1.0", url: "https://creativecommons.org/publicdomain/zero/1.0/" },
+  "CC-BY-2.0": { label: "CC BY 2.0", url: "https://creativecommons.org/licenses/by/2.0/" },
+  "CC-BY-SA-2.0": { label: "CC BY-SA 2.0", url: "https://creativecommons.org/licenses/by-sa/2.0/" },
+};
 const dom = Object.fromEntries(["ennemi", "allie", "main", "detail", "event", "activate", "reset", "energy", "son", "volume", "credit-list", "gallery"].map(id => [id, document.getElementById(id)]));
 const handIds = ["perlimpinpin", "danse_jojo", "touche_pas_bulma", "sss_plendide"];
 let state;
@@ -24,7 +30,6 @@ function renderCard(card, { compact = false, interactive = false, hp, shield } =
   }
   element.dataset.compact = compact;
   element.dataset.cardId = card.id;
-  element.dataset.longTitle = card.name.length >= 13;
   const artwork = node("span", "card-illustration");
   const photo = card.media.map(id => mediaRegistry.get(id)).find(item => item?.kind === "image" && item.status === "demo_asset");
   if (photo) {
@@ -45,10 +50,12 @@ function renderCard(card, { compact = false, interactive = false, hp, shield } =
   frame.alt = "";
   frame.src = card.kind === "character" ? "assets/frames/personnage.webp" : "assets/frames/ref.webp";
 
+  const title = node("span", "card-copy card-title", card.name);
+  title.dataset.long = card.name.length >= 15;
   element.append(
-    node("span", "card-base"), artwork, frame,
+    artwork, frame,
     node("span", "card-copy card-cost", card.cost),
-    node("span", "card-copy card-title", card.name),
+    title,
     node("span", "card-copy card-tag", card.kind === "ref" ? `Ref · ${categories[card.category]}` : categories[card.category]),
     node("span", "card-copy card-effect", card.text),
   );
@@ -87,9 +94,10 @@ function selectCard(id, values = {}) {
   state.selected = id;
   const display = node("div", "detail-card");
   display.append(element);
-  const description = node("p", "description", card.text);
-  const note = node("p", "detail-note", photo ? photo.restrictions.split(". ")[0] + "." : "Visuel provisoire · scène d’origine référencée dans le catalogue.");
-  dom.detail.replaceChildren(display, description, note);
+  dom.detail.replaceChildren(display);
+  if (photo) {
+    dom.detail.append(node("p", "detail-note", photo.caption ?? photo.restrictions.split(". ")[0] + "."));
+  }
   for (const button of document.querySelectorAll("button.card")) {
     const selected = button.dataset.cardId === id;
     button.dataset.selected = selected;
@@ -174,15 +182,15 @@ gallery.addEventListener("toggle", () => {
 document.querySelector('a[href="#catalogue"]').addEventListener("click", () => { gallery.open = true; });
 
 for (const photo of media.filter(item => item.status === "demo_asset")) {
-  const licenseNames = { "PD-USGov": "domaine public aux États-Unis", "CC0-1.0": "CC0 1.0", "CC-BY-2.0": "CC BY 2.0" };
-  const item = node("li", "", `${photo.creator} · ${licenseNames[photo.license]} · `);
+  const license = licenses[photo.license];
+  const item = node("li", "", `${photo.creator} · ${license.label} · `);
   const source = node("a", "", "source de la photographie");
   source.href = photo.sourceUrl;
   item.append(source);
-  if (photo.license !== "PD-USGov") {
-    const license = node("a", "", "licence");
-    license.href = photo.license === "CC0-1.0" ? "https://creativecommons.org/publicdomain/zero/1.0/" : "https://creativecommons.org/licenses/by/2.0/";
-    item.append(" · ", license);
+  if (license.url) {
+    const terms = node("a", "", "licence");
+    terms.href = license.url;
+    item.append(" · ", terms);
   }
   item.append(" · Redimensionnement WebP et cadrage à l’affichage.");
   dom["credit-list"].append(item);

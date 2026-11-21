@@ -17,20 +17,16 @@ Dépôt [RhomDev/Battle_ref_concour_enigma](https://github.com/RhomDev/Battle_re
 
 Migration proposée dans une future branche. Déplacer les fiches d’origine et les scripts vers `legacy/python/` au premier commit de réorganisation. Conserver `the_mask` et fixer un alias d’import `the_mask_ref_1 → sss_plendide`. Les trois pointeurs d’attaque historiques laissent place aux règles d’attaque globales. Les valeurs factices sont converties à la main à partir des nouvelles fiches, avec revue de l’équipe. Les PNG historiques sont conservés dans Git comme preuves de travail et traités comme médias de recherche dans le registre jusqu’à validation des droits.
 
-## Trois directions graphiques
+## Direction graphique retenue
 
-| Direction | Silhouette, couleurs et traitement | Application à l’arène |
-|---|---|---|
-| **Régie pop** · retenue | Cartouche robuste, bleu nuit, angles biseautés, trame imprimée et accents cyan ou orange signal. Grand cadre de captation pour la scène. | Les photos réelles, le pixel art et l’animation cohabitent comme un changement de chaîne. Un spectateur identifie le type de carte d’un coup d’œil. Palette `#0B101C`, `#67E9FF`, `#FFAD58`. |
-| **Cabinet des reliques** | Blasons et cartouches, ardoise, bronze et accents rubis. Les Refs empruntent la forme de fiches d’archives. | Accent sur la collection et les références de cinéma. Les archives modernes demandent un recadrage plus sophistiqué pour garder le visage lisible. Palette `#25283B`, `#D5A768`, `#BD5962`. |
-| **Fanzine de tournoi** | Encre noire, ivoire, ruban et couleurs d’imprimerie. Cadres rectangulaires Personnage et ticket découpé pour Ref. | Ressort parodique immédiat. Les photos sombres gagnent à rester intactes derrière des aplats très sobres. Palette `#1F2025`, `#F5E9D7`, `#D84872`. |
+La **table de projection** assemble un tapis de jeu bordeaux, des bobines en périphérie et deux cadres inspirés du cinéma imprimé. Le fond illustré laisse libres les deux rangées du duel. Les jauges de PV longent le tapis et la main reste sur une zone papier séparée. Les directions alternatives restent consultables dans la [planche graphique](../directions.html).
 
-Les deux PNG finaux ont été créés avec l’outil imagegen intégré. Personnage 1086 × 1448, Ref 1024 × 1536. Les WebP livrés ont un alpha réel et la fenêtre a été vérifiée. Le rendu étire légèrement le cadre Personnage vers le ratio commun 2:3. Pour stabiliser les marges sur les prochains exports, tirer les deux masters dans la même géométrie et reprendre les bonnes coordonnées dans l’UI.
+Les deux cadres PNG de 1 024 × 1 536 px ont été générés avec une fenêtre réellement transparente. Les WebP alpha de 660 × 990 px servent au jeu. L’interface place la photo derrière le cadre puis ajoute le texte et les statistiques devant. Les pourcentages de la fenêtre et du médaillon vivent dans la feuille de style.
 
-- **Personnage.** Coût en haut à gauche, nom en haut, illustration centrée, univers sous l’image, texte d’effet, puis ATQ et PV en bas. Pour l’état, un badge Bouclier, une icône et un libellé aident à lire la protection. En combat, la fiche agrandie contient la règle complète. Retenir les badges numérique Bouclier, Garde par écusson, blessure par PV actuels et renfort par `+ATQ`. L’accessibilité repose sur la forme, le libellé et les valeurs.
-- **Ref.** Coin coupé, orange, contrôle de lecture et cartouche « Ref ». Le coût garde la même position générale. Le bloc d’effet occupe le bas, avec une mention Danse si applicable. Les PV et l’attaque appartiennent au format Personnage.
-- **Rareté.** Différée au-delà du premier playtest. La lisibilité et l’équilibrage des quinze cartes passent d’abord. Pour une extension, utiliser un pictogramme à un, deux ou trois chevrons près du type, accompagné d’un libellé dans la fiche.
-- **Échelles.** Maître PNG avec alpha, dérivés WebP alpha, format carte 600 × 900 de référence. Cartes de plateau 110–150 px de large sur écran jury. Prioriser nom, coût, ATQ et PV dès 100 px. À 80–99 px, conserver les chiffres et offrir l’inspection au clavier/toucher. Visuels de scène à 320 et 640 px, photo < 120 Ko à cette taille. Cadres partagés, cible < 250 Ko chaque une fois optimisés. Les fichiers de première passe pèsent 160 et 289 Ko.
+- **Personnage.** Bordeaux et angles biseautés. Le coût apparaît dans le médaillon. Le bandeau inférieur accueille univers, effet, attaque, PV et Bouclier. En combat, la fiche agrandie donne le détail de la règle.
+- **Ref.** Vert profond et or, avec perforations latérales et encoches de ticket. Les cinq cartes ont une photographie locale. Sur la fiche, le bas présente la règle et la catégorie. Les médias de substitution sont identifiés sous la carte et dans les crédits.
+- **Rareté.** Différée au-delà du premier playtest.
+- **Échelles.** Maîtres PNG avec alpha, cadres WebP à moins de 80 Ko chacun, cartes du plateau autour de 116 px de large sur ordinateur. Les exemples autonomes mesurent 600 × 900 px. Le fond généré est stocké en WebP à 1 560 × 780 px.
 
 ## Règles proposées
 

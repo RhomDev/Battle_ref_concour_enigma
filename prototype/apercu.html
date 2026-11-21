@@ -3,38 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Battle Ref Arena — Aperçu du plateau</title>
+  <title>Battle Ref Arena — Plateau de combat</title>
   <link rel="stylesheet" href="arena.css">
   <script src="catalogue/apercu-data.js" defer></script>
   <script src="arena.js" defer></script>
 </head>
 <body>
   <header class="topbar">
-    <div class="brand"><span class="brand-icon" aria-hidden="true">▶</span><div><strong>BATTLE REF<span> ARENA</span></strong><small>Aperçu du plateau</small></div></div>
-    <div class="settings">
-      <button id="son" type="button" aria-pressed="false">Activer le son</button>
-      <label class="volume">Volume <input id="volume" type="range" min="0" max="100" value="35"></label>
+    <div class="brand">
+      <a href="apercu.html" aria-label="Battle Ref Arena, plateau">BATTLE REF <span>ARENA</span></a>
+      <span class="scene-label">Démonstration</span>
+    </div>
+    <nav class="settings" aria-label="Options du plateau">
       <a href="#catalogue">Catalogue</a>
       <a href="#credits">Crédits</a>
-    </div>
+      <button id="son" type="button" aria-pressed="false">Activer le son</button>
+      <label class="volume"><span>Volume</span><input id="volume" type="range" min="0" max="100" value="35"></label>
+    </nav>
   </header>
   <main class="layout">
     <section class="arena" aria-label="Plateau de combat">
-      <div class="team enemy">
-        <div><h1>Équipe adverse</h1><p>Tour de démonstration</p></div>
-        <span class="life"><b>12</b> PV</span>
+      <div class="table">
+        <header class="team enemy">
+          <h1>Adversaire</h1>
+          <div class="team-score">
+            <meter aria-label="PV adverses" min="0" max="18" value="12">12 sur 18</meter>
+            <span class="life"><b>12</b> PV</span>
+          </div>
+        </header>
+        <div class="lane" id="ennemi" aria-label="Personnages adverses"></div>
+        <div class="centerline" aria-label="Votre tour, tour 5">
+          <span aria-hidden="true"></span><strong>Tour 5</strong><span aria-hidden="true"></span>
+        </div>
+        <div class="lane" id="allie" aria-label="Vos personnages"></div>
+        <footer class="team ally">
+          <h2>Votre camp <small>À vous de jouer</small></h2>
+          <div class="team-score">
+            <meter aria-label="Vos PV" min="0" max="18" value="15">15 sur 18</meter>
+            <span class="life"><b>15</b> PV</span>
+          </div>
+        </footer>
       </div>
-      <div class="lane" id="ennemi" aria-label="Personnages adverses"></div>
-      <div class="centerline"><span></span><strong>Tour 5</strong><span></span></div>
-      <div class="lane" id="allie" aria-label="Vos personnages"></div>
-      <div class="team ally">
-        <div><h2>Votre équipe</h2><p>Votre tour</p></div>
-        <span class="life"><b>15</b> PV</span>
-      </div>
-      <div class="hand">
-        <div class="hand-head"><h2>Votre main</h2><span><b id="energy">4</b> / 5 ⚡</span></div>
+      <section class="hand" aria-labelledby="hand-heading">
+        <div class="hand-head">
+          <h2 id="hand-heading">En main</h2>
+          <span class="energy" aria-label="Énergie disponible"><b id="energy">4</b> / 5 ⚡</span>
+        </div>
         <div class="lane hand-cards" id="main" aria-label="Cartes en main"></div>
-      </div>
+      </section>
     </section>
     <aside class="sidebar" aria-labelledby="selection-heading">
       <h2 id="selection-heading">Carte sélectionnée</h2>
@@ -47,6 +63,6 @@
   <section class="gallery" id="catalogue" aria-labelledby="catalogue-heading">
     <details><summary id="catalogue-heading">Catalogue des 15 cartes</summary><div id="gallery" class="gallery-grid"></div></details>
   </section>
-  <footer id="credits"><h2>Crédits des photographies</h2><ul id="credit-list"></ul></footer>
+  <footer class="credits" id="credits"><h2>Crédits des photographies</h2><ul id="credit-list"></ul></footer>
 </body>
 </html>

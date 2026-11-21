@@ -8,9 +8,9 @@
 <style>
   .directions { max-width: 1210px; padding: 30px 22px; margin: auto; }
   .directions h1 { margin-bottom: 8px; }
-  .directions p { color: #bdccdc; line-height: 1.55; }
-  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-  .direction { padding: 16px; border: 1px solid #334359; border-radius: 12px; background: #151f31; }
+  .directions p { color: var(--muted); line-height: 1.55; }
+  .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px; }
+  .direction { padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
   .direction h2 { font-size: 18px; margin: 0; }
   .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 10px; margin-block: 16px; }
   .pair > * { width: 100%; min-width: 0; aspect-ratio: 2/3; }
@@ -26,15 +26,15 @@
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand"><span class="brand-icon" aria-hidden="true">▶</span><div><strong>BATTLE REF<span> ARENA</span></strong><small>Directions graphiques</small></div></div><a href="apercu.html">Voir le plateau</a></header>
+<header class="topbar"><div class="brand"><a href="apercu.html">BATTLE REF <span>ARENA</span></a></div><a href="apercu.html">Voir le plateau</a></header>
 <main class="directions">
 <h1>Trois directions pour les cartes</h1>
 <p>Les aperçus comparent le cadre Personnage à gauche et le cadre Ref à droite.</p>
 <div class="panels">
   <section class="direction">
-    <h2>Régie pop · retenue</h2>
-    <div class="pair"><img class="final-frame" src="assets/frames/personnage.webp" alt="Cadre Personnage cyan"><img class="final-frame" src="assets/frames/ref.webp" alt="Cadre Ref orange"></div>
-    <p>Une fenêtre de diffusion accueille des photos et des styles d’animation différents. Cyan et coin biseauté orange signalent les deux types.</p>
+    <h2>Table de projection · retenue</h2>
+    <div class="pair"><img class="final-frame" src="assets/frames/personnage.webp" alt="Cadre Personnage bordeaux"><img class="final-frame" src="assets/frames/ref.webp" alt="Cadre Ref vert et or"></div>
+    <p>Le cadre bordeaux évoque une carte imprimée. Le cadre vert, perforé comme une pellicule, identifie les Refs. Les deux laissent une grande fenêtre pour une photographie.</p>
   </section>
   <section class="direction">
     <h2>Cabinet des reliques</h2>

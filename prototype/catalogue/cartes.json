@@ -350,6 +350,7 @@
     "weakness": "Vulnérable à la dissipation.",
     "visual": "spotlight",
     "media": [
+      "mask_cosplay",
       "mask_scene"
     ],
     "abilities": [
@@ -390,6 +391,7 @@
     "weakness": "Coûte cher et doit choisir entre se préparer et attaquer.",
     "visual": "pulse",
     "media": [
+      "vegeta_cosplay",
       "bulma_scene"
     ],
     "abilities": [
@@ -475,6 +477,7 @@
     "weakness": "Demande une cible alliée.",
     "visual": "spotlight",
     "media": [
+      "mask_cosplay",
       "mask_scene",
       "mask_vf_recreation"
     ],
@@ -513,6 +516,7 @@
     "weakness": "Demande un allié et coûte une carte.",
     "visual": "spotlight",
     "media": [
+      "narancia_cosplay",
       "jojo_scene",
       "jojo_music"
     ],
@@ -559,6 +563,7 @@
     "weakness": "Faible avec un plateau vide ou épuisé.",
     "visual": "spotlight",
     "media": [
+      "ymca_photo",
       "trump_dance_scene"
     ],
     "abilities": [
@@ -598,6 +603,7 @@
     "weakness": "Les bonus s’exposent à la dissipation.",
     "visual": "pulse",
     "media": [
+      "bulma_cosplay",
       "bulma_scene"
     ],
     "abilities": [
