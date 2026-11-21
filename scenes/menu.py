@@ -2,7 +2,7 @@
 import pygame
 from config import WIDTH, HEIGHT
 from gameplay.card import Card_Item
-from scenes.battle_scene import CardView
+from ui.Card_View import CardView
 from scenes.media_collection import MediaCollectionScene
 
 
