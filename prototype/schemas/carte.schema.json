@@ -18,7 +18,7 @@
   "additionalProperties": false,
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "id": {
       "type": "string",
@@ -83,16 +83,10 @@
     "stats": {
       "type": "object",
       "required": [
-        "attack",
         "hp"
       ],
       "additionalProperties": false,
       "properties": {
-        "attack": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 12
-        },
         "hp": {
           "type": "integer",
           "minimum": 1,
@@ -162,7 +156,6 @@
             "enum": [
               "summoned",
               "defeated",
-              "active",
               "ally_dance_ref_resolved",
               "cast"
             ]
@@ -173,7 +166,8 @@
               "enemy_character",
               "none",
               "optional_enemy_character",
-              "optional_other_ally_character"
+              "optional_other_ally_character",
+              "enemy"
             ]
           },
           "effects": {
@@ -192,10 +186,7 @@
                     "op": {
                       "enum": [
                         "shield",
-                        "draw",
                         "damage",
-                        "boost_attack",
-                        "charge",
                         "heal"
                       ]
                     },
@@ -203,9 +194,7 @@
                       "enum": [
                         "self",
                         "chosen",
-                        "player",
-                        "ally_characters",
-                        "enemy_characters"
+                        "ally_characters"
                       ]
                     },
                     "amount": {
@@ -233,9 +222,7 @@
                       "enum": [
                         "self",
                         "chosen",
-                        "player",
-                        "ally_characters",
-                        "enemy_characters"
+                        "ally_characters"
                       ]
                     }
                   }
@@ -244,36 +231,8 @@
             },
             "minItems": 1,
             "maxItems": 4
-          },
-          "cost": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 6
           }
-        },
-        "allOf": [
-          {
-            "if": {
-              "properties": {
-                "timing": {
-                  "const": "active"
-                }
-              }
-            },
-            "then": {
-              "required": [
-                "cost"
-              ]
-            },
-            "else": {
-              "not": {
-                "required": [
-                  "cost"
-                ]
-              }
-            }
-          }
-        ]
+        }
       },
       "minItems": 1,
       "maxItems": 4
@@ -302,9 +261,19 @@
                   "enum": [
                     "summoned",
                     "defeated",
-                    "active",
                     "ally_dance_ref_resolved"
                   ]
+                },
+                "effects": {
+                  "items": {
+                    "properties": {
+                      "op": {
+                        "not": {
+                          "const": "damage"
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -318,6 +287,9 @@
           ]
         },
         "properties": {
+          "cost": {
+            "minimum": 1
+          },
           "abilities": {
             "minItems": 1,
             "maxItems": 1,

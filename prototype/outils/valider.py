@@ -51,20 +51,37 @@ def validate():
     for item in media:
         if item["status"] == "demo_asset" and not (ROOT / item["localPath"]).is_file():
             raise ValueError(f"Fichier manquant: {item['localPath']}")
+    amplified_refs = set()
     for synergy in synergies:
         source = card_index[synergy["sourceCardId"]]
         expected = "ref" if synergy["event"] == "ref_resolved" else "character"
         if source["kind"] != expected:
             raise ValueError(f"Événement incompatible: {synergy['id']}")
+        if synergy.get("amplification"):
+            if source["id"] in amplified_refs:
+                raise ValueError(f"Amplification répétée: {source['id']}")
+            amplified_refs.add(source["id"])
         for requirement in synergy["requirements"]:
             if card_index[requirement["cardId"]]["kind"] != "character":
                 raise ValueError(f"Cible incompatible: {synergy['id']}")
+            if synergy["event"] == "characters_combined" and requirement["cardId"] == source["id"]:
+                raise ValueError(f"Combinaison de deux Personnages distincts attendue: {synergy['id']}")
+            if requirement["kind"] == "chosen_card" and (
+                expected != "ref" or source["abilities"][0]["targeting"] == "none"
+            ):
+                raise ValueError(f"Synergie sans sélection: {synergy['id']}")
         for effect in synergy["effects"]:
             target = effect["target"]
+            if expected == "character" and effect["op"] == "damage":
+                raise ValueError(f"Un Personnage ne peut pas infliger de dégâts: {synergy['id']}")
+            if target == "chosen" and (expected != "ref" or source["abilities"][0]["targeting"] == "none"):
+                raise ValueError(f"Effet sans sélection: {synergy['id']}")
             if ":" in target:
                 side, card_id = target.split(":")
                 if {"kind": "board_card", "cardId": card_id, "side": side} not in synergy["requirements"]:
                     raise ValueError(f"Cible de plateau sans condition: {synergy['id']}")
+    if amplified_refs != {card["id"] for card in cards if card["kind"] == "ref"}:
+        raise ValueError("Chaque Ref doit avoir une amplification.")
     return {"cards": cards, "media": media, "synergies": synergies}
 
 

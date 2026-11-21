@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "creeper",
   "name": "Creeper",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 2,
-  "text": "K.-O. · Inflige 1 dégât à chaque Personnage adverse.",
-  "strength": "Punit un plateau fragile.",
-  "weakness": "Ses dégâts touchent peu un adversaire sans plateau.",
+  "text": "K.-O. · Donne 1 Bouclier aux autres alliés.",
+  "strength": "Protège le reste du plateau quand il est éliminé.",
+  "weakness": "Sa protection exige d’autres Personnages en jeu.",
   "visual": "pixel",
   "media": [
     "creeper_scene"
@@ -27,15 +27,14 @@
       "targeting": "none",
       "effects": [
         {
-          "op": "damage",
-          "target": "enemy_characters",
+          "op": "shield",
+          "target": "ally_characters",
           "amount": 1
         }
       ]
     }
   ],
   "stats": {
-    "attack": 2,
     "hp": 2
   }
 }

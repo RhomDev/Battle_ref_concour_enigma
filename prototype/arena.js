@@ -1,6 +1,7 @@
 const { cards, media, synergies } = window.BATTLE_REF_PREVIEW;
 const catalogue = new Map(cards.map(card => [card.id, card]));
 const mediaRegistry = new Map(media.map(item => [item.id, item]));
+const amplifications = new Map(synergies.filter(item => item.amplification).map(item => [item.sourceCardId, item]));
 const categories = { cinema: "Cinéma", series: "Séries", politique: "Politique", anime: "Animé", musique: "Musique", jeu_video: "Jeu vidéo" };
 const symbols = { pulse: "◈", subtitle: "…", scroll: "¶", spotlight: "▶", rewind: "⏪", powder: "✦", pixel: "▦" };
 const licenses = {
@@ -16,7 +17,16 @@ const dom = Object.fromEntries([
 ].map(id => [id, document.getElementById(id)]));
 const battle = document.querySelector(".battle");
 const energyGems = document.querySelectorAll(".energy-gems i");
-const handIds = ["perlimpinpin", "danse_jojo", "touche_pas_bulma", "sss_plendide"];
+const drawCost = 1;
+const otis = catalogue.get("otis");
+const ymca = catalogue.get("ymca");
+const otisCombo = synergies.find(item => item.event === "characters_combined" && item.sourceCardId === otis.id);
+const steps = [
+  { label: `Piocher · ${drawCost} ⚡`, cost: drawCost, run: drawCard },
+  { label: `Déployer ${otis.name} · ${otis.cost} ⚡`, cost: otis.cost, cardId: otis.id, run: deployOtis },
+  { label: `Jouer ${ymca.name} · ${ymca.cost} ⚡`, cost: ymca.cost, cardId: ymca.id, run: playRef },
+  { label: "Terminer le tour", cost: 0, run: finishTurn },
+];
 let state;
 let audio;
 
@@ -27,12 +37,17 @@ function node(tag, className, label) {
   return element;
 }
 
-function renderCard(card, { compact = false, interactive = false, hp, shield } = {}) {
+function renderCard(card, { compact = false, interactive = false, hp, shield, guard, amplified } = {}) {
   const element = node(interactive ? "button" : "div", `card ${card.kind}`);
   if (interactive) {
     element.type = "button";
-    element.setAttribute("aria-label", `${card.name}, ${card.kind === "ref" ? "Ref" : "Personnage"}, coût ${card.cost}${card.stats ? `, attaque ${card.stats.attack}, ${hp ?? card.stats.hp} PV` : ""}`);
-    element.setAttribute("aria-pressed", "false");
+    const details = [`${card.name}, ${card.kind === "ref" ? "Ref" : "Personnage"}`, `coût ${card.cost}`];
+    if (card.stats) details.push(`${hp ?? card.stats.hp} PV`);
+    if (shield) details.push(`${shield} Bouclier`);
+    if (guard) details.push("Garde");
+    if (amplified) details.push("amplifiée");
+    element.setAttribute("aria-label", details.join(", "));
+    element.setAttribute("aria-haspopup", "dialog");
   }
   element.dataset.compact = compact;
   element.dataset.cardId = card.id;
@@ -66,16 +81,17 @@ function renderCard(card, { compact = false, interactive = false, hp, shield } =
     node("span", "card-copy card-effect", card.text),
   );
   if (card.stats) {
-    element.append(
-      node("span", "card-copy card-stat card-atk", `⚔ ${card.stats.attack}`),
-      node("span", "card-copy card-stat card-hp", `♥ ${hp ?? card.stats.hp}`),
-    );
+    element.append(node("span", "card-copy card-stat card-hp", `♥ ${hp ?? card.stats.hp}`));
   }
   if (shield) {
     const marker = node("span", "card-copy card-status", `◈ ${shield}`);
     marker.title = `Bouclier ${shield}`;
-    if (interactive) element.setAttribute("aria-label", element.getAttribute("aria-label") + `, Bouclier ${shield}`);
     element.append(marker);
+  }
+  if (guard) element.append(node("span", "card-copy card-stat card-guard", "Garde"));
+  if (compact && amplified) {
+    element.dataset.amplified = true;
+    element.append(node("span", "card-copy card-stat card-amplified", "Amplifiée"));
   }
   return { element, photo };
 }
@@ -86,10 +102,12 @@ function placeCards(container, positions, compact) {
     const slot = node("div", "slot");
     if (position) {
       const { id, ...values } = position;
-      const { element } = renderCard(catalogue.get(id), { compact, interactive: true, ...values });
+      const inHand = container === dom.main;
+      const amplified = inHand && Boolean(findAlly(amplifications.get(id)?.requirements[0].cardId));
+      const { element } = renderCard(catalogue.get(id), { compact, interactive: true, amplified, ...values });
+      element.dataset.next = inHand && steps[state.step]?.cardId === id;
       element.addEventListener("click", () => {
-        selectCard(id, values);
-        element.focus({ preventScroll: true });
+        inspectCard(id, values, inHand, amplified);
         dom.inspector.showModal();
       });
       slot.append(element);
@@ -98,44 +116,64 @@ function placeCards(container, positions, compact) {
   }
 }
 
-function selectCard(id, values = {}) {
+function inspectCard(id, values, inHand, amplified) {
   const card = catalogue.get(id);
   const { element, photo } = renderCard(card, values);
-  state.selected = id;
   const display = node("div", "detail-card");
   display.append(element);
   dom.detail.replaceChildren(display);
+  const amplifier = amplifications.get(id);
+  if (amplifier) {
+    const partner = catalogue.get(amplifier.requirements[0].cardId);
+    const label = amplified ? `Amplification active · ${partner.name}` : `Personnage associé · ${partner.name}`;
+    dom.detail.append(node("p", "detail-note", label));
+  }
   if (photo) {
     dom.detail.append(node("p", "detail-note", photo.caption ?? photo.restrictions.split(". ")[0] + "."));
   }
-  for (const button of document.querySelectorAll("button.card")) {
-    const selected = button.dataset.cardId === id;
-    button.dataset.selected = selected;
-    button.setAttribute("aria-pressed", String(selected));
-  }
-  const canPlay = id === "perlimpinpin" && !state.played;
-  dom.activate.disabled = !canPlay && !state.played;
-  dom.activate.textContent = state.played ? "Rejouer" : "Jouer la Ref";
-  dom["activate-card"].hidden = !canPlay;
-  dom["activate-card"].disabled = !canPlay;
+  const step = steps[state.step];
+  const canUse = inHand && step?.cardId === id && state.energy >= step.cost;
+  dom["activate-card"].hidden = !canUse;
+  if (canUse) dom["activate-card"].textContent = step.label;
 }
 
 function renderScene() {
-  const energy = state.played ? 3 : 4;
-  dom.energy.textContent = energy;
-  energyGems.forEach((gem, index) => gem.classList.toggle("charged", index < energy));
-  placeCards(dom.ennemi, [{ id: "trump", hp: 3, shield: state.played ? 0 : 1 }, null, { id: "vegeta", hp: 3 }], true);
-  placeCards(dom.allie, [{ id: "macron" }, null, { id: "psy", hp: 2 }], true);
-  const hand = state.played ? [...handIds.slice(1), "ymca"] : handIds;
-  placeCards(dom.main, hand.map(id => ({ id })), true);
+  const step = steps[state.step];
+  dom.energy.textContent = state.energy;
+  energyGems.forEach((gem, index) => gem.classList.toggle("charged", index < state.energy));
+  placeCards(dom.ennemi, state.enemy, true);
+  placeCards(dom.allie, state.ally, true);
+  placeCards(dom.main, state.hand.map(id => ({ id })), true);
+  dom.activate.textContent = step?.label ?? "Rejouer la scène";
+  dom.activate.disabled = Boolean(step && state.energy < step.cost);
 }
 
 function reset() {
-  state = { played: false, selected: null };
+  const vegeta = catalogue.get("vegeta");
+  const protection = vegeta.abilities[0].effects;
+  state = {
+    step: 0,
+    energy: energyGems.length,
+    enemy: [{ id: "creeper" }, null, {
+      id: vegeta.id,
+      hp: vegeta.stats.hp,
+      shield: protection.find(effect => effect.op === "shield").amount,
+      guard: protection.some(effect => effect.op === "guard"),
+    }],
+    ally: [{ id: "perceval", shield: catalogue.get("perceval").abilities[0].effects[0].amount }, null, { id: "trump", shield: 0 }],
+    hand: [ymca.id, "perlimpinpin", "sss_plendide"],
+  };
   renderScene();
-  selectCard("perlimpinpin");
-  dom.event.replaceChildren();
+  announce("Votre tour", "Perceval et Trump sont déjà déployés. Piochez pour ajouter un Personnage à votre main.");
   battle.querySelectorAll(".signal-mote").forEach(mote => mote.remove());
+}
+
+function findAlly(id) {
+  return state.ally.find(position => position && position.id === id);
+}
+
+function announce(title, message) {
+  dom.event.replaceChildren(node("strong", "", title), node("span", "", message));
 }
 
 function playSound() {
@@ -194,33 +232,67 @@ function animateSignal(source, target) {
   }
 }
 
-function playRef() {
-  if (state.played || state.selected !== "perlimpinpin") return;
-  const source = dom.main.querySelector('[data-card-id="perlimpinpin"]').getBoundingClientRect();
-  if (dom.inspector.open) dom.inspector.close();
-  state.played = true;
+function drawCard() {
+  state.hand.push(otis.id);
   renderScene();
-  selectCard("perlimpinpin");
-  const match = synergies.find(synergy => synergy.sourceCardId === "perlimpinpin" && synergy.requirements.some(requirement => requirement.cardId === "macron"));
-  dom.event.replaceChildren(
-    node("strong", "", match.title),
-    node("span", "", "Bouclier dissipé · Y.M.C.A. rejoint votre main."),
-  );
-  const trump = dom.ennemi.querySelector('[data-card-id="trump"]');
-  trump.classList.add("flash");
-  animateSignal(source, trump);
-  dom.activate.focus({ preventScroll: true });
+  announce(`${otis.name} rejoint votre main`, `La pioche coûte ${drawCost} ⚡. Déployez ${otis.name} aux côtés de Perceval.`);
+}
+
+function deployOtis() {
+  const guard = otis.abilities[0].effects.some(effect => effect.op === "guard");
+  const partner = findAlly(otisCombo.requirements[0].cardId);
+  const shield = partner ? otisCombo.effects[0].amount : 0;
+  state.hand = state.hand.filter(id => id !== otis.id);
+  state.ally[1] = { id: otis.id, shield, guard };
+  renderScene();
+  announce(otisCombo.title, `Otis gagne Garde et ${shield} Bouclier avec Perceval. Il peut protéger votre camp.`);
   playSound();
 }
 
-dom.activate.addEventListener("click", () => {
-  if (state.played) {
-    reset();
-    return;
+function playRef() {
+  const amplification = amplifications.get(ymca.id);
+  const amplifier = findAlly(amplification.requirements[0].cardId);
+  const baseDamage = ymca.abilities[0].effects[0].amount;
+  const bonusDamage = amplifier ? amplification.effects[0].amount : 0;
+  const target = state.enemy.find(position => position?.guard);
+  const absorbed = Math.min(target.shield, baseDamage + bonusDamage);
+  const source = dom.main.querySelector(`[data-card-id="${ymca.id}"]`).getBoundingClientRect();
+
+  target.shield -= absorbed;
+  target.hp -= baseDamage + bonusDamage - absorbed;
+  state.hand = state.hand.filter(id => id !== ymca.id);
+  if (amplifier && ymca.tags.includes("dance")) {
+    const danceEffect = catalogue.get(amplifier.id).abilities.find(ability => ability.timing === "ally_dance_ref_resolved");
+    amplifier.shield += danceEffect.effects[0].amount;
   }
-  playRef();
-});
-dom["activate-card"].addEventListener("click", playRef);
+  renderScene();
+  const defender = dom.ennemi.querySelector(`[data-card-id="${target.id}"]`);
+  defender.classList.add("flash");
+  animateSignal(source, defender);
+  announce(amplification.title, `${ymca.name} inflige ${baseDamage} + ${bonusDamage} dégâts. La Garde de Vegeta protège son camp et son Bouclier en absorbe ${absorbed}. Vegeta garde ${target.hp} PV.`);
+  playSound();
+}
+
+function finishTurn() {
+  renderScene();
+  announce("Fin du tour", "Otis protège votre camp. La Ref a touché Vegeta et les PV du joueur adverse sont intacts.");
+}
+
+function advanceScene() {
+  const step = steps[state.step];
+  if (dom.inspector.open) dom.inspector.close();
+  if (!step) {
+    reset();
+  } else if (state.energy >= step.cost) {
+    state.energy -= step.cost;
+    state.step += 1;
+    step.run();
+  }
+  dom.activate.focus({ preventScroll: true });
+}
+
+dom.activate.addEventListener("click", advanceScene);
+dom["activate-card"].addEventListener("click", advanceScene);
 dom.reset.addEventListener("click", () => {
   dom.options.close();
   reset();

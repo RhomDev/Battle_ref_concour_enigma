@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "macron",
   "name": "Emmanuel Macron",
   "kind": "character",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 2,
-  "text": "Invocation · Retirez les bonus visibles d’un ennemi, s’il y en a.",
-  "strength": "Ouvre un passage contre un ennemi protégé.",
-  "weakness": "Pouvoir sans valeur sur un plateau sans bonus.",
+  "text": "À l’arrivée · Dissipation ennemie facultative.",
+  "strength": "Ouvre une cible protégée et renforce Poudre de perlimpinpin.",
+  "weakness": "Sa dissipation exige une cible protégée.",
   "visual": "powder",
   "media": [
     "macron_photo",
@@ -35,7 +35,6 @@
     }
   ],
   "stats": {
-    "attack": 1,
     "hp": 3
   }
 }

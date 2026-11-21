@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "danse_jojo",
   "name": "Canzoni preferite",
   "kind": "ref",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 2,
-  "text": "Danse · Donnez 1 Charge et 1 Bouclier à un allié.",
-  "strength": "Prépare un ultime tout en protégeant son porteur.",
-  "weakness": "Demande un allié et coûte une carte.",
+  "text": "Danse · Donnez 2 Boucliers à un allié. Avec Mista en jeu, donnez-en 3.",
+  "strength": "Protège une carte clé dès que la Ref est jouée.",
+  "weakness": "Demande un Personnage allié à protéger.",
   "visual": "spotlight",
   "media": [
     "narancia_cosplay",
@@ -29,14 +29,9 @@
       "targeting": "ally_character",
       "effects": [
         {
-          "op": "charge",
-          "target": "chosen",
-          "amount": 1
-        },
-        {
           "op": "shield",
           "target": "chosen",
-          "amount": 1
+          "amount": 2
         }
       ]
     }

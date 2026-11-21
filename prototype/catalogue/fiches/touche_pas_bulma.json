@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "touche_pas_bulma",
   "name": "Touche pas à ma Bulma !",
   "kind": "ref",
@@ -12,9 +12,9 @@
     ]
   },
   "cost": 3,
-  "text": "Donnez 2 Boucliers et Garde à un allié.",
-  "strength": "Couvre le joueur et impose un échange.",
-  "weakness": "Les bonus s’exposent à la dissipation.",
+  "text": "Donnez Garde et 2 Boucliers à un allié. Avec Vegeta en jeu, donnez-lui 4 Boucliers.",
+  "strength": "Met un allié en position de protéger le joueur.",
+  "weakness": "Garde et Bouclier peuvent être dissipés.",
   "visual": "pulse",
   "media": [
     "bulma_cosplay",

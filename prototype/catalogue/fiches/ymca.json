@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "ymca",
   "name": "Y.M.C.A.",
   "kind": "ref",
@@ -13,9 +13,9 @@
     ]
   },
   "cost": 2,
-  "text": "Danse · Donnez +1 ATQ à tous vos Personnages pour ce tour.",
-  "strength": "Valorise un plateau préparé.",
-  "weakness": "Faible avec un plateau vide ou épuisé.",
+  "text": "Danse · Infligez 2 dégâts à une cible adverse. Avec Trump en jeu, infligez-en 3.",
+  "strength": "Menace un Personnage ou les PV du joueur si le passage est libre.",
+  "weakness": "Les Gardes peuvent bloquer la voie vers le joueur adverse.",
   "visual": "spotlight",
   "media": [
     "ymca_photo",
@@ -25,12 +25,12 @@
     {
       "id": "chorus",
       "timing": "cast",
-      "targeting": "none",
+      "targeting": "enemy",
       "effects": [
         {
-          "op": "boost_attack",
-          "target": "ally_characters",
-          "amount": 1
+          "op": "damage",
+          "target": "chosen",
+          "amount": 2
         }
       ]
     }
