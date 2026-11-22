@@ -1998,7 +1998,7 @@
     },
     "cost": 2,
     "text": "Soignez un allié de 2 PV. Avec Pierre le Blond sur votre terrain, soignez 3 PV.",
-    "strength": "Chant romantique de l'âge de pierre.",
+    "strength": "Une partie de biche-volley à l’âge de pierre.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
@@ -2734,36 +2734,6 @@
   },
   {
     "schemaVersion": 3,
-    "id": "l_age_c_est_dans_la_tete",
-    "name": "L'âge, c'est dans la tête",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "Astérix & Obélix : Mission Cléopâtre",
-      "year": 2002,
-      "sources": [
-        "https://www.pathefilms.com/fr/films/asterix-et-obelix-mission-cleopatre/"
-      ]
-    },
-    "cost": 2,
-    "text": "Donnez 2 points de bouclier à un allié. Avec Numérobis sur votre terrain, donnez 3 points de bouclier.",
-    "strength": "Revendication d'un forfait moderne dans le désert.",
-    "weakness": "Demande un personnage allié déployé.",
-    "visual": "scroll",
-    "media": [],
-    "abilities": {
-      "effect": {
-        "type": "shield",
-        "amount": 2
-      }
-    },
-    "synergy": {
-      "character_id": "numerobis",
-      "bonus": 1
-    }
-  },
-  {
-    "schemaVersion": 3,
     "id": "la_republique_cest_moi",
     "name": "La République, c’est moi !",
     "kind": "ref",
@@ -2892,67 +2862,6 @@
       "character_id": "luffy",
       "bonus": 1
     }
-  },
-  {
-    "schemaVersion": 3,
-    "id": "mammouth_qui_vole",
-    "name": "Un mammouth qui vole !",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "RRRrrrr !!!",
-      "year": 2004,
-      "sources": [
-        "https://www.studiocanal.com/title/rrrrrrr-2004/"
-      ]
-    },
-    "cost": 2,
-    "text": "Donnez 2 points de bouclier à un allié. Avec Pierre le Guérisseur sur votre terrain, donnez 3 points de bouclier.",
-    "strength": "Diversion absurde et imparable.",
-    "weakness": "Demande un personnage allié déployé.",
-    "visual": "rewind",
-    "media": [
-      "rrrr_mammouth_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "shield",
-        "amount": 2
-      }
-    },
-    "synergy": {
-      "character_id": "pierre_le_guerisseur",
-      "bonus": 1
-    }
-  },
-  {
-    "schemaVersion": 3,
-    "id": "manucure_prehistorique",
-    "name": "Manucure au silex",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "RRRrrrr !!!",
-      "year": 2004,
-      "sources": [
-        "https://www.studiocanal.com/title/rrrrrrr-2004/"
-      ]
-    },
-    "cost": 2,
-    "text": "Soignez un allié de 2 PV.",
-    "strength": "Soin esthétique raffiné des Cheveux Propres.",
-    "weakness": "Demande un personnage allié déployé.",
-    "visual": "scroll",
-    "media": [
-      "rrrr_manucure_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "heal",
-        "amount": 2
-      }
-    },
-    "synergy": null
   },
   {
     "schemaVersion": 3,
@@ -3220,38 +3129,6 @@
   },
   {
     "schemaVersion": 3,
-    "id": "plus_d_eau_chaude",
-    "name": "Plus d'eau chaude au bloc 3",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "Camping",
-      "year": 2006,
-      "sources": [
-        "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod"
-      ]
-    },
-    "cost": 2,
-    "text": "Infligez 2 dégâts à un personnage adverse. Avec Jacky Pic sur votre terrain, infligez 3 dégâts.",
-    "strength": "Douche glacée qui réveille les campeurs grincheux.",
-    "weakness": "Demande un personnage adverse déployé.",
-    "visual": "subtitle",
-    "media": [
-      "camping_eau_chaude_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "attack",
-        "amount": 2
-      }
-    },
-    "synergy": {
-      "character_id": "jacky_pic",
-      "bonus": 1
-    }
-  },
-  {
-    "schemaVersion": 3,
     "id": "previens_pierre",
     "name": "Préviens Pierre !",
     "kind": "ref",
@@ -3447,38 +3324,6 @@
   },
   {
     "schemaVersion": 3,
-    "id": "shogi_shogi",
-    "name": "La danse du Shogi Shogi",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "Camping",
-      "year": 2006,
-      "sources": [
-        "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod"
-      ]
-    },
-    "cost": 2,
-    "text": "Soignez un allié de 2 PV. Avec Patrick Chirac sur votre terrain, soignez 3 PV.",
-    "strength": "Rythme endiablé galvanisant toute la terrasse.",
-    "weakness": "Demande un personnage allié déployé.",
-    "visual": "scroll",
-    "media": [
-      "camping_shogi_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "heal",
-        "amount": 2
-      }
-    },
-    "synergy": {
-      "character_id": "patrick_chirac",
-      "bonus": 1
-    }
-  },
-  {
-    "schemaVersion": 3,
     "id": "silence_among_us",
     "name": "Chut !",
     "kind": "ref",
@@ -3670,38 +3515,6 @@
   },
   {
     "schemaVersion": 3,
-    "id": "vous_voulez_un_verre_deau",
-    "name": "Vous voulez un peu d'eau ?",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "RRRrrrr !!!",
-      "year": 2004,
-      "sources": [
-        "https://www.studiocanal.com/title/rrrrrrr-2004/"
-      ]
-    },
-    "cost": 2,
-    "text": "Soignez un allié de 2 PV. Avec Pierre le Guérisseur sur votre terrain, soignez 4 PV.",
-    "strength": "Remède universel pour toutes les blessures.",
-    "weakness": "Demande un personnage allié déployé.",
-    "visual": "scroll",
-    "media": [
-      "rrrr_eau_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "heal",
-        "amount": 2
-      }
-    },
-    "synergy": {
-      "character_id": "pierre_le_guerisseur",
-      "bonus": 2
-    }
-  },
-  {
-    "schemaVersion": 3,
     "id": "wheatley_le_chapitre",
     "name": "Un chapitre bien nommé",
     "kind": "ref",
@@ -3804,38 +3617,6 @@
     "synergy": {
       "character_id": "trump",
       "bonus": 1
-    }
-  },
-  {
-    "schemaVersion": 3,
-    "id": "attaque_au_poulet",
-    "name": "Attaque au poulet écrasé",
-    "kind": "ref",
-    "category": "cinema",
-    "origin": {
-      "work": "RRRrrrr !!!",
-      "year": 2004,
-      "sources": [
-        "https://www.studiocanal.com/title/rrrrrrr-2004/"
-      ]
-    },
-    "cost": 3,
-    "text": "Infligez 3 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 5 dégâts.",
-    "strength": "Projectile aviaire ancestral d'une rare violence.",
-    "weakness": "Demande un personnage adverse déployé.",
-    "visual": "powder",
-    "media": [
-      "rrrr_poulet_media"
-    ],
-    "abilities": {
-      "effect": {
-        "type": "attack",
-        "amount": 3
-      }
-    },
-    "synergy": {
-      "character_id": "pierre_le_chef",
-      "bonus": 2
     }
   },
   {

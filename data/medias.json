@@ -2376,24 +2376,36 @@
     "caption": "Ça va être tout noir ! · RRRrrrr !!!"
   },
   {
-    "id": "rrrr_eau_media",
-    "kind": "video",
-    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
-    "creator": "Alain Chabat / StudioCanal",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de la proposition d'eau récurrente de Pierre le Guérisseur.",
-    "caption": "Vous voulez un peu d'eau ? · RRRrrrr !!!"
-  },
-  {
     "id": "rrrr_biche_media",
-    "kind": "video",
-    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=31s",
     "creator": "Alain Chabat / StudioCanal",
     "license": "authorization-required",
     "status": "reference_only",
-    "restrictions": "Extrait musical officiel de Biche ô ma biche préhistorique.",
-    "caption": "Biche, ô ma biche · RRRrrrr !!!"
+    "restrictions": "La partie de biche-volley dans la bande-annonce de RRRrrrr !!!",
+    "caption": "La partie de biche-volley dans la bande-annonce de RRRrrrr !!!",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-biche-oh-ma-biche.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=31s",
+        "caption": "La partie de biche-volley dans la bande-annonce de RRRrrrr !!!"
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/ref-biche-oh-ma-biche.gif",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=31s",
+        "caption": "La partie de biche-volley dans la bande-annonce de RRRrrrr !!!",
+        "durationMs": 3000
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-biche-oh-ma-biche.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=31s",
+        "caption": "Son de la séquence de biche-volley dans la bande-annonce de RRRrrrr !!!",
+        "durationMs": 3030
+      }
+    ]
   },
   {
     "id": "rrrr_meurtre_media",
@@ -2426,16 +2438,6 @@
     "caption": "La formule du shampooing · RRRrrrr !!!"
   },
   {
-    "id": "rrrr_mammouth_media",
-    "kind": "video",
-    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
-    "creator": "Alain Chabat / StudioCanal",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de la diversion du mammouth volant.",
-    "caption": "Y a un mammouth qui vole ! · RRRrrrr !!!"
-  },
-  {
     "id": "rrrr_previens_media",
     "kind": "video",
     "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
@@ -2444,26 +2446,6 @@
     "status": "reference_only",
     "restrictions": "Extrait officiel du dialogue absurde 'Préviens Pierre'.",
     "caption": "Préviens Pierre qu'on a trouvé Pierre ! · RRRrrrr !!!"
-  },
-  {
-    "id": "rrrr_manucure_media",
-    "kind": "video",
-    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
-    "creator": "Alain Chabat / StudioCanal",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de la manucure avec des petits silex.",
-    "caption": "Manucure au silex · RRRrrrr !!!"
-  },
-  {
-    "id": "rrrr_poulet_media",
-    "kind": "video",
-    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
-    "creator": "Alain Chabat / StudioCanal",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de l'attaque inattendue au poulet écrasé.",
-    "caption": "Attaque au poulet écrasé · RRRrrrr !!!"
   },
   {
     "id": "camping_patrick_portrait",
@@ -2569,33 +2551,21 @@
   },
   {
     "id": "camping_slip_media",
-    "kind": "video",
-    "sourceUrl": "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
+    "kind": "image",
+    "sourceUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=2s",
     "creator": "Fabien Onteniente / Pathé",
     "license": "authorization-required",
     "status": "reference_only",
-    "restrictions": "Extrait officiel de la parade au maillot bleu au bord du bassin.",
-    "caption": "Le maillot moulant de Patrick · Camping"
-  },
-  {
-    "id": "camping_shogi_media",
-    "kind": "video",
-    "sourceUrl": "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
-    "creator": "Fabien Onteniente / Pathé",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de la chorégraphie du Shogi Shogi.",
-    "caption": "La danse du Shogi Shogi · Camping"
-  },
-  {
-    "id": "camping_eau_chaude_media",
-    "kind": "video",
-    "sourceUrl": "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
-    "creator": "Fabien Onteniente / Pathé",
-    "license": "authorization-required",
-    "status": "reference_only",
-    "restrictions": "Extrait officiel de la plainte matinale pour l'eau froide.",
-    "caption": "Plus d'eau chaude au bloc 3 · Camping"
+    "restrictions": "Patrick Chirac en maillot de bain dans Camping, photogramme du film.",
+    "caption": "Patrick Chirac en maillot de bain dans Camping, photogramme du film.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-slip-de-bain-bleu.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=2s",
+        "caption": "Patrick Chirac en maillot de bain dans Camping, photogramme du film."
+      }
+    ]
   },
   {
     "id": "camping_tournee_media",
@@ -2609,13 +2579,21 @@
   },
   {
     "id": "camping_petanque_media",
-    "kind": "video",
-    "sourceUrl": "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
+    "kind": "image",
+    "sourceUrl": "https://www.premiere.fr/People/Dans-le-dressing-de-Patrick-Chirac",
     "creator": "Fabien Onteniente / Pathé",
     "license": "authorization-required",
     "status": "reference_only",
-    "restrictions": "Extrait officiel du tournoi de pétanque au camping.",
-    "caption": "Tournoi de pétanque d'Arcachon · Camping"
+    "restrictions": "Le tournoi de pétanque des Flots Bleus dans Camping, photo publiée par Première.",
+    "caption": "Le tournoi de pétanque des Flots Bleus dans Camping, photo publiée par Première.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-tournoi-de-petanque.webp",
+        "assetUrl": "https://www.premiere.fr/sites/default/files/styles/scale_crop_border_1280x720/public/2018-04/18603140.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg",
+        "caption": "Le tournoi de pétanque des Flots Bleus dans Camping, photo publiée par Première."
+      }
+    ]
   },
   {
     "id": "camping_mehari_media",
