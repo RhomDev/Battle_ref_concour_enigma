@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "un_magicien_nest_jamais_en_retard",
+  "name": "Un magicien n'est jamais en retard",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Gandalf le Gris sur votre terrain, soignez 4 PV.",
+  "strength": "Arrivée opportune au moment précis souhaité.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [
+    "lotr_retard_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "gandalf",
+    "bonus": 2
+  }
+}

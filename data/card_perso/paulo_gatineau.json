@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "paulo_gatineau",
+  "name": "Paulo Gatineau",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 3,
+  "text": "Vacancier fidèle des Flots Bleus adepte de l'apéro sous la tente.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "powder",
+  "media": [
+    "camping_paulo_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "formule_du_shampooing",
+  "name": "La formule du shampooing",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 3,
+  "text": "Donnez 3 points de bouclier à un allié. Avec Pierre la Blonde sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Chevelure soyeuse et propre face aux intempéries.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [
+    "rrrr_shampooing_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_la_blonde",
+    "bonus": 1
+  }
+}

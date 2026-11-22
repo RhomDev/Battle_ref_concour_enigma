@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "plus_d_eau_chaude",
+  "name": "Plus d'eau chaude au bloc 3",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Jacky Pic sur votre terrain, infligez 3 dégâts.",
+  "strength": "Douche glacée qui réveille les campeurs grincheux.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "subtitle",
+  "media": [
+    "camping_eau_chaude_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "jacky_pic",
+    "bonus": 1
+  }
+}

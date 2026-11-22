@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "slip_de_bain_bleu",
+  "name": "Le maillot moulant de Patrick",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Patrick Chirac sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Assurance vestimentaire éblouissante au soleil.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "pulse",
+  "media": [
+    "camping_slip_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "patrick_chirac",
+    "bonus": 2
+  }
+}

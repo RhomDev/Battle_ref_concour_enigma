@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "goutte_de_potion_magique",
+  "name": "Une goutte de potion magique",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 3,
+  "text": "Soignez un allié de 3 PV. Avec Panoramix sur votre terrain, soignez 5 PV.",
+  "strength": "Énergie décuplée permettant de transporter les blocs de granit.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "pulse",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "panoramix",
+    "bonus": 2
+  }
+}

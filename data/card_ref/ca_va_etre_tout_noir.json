@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "ca_va_etre_tout_noir",
+  "name": "Ça va être tout noir !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 4 dégâts.",
+  "strength": "Rituel quotidien et réplique collective.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "subtitle",
+  "media": [
+    "rrrr_tout_noir_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_le_chef",
+    "bonus": 2
+  }
+}

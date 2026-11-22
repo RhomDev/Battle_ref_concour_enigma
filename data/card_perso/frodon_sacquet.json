@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "frodon_sacquet",
+  "name": "Frodon Sacquet",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 2,
+  "text": "Porteur de l'Anneau Unique en marche vers la Montagne du Destin.",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "subtitle",
+  "media": [
+    "lotr_frodon_portrait"
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

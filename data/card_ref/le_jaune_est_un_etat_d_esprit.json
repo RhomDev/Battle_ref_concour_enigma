@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "le_jaune_est_un_etat_d_esprit",
+  "name": "Le jaune est un état d'esprit",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Brice de Nice",
+    "year": 2005,
+    "sources": [
+      "https://www.mandarincinema.com/"
+    ]
+  },
+  "cost": 3,
+  "text": "Donnez 3 points de bouclier à un allié. Avec Brice de Nice sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Rayonnement solaire protecteur de la tenue canari.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "pulse",
+  "media": [
+    "dujardin_jaune_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "brice_de_nice",
+    "bonus": 1
+  }
+}

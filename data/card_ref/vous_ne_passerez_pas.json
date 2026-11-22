@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "vous_ne_passerez_pas",
+  "name": "Vous ne passerez pas !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 3,
+  "text": "Donnez 3 points de bouclier à un allié. Avec Gandalf le Gris sur votre terrain, donnez 5 points de bouclier.",
+  "strength": "Défense infranchissable sur le pont.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [
+    "lotr_passerez_pas_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "gandalf",
+    "bonus": 2
+  }
+}

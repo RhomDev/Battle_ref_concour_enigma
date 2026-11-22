@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "plan_en_coupe",
+  "name": "Un plan en coupe",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Amonbofis sur votre terrain, infligez 3 dégâts.",
+  "strength": "Schéma d'architecte trapézoïdal semant la discorde.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "powder",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "amonbofis",
+    "bonus": 1
+  }
+}

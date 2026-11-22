@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "shogi_shogi",
+  "name": "La danse du Shogi Shogi",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Patrick Chirac sur votre terrain, soignez 3 PV.",
+  "strength": "Rythme endiablé galvanisant toute la terrasse.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [
+    "camping_shogi_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "patrick_chirac",
+    "bonus": 1
+  }
+}

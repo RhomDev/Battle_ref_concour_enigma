@@ -2115,5 +2115,585 @@
         "caption": "Image publiée par Joe Biden le 11 février 2024, recadrée depuis la capture du post."
       }
     ]
+  },
+  {
+    "id": "lotr_gandalf_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Gandalf le Gris.",
+    "caption": "Gandalf le Gris · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_aragorn_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-return-king",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel d'Aragorn.",
+    "caption": "Aragorn · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_legolas_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-two-towers",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Legolas.",
+    "caption": "Legolas · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_gimli_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Gimli.",
+    "caption": "Gimli · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_gollum_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-two-towers",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Gollum.",
+    "caption": "Gollum · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_frodon_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Frodon Sacquet.",
+    "caption": "Frodon Sacquet · Le Seigneur des Anneaux"
+  },
+  {
+    "id": "lotr_passerez_pas_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la confrontation au pont de Khazad-dûm.",
+    "caption": "Vous ne passerez pas ! · Scène culte du pont de Khazad-dûm"
+  },
+  {
+    "id": "lotr_pour_frodon_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-return-king",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la charge d'Aragorn devant la Porte Noire.",
+    "caption": "Pour Frodon · Charge de la Porte Noire"
+  },
+  {
+    "id": "lotr_compte_un_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-return-king",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la réplique de Gimli abattant l'Oliphaunt.",
+    "caption": "Ça ne compte que pour un ! · Bataille des champs du Pelennor"
+  },
+  {
+    "id": "lotr_precieux_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-two-towers",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de Gollum parlant à son Précieux.",
+    "caption": "Mon Précieux ! · Soliloque de Gollum"
+  },
+  {
+    "id": "lotr_mordor_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du Conseil d'Elrond à Fondcombe.",
+    "caption": "On n'entre pas si facilement en Mordor · Conseil d'Elrond"
+  },
+  {
+    "id": "lotr_hache_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du serment de Gimli devant la Communauté.",
+    "caption": "Et ma hache ! · Formation de la Communauté"
+  },
+  {
+    "id": "lotr_dejeuner_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la réclamation du second petit-déjeuner.",
+    "caption": "Le second petit-déjeuner · En route vers Fondcombe"
+  },
+  {
+    "id": "lotr_retard_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de l'arrivée de Gandalf en Comté.",
+    "caption": "Un magicien n'est jamais en retard · Arrivée en Comté"
+  },
+  {
+    "id": "lotr_troll_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du combat dans la tombe de Balin en Moria.",
+    "caption": "Ils ont un troll des cavernes · Tombe de Balin"
+  },
+  {
+    "id": "lotr_fuyez_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/lord-rings-fellowship-ring",
+    "creator": "Peter Jackson / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la chute de Gandalf dans les mines de la Moria.",
+    "caption": "Fuyez, pauvres fous ! · Chute de Gandalf"
+  },
+  {
+    "id": "rrrr_blond_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel promotionnel officiel de Pierre le Blond.",
+    "caption": "Pierre le Blond · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_chef_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel promotionnel officiel de Pierre le Chef.",
+    "caption": "Pierre le Chef · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_guerisseur_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel promotionnel officiel de Pierre le Guérisseur.",
+    "caption": "Pierre le Guérisseur · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_blonde_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel promotionnel officiel de Pierre la Blonde.",
+    "caption": "Pierre la Blonde · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_tout_noir_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait de la réplique culte 'Ça va être tout noir ! - Ta gueule !'.",
+    "caption": "Ça va être tout noir ! · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_eau_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la proposition d'eau récurrente de Pierre le Guérisseur.",
+    "caption": "Vous voulez un peu d'eau ? · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_biche_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait musical officiel de Biche ô ma biche préhistorique.",
+    "caption": "Biche, ô ma biche · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_meurtre_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la découverte du premier meurtre.",
+    "caption": "Le premier crime de l'humanité · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_pierre_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la présentation où tout le monde s'appelle Pierre.",
+    "caption": "Appelez-moi Pierre ! · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_shampooing_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel sur la formule secrète convoitée du shampooing.",
+    "caption": "La formule du shampooing · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_mammouth_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la diversion du mammouth volant.",
+    "caption": "Y a un mammouth qui vole ! · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_previens_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du dialogue absurde 'Préviens Pierre'.",
+    "caption": "Préviens Pierre qu'on a trouvé Pierre ! · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_manucure_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la manucure avec des petits silex.",
+    "caption": "Manucure au silex · RRRrrrr !!!"
+  },
+  {
+    "id": "rrrr_poulet_media",
+    "kind": "video",
+    "sourceUrl": "https://www.studiocanal.com/title/rrrrrrr-2004/",
+    "creator": "Alain Chabat / StudioCanal",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de l'attaque inattendue au poulet écrasé.",
+    "caption": "Attaque au poulet écrasé · RRRrrrr !!!"
+  },
+  {
+    "id": "camping_patrick_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Patrick Chirac.",
+    "caption": "Patrick Chirac · Camping"
+  },
+  {
+    "id": "camping_jacky_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Jacky Pic.",
+    "caption": "Jacky Pic · Camping"
+  },
+  {
+    "id": "camping_paulo_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Paulo Gatineau.",
+    "caption": "Paulo Gatineau · Camping"
+  },
+  {
+    "id": "camping_sophie_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Sophie Gatineau.",
+    "caption": "Sophie Gatineau · Camping"
+  },
+  {
+    "id": "camping_attend_patrick_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la réplique 'Alors, on n'attend pas Patrick ?'.",
+    "caption": "Alors, on n'attend pas Patrick ? · Camping"
+  },
+  {
+    "id": "camping_emplacement_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la revendication de l'emplacement 17.",
+    "caption": "L'emplacement 17 · Camping"
+  },
+  {
+    "id": "camping_apero_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de l'apéritif rituel sous la tente.",
+    "caption": "L'apéro des Flots Bleus · Camping"
+  },
+  {
+    "id": "camping_slip_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la parade au maillot bleu au bord du bassin.",
+    "caption": "Le maillot moulant de Patrick · Camping"
+  },
+  {
+    "id": "camping_shogi_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la chorégraphie du Shogi Shogi.",
+    "caption": "La danse du Shogi Shogi · Camping"
+  },
+  {
+    "id": "camping_eau_chaude_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la plainte matinale pour l'eau froide.",
+    "caption": "Plus d'eau chaude au bloc 3 · Camping"
+  },
+  {
+    "id": "camping_tournee_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la commande de tournée au bar des Flots Bleus.",
+    "caption": "Remets-nous une tournée ! · Camping"
+  },
+  {
+    "id": "camping_petanque_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du tournoi de pétanque au camping.",
+    "caption": "Tournoi de pétanque d'Arcachon · Camping"
+  },
+  {
+    "id": "camping_mehari_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la panne de la Méhari décapotable.",
+    "caption": "La Méhari en panne · Camping"
+  },
+  {
+    "id": "camping_bien_la_media",
+    "kind": "video",
+    "sourceUrl": "https://www.pathefilms.com/film/camping",
+    "creator": "Fabien Onteniente / Pathé",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la réplique méditative 'On est pas bien là ?'.",
+    "caption": "On est pas bien là ? · Camping"
+  },
+  {
+    "id": "dujardin_hubert_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel d'Hubert Bonisseur de La Bath.",
+    "caption": "Hubert Bonisseur de La Bath · OSS 117"
+  },
+  {
+    "id": "dujardin_brice_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.mandarincinema.com/",
+    "creator": "James Huth / Mandarin Cinéma",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Brice de Nice.",
+    "caption": "Brice de Nice · Brice de Nice"
+  },
+  {
+    "id": "dujardin_george_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.warnerbros.fr/movies/artist",
+    "creator": "Michel Hazanavicius / La Petite Reine",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de George Valentin.",
+    "caption": "George Valentin · The Artist"
+  },
+  {
+    "id": "dujardin_dolores_portrait",
+    "kind": "image",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel officiel promotionnel de Dolores Koulechov.",
+    "caption": "Dolores Koulechov · OSS 117"
+  },
+  {
+    "id": "dujardin_blanquette_media",
+    "kind": "video",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du mot de passe 'Comment est votre blanquette ?'.",
+    "caption": "Comment est votre blanquette ? · OSS 117"
+  },
+  {
+    "id": "dujardin_casse_media",
+    "kind": "video",
+    "sourceUrl": "https://www.mandarincinema.com/",
+    "creator": "James Huth / Mandarin Cinéma",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du geste et de la réplique 'J't'ai cassé !'.",
+    "caption": "J't'ai cassé ! · Brice de Nice"
+  },
+  {
+    "id": "dujardin_battre_media",
+    "kind": "video",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la tirade sur la bagarre d'Hubert.",
+    "caption": "J'aime me battre · OSS 117"
+  },
+  {
+    "id": "dujardin_vague_media",
+    "kind": "video",
+    "sourceUrl": "https://www.mandarincinema.com/",
+    "creator": "James Huth / Mandarin Cinéma",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de l'attente de la vague sur la plage niçoise.",
+    "caption": "Attendre la vague à Nice · Brice de Nice"
+  },
+  {
+    "id": "dujardin_claquettes_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.fr/movies/artist",
+    "creator": "Michel Hazanavicius / La Petite Reine",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du triomphe de claquettes silencieuses.",
+    "caption": "Le numéro de claquettes muet · The Artist"
+  },
+  {
+    "id": "dujardin_habile_media",
+    "kind": "video",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de la réplique 'Habile, Bill !'.",
+    "caption": "Habile, Bill ! · OSS 117"
+  },
+  {
+    "id": "dujardin_muezzin_media",
+    "kind": "video",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du réveil nocturne d'Hubert au Caire.",
+    "caption": "Il va fermer sa gueule, là-haut ? · OSS 117"
+  },
+  {
+    "id": "dujardin_jaune_media",
+    "kind": "video",
+    "sourceUrl": "https://www.mandarincinema.com/",
+    "creator": "James Huth / Mandarin Cinéma",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel sur la philosophie vestimentaire de Brice.",
+    "caption": "Le jaune est un état d'esprit · Brice de Nice"
+  },
+  {
+    "id": "dujardin_coty_media",
+    "kind": "video",
+    "sourceUrl": "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+    "creator": "Michel Hazanavicius / Gaumont",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel de l'éloge vibrant du Président René Coty.",
+    "caption": "C'est notre Raïs à nous ! · OSS 117"
+  },
+  {
+    "id": "dujardin_uggie_media",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.fr/movies/artist",
+    "creator": "Michel Hazanavicius / La Petite Reine",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait officiel du sauvetage par le chien Uggie.",
+    "caption": "Le fidèle Uggie · The Artist"
   }
 ]

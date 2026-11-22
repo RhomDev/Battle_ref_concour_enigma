@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "ils_ont_un_troll",
+  "name": "Ils ont un troll des cavernes",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Legolas sur votre terrain, infligez 4 dégâts.",
+  "strength": "Tir fatal au sommet d'une menace colossale.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "pulse",
+  "media": [
+    "lotr_troll_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "legolas",
+    "bonus": 1
+  }
+}

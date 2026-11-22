@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "brice_de_nice",
+  "name": "Brice de Nice",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Brice de Nice",
+    "year": 2005,
+    "sources": [
+      "https://www.mandarincinema.com/"
+    ]
+  },
+  "cost": 3,
+  "text": "Surfeur légendaire de la Méditerranée et maître du cassage.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [
+    "dujardin_brice_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

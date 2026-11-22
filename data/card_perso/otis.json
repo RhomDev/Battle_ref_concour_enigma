@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "id": "otis",
+  "name": "Otis",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 3,
+  "text": "Scribe officiel de Numérobis et philosophe des opportunités de la vie.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "subtitle",
+  "media": [],
+  "stats": {
+    "hp": 4
+  }
+}

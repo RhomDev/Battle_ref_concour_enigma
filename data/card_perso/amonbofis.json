@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "id": "amonbofis",
+  "name": "Amonbofis",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 4,
+  "text": "Architecte rival jaloux prêt à tout pour saboter le chantier du palais.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "powder",
+  "media": [],
+  "stats": {
+    "hp": 4
+  }
+}

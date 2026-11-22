@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "l_age_c_est_dans_la_tete",
+  "name": "L'âge, c'est dans la tête",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Numérobis sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Revendication d'un forfait moderne dans le désert.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "numerobis",
+    "bonus": 1
+  }
+}

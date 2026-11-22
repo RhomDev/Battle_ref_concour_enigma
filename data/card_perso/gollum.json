@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "gollum",
+  "name": "Gollum",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : Les Deux Tours",
+    "year": 2002,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-two-towers"
+    ]
+  },
+  "cost": 2,
+  "text": "Créature tourmentée et obsédée par son Précieux Anneau.",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "rewind",
+  "media": [
+    "lotr_gollum_portrait"
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

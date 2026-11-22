@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "id": "panoramix",
+  "name": "Panoramix",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 4,
+  "text": "Vénérable druide gaulois détenteur du secret de la potion magique.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [],
+  "stats": {
+    "hp": 5
+  }
+}

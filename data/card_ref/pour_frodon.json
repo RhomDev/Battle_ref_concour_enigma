@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "pour_frodon",
+  "name": "Pour Frodon",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : Le Retour du Roi",
+    "year": 2003,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-return-king"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Aragorn sur votre terrain, infligez 5 dégâts.",
+  "strength": "Charge héroïque à la Porte Noire.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "pulse",
+  "media": [
+    "lotr_pour_frodon_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "aragorn",
+    "bonus": 2
+  }
+}

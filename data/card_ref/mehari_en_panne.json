@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "mehari_en_panne",
+  "name": "La Méhari en panne",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Patrick Chirac sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Véhicule immobile formant un abri de fortune.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "camping_mehari_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "patrick_chirac",
+    "bonus": 1
+  }
+}

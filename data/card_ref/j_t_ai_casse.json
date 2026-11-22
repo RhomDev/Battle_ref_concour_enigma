@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "j_t_ai_casse",
+  "name": "J't'ai cassé !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Brice de Nice",
+    "year": 2005,
+    "sources": [
+      "https://www.mandarincinema.com/"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Brice de Nice sur votre terrain, infligez 5 dégâts.",
+  "strength": "Geste tranchant dévastateur pour l'ego adverse.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "pulse",
+  "media": [
+    "dujardin_casse_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "brice_de_nice",
+    "bonus": 2
+  }
+}

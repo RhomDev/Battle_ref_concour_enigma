@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "pierre_le_guerisseur",
+  "name": "Pierre le Guérisseur",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 3,
+  "text": "Médecin préhistorique qui propose de l'eau à tous les patients.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "scroll",
+  "media": [
+    "rrrr_guerisseur_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

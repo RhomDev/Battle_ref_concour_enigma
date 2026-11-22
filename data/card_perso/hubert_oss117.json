@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "hubert_oss117",
+  "name": "Hubert Bonisseur de La Bath",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "OSS 117 : Le Caire, nid d'espions",
+    "year": 2006,
+    "sources": [
+      "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+    ]
+  },
+  "cost": 4,
+  "text": "Agent secret d'élite français au service de la République.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "spotlight",
+  "media": [
+    "dujardin_hubert_portrait"
+  ],
+  "stats": {
+    "hp": 5
+  }
+}

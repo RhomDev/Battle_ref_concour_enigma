@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "sophie_gatineau",
+  "name": "Sophie Gatineau",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Épouse de Paulo rêvant de vacances plus exotiques.",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "subtitle",
+  "media": [
+    "camping_sophie_portrait"
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

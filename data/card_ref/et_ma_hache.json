@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "et_ma_hache",
+  "name": "Et ma hache !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Gimli sur votre terrain, infligez 3 dégâts.",
+  "strength": "Engagement franc et direct au combat.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "powder",
+  "media": [
+    "lotr_hache_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "gimli",
+    "bonus": 1
+  }
+}

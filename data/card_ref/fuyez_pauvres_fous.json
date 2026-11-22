@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "fuyez_pauvres_fous",
+  "name": "Fuyez, pauvres fous !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 3,
+  "text": "Soignez un allié de 3 PV. Avec Gandalf le Gris sur votre terrain, soignez 4 PV.",
+  "strength": "Sacrifice suprême sauvant la troupe.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "lotr_fuyez_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "gandalf",
+    "bonus": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "on_attend_pas_patrick",
+  "name": "Alors, on n'attend pas Patrick ?",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Patrick Chirac sur votre terrain, infligez 4 dégâts.",
+  "strength": "Arrivée fracassante aux Flots Bleus.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "pulse",
+  "media": [
+    "camping_attend_patrick_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "patrick_chirac",
+    "bonus": 2
+  }
+}

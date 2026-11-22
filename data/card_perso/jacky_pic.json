@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "jacky_pic",
+  "name": "Jacky Pic",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 4,
+  "text": "Gardien intransigeant de l'emplacement 17 depuis 30 ans.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "spotlight",
+  "media": [
+    "camping_jacky_portrait"
+  ],
+  "stats": {
+    "hp": 5
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "pierre_le_blond",
+  "name": "Pierre le Blond",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 3,
+  "text": "Guerrier préhistorique de la tribu des Cheveux Propres.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [
+    "rrrr_blond_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

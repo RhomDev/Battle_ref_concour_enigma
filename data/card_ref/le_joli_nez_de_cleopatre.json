@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "le_joli_nez_de_cleopatre",
+  "name": "Le joli nez de Cléopâtre",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Cléopâtre sur votre terrain, soignez 4 PV.",
+  "strength": "Charme historique qui a changé la face du monde.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "cleopatre",
+    "bonus": 2
+  }
+}

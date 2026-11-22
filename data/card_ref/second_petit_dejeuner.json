@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "second_petit_dejeuner",
+  "name": "Le second petit-déjeuner",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Frodon Sacquet sur votre terrain, soignez 4 PV.",
+  "strength": "Repos gastronomique traditionnel de la Comté.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "subtitle",
+  "media": [
+    "lotr_dejeuner_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "frodon_sacquet",
+    "bonus": 2
+  }
+}

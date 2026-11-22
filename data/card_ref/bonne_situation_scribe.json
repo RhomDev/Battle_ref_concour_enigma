@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "bonne_situation_scribe",
+  "name": "Pas de bonne ou de mauvaise situation",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 3,
+  "text": "Soignez un allié de 3 PV. Avec Otis sur votre terrain, soignez 5 PV.",
+  "strength": "Monologue philosophique inspirant sur les rencontres de la vie.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "subtitle",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "otis",
+    "bonus": 2
+  }
+}

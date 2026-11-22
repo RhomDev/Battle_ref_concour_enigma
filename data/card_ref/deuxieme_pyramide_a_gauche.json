@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "deuxieme_pyramide_a_gauche",
+  "name": "Deuxième pyramide à gauche",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Numérobis sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Orientation topographique égyptienne sans faille.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "numerobis",
+    "bonus": 2
+  }
+}

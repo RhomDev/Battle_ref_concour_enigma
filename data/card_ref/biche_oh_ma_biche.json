@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "biche_oh_ma_biche",
+  "name": "Biche, ô ma biche",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Pierre le Blond sur votre terrain, soignez 3 PV.",
+  "strength": "Chant romantique de l'âge de pierre.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "pulse",
+  "media": [
+    "rrrr_biche_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_le_blond",
+    "bonus": 1
+  }
+}

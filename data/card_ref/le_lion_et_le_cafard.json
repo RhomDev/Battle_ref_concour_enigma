@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "le_lion_et_le_cafard",
+  "name": "Le lion ne s'associe pas avec le cafard",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Amonbofis sur votre terrain, infligez 5 dégâts.",
+  "strength": "Mépris tranchant de l'architecte officiel envers son rival.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "spotlight",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "amonbofis",
+    "bonus": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "gandalf",
+  "name": "Gandalf le Gris",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 4,
+  "text": "Magicien Istar guidant la Communauté de l'Anneau face aux ténèbres.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "spotlight",
+  "media": [
+    "lotr_gandalf_portrait"
+  ],
+  "stats": {
+    "hp": 5
+  }
+}

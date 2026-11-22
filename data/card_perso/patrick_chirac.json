@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "patrick_chirac",
+  "name": "Patrick Chirac",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 3,
+  "text": "Pilier légendaire du Camping des Flots Bleus et séducteur invétéré.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [
+    "camping_patrick_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

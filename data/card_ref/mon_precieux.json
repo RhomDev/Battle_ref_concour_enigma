@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "mon_precieux",
+  "name": "Mon Précieux !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : Les Deux Tours",
+    "year": 2002,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-two-towers"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Gollum sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Protection jalouse de l'Anneau.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "lotr_precieux_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "gollum",
+    "bonus": 2
+  }
+}

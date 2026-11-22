@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "remets_nous_une_tournee",
+  "name": "Remets-nous une tournée !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Paulo Gatineau sur votre terrain, infligez 4 dégâts.",
+  "strength": "Assaut de générosité festive en fin de soirée.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "powder",
+  "media": [
+    "camping_tournee_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "paulo_gatineau",
+    "bonus": 1
+  }
+}

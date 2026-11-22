@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "attaque_au_poulet",
+  "name": "Attaque au poulet écrasé",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 3,
+  "text": "Infligez 3 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 5 dégâts.",
+  "strength": "Projectile aviaire ancestral d'une rare violence.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "powder",
+  "media": [
+    "rrrr_poulet_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_le_chef",
+    "bonus": 2
+  }
+}

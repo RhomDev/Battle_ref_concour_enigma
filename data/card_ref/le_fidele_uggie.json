@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "le_fidele_uggie",
+  "name": "Le fidèle Uggie",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "The Artist",
+    "year": 2011,
+    "sources": [
+      "https://www.warnerbros.fr/movies/artist"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec George Valentin sur votre terrain, soignez 3 PV.",
+  "strength": "Alerte héroïque du petit chien sauvant son maître.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "dujardin_uggie_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "george_valentin",
+    "bonus": 1
+  }
+}

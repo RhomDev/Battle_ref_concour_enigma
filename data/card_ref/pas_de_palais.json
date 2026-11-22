@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "id": "pas_de_palais",
+  "name": "Pas de pierre, pas de palais",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Numérobis sur votre terrain, infligez 4 dégâts.",
+  "strength": "Logique implacable sur la rupture d'approvisionnement.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "powder",
+  "media": [],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "numerobis",
+    "bonus": 2
+  }
+}

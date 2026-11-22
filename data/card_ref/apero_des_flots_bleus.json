@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "apero_des_flots_bleus",
+  "name": "L'apéro des Flots Bleus",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Paulo Gatineau sur votre terrain, soignez 4 PV.",
+  "strength": "Convivialité absolue et rafraîchissement anisé.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "powder",
+  "media": [
+    "camping_apero_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "paulo_gatineau",
+    "bonus": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "pierre_la_blonde",
+  "name": "Pierre la Blonde",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Membre de la tribu des Cheveux Sales infiltrée chez les Propres.",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "subtitle",
+  "media": [
+    "rrrr_blonde_portrait"
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

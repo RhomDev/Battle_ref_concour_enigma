@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "legolas",
+  "name": "Legolas",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : Les Deux Tours",
+    "year": 2002,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-two-towers"
+    ]
+  },
+  "cost": 3,
+  "text": "Prince elfe de Grand'Peur à la précision légendaire à l'arc.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [
+    "lotr_legolas_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

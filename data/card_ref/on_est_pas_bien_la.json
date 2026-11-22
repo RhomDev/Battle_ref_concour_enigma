@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "on_est_pas_bien_la",
+  "name": "On est pas bien là ?",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 3,
+  "text": "Soignez un allié de 3 PV. Avec Paulo Gatineau sur votre terrain, soignez 5 PV.",
+  "strength": "Paix royale au cœur des pins maritimes.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "subtitle",
+  "media": [
+    "camping_bien_la_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "paulo_gatineau",
+    "bonus": 2
+  }
+}

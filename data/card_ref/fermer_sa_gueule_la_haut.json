@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "fermer_sa_gueule_la_haut",
+  "name": "Il va fermer sa gueule, là-haut ?",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "OSS 117 : Le Caire, nid d'espions",
+    "year": 2006,
+    "sources": [
+      "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+    ]
+  },
+  "cost": 2,
+  "text": "Infligez 2 dégâts à un personnage adverse. Avec Hubert Bonisseur de La Bath sur votre terrain, infligez 4 dégâts.",
+  "strength": "Rappel à l'ordre nocturne sans aucune diplomatie.",
+  "weakness": "Demande un personnage adverse déployé.",
+  "visual": "spotlight",
+  "media": [
+    "dujardin_muezzin_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "attack",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "hubert_oss117",
+    "bonus": 2
+  }
+}

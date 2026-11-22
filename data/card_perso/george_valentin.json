@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "george_valentin",
+  "name": "George Valentin",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "The Artist",
+    "year": 2011,
+    "sources": [
+      "https://www.warnerbros.fr/movies/artist"
+    ]
+  },
+  "cost": 3,
+  "text": "Grande star du cinéma muet hollywoodien des années 1920.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "scroll",
+  "media": [
+    "dujardin_george_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

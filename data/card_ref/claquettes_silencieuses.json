@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "claquettes_silencieuses",
+  "name": "Le numéro de claquettes muet",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "The Artist",
+    "year": 2011,
+    "sources": [
+      "https://www.warnerbros.fr/movies/artist"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec George Valentin sur votre terrain, soignez 4 PV.",
+  "strength": "Chorégraphie magistrale sans une seule parole.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "dujardin_claquettes_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "george_valentin",
+    "bonus": 2
+  }
+}

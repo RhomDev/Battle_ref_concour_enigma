@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "aragorn",
+  "name": "Aragorn",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : Le Retour du Roi",
+    "year": 2003,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-return-king"
+    ]
+  },
+  "cost": 4,
+  "text": "Héritier d'Isildur et futur Roi du Gondor.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "pulse",
+  "media": [
+    "lotr_aragorn_portrait"
+  ],
+  "stats": {
+    "hp": 5
+  }
+}

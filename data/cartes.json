@@ -26,6 +26,31 @@
   },
   {
     "schemaVersion": 3,
+    "id": "dolores_oss117",
+    "name": "Dolores Koulechov",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Rio ne répond plus",
+      "year": 2009,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus"
+      ]
+    },
+    "cost": 2,
+    "text": "Lieutenant-colonel des services secrets israéliens en mission à Rio.",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "subtitle",
+    "media": [
+      "dujardin_dolores_portrait"
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "francois_hollande",
     "name": "François Hollande",
     "kind": "character",
@@ -76,6 +101,56 @@
   },
   {
     "schemaVersion": 3,
+    "id": "frodon_sacquet",
+    "name": "Frodon Sacquet",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 2,
+    "text": "Porteur de l'Anneau Unique en marche vers la Montagne du Destin.",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "subtitle",
+    "media": [
+      "lotr_frodon_portrait"
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "gollum",
+    "name": "Gollum",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Les Deux Tours",
+      "year": 2002,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-two-towers"
+      ]
+    },
+    "cost": 2,
+    "text": "Créature tourmentée et obsédée par son Précieux Anneau.",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "rewind",
+    "media": [
+      "lotr_gollum_portrait"
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "ken",
     "name": "Ken",
     "kind": "character",
@@ -120,6 +195,56 @@
     "visual": "powder",
     "media": [
       "debate_scene"
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pierre_la_blonde",
+    "name": "Pierre la Blonde",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Membre de la tribu des Cheveux Sales infiltrée chez les Propres.",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "subtitle",
+    "media": [
+      "rrrr_blonde_portrait"
+    ],
+    "stats": {
+      "hp": 3
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "sophie_gatineau",
+    "name": "Sophie Gatineau",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Épouse de Paulo rêvant de vacances plus exotiques.",
+    "strength": "Dispose de 3 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "subtitle",
+    "media": [
+      "camping_sophie_portrait"
     ],
     "stats": {
       "hp": 3
@@ -177,6 +302,31 @@
   },
   {
     "schemaVersion": 3,
+    "id": "brice_de_nice",
+    "name": "Brice de Nice",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Brice de Nice",
+      "year": 2005,
+      "sources": [
+        "https://www.mandarincinema.com/"
+      ]
+    },
+    "cost": 3,
+    "text": "Surfeur légendaire de la Méditerranée et maître du cassage.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "dujardin_brice_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "chat_potte",
     "name": "Le Chat Potté",
     "kind": "character",
@@ -196,6 +346,56 @@
     "strength": "Dispose de 4 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "cost": 3,
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "george_valentin",
+    "name": "George Valentin",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "The Artist",
+      "year": 2011,
+      "sources": [
+        "https://www.warnerbros.fr/movies/artist"
+      ]
+    },
+    "cost": 3,
+    "text": "Grande star du cinéma muet hollywoodien des années 1920.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "scroll",
+    "media": [
+      "dujardin_george_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "gimli",
+    "name": "Gimli",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 3,
+    "text": "Guerrier nain fier et manieur de hache redoutable.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "powder",
+    "media": [
+      "lotr_gimli_portrait"
+    ],
     "stats": {
       "hp": 4
     }
@@ -277,6 +477,31 @@
   },
   {
     "schemaVersion": 3,
+    "id": "legolas",
+    "name": "Legolas",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Les Deux Tours",
+      "year": 2002,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-two-towers"
+      ]
+    },
+    "cost": 3,
+    "text": "Prince elfe de Grand'Peur à la précision légendaire à l'arc.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "lotr_legolas_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "luffy",
     "name": "Monkey D. Luffy",
     "kind": "character",
@@ -331,6 +556,152 @@
   },
   {
     "schemaVersion": 3,
+    "id": "numerobis",
+    "name": "Numérobis",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Architecte avant-gardiste d'Alexandrie chargé de bâtir un palais en 3 mois.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "scroll",
+    "media": [],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "otis",
+    "name": "Otis",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Scribe officiel de Numérobis et philosophe des opportunités de la vie.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "subtitle",
+    "media": [],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "patrick_chirac",
+    "name": "Patrick Chirac",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 3,
+    "text": "Pilier légendaire du Camping des Flots Bleus et séducteur invétéré.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "camping_patrick_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "paulo_gatineau",
+    "name": "Paulo Gatineau",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 3,
+    "text": "Vacancier fidèle des Flots Bleus adepte de l'apéro sous la tente.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "powder",
+    "media": [
+      "camping_paulo_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pierre_le_blond",
+    "name": "Pierre le Blond",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 3,
+    "text": "Guerrier préhistorique de la tribu des Cheveux Propres.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "rrrr_blond_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pierre_le_guerisseur",
+    "name": "Pierre le Guérisseur",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 3,
+    "text": "Médecin préhistorique qui propose de l'eau à tous les patients.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "scroll",
+    "media": [
+      "rrrr_guerisseur_portrait"
+    ],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "rouge_among_us",
     "name": "Rouge",
     "kind": "character",
@@ -379,6 +750,200 @@
     ],
     "stats": {
       "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "amonbofis",
+    "name": "Amonbofis",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 4,
+    "text": "Architecte rival jaloux prêt à tout pour saboter le chantier du palais.",
+    "strength": "Dispose de 4 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "powder",
+    "media": [],
+    "stats": {
+      "hp": 4
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "aragorn",
+    "name": "Aragorn",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Le Retour du Roi",
+      "year": 2003,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-return-king"
+      ]
+    },
+    "cost": 4,
+    "text": "Héritier d'Isildur et futur Roi du Gondor.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "lotr_aragorn_portrait"
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "cleopatre",
+    "name": "Cléopâtre",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 4,
+    "text": "Reine d'Égypte au nez parfait qui défie Jules César sur la grandeur de son peuple.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "spotlight",
+    "media": [],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "gandalf",
+    "name": "Gandalf le Gris",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 4,
+    "text": "Magicien Istar guidant la Communauté de l'Anneau face aux ténèbres.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "spotlight",
+    "media": [
+      "lotr_gandalf_portrait"
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "hubert_oss117",
+    "name": "Hubert Bonisseur de La Bath",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Le Caire, nid d'espions",
+      "year": 2006,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+      ]
+    },
+    "cost": 4,
+    "text": "Agent secret d'élite français au service de la République.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "spotlight",
+    "media": [
+      "dujardin_hubert_portrait"
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "jacky_pic",
+    "name": "Jacky Pic",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 4,
+    "text": "Gardien intransigeant de l'emplacement 17 depuis 30 ans.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "spotlight",
+    "media": [
+      "camping_jacky_portrait"
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "panoramix",
+    "name": "Panoramix",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 4,
+    "text": "Vénérable druide gaulois détenteur du secret de la potion magique.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pierre_le_chef",
+    "name": "Pierre le Chef",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 4,
+    "text": "Chef vénérable de la tribu des Cheveux Propres gardant la formule.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "spotlight",
+    "media": [
+      "rrrr_chef_portrait"
+    ],
+    "stats": {
+      "hp": 5
     }
   },
   {
@@ -1238,6 +1803,70 @@
   },
   {
     "schemaVersion": 3,
+    "id": "apero_des_flots_bleus",
+    "name": "L'apéro des Flots Bleus",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Paulo Gatineau sur votre terrain, soignez 4 PV.",
+    "strength": "Convivialité absolue et rafraîchissement anisé.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "powder",
+    "media": [
+      "camping_apero_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "paulo_gatineau",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "appelez_moi_pierre",
+    "name": "Appelez-moi Pierre !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Pierre le Blond sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Identité commune unissant toute la tribu.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [
+      "rrrr_pierre_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_blond",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "arreter_la_pluie",
     "name": "Comme si je pouvais arrêter la pluie",
     "kind": "ref",
@@ -1266,6 +1895,38 @@
     "synergy": {
       "character_id": "francois_hollande",
       "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "attendre_la_vague",
+    "name": "Attendre la vague à Nice",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Brice de Nice",
+      "year": 2005,
+      "sources": [
+        "https://www.mandarincinema.com/"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Brice de Nice sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Patience inébranlable sur les galets de la Baie des Anges.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "dujardin_vague_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "brice_de_nice",
+      "bonus": 2
     }
   },
   {
@@ -1302,6 +1963,38 @@
   },
   {
     "schemaVersion": 3,
+    "id": "biche_oh_ma_biche",
+    "name": "Biche, ô ma biche",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Pierre le Blond sur votre terrain, soignez 3 PV.",
+    "strength": "Chant romantique de l'âge de pierre.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "pulse",
+    "media": [
+      "rrrr_biche_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_blond",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "bingo_vegeta",
     "name": "Le bingo de Vegeta",
     "kind": "ref",
@@ -1330,6 +2023,70 @@
     "synergy": {
       "character_id": "vegeta",
       "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "ca_va_etre_tout_noir",
+    "name": "Ça va être tout noir !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 4 dégâts.",
+    "strength": "Rituel quotidien et réplique collective.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "subtitle",
+    "media": [
+      "rrrr_tout_noir_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_chef",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "cela_ne_compte_qu_pour_un",
+    "name": "Ça ne compte que pour un !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Le Retour du Roi",
+      "year": 2003,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-return-king"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Gimli sur votre terrain, infligez 4 dégâts.",
+    "strength": "Rivalité sportive entre guerriers.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "lotr_compte_un_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "gimli",
+      "bonus": 2
     }
   },
   {
@@ -1394,6 +2151,70 @@
     "synergy": {
       "character_id": "thanos",
       "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "claquettes_silencieuses",
+    "name": "Le numéro de claquettes muet",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "The Artist",
+      "year": 2011,
+      "sources": [
+        "https://www.warnerbros.fr/movies/artist"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec George Valentin sur votre terrain, soignez 4 PV.",
+    "strength": "Chorégraphie magistrale sans une seule parole.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "dujardin_claquettes_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "george_valentin",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "comment_est_votre_blanquette",
+    "name": "Comment est votre blanquette ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Le Caire, nid d'espions",
+      "year": 2006,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Hubert Bonisseur de La Bath sur votre terrain, soignez 4 PV.",
+    "strength": "Plat traditionnel français rassérénant.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "dujardin_blanquette_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "hubert_oss117",
+      "bonus": 2
     }
   },
   {
@@ -1530,6 +2351,100 @@
   },
   {
     "schemaVersion": 3,
+    "id": "deuxieme_pyramide_a_gauche",
+    "name": "Deuxième pyramide à gauche",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Numérobis sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Orientation topographique égyptienne sans faille.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "numerobis",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "et_ma_hache",
+    "name": "Et ma hache !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Gimli sur votre terrain, infligez 3 dégâts.",
+    "strength": "Engagement franc et direct au combat.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "lotr_hache_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "gimli",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "fermer_sa_gueule_la_haut",
+    "name": "Il va fermer sa gueule, là-haut ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Le Caire, nid d'espions",
+      "year": 2006,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Hubert Bonisseur de La Bath sur votre terrain, infligez 4 dégâts.",
+    "strength": "Rappel à l'ordre nocturne sans aucune diplomatie.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "spotlight",
+    "media": [
+      "dujardin_muezzin_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "hubert_oss117",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "fortnite_floss",
     "name": "Floss",
     "kind": "ref",
@@ -1655,6 +2570,38 @@
   },
   {
     "schemaVersion": 3,
+    "id": "habile_bill",
+    "name": "Habile, Bill !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Rio ne répond plus",
+      "year": 2009,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Hubert Bonisseur de La Bath sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Jeu d'esprit typiquement français déroutant l'espion.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [
+      "dujardin_habile_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "hubert_oss117",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "i_am_steve",
     "name": "I Am Steve",
     "kind": "ref",
@@ -1751,6 +2698,36 @@
   },
   {
     "schemaVersion": 3,
+    "id": "l_age_c_est_dans_la_tete",
+    "name": "L'âge, c'est dans la tête",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Numérobis sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Revendication d'un forfait moderne dans le désert.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "numerobis",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "la_republique_cest_moi",
     "name": "La République, c’est moi !",
     "kind": "ref",
@@ -1779,6 +2756,68 @@
     "synergy": {
       "character_id": "jean_luc_melenchon",
       "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "le_fidele_uggie",
+    "name": "Le fidèle Uggie",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "The Artist",
+      "year": 2011,
+      "sources": [
+        "https://www.warnerbros.fr/movies/artist"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec George Valentin sur votre terrain, soignez 3 PV.",
+    "strength": "Alerte héroïque du petit chien sauvant son maître.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "dujardin_uggie_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "george_valentin",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "le_joli_nez_de_cleopatre",
+    "name": "Le joli nez de Cléopâtre",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Cléopâtre sur votre terrain, soignez 4 PV.",
+    "strength": "Charme historique qui a changé la face du monde.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "cleopatre",
+      "bonus": 2
     }
   },
   {
@@ -1815,6 +2854,102 @@
   },
   {
     "schemaVersion": 3,
+    "id": "mammouth_qui_vole",
+    "name": "Un mammouth qui vole !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Pierre le Guérisseur sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Diversion absurde et imparable.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "rrrr_mammouth_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_guerisseur",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "manucure_prehistorique",
+    "name": "Manucure au silex",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Pierre la Blonde sur votre terrain, soignez 4 PV.",
+    "strength": "Soin esthétique raffiné des Cheveux Propres.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "rrrr_manucure_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_la_blonde",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "mehari_en_panne",
+    "name": "La Méhari en panne",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Patrick Chirac sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Véhicule immobile formant un abri de fortune.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "camping_mehari_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "patrick_chirac",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "mojo_dojo_casa_house",
     "name": "Mojo Dojo Casa House",
     "kind": "ref",
@@ -1843,6 +2978,256 @@
     "synergy": {
       "character_id": "ken",
       "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "mon_precieux",
+    "name": "Mon Précieux !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Les Deux Tours",
+      "year": 2002,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-two-towers"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Gollum sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Protection jalouse de l'Anneau.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "lotr_precieux_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "gollum",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "on_attend_pas_patrick",
+    "name": "Alors, on n'attend pas Patrick ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Patrick Chirac sur votre terrain, infligez 4 dégâts.",
+    "strength": "Arrivée fracassante aux Flots Bleus.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "pulse",
+    "media": [
+      "camping_attend_patrick_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "patrick_chirac",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "on_ne_passe_pas_facilement_en_mordor",
+    "name": "On n'entre pas si facilement en Mordor",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Aragorn sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Mise en garde tactique du Conseil.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "lotr_mordor_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "aragorn",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "parler_en_alexandrins",
+    "name": "Je parle en alexandrins !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Otis sur votre terrain, donnez 3 points de bouclier.",
+    "strength": "Prosodie poétique classique désarmant l'ennemi.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "otis",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pas_de_palais",
+    "name": "Pas de pierre, pas de palais",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Numérobis sur votre terrain, infligez 4 dégâts.",
+    "strength": "Logique implacable sur la rupture d'approvisionnement.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "numerobis",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "plan_en_coupe",
+    "name": "Un plan en coupe",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Amonbofis sur votre terrain, infligez 3 dégâts.",
+    "strength": "Schéma d'architecte trapézoïdal semant la discorde.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "amonbofis",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "plus_d_eau_chaude",
+    "name": "Plus d'eau chaude au bloc 3",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Jacky Pic sur votre terrain, infligez 3 dégâts.",
+    "strength": "Douche glacée qui réveille les campeurs grincheux.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "subtitle",
+    "media": [
+      "camping_eau_chaude_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "jacky_pic",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "previens_pierre",
+    "name": "Préviens Pierre !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Pierre le Blond sur votre terrain, infligez 4 dégâts.",
+    "strength": "Transmission d'ordre par homonymie totale.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "subtitle",
+    "media": [
+      "rrrr_previens_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_blond",
+      "bonus": 2
     }
   },
   {
@@ -1975,6 +3360,70 @@
   },
   {
     "schemaVersion": 3,
+    "id": "second_petit_dejeuner",
+    "name": "Le second petit-déjeuner",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Frodon Sacquet sur votre terrain, soignez 4 PV.",
+    "strength": "Repos gastronomique traditionnel de la Comté.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [
+      "lotr_dejeuner_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "frodon_sacquet",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "shogi_shogi",
+    "name": "La danse du Shogi Shogi",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Patrick Chirac sur votre terrain, soignez 3 PV.",
+    "strength": "Rythme endiablé galvanisant toute la terrasse.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "camping_shogi_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "patrick_chirac",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "silence_among_us",
     "name": "Chut !",
     "kind": "ref",
@@ -2007,6 +3456,102 @@
   },
   {
     "schemaVersion": 3,
+    "id": "slip_de_bain_bleu",
+    "name": "Le maillot moulant de Patrick",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Donnez 2 points de bouclier à un allié. Avec Patrick Chirac sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Assurance vestimentaire éblouissante au soleil.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "pulse",
+    "media": [
+      "camping_slip_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "patrick_chirac",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "tournoi_de_petanque",
+    "name": "Tournoi de pétanque d'Arcachon",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 2,
+    "text": "Infligez 2 dégâts à un personnage adverse. Avec Jacky Pic sur votre terrain, infligez 4 dégâts.",
+    "strength": "Carreau parfait au millimètre près.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "spotlight",
+    "media": [
+      "camping_petanque_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "jacky_pic",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "un_magicien_nest_jamais_en_retard",
+    "name": "Un magicien n'est jamais en retard",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Gandalf le Gris sur votre terrain, soignez 4 PV.",
+    "strength": "Arrivée opportune au moment précis souhaité.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "lotr_retard_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "gandalf",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "vent_among_us",
     "name": "Il a pris le conduit",
     "kind": "ref",
@@ -2033,6 +3578,38 @@
       }
     },
     "synergy": null
+  },
+  {
+    "schemaVersion": 3,
+    "id": "vous_voulez_un_verre_deau",
+    "name": "Vous voulez un peu d'eau ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec Pierre le Guérisseur sur votre terrain, soignez 4 PV.",
+    "strength": "Remède universel pour toutes les blessures.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "rrrr_eau_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_guerisseur",
+      "bonus": 2
+    }
   },
   {
     "schemaVersion": 3,
@@ -2143,6 +3720,130 @@
   },
   {
     "schemaVersion": 3,
+    "id": "attaque_au_poulet",
+    "name": "Attaque au poulet écrasé",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 5 dégâts.",
+    "strength": "Projectile aviaire ancestral d'une rare violence.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "rrrr_poulet_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_chef",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "aux_crocodiles_sacres",
+    "name": "Aux crocodiles sacrés !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Cléopâtre sur votre terrain, infligez 5 dégâts.",
+    "strength": "Sentence royale impitoyable jetant les coupables aux bêtes.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "spotlight",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "cleopatre",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "bonne_situation_scribe",
+    "name": "Pas de bonne ou de mauvaise situation",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Soignez un allié de 3 PV. Avec Otis sur votre terrain, soignez 5 PV.",
+    "strength": "Monologue philosophique inspirant sur les rencontres de la vie.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "otis",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "emplacement_17",
+    "name": "L'emplacement 17",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 3,
+    "text": "Donnez 3 points de bouclier à un allié. Avec Jacky Pic sur votre terrain, donnez 5 points de bouclier.",
+    "strength": "Parcelle sacrée réservée depuis des décennies.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "camping_emplacement_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "jacky_pic",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "faites_mieux",
     "name": "Faites mieux !",
     "kind": "ref",
@@ -2170,6 +3871,38 @@
     },
     "synergy": {
       "character_id": "jean_luc_melenchon",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "formule_du_shampooing",
+    "name": "La formule du shampooing",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 3,
+    "text": "Donnez 3 points de bouclier à un allié. Avec Pierre la Blonde sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Chevelure soyeuse et propre face aux intempéries.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "rrrr_shampooing_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_la_blonde",
       "bonus": 1
     }
   },
@@ -2208,6 +3941,100 @@
   },
   {
     "schemaVersion": 3,
+    "id": "fuyez_pauvres_fous",
+    "name": "Fuyez, pauvres fous !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 3,
+    "text": "Soignez un allié de 3 PV. Avec Gandalf le Gris sur votre terrain, soignez 4 PV.",
+    "strength": "Sacrifice suprême sauvant la troupe.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "rewind",
+    "media": [
+      "lotr_fuyez_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "gandalf",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "goutte_de_potion_magique",
+    "name": "Une goutte de potion magique",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Soignez un allié de 3 PV. Avec Panoramix sur votre terrain, soignez 5 PV.",
+    "strength": "Énergie décuplée permettant de transporter les blocs de granit.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "pulse",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "panoramix",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "ils_ont_un_troll",
+    "name": "Ils ont un troll des cavernes",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Legolas sur votre terrain, infligez 4 dégâts.",
+    "strength": "Tir fatal au sommet d'une menace colossale.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "pulse",
+    "media": [
+      "lotr_troll_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "legolas",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "im_just_ken",
     "name": "I’m Just Ken",
     "kind": "ref",
@@ -2240,6 +4067,132 @@
   },
   {
     "schemaVersion": 3,
+    "id": "j_aime_me_battre",
+    "name": "J'aime me battre",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Rio ne répond plus",
+      "year": 2009,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Hubert Bonisseur de La Bath sur votre terrain, infligez 5 dégâts.",
+    "strength": "Bagarre physique et saine à mains nues.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "dujardin_battre_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "hubert_oss117",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "j_t_ai_casse",
+    "name": "J't'ai cassé !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Brice de Nice",
+      "year": 2005,
+      "sources": [
+        "https://www.mandarincinema.com/"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Brice de Nice sur votre terrain, infligez 5 dégâts.",
+    "strength": "Geste tranchant dévastateur pour l'ego adverse.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "pulse",
+    "media": [
+      "dujardin_casse_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "brice_de_nice",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "le_jaune_est_un_etat_d_esprit",
+    "name": "Le jaune est un état d'esprit",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Brice de Nice",
+      "year": 2005,
+      "sources": [
+        "https://www.mandarincinema.com/"
+      ]
+    },
+    "cost": 3,
+    "text": "Donnez 3 points de bouclier à un allié. Avec Brice de Nice sur votre terrain, donnez 4 points de bouclier.",
+    "strength": "Rayonnement solaire protecteur de la tenue canari.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "pulse",
+    "media": [
+      "dujardin_jaune_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "brice_de_nice",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "le_lion_et_le_cafard",
+    "name": "Le lion ne s'associe pas avec le cafard",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Astérix & Obélix : Mission Cléopâtre",
+      "year": 2002,
+      "sources": [
+        "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Amonbofis sur votre terrain, infligez 5 dégâts.",
+    "strength": "Mépris tranchant de l'architecte officiel envers son rival.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "spotlight",
+    "media": [],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "amonbofis",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "moi_president",
     "name": "Moi président…",
     "kind": "ref",
@@ -2268,6 +4221,166 @@
     },
     "synergy": {
       "character_id": "francois_hollande",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "notre_rais_a_nous",
+    "name": "C'est notre Raïs à nous !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "OSS 117 : Le Caire, nid d'espions",
+      "year": 2006,
+      "sources": [
+        "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+      ]
+    },
+    "cost": 3,
+    "text": "Soignez un allié de 3 PV. Avec Hubert Bonisseur de La Bath sur votre terrain, soignez 4 PV.",
+    "strength": "Ferveur patriotique inaltérable pour M. René Coty.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "scroll",
+    "media": [
+      "dujardin_coty_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "hubert_oss117",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "on_est_pas_bien_la",
+    "name": "On est pas bien là ?",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 3,
+    "text": "Soignez un allié de 3 PV. Avec Paulo Gatineau sur votre terrain, soignez 5 PV.",
+    "strength": "Paix royale au cœur des pins maritimes.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "subtitle",
+    "media": [
+      "camping_bien_la_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "paulo_gatineau",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "pour_frodon",
+    "name": "Pour Frodon",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : Le Retour du Roi",
+      "year": 2003,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-return-king"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Aragorn sur votre terrain, infligez 5 dégâts.",
+    "strength": "Charge héroïque à la Porte Noire.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "pulse",
+    "media": [
+      "lotr_pour_frodon_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "aragorn",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "premier_meurtre_de_l_histoire",
+    "name": "Premier meurtre de l'histoire",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "RRRrrrr !!!",
+      "year": 2004,
+      "sources": [
+        "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Pierre le Chef sur votre terrain, infligez 4 dégâts.",
+    "strength": "Constat inédit qui bouleverse la tribu.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "rrrr_meurtre_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "pierre_le_chef",
+      "bonus": 1
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "remets_nous_une_tournee",
+    "name": "Remets-nous une tournée !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Camping",
+      "year": 2006,
+      "sources": [
+        "https://www.pathefilms.com/film/camping"
+      ]
+    },
+    "cost": 3,
+    "text": "Infligez 3 dégâts à un personnage adverse. Avec Paulo Gatineau sur votre terrain, infligez 4 dégâts.",
+    "strength": "Assaut de générosité festive en fin de soirée.",
+    "weakness": "Demande un personnage adverse déployé.",
+    "visual": "powder",
+    "media": [
+      "camping_tournee_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "attack",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "paulo_gatineau",
       "bonus": 1
     }
   },
@@ -2333,6 +4446,38 @@
     },
     "synergy": {
       "character_id": "vegeta",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "vous_ne_passerez_pas",
+    "name": "Vous ne passerez pas !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+      "year": 2001,
+      "sources": [
+        "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+      ]
+    },
+    "cost": 3,
+    "text": "Donnez 3 points de bouclier à un allié. Avec Gandalf le Gris sur votre terrain, donnez 5 points de bouclier.",
+    "strength": "Défense infranchissable sur le pont.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "lotr_passerez_pas_media"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "shield",
+        "amount": 3
+      }
+    },
+    "synergy": {
+      "character_id": "gandalf",
       "bonus": 2
     }
   }

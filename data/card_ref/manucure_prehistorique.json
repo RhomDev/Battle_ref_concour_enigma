@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "manucure_prehistorique",
+  "name": "Manucure au silex",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Pierre la Blonde sur votre terrain, soignez 4 PV.",
+  "strength": "Soin esthétique raffiné des Cheveux Propres.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [
+    "rrrr_manucure_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_la_blonde",
+    "bonus": 2
+  }
+}

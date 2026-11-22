@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "emplacement_17",
+  "name": "L'emplacement 17",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Camping",
+    "year": 2006,
+    "sources": [
+      "https://www.pathefilms.com/film/camping"
+    ]
+  },
+  "cost": 3,
+  "text": "Donnez 3 points de bouclier à un allié. Avec Jacky Pic sur votre terrain, donnez 5 points de bouclier.",
+  "strength": "Parcelle sacrée réservée depuis des décennies.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [
+    "camping_emplacement_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 3
+    }
+  },
+  "synergy": {
+    "character_id": "jacky_pic",
+    "bonus": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "attendre_la_vague",
+  "name": "Attendre la vague à Nice",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Brice de Nice",
+    "year": 2005,
+    "sources": [
+      "https://www.mandarincinema.com/"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Brice de Nice sur votre terrain, donnez 4 points de bouclier.",
+  "strength": "Patience inébranlable sur les galets de la Baie des Anges.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [
+    "dujardin_vague_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "brice_de_nice",
+    "bonus": 2
+  }
+}

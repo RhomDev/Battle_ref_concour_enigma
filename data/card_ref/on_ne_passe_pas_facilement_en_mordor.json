@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "on_ne_passe_pas_facilement_en_mordor",
+  "name": "On n'entre pas si facilement en Mordor",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Aragorn sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Mise en garde tactique du Conseil.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [
+    "lotr_mordor_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "aragorn",
+    "bonus": 1
+  }
+}

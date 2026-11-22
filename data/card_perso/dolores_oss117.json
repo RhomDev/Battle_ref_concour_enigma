@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "dolores_oss117",
+  "name": "Dolores Koulechov",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "OSS 117 : Rio ne répond plus",
+    "year": 2009,
+    "sources": [
+      "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus"
+    ]
+  },
+  "cost": 2,
+  "text": "Lieutenant-colonel des services secrets israéliens en mission à Rio.",
+  "strength": "Dispose de 3 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "subtitle",
+  "media": [
+    "dujardin_dolores_portrait"
+  ],
+  "stats": {
+    "hp": 3
+  }
+}

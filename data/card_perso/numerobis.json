@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "id": "numerobis",
+  "name": "Numérobis",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 3,
+  "text": "Architecte avant-gardiste d'Alexandrie chargé de bâtir un palais en 3 mois.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "scroll",
+  "media": [],
+  "stats": {
+    "hp": 4
+  }
+}

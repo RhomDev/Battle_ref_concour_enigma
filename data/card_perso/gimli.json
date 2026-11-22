@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "gimli",
+  "name": "Gimli",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Le Seigneur des Anneaux : La Communauté de l'Anneau",
+    "year": 2001,
+    "sources": [
+      "https://www.warnerbros.com/movies/lord-rings-fellowship-ring"
+    ]
+  },
+  "cost": 3,
+  "text": "Guerrier nain fier et manieur de hache redoutable.",
+  "strength": "Dispose de 4 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "powder",
+  "media": [
+    "lotr_gimli_portrait"
+  ],
+  "stats": {
+    "hp": 4
+  }
+}

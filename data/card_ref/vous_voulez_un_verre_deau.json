@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "vous_voulez_un_verre_deau",
+  "name": "Vous voulez un peu d'eau ?",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec Pierre le Guérisseur sur votre terrain, soignez 4 PV.",
+  "strength": "Remède universel pour toutes les blessures.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "scroll",
+  "media": [
+    "rrrr_eau_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_le_guerisseur",
+    "bonus": 2
+  }
+}

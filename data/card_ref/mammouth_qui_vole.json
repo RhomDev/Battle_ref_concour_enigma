@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "mammouth_qui_vole",
+  "name": "Un mammouth qui vole !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 2,
+  "text": "Donnez 2 points de bouclier à un allié. Avec Pierre le Guérisseur sur votre terrain, donnez 3 points de bouclier.",
+  "strength": "Diversion absurde et imparable.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "rewind",
+  "media": [
+    "rrrr_mammouth_media"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "shield",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "pierre_le_guerisseur",
+    "bonus": 1
+  }
+}

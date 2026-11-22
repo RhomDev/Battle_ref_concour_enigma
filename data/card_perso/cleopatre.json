@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "id": "cleopatre",
+  "name": "Cléopâtre",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "Astérix & Obélix : Mission Cléopâtre",
+    "year": 2002,
+    "sources": [
+      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+    ]
+  },
+  "cost": 4,
+  "text": "Reine d'Égypte au nez parfait qui défie Jules César sur la grandeur de son peuple.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "spotlight",
+  "media": [],
+  "stats": {
+    "hp": 5
+  }
+}

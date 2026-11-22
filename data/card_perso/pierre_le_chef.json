@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "id": "pierre_le_chef",
+  "name": "Pierre le Chef",
+  "kind": "character",
+  "category": "cinema",
+  "origin": {
+    "work": "RRRrrrr !!!",
+    "year": 2004,
+    "sources": [
+      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+    ]
+  },
+  "cost": 4,
+  "text": "Chef vénérable de la tribu des Cheveux Propres gardant la formule.",
+  "strength": "Dispose de 5 PV.",
+  "weakness": "Dépend des Refs pour agir sur le terrain.",
+  "visual": "spotlight",
+  "media": [
+    "rrrr_chef_portrait"
+  ],
+  "stats": {
+    "hp": 5
+  }
+}
