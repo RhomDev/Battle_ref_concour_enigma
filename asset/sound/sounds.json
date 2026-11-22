@@ -1,0 +1,74 @@
+{
+    "camping_blanquette": {
+        "file": "asset/sound/camping_blanquette.mp3",
+        "description": "Comment est votre blanquette ? — Patrick Chirac",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/commentestvotreblanquette.mp3",
+        "theme": "camping",
+        "duration_s": 32.2
+    },
+    "sda_mon_precieux": {
+        "file": "asset/sound/sda_mon_precieux.mp3",
+        "description": "Mon précieux — Gollum (VO)",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/my-precious.mp3",
+        "theme": "seigneur_des_anneaux",
+        "duration_s": 9.1
+    },
+    "sda_you_shall_not_pass": {
+        "file": "asset/sound/sda_you_shall_not_pass.mp3",
+        "description": "You shall not pass ! — Gandalf (VO)",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/you-shall-not-pass_1.mp3",
+        "theme": "seigneur_des_anneaux",
+        "duration_s": 5.3
+    },
+    "asterix_ca_ne_compte": {
+        "file": "asset/sound/asterix_ca_ne_compte.mp3",
+        "description": "Ça ne compte quand même que pour un — Astérix et Cléopâtre",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/ca-ne-compte-quand-meme-que-pour-un.mp3",
+        "theme": "asterix",
+        "duration_s": 2.2
+    },
+    "sda_cor_du_rohan": {
+        "file": "asset/sound/sda_cor_du_rohan.mp3",
+        "description": "Cor du Rohan — Le Seigneur des Anneaux",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/haradrim-horn.mp3",
+        "theme": "seigneur_des_anneaux",
+        "duration_s": 6.7
+    },
+    "sda_oui_maitre": {
+        "file": "asset/sound/sda_oui_maitre.mp3",
+        "description": "Oui Maître — Gollum (VO)",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/oui-maitre.mp3",
+        "theme": "seigneur_des_anneaux",
+        "duration_s": 2.7
+    },
+    "brice_de_nice_vague": {
+        "file": "asset/sound/brice_de_nice_vague.mp3",
+        "description": "La vague — Brice de Nice",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/bricedenice02.mp3",
+        "theme": "brice_de_nice",
+        "duration_s": 2.9
+    },
+    "brice_je_tai_casse": {
+        "file": "asset/sound/brice_je_tai_casse.mp3",
+        "description": "Je t'ai cassé — Brice de Nice",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/chtecasse.mp3",
+        "theme": "brice_de_nice",
+        "duration_s": 2.7
+    },
+    "brice_ferme_ta_gueule": {
+        "file": "asset/sound/brice_ferme_ta_gueule.mp3",
+        "description": "Ferme ta gueule — Brice de Nice",
+        "source": "MyInstants",
+        "source_url": "https://www.myinstants.com/media/sounds/fermetagueule_R4BhXYv.mp3",
+        "theme": "brice_de_nice",
+        "duration_s": 3.0
+    }
+}
