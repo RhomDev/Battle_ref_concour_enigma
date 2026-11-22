@@ -202,31 +202,6 @@
   },
   {
     "schemaVersion": 3,
-    "id": "pierre_la_blonde",
-    "name": "Pierre la Blonde",
-    "kind": "character",
-    "category": "cinema",
-    "origin": {
-      "work": "RRRrrrr !!!",
-      "year": 2004,
-      "sources": [
-        "https://www.studiocanal.com/title/rrrrrrr-2004/"
-      ]
-    },
-    "cost": 2,
-    "text": "Membre de la tribu des Cheveux Sales infiltrée chez les Propres.",
-    "strength": "Dispose de 3 PV.",
-    "weakness": "Dépend des Refs pour agir sur le terrain.",
-    "visual": "subtitle",
-    "media": [
-      "rrrr_blonde_portrait"
-    ],
-    "stats": {
-      "hp": 3
-    }
-  },
-  {
-    "schemaVersion": 3,
     "id": "sophie_gatineau",
     "name": "Sophie Gatineau",
     "kind": "character",
@@ -572,7 +547,9 @@
     "strength": "Dispose de 4 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "scroll",
-    "media": [],
+    "media": [
+      "numerobis_portrait"
+    ],
     "stats": {
       "hp": 4
     }
@@ -595,7 +572,9 @@
     "strength": "Dispose de 4 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "subtitle",
-    "media": [],
+    "media": [
+      "otis_portrait"
+    ],
     "stats": {
       "hp": 4
     }
@@ -770,7 +749,9 @@
     "strength": "Dispose de 4 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "powder",
-    "media": [],
+    "media": [
+      "amonbofis_portrait"
+    ],
     "stats": {
       "hp": 4
     }
@@ -818,7 +799,9 @@
     "strength": "Dispose de 5 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "spotlight",
-    "media": [],
+    "media": [
+      "cleopatre_portrait"
+    ],
     "stats": {
       "hp": 5
     }
@@ -916,7 +899,9 @@
     "strength": "Dispose de 5 PV.",
     "weakness": "Dépend des Refs pour agir sur le terrain.",
     "visual": "pulse",
-    "media": [],
+    "media": [
+      "panoramix_portrait"
+    ],
     "stats": {
       "hp": 5
     }
@@ -1091,8 +1076,7 @@
     },
     "visual": "powder",
     "media": [
-      "covfefe_source",
-      "habillage_covfefe_audio"
+      "covfefe_source"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Donald Trump sur votre terrain, infligez 3 dégâts.",
@@ -1124,8 +1108,7 @@
     },
     "visual": "pulse",
     "media": [
-      "dango_luffy_kid_source",
-      "habillage_dango_luffy_kid_audio"
+      "dango_luffy_kid_source"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié. Avec Monkey D. Luffy sur votre terrain, rendez 3 PV.",
@@ -1283,7 +1266,7 @@
     "visual": "pulse",
     "media": [
       "gojo_t_es_faible_source",
-      "habillage_gojo_t_es_faible_audio"
+      "extrait_original_gojo_t_es_faible"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",
@@ -1476,8 +1459,7 @@
     "weakness": "Les personnages adverses protègent les PV du joueur.",
     "visual": "powder",
     "media": [
-      "debate_scene",
-      "demo_perlimpinpin"
+      "debate_scene"
     ],
     "abilities": {
       "effect": {
@@ -1568,8 +1550,7 @@
     },
     "visual": "pulse",
     "media": [
-      "saitama_promos_source",
-      "habillage_saitama_promos_audio"
+      "saitama_promos_source"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié. Avec Saitama sur votre terrain, rendez 3 PV.",
@@ -1833,8 +1814,7 @@
     "visual": "powder",
     "media": [
       "source_apero_des_flots_bleus_image",
-      "camping_apero_media",
-      "habillage_apero_des_flots_bleus_audio"
+      "camping_apero_media"
     ],
     "abilities": {
       "effect": {
@@ -1997,8 +1977,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "rrrr_biche_media",
-      "habillage_biche_oh_ma_biche_audio"
+      "rrrr_biche_media"
     ],
     "abilities": {
       "effect": {
@@ -2228,7 +2207,7 @@
     "media": [
       "source_comment_est_votre_blanquette_image",
       "dujardin_blanquette_media",
-      "habillage_comment_est_votre_blanquette_audio"
+      "extrait_original_comment_est_votre_blanquette"
     ],
     "abilities": {
       "effect": {
@@ -2327,7 +2306,7 @@
       "jojo_scene",
       "jojo_stills",
       "jojo_music",
-      "demo_danse_jojo"
+      "extrait_original_danse_jojo"
     ],
     "abilities": {
       "effect": {
@@ -2356,8 +2335,7 @@
     },
     "visual": "powder",
     "media": [
-      "dark_brandon_source",
-      "habillage_dark_brandon_audio"
+      "dark_brandon_source"
     ],
     "cost": 2,
     "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Joe Biden sur votre terrain, infligez 4 dégâts.",
@@ -2394,8 +2372,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "source_deuxieme_pyramide_a_gauche_image",
-      "habillage_deuxieme_pyramide_a_gauche_audio"
+      "source_deuxieme_pyramide_a_gauche_image"
     ],
     "abilities": {
       "effect": {
@@ -2461,7 +2438,7 @@
     "visual": "spotlight",
     "media": [
       "dujardin_muezzin_media",
-      "habillage_fermer_sa_gueule_la_haut_audio"
+      "extrait_original_fermer_sa_gueule_la_haut"
     ],
     "abilities": {
       "effect": {
@@ -2519,8 +2496,7 @@
     },
     "visual": "pixel",
     "media": [
-      "franklin_et_chop_source",
-      "habillage_franklin_et_chop_audio"
+      "franklin_et_chop_source"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Franklin Clinton sur votre terrain, donnez 2 points de bouclier.",
@@ -2552,8 +2528,7 @@
     },
     "visual": "pulse",
     "media": [
-      "gojo_domaine_source",
-      "habillage_gojo_domaine_audio"
+      "gojo_domaine_source"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Satoru Gojo sur votre terrain, donnez 2 points de bouclier.",
@@ -2586,7 +2561,7 @@
     "visual": "pulse",
     "media": [
       "gojo_elu_source",
-      "habillage_gojo_elu_audio"
+      "extrait_original_gojo_elu"
     ],
     "cost": 2,
     "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 4 dégâts.",
@@ -2750,9 +2725,7 @@
     "strength": "Revendication d'un forfait moderne dans le désert.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
-    "media": [
-      "habillage_l_age_c_est_dans_la_tete_audio"
-    ],
+    "media": [],
     "abilities": {
       "effect": {
         "type": "shield",
@@ -2779,8 +2752,7 @@
     },
     "visual": "powder",
     "media": [
-      "la_republique_cest_moi_source",
-      "habillage_la_republique_cest_moi_audio"
+      "la_republique_cest_moi_source"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Jean-Luc Mélenchon sur votre terrain, donnez 2 points de bouclier.",
@@ -2850,8 +2822,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "source_le_joli_nez_de_cleopatre_image",
-      "habillage_le_joli_nez_de_cleopatre_audio"
+      "source_le_joli_nez_de_cleopatre_image"
     ],
     "abilities": {
       "effect": {
@@ -2916,8 +2887,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "rrrr_mammouth_media",
-      "habillage_mammouth_qui_vole_audio"
+      "rrrr_mammouth_media"
     ],
     "abilities": {
       "effect": {
@@ -2944,13 +2914,12 @@
       ]
     },
     "cost": 2,
-    "text": "Soignez un allié de 2 PV. Avec Pierre la Blonde sur votre terrain, soignez 4 PV.",
+    "text": "Soignez un allié de 2 PV.",
     "strength": "Soin esthétique raffiné des Cheveux Propres.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "rrrr_manucure_media",
-      "habillage_manucure_prehistorique_audio"
+      "rrrr_manucure_media"
     ],
     "abilities": {
       "effect": {
@@ -2958,10 +2927,7 @@
         "amount": 2
       }
     },
-    "synergy": {
-      "character_id": "pierre_la_blonde",
-      "bonus": 2
-    }
+    "synergy": null
   },
   {
     "schemaVersion": 3,
@@ -2984,8 +2950,7 @@
     "visual": "rewind",
     "media": [
       "source_mehari_en_panne_image",
-      "camping_mehari_media",
-      "habillage_mehari_en_panne_audio"
+      "camping_mehari_media"
     ],
     "abilities": {
       "effect": {
@@ -3149,8 +3114,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
     "media": [
-      "source_parler_en_alexandrins_image",
-      "habillage_parler_en_alexandrins_audio"
+      "source_parler_en_alexandrins_image"
     ],
     "abilities": {
       "effect": {
@@ -3216,8 +3180,7 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "source_plan_en_coupe_image",
-      "habillage_plan_en_coupe_audio"
+      "source_plan_en_coupe_image"
     ],
     "abilities": {
       "effect": {
@@ -3249,8 +3212,7 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "subtitle",
     "media": [
-      "camping_eau_chaude_media",
-      "habillage_plus_d_eau_chaude_audio"
+      "camping_eau_chaude_media"
     ],
     "abilities": {
       "effect": {
@@ -3284,8 +3246,7 @@
     "visual": "subtitle",
     "media": [
       "source_previens_pierre_image",
-      "rrrr_previens_media",
-      "habillage_previens_pierre_audio"
+      "rrrr_previens_media"
     ],
     "abilities": {
       "effect": {
@@ -3313,8 +3274,7 @@
     },
     "visual": "pulse",
     "media": [
-      "quatre_cartouches_source",
-      "habillage_quatre_cartouches_audio"
+      "quatre_cartouches_source"
     ],
     "cost": 2,
     "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",
@@ -3479,8 +3439,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "camping_shogi_media",
-      "habillage_shogi_shogi_audio"
+      "camping_shogi_media"
     ],
     "abilities": {
       "effect": {
@@ -3545,8 +3504,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "camping_slip_media",
-      "habillage_slip_de_bain_bleu_audio"
+      "camping_slip_media"
     ],
     "abilities": {
       "effect": {
@@ -3578,8 +3536,7 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
     "media": [
-      "camping_petanque_media",
-      "habillage_tournoi_de_petanque_audio"
+      "camping_petanque_media"
     ],
     "abilities": {
       "effect": {
@@ -3673,8 +3630,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "rrrr_eau_media",
-      "habillage_vous_voulez_un_verre_deau_audio"
+      "rrrr_eau_media"
     ],
     "abilities": {
       "effect": {
@@ -3779,7 +3735,6 @@
       "ymca_photo",
       "ymca_navy_dance",
       "ymca_audio_original",
-      "demo_ymca",
       "trump_dance_scene",
       "ymca_original"
     ],
@@ -3813,8 +3768,7 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "rrrr_poulet_media",
-      "habillage_attaque_au_poulet_audio"
+      "rrrr_poulet_media"
     ],
     "abilities": {
       "effect": {
@@ -3847,8 +3801,7 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
     "media": [
-      "source_aux_crocodiles_sacres_image",
-      "habillage_aux_crocodiles_sacres_audio"
+      "source_aux_crocodiles_sacres_image"
     ],
     "abilities": {
       "effect": {
@@ -3914,8 +3867,7 @@
     "visual": "spotlight",
     "media": [
       "source_emplacement_17_image",
-      "camping_emplacement_media",
-      "habillage_emplacement_17_audio"
+      "camping_emplacement_media"
     ],
     "abilities": {
       "effect": {
@@ -3975,14 +3927,13 @@
       ]
     },
     "cost": 3,
-    "text": "Donnez 3 points de bouclier à un allié. Avec Pierre la Blonde sur votre terrain, donnez 4 points de bouclier.",
+    "text": "Donnez 3 points de bouclier à un allié.",
     "strength": "Chevelure soyeuse et propre face aux intempéries.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
       "source_formule_du_shampooing_image",
-      "rrrr_shampooing_media",
-      "habillage_formule_du_shampooing_audio"
+      "rrrr_shampooing_media"
     ],
     "abilities": {
       "effect": {
@@ -3990,10 +3941,7 @@
         "amount": 3
       }
     },
-    "synergy": {
-      "character_id": "pierre_la_blonde",
-      "bonus": 1
-    }
+    "synergy": null
   },
   {
     "schemaVersion": 3,
@@ -4082,8 +4030,7 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "source_goutte_de_potion_magique_image",
-      "habillage_goutte_de_potion_magique_audio"
+      "source_goutte_de_potion_magique_image"
     ],
     "abilities": {
       "effect": {
@@ -4183,7 +4130,7 @@
     "media": [
       "source_j_aime_me_battre_image",
       "dujardin_battre_media",
-      "habillage_j_aime_me_battre_audio"
+      "extrait_original_j_aime_me_battre"
     ],
     "abilities": {
       "effect": {
@@ -4249,8 +4196,7 @@
     "visual": "pulse",
     "media": [
       "dujardin_jaune_media",
-      "extrait_le_jaune_est_un_etat_d_esprit",
-      "habillage_le_jaune_est_un_etat_d_esprit_audio"
+      "extrait_le_jaune_est_un_etat_d_esprit"
     ],
     "abilities": {
       "effect": {
@@ -4382,8 +4328,7 @@
     "visual": "subtitle",
     "media": [
       "source_on_est_pas_bien_la_image",
-      "camping_bien_la_media",
-      "habillage_on_est_pas_bien_la_audio"
+      "camping_bien_la_media"
     ],
     "abilities": {
       "effect": {
@@ -4483,8 +4428,7 @@
     "visual": "powder",
     "media": [
       "source_remets_nous_une_tournee_image",
-      "camping_tournee_media",
-      "habillage_remets_nous_une_tournee_audio"
+      "camping_tournee_media"
     ],
     "abilities": {
       "effect": {
@@ -4549,7 +4493,7 @@
     "media": [
       "bulma_scene",
       "bulma_trailer",
-      "demo_touche_pas_bulma"
+      "extrait_original_touche_pas_bulma"
     ],
     "abilities": {
       "effect": {

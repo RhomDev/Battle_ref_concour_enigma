@@ -17,8 +17,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "pulse",
   "media": [
-    "camping_slip_media",
-    "habillage_slip_de_bain_bleu_audio"
+    "camping_slip_media"
   ],
   "abilities": {
     "effect": {

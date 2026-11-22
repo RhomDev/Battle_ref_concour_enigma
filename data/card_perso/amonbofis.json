@@ -16,7 +16,9 @@
   "strength": "Dispose de 4 PV.",
   "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "powder",
-  "media": [],
+  "media": [
+    "amonbofis_portrait"
+  ],
   "stats": {
     "hp": 4
   }

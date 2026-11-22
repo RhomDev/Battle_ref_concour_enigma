@@ -17,8 +17,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "rewind",
   "media": [
-    "rrrr_mammouth_media",
-    "habillage_mammouth_qui_vole_audio"
+    "rrrr_mammouth_media"
   ],
   "abilities": {
     "effect": {

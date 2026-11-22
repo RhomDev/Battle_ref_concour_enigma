@@ -18,8 +18,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "source_deuxieme_pyramide_a_gauche_image",
-    "habillage_deuxieme_pyramide_a_gauche_audio"
+    "source_deuxieme_pyramide_a_gauche_image"
   ],
   "abilities": {
     "effect": {

@@ -53,14 +53,16 @@ def validate():
             if "localPath" in item:
                 local_kinds.add(item["kind"])
             local_kinds.update(copy["kind"] for copy in item.get("localCopies", []))
-        if card["kind"] == "ref":
-            if "video" in local_kinds and "gif" not in local_kinds:
-                raise ValueError(f"Vidéo de Réf sans GIF pour Pygame: {card['id']}")
-            if not local_kinds.intersection(("gif", "audio")):
-                raise ValueError(f"Réf sans aperçu local lisible: {card['id']}")
+        if card["kind"] == "character" and "image" not in local_kinds:
+            raise ValueError(f"Personnage sans image locale: {card['id']}")
+        if card["kind"] == "ref" and "video" in local_kinds and "gif" not in local_kinds:
+            raise ValueError(f"Vidéo de Réf sans GIF pour Pygame: {card['id']}")
     for item in media:
-        if item["status"] == "demo_asset" and not (ROOT / item["localPath"]).is_file():
-            raise ValueError(f"Fichier manquant: {item['localPath']}")
+        if item["status"] == "demo_asset":
+            if item["kind"] == "audio":
+                raise ValueError(f"Piste audio sans extrait d’origine: {item['id']}")
+            if not (ROOT / item["localPath"]).is_file():
+                raise ValueError(f"Fichier manquant: {item['localPath']}")
         for copy in item.get("localCopies", []):
             if not (ROOT / copy["localPath"]).is_file():
                 raise ValueError(f"Copie locale manquante: {copy['localPath']}")

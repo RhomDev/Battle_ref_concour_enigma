@@ -19,8 +19,7 @@
   "visual": "powder",
   "media": [
     "source_remets_nous_une_tournee_image",
-    "camping_tournee_media",
-    "habillage_remets_nous_une_tournee_audio"
+    "camping_tournee_media"
   ],
   "abilities": {
     "effect": {

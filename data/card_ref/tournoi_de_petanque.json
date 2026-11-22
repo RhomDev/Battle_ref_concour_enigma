@@ -17,8 +17,7 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "spotlight",
   "media": [
-    "camping_petanque_media",
-    "habillage_tournoi_de_petanque_audio"
+    "camping_petanque_media"
   ],
   "abilities": {
     "effect": {

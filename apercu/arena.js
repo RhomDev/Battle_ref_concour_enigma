@@ -30,7 +30,6 @@ const steps = [
   { label: "Terminer le tour", cost: 0, run: finishTurn },
 ];
 let state;
-let audio;
 let playback;
 
 function cardMedia(card) {
@@ -43,7 +42,7 @@ function localMedia(card, kind) {
   const original = sources.flatMap(item => (item.localCopies ?? []).map(copy => ({
     ...copy, sourceUrl: item.sourceUrl,
   }))).find(copy => copy.kind === kind);
-  return kind === "audio" ? original ?? demo : demo ?? original;
+  return kind === "audio" ? original : demo ?? original;
 }
 
 function node(tag, className, label) {
@@ -285,36 +284,8 @@ function playCardMedia(card, projection = dom.projection) {
   return true;
 }
 
-function playSound() {
-  if (dom.son.getAttribute("aria-pressed") !== "true" || audio?.state !== "running") return;
-  const frequencies = [285, 424, 568];
-  const volume = Number(dom.volume.value) / 100;
-  for (const [index, frequency] of frequencies.entries()) {
-    const start = audio.currentTime + index * 0.055;
-    const oscillator = audio.createOscillator();
-    const envelope = audio.createGain();
-    oscillator.type = "sine";
-    oscillator.frequency.value = frequency;
-    envelope.gain.setValueAtTime(0, start);
-    envelope.gain.linearRampToValueAtTime(0.25 * volume, start + 0.015);
-    envelope.gain.linearRampToValueAtTime(0, start + 0.12);
-    oscillator.connect(envelope).connect(audio.destination);
-    oscillator.start(start);
-    oscillator.stop(start + 0.13);
-  }
-}
-
-dom.son.addEventListener("click", async () => {
+dom.son.addEventListener("click", () => {
   const enabled = dom.son.getAttribute("aria-pressed") !== "true";
-  if (enabled) {
-    try {
-      audio ??= new AudioContext();
-      await audio.resume();
-    } catch {
-      dom["audio-status"].hidden = false;
-      return;
-    }
-  }
   dom["audio-status"].hidden = true;
   dom.son.setAttribute("aria-pressed", String(enabled));
   dom.son.textContent = enabled ? "Couper le son" : "Activer le son";
@@ -366,7 +337,6 @@ function deployMacron() {
   state.ally[1] = { id: macron.id };
   renderScene();
   announce("Macron rejoint le plateau", `${ymca.name} est prête à jouer. Trump peut amplifier ses dégâts.`);
-  playSound();
 }
 
 function playRef() {
@@ -384,7 +354,7 @@ function playRef() {
   defender.classList.add("flash");
   animateSignal(source, defender);
   announce(ymca.name, `${ymca.name} inflige ${damage} dégâts à Vegeta. Il lui reste ${target.hp} PV.`);
-  if (!playCardMedia(ymca)) playSound();
+  playCardMedia(ymca);
 }
 
 function finishTurn() {

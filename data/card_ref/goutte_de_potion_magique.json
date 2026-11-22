@@ -18,8 +18,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "pulse",
   "media": [
-    "source_goutte_de_potion_magique_image",
-    "habillage_goutte_de_potion_magique_audio"
+    "source_goutte_de_potion_magique_image"
   ],
   "abilities": {
     "effect": {

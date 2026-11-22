@@ -18,8 +18,7 @@
   "weakness": "Les personnages adverses protègent les PV du joueur.",
   "visual": "powder",
   "media": [
-    "debate_scene",
-    "demo_perlimpinpin"
+    "debate_scene"
   ],
   "abilities": {
     "effect": {

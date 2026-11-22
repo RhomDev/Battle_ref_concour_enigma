@@ -1,12 +1,4 @@
 {
-    "camping_blanquette": {
-        "file": "asset/sound/camping_blanquette.mp3",
-        "description": "Comment est votre blanquette ? — Patrick Chirac",
-        "source": "MyInstants",
-        "source_url": "https://www.myinstants.com/media/sounds/commentestvotreblanquette.mp3",
-        "theme": "camping",
-        "duration_s": 32.2
-    },
     "sda_mon_precieux": {
         "file": "asset/sound/sda_mon_precieux.mp3",
         "description": "Mon précieux — Gollum (VO)",

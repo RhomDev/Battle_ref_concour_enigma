@@ -16,9 +16,7 @@
   "strength": "Revendication d'un forfait moderne dans le désert.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
-  "media": [
-    "habillage_l_age_c_est_dans_la_tete_audio"
-  ],
+  "media": [],
   "abilities": {
     "effect": {
       "type": "shield",

@@ -16,7 +16,9 @@
   "strength": "Dispose de 5 PV.",
   "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "pulse",
-  "media": [],
+  "media": [
+    "panoramix_portrait"
+  ],
   "stats": {
     "hp": 5
   }

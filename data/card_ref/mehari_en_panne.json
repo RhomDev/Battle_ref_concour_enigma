@@ -19,8 +19,7 @@
   "visual": "rewind",
   "media": [
     "source_mehari_en_panne_image",
-    "camping_mehari_media",
-    "habillage_mehari_en_panne_audio"
+    "camping_mehari_media"
   ],
   "abilities": {
     "effect": {

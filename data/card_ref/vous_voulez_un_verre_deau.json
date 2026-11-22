@@ -17,8 +17,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "rrrr_eau_media",
-    "habillage_vous_voulez_un_verre_deau_audio"
+    "rrrr_eau_media"
   ],
   "abilities": {
     "effect": {

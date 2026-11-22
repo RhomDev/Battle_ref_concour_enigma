@@ -16,7 +16,9 @@
   "strength": "Dispose de 5 PV.",
   "weakness": "Dépend des Refs pour agir sur le terrain.",
   "visual": "spotlight",
-  "media": [],
+  "media": [
+    "cleopatre_portrait"
+  ],
   "stats": {
     "hp": 5
   }

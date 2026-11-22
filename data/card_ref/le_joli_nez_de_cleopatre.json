@@ -18,8 +18,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
-    "source_le_joli_nez_de_cleopatre_image",
-    "habillage_le_joli_nez_de_cleopatre_audio"
+    "source_le_joli_nez_de_cleopatre_image"
   ],
   "abilities": {
     "effect": {

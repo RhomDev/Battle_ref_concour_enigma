@@ -12,13 +12,12 @@
     ]
   },
   "cost": 2,
-  "text": "Soignez un allié de 2 PV. Avec Pierre la Blonde sur votre terrain, soignez 4 PV.",
+  "text": "Soignez un allié de 2 PV.",
   "strength": "Soin esthétique raffiné des Cheveux Propres.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "rrrr_manucure_media",
-    "habillage_manucure_prehistorique_audio"
+    "rrrr_manucure_media"
   ],
   "abilities": {
     "effect": {
@@ -26,8 +25,5 @@
       "amount": 2
     }
   },
-  "synergy": {
-    "character_id": "pierre_la_blonde",
-    "bonus": 2
-  }
+  "synergy": null
 }

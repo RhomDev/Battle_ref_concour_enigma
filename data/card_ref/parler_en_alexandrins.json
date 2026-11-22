@@ -18,8 +18,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
   "media": [
-    "source_parler_en_alexandrins_image",
-    "habillage_parler_en_alexandrins_audio"
+    "source_parler_en_alexandrins_image"
   ],
   "abilities": {
     "effect": {

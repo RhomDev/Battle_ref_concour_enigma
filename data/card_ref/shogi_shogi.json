@@ -17,8 +17,7 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "camping_shogi_media",
-    "habillage_shogi_shogi_audio"
+    "camping_shogi_media"
   ],
   "abilities": {
     "effect": {

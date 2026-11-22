@@ -18,8 +18,7 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "spotlight",
   "media": [
-    "source_aux_crocodiles_sacres_image",
-    "habillage_aux_crocodiles_sacres_audio"
+    "source_aux_crocodiles_sacres_image"
   ],
   "abilities": {
     "effect": {

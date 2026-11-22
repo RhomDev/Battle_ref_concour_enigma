@@ -16,7 +16,10 @@ class AssetManager:
 
     def media_for(self, media_ids):
         items = [self.media[media_id] for media_id in media_ids]
-        demos = [item for item in items if item["status"] == "demo_asset"]
+        demos = [
+            item for item in items
+            if item["status"] == "demo_asset" and item["kind"] != "audio"
+        ]
         originals = [
             {**copy, "sourceUrl": item["sourceUrl"]}
             for item in items
