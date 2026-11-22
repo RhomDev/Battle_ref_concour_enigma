@@ -38,7 +38,7 @@ done
     "$p4a" apk --bootstrap=sdl2 --requirements=python3,pygame,pillow \
         "${arch_args[@]}" --android-api=35 --ndk-api=24 --sdk-dir="$sdk" --ndk-dir="$ndk" \
         --storage-dir="$storage" --dist-name="$dist" --private="$app" \
-        --name='Battle Ref Arena' --package=fr.battleref.arena --version=0.4.2 --numeric-version=9 \
+        --name='Battle Ref Arena' --package=fr.battleref.arena --version=0.4.3 --numeric-version=10 \
         --orientation=portrait --permission=INTERNET --permission=ACCESS_NETWORK_STATE \
         --permission=ACCESS_WIFI_STATE --permission=CHANGE_WIFI_MULTICAST_STATE
 )

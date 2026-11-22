@@ -1,10 +1,10 @@
 # Battle Ref Arena
 
-## Télécharger l’APK Android 0.4.2
+## Télécharger l’APK Android 0.4.3
 
-[Télécharger Battle Ref Arena 0.4.2 — téléphone Android ARM64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.2/battle-ref-arena-arm64-v8a.apk)
+[Télécharger Battle Ref Arena 0.4.3 — téléphone Android ARM64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.3/battle-ref-arena-0.4.3-arm64-v8a.apk)
 
-[Télécharger Battle Ref Arena 0.4.2 — émulateur PC x86_64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.2/battle-ref-arena-x86_64.apk)
+[Télécharger Battle Ref Arena 0.4.3 — émulateur PC x86_64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.3/battle-ref-arena-0.4.3-x86_64.apk)
 
 Sur téléphone, ouvre l’APK ARM64 pour l’installer. Sur PC, glisse l’APK x86_64 dans la fenêtre de l’émulateur.
 
@@ -16,4 +16,4 @@ Le catalogue contient **101 Refs et 43 Personnages** inspirés de mèmes d’ani
 
 - Ouvrir [le plateau guidé](apercu/index.html) dans un navigateur. Activer le son dans Options, piocher, déployer Macron puis jouer Y.M.C.A. pour déclencher sa projection.
 - Pour consulter les médias avec Pygame, installer les dépendances avec `python3 -m pip install -r requirements.txt`, puis lancer `python3 main.py`. Les boutons **Personnages** et **Références** ouvrent les collections.
-- Dans Pygame, **Jouer** propose une partie solo ou une partie sur le réseau local. Jouer une Réf lance son extrait dans l’arène lorsqu’il est disponible. **Piocher** coûte 1 énergie et **Passer** termine le tour.
+- Dans Pygame, **Jouer** propose une partie solo ou une partie sur le réseau local. Une [musique de combat](asset/sound/MUSIC_CREDITS.md) est tirée au sort à chaque partie et baisse de volume pendant la lecture des extraits de Réf. **Piocher** coûte 1 énergie et **Passer** termine le tour.

@@ -13,11 +13,20 @@ Usage :
 import json
 import logging
 from pathlib import Path
+from random import SystemRandom
 
 import pygame
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "asset" / "sound" / "sounds.json"
+BATTLE_TRACKS = (
+    "battle-bossfight.ogg",
+    "battle-final.ogg",
+    "battle-ghosts-and-heroes.ogg",
+    "battle-hard-boss.ogg",
+)
+BATTLE_MUSIC_VOLUME = 0.22
+BATTLE_MUSIC_DUCKED_VOLUME = 0.07
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +42,7 @@ class SoundManager:
         self._registry: dict = {}
         self._cache: dict[str, pygame.mixer.Sound] = {}
         self._volume: float = 1.0
+        self._battle_music_ducked = False
 
         if registry_path.exists():
             try:
@@ -78,6 +88,35 @@ class SoundManager:
 
     def get_volume(self) -> float:
         return self._volume
+
+    def play_battle_music(self) -> None:
+        """Choisit une piste de combat et la joue en boucle."""
+        if not self._ensure_mixer():
+            return
+
+        track = SystemRandom().choice(BATTLE_TRACKS)
+        path = REGISTRY_PATH.parent / track
+        try:
+            pygame.mixer.music.load(path)
+            pygame.mixer.music.set_volume(BATTLE_MUSIC_VOLUME)
+            pygame.mixer.music.play(loops=-1)
+            self._battle_music_ducked = False
+        except (pygame.error, OSError) as exc:
+            logger.warning("Musique de combat indisponible (%s) : %s", track, exc)
+
+    def set_battle_music_ducked(self, ducked: bool) -> None:
+        """Baisse la musique pendant la lecture d'un extrait de Réf."""
+        if ducked == self._battle_music_ducked or not pygame.mixer.get_init():
+            return
+        if pygame.mixer.music.get_busy():
+            volume = BATTLE_MUSIC_DUCKED_VOLUME if ducked else BATTLE_MUSIC_VOLUME
+            pygame.mixer.music.set_volume(volume)
+            self._battle_music_ducked = ducked
+
+    def stop_battle_music(self) -> None:
+        if pygame.mixer.get_init():
+            pygame.mixer.music.stop()
+            pygame.mixer.music.unload()
 
     def preload(self, *sound_ids: str) -> None:
         """Précharge les sons dans le cache sans les jouer."""

@@ -3,6 +3,7 @@ import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT
+from core.sound_manager import SoundManager
 from gameplay.card import Card_Item
 from gameplay.partie import Partie
 from gameplay.terrain import Terrain
@@ -68,6 +69,7 @@ class BattleScene:
         self.preview_rect.center = (WIDTH // 2, round(HEIGHT * .407))
         self.preview = MediaPreview(self.preview_rect.inflate(-12, -12).size)
         self.preview_title = ""
+        self.sound = SoundManager()
         self.terrain = Terrain()
         self.terrain_ui = TerrainUI(self.terrain, self.card_view)
 
@@ -94,15 +96,11 @@ class BattleScene:
         # Initialisation selon le mode
         if self.mode == "solo":
             self.partie = Partie(p1_name="Vous", p2_name="IA Bot")
-            self.state = self.partie.get_state_for_player(1)
-            self._update_from_state(self.state)
+            self._update_from_state(self.partie.get_state_for_player(1))
         elif self.mode == "host":
             # Le serveur gère la partie
-            self.state = self.server.partie.get_state_for_player(1)
-            self._update_from_state(self.state)
-        elif self.mode == "client":
-            # Attente de la première synchronisation du serveur
-            pass
+            self._update_from_state(self.server.partie.get_state_for_player(1))
+        # En mode client, le premier état arrivera du serveur.
 
     @staticmethod
     def make_arena_background():
@@ -132,6 +130,11 @@ class BattleScene:
         return pos
 
     def _update_from_state(self, state):
+        if self.state is None and not state.get("game_over") and not self.disconnected:
+            self.sound.play_battle_music()
+        elif self.state and not self.state.get("game_over") and state.get("game_over"):
+            self.sound.stop_battle_music()
+
         previous_ref = self.state.get("last_ref") if self.state else None
         self.state = state
         played_ref = state.get("last_ref")
@@ -143,6 +146,8 @@ class BattleScene:
                 pass
             else:
                 self.preview_title = card.name
+                if media["gif"] or media["audio"]:
+                    self.sound.set_battle_music_ducked(True)
                 self.preview.play(media["gif"], media["audio"])
         self.action_error = ""
         # Reconstruction des cartes du terrain
@@ -360,6 +365,7 @@ class BattleScene:
 
     def cleanup_and_exit(self):
         self.preview.stop()
+        self.sound.stop_battle_music()
         if self.mode == "host" and self.server:
             self.server.stop()
             self.server = None
@@ -397,6 +403,7 @@ class BattleScene:
                     self.action_error = ev["message"]
                 elif ev_type == "opponent_disconnected":
                     self.disconnected = True
+                    self.sound.stop_battle_music()
                     self.disconnect_message = ev.get("message", "Le joueur 2 s'est déconnecté.")
 
         # Traitement des événements en mode Client
@@ -410,7 +417,10 @@ class BattleScene:
                     self.action_error = ev["message"]
                 elif ev_type in ("disconnected", "opponent_disconnected"):
                     self.disconnected = True
+                    self.sound.stop_battle_music()
                     self.disconnect_message = ev.get("message", "Connexion avec l'hôte perdue.")
+
+        self.sound.set_battle_music_ducked(self.preview.playing)
 
     def draw(self, surface):
         surface.blit(self.arena_background, (0, 0))
