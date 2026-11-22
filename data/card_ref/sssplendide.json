@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "id": "sssplendide",
+  "name": "Sssplendide !",
+  "kind": "ref",
+  "category": "cinema",
+  "origin": {
+    "work": "The Mask",
+    "year": 1994,
+    "sources": [
+      "https://www.warnerbros.com/movies/mask"
+    ]
+  },
+  "cost": 2,
+  "text": "Soignez un allié de 2 PV. Avec The Mask sur votre terrain, soignez 4 PV.",
+  "strength": "Régénère un allié au combat.",
+  "weakness": "Demande un personnage allié déployé.",
+  "visual": "spotlight",
+  "media": [
+    "sssplendide_source"
+  ],
+  "abilities": {
+    "effect": {
+      "type": "heal",
+      "amount": 2
+    }
+  },
+  "synergy": {
+    "character_id": "the_mask",
+    "bonus": 2
+  }
+}
