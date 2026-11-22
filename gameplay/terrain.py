@@ -29,6 +29,15 @@ class Terrain:
         self.slots[player][index] = None
         return True
 
+    def is_empty(self, player, index):
+        return self._has_slot(player, index) and self.slots[player][index] is None
+
+    def to_dict(self):
+        return {
+            1: [card.to_dict() if card is not None else None for card in self.slots[1]],
+            2: [card.to_dict() if card is not None else None for card in self.slots[2]],
+        }
+
     def apply_effect(self, player, target_player, index, ref_card):
         if ref_card.type != "ref" or type(player) is not int or player not in self.slots:
             return False

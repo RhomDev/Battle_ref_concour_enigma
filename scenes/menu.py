@@ -75,15 +75,18 @@ class MenuScene:
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             mouse = self.to_canvas_position(event.pos)
             if self.play_rect.collidepoint(mouse):
-                if self.battle_scene is None:
-                    self.battle_scene = BattleScene(self)
-                self.game.change_scene(self.battle_scene)
+                from scenes.mode_select import ModeSelectScene
+                if self.game:
+                    self.game.change_scene(ModeSelectScene(self))
             elif self.characters_rect.collidepoint(mouse):
-                self.game.change_scene(MediaCollectionScene(self, "character"))
+                if self.game:
+                    self.game.change_scene(MediaCollectionScene(self, "character"))
             elif self.references_rect.collidepoint(mouse):
-                self.game.change_scene(MediaCollectionScene(self, "ref"))
+                if self.game:
+                    self.game.change_scene(MediaCollectionScene(self, "ref"))
             elif self.quit_rect.collidepoint(mouse):
-                self.game.running = False
+                if self.game:
+                    self.game.running = False
 
     def update(self, dt):
         self.mouse_pos = self.to_canvas_position(pygame.mouse.get_pos())

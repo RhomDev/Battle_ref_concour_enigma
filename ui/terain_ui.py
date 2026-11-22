@@ -40,6 +40,12 @@ class TerrainUI:
                 return card, player, index
         return None, None, None
 
+    def get_slot_at(self, position, size, local_player=1):
+        for player, index, card, rect in self.positions(size, local_player):
+            if rect.collidepoint(position):
+                return player, index, card, rect
+        return None, None, None, None
+
     def draw(self, surface, local_player=1, *, fill_background=True):
         if fill_background:
             surface.fill(BACKGROUND)

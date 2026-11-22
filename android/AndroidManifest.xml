@@ -4,6 +4,12 @@
     android:versionCode="1"
     android:versionName="0.1">
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="35" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
     <application android:label="Battle Ref Menu"
         android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen">
         <activity android:name=".MenuActivity"
@@ -16,3 +22,4 @@
         </activity>
     </application>
 </manifest>
+

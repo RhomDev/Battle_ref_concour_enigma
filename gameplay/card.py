@@ -20,6 +20,8 @@ class Card_Item:
         if data["kind"] != CARD_KINDS[folder]:
             raise ValueError(f"Type de carte incompatible avec le dossier : {path.name}")
 
+        self.json_name = filename.name
+        self.cat = folder
         self.type = data["kind"]
         self.id = data["id"]
         self.name = data["name"]
@@ -37,6 +39,45 @@ class Card_Item:
             self.effect_type = effect["type"]
             self.amount = effect["amount"]
             self.synergy = data["synergy"]
+
+    def to_dict(self):
+        data = {
+            "json_name": self.json_name,
+            "cat": self.cat,
+            "id": self.id,
+            "name": self.name,
+            "type": self.type,
+            "cost": self.cost,
+            "category": self.category,
+            "text": self.text,
+            "media": list(self.media),
+        }
+        if self.type == "character":
+            data.update({
+                "hp": self.hp,
+                "hp_max": self.hp_max,
+                "shield": self.shield,
+            })
+        else:
+            data.update({
+                "effect_type": self.effect_type,
+                "amount": self.amount,
+                "synergy": self.synergy,
+            })
+        return data
+
+    @classmethod
+    def from_dict(cls, data):
+        card = cls(data["json_name"], data["cat"])
+        if card.type == "character":
+            card.hp = data.get("hp", card.hp_max)
+            card.hp_max = data.get("hp_max", card.hp_max)
+            card.shield = data.get("shield", 0)
+        else:
+            card.effect_type = data.get("effect_type", card.effect_type)
+            card.amount = data.get("amount", card.amount)
+            card.synergy = data.get("synergy", card.synergy)
+        return card
 
     def amount_with_synergy(self, deployed_character_ids):
         if self.synergy and self.synergy["character_id"] in deployed_character_ids:
