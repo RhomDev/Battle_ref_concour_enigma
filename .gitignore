@@ -12,3 +12,6 @@ venv/
 # APK de test générés localement
 android/*.apk
 android/.debug.keystore
+
+# Sorties du build Android
+/android/build/

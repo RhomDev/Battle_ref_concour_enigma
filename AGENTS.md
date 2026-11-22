@@ -8,20 +8,20 @@
 - Reuse the existing project structure instead of creating parallel directories.
 - Before adding a new file, inspect the existing files to avoid duplication.
 - Keep game logic separate from Pygame rendering and user input.
-- The game is designed for multiplayer and mobile (Android). Architecture must remain compatible with both.
+- The game is designed for multiplayer. Android is the primary platform, and the game also runs on PC, primarily for development and testing.
 
 ### 2. Card types
 
 The game supports two card types:
 
-- `character`: a character that can be deployed on the battlefield. Each player has 3 character slots.
+- `character`: a character that can be deployed in an empty slot on its owner's battlefield. Each player has 3 character slots.
 - `ref`: a reference card that performs an immediate action on a deployed character.
 
 **Reference cards support exactly three effects:**
 
-- `attack`: deal damage to a character.
-- `heal`: restore HP to a character.
-- `shield`: add shield points to a character.
+- `attack`: deal damage to a deployed enemy character. Shield points absorb damage before HP. A character at 0 HP is removed from its slot.
+- `heal`: restore HP to a deployed allied character, up to its maximum HP.
+- `shield`: add shield points to a deployed allied character's existing shield.
 
 No other effects are allowed.
 
@@ -83,16 +83,26 @@ For references without synergy, use `null` for the `synergy` field.
 
 Keep the JSON schemas consistent with these rules. Do not introduce unnecessary effect fields or complex ability systems.
 
-### 5. Multiplayer architecture
+### 5. Turns, energy, and player HP
+
+- A player must have enough energy to pay a card's `cost` when they play it.
+- Players draw their opening hands for free. Drawing cards after that costs energy.
+- Players recharge energy on each of their turns.
+- The active player can end their turn with **Passer**, including at 0 energy or when they cannot afford any card.
+- Track each player's HP separately from their characters' HP.
+- In the battle UI, show both players' current HP next to their names and place **Passer** in the top-right corner. On character cards, the left badge shows the energy cost and the right badge shows the character's current HP.
+- Preview values are sample data. Starting player HP, the draw cost, energy limits and the amount restored per turn, how players take damage, and victory conditions still need confirmation.
+
+### 6. Multiplayer architecture
 
 - Each player owns an independent deck, hand, and battlefield.
 - The game rules must be independent of the rendering system.
-- The server must validate card actions, targets, damage, healing, shields, and synergies.
+- The server must validate turn ownership, pass actions, draws, energy costs, card actions, targets, damage, healing, shields, and synergies.
 - Clients must not be authoritative over game state.
 - An opponent's hidden cards must not be revealed to the other player.
 - Pygame classes are responsible for rendering and interaction, not for deciding game outcomes.
 
-### 6. Simplicity
+### 7. Simplicity
 
 This is a simple multiplayer card game, not a complex trading card game engine.
 

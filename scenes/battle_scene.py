@@ -1,89 +1,168 @@
+from copy import copy
+
 import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT
-from gameplay.card import Card_Item
-from gameplay.hand import Hand
 from gameplay.terrain import Terrain
 from scenes.media_collection import GOLD, INK
 from ui.Card_View import CARD_HEIGHT_RATIO, CardView
 from ui.terain_ui import TerrainUI
+from ui.fonts import interface_font
 
 
 MARGIN = 30
 HAND_CARD_WIDTH = 142
 HAND_CARD_GAP = 16
-HAND_BOTTOM_MARGIN = 132
+HAND_BOTTOM_MARGIN = 144
+CARDS_PER_PAGE = 4
 ARENA_HEIGHT = 1054
 SHADOW = (9, 16, 21)
 METAL = (23, 36, 40)
 METAL_EDGE = (119, 94, 61)
 HEALTH_COLOR = (255, 167, 153)
-DEMO_PLAYER_HP = 15
-DEMO_OPPONENT_HP = 12
 
 
 class BattleScene:
-    def __init__(self, menu):
-        self.menu = menu
-        self.game = menu.game
+    def __init__(self, lobby, session, state):
+        self.lobby = lobby
+        self.menu = lobby.menu
+        self.game = lobby.game
+        self.session = session
         self.back_rect = pygame.Rect(MARGIN, 28, 146, 62)
-        self.pass_rect = pygame.Rect(WIDTH - MARGIN - 184, self.back_rect.y, 184, self.back_rect.height)
-        self.energy_rect = pygame.Rect((WIDTH - 246) // 2, HEIGHT - 112, 246, 80)
-        self.button_font = pygame.font.SysFont("arial", 27, bold=True)
-        self.pass_font = pygame.font.SysFont("arial", 34, bold=True)
+        self.pass_rect = pygame.Rect(WIDTH - MARGIN - 184, 28, 184, 62)
+        self.energy_rect = pygame.Rect(MARGIN, HEIGHT - 105, 250, 72)
+        self.draw_rect = pygame.Rect(WIDTH - MARGIN - 245, HEIGHT - 105, 245, 72)
+        self.prev_rect = pygame.Rect(40, 1140, 136, 30)
+        self.next_rect = pygame.Rect(WIDTH - 176, 1140, 136, 30)
+        self.button_font = interface_font(27, bold=True)
+        self.small_font = interface_font(23)
         self.pointer = (-1, -1)
-        self.pass_highlight_until = 0
-        self.board = self.make_board()
+        self.background = self.make_arena_background()
+        self.plaque = pygame.image.load(ROOT / "asset/board/plaque.webp").convert_alpha()
+        self.terrain = Terrain()
+        self.card_view = CardView()
+        self.terrain_ui = TerrainUI(self.terrain, self.card_view)
+        self.page = 0
+        self.selected = None
+        self.pending = False
+        self.notice = ""
+        self.set_state(state)
 
-    def make_board(self):
-        terrain = Terrain()
-        terrain.place_card(2, Card_Item("vegeta.json", "card_perso"), 0)
-        terrain.place_card(2, Card_Item("luffy.json", "card_perso"), 2)
-        terrain.place_card(1, Card_Item("macron.json", "card_perso"), 0)
-        terrain.place_card(1, Card_Item("creeper.json", "card_perso"), 1)
+    def close(self):
+        self.session.close()
 
-        hand = Hand()
-        hand.add_card(Card_Item("satoru_gojo.json", "card_perso"))
-        hand.add_card(Card_Item("ymca.json", "card_ref"))
-        hand.add_card(Card_Item("touche_pas_bulma.json", "card_ref"))
-        hand.add_card(Card_Item("hi_barbie.json", "card_ref"))
+    def leave(self, notice=""):
+        self.close()
+        self.lobby.return_with_notice(notice)
+        self.game.change_scene(self.lobby)
 
-        card_view = CardView()
-        terrain_ui = TerrainUI(terrain, card_view)
-        board = self.make_arena_background()
-        terrain_ui.draw(board, fill_background=False)
-        opponent_slot, player_slot = (
-            rect for _, index, _, rect in terrain_ui.positions(board.get_size()) if index == 0
-        )
+    def set_state(self, state):
+        self.state = state
+        self.seat = state["seat"]
+        self.opponent = 3 - self.seat
+        for player in state["players"]:
+            self.terrain.slots[player["seat"]] = [self.slot_card(slot) for slot in player["slots"]]
+        self.selected = None
+        self.pending = False
+        self.notice = ""
+        self.page = min(self.page, self.max_page)
 
-        plaque = pygame.image.load(ROOT / "asset/board/plaque.webp")
-        for name, hp, size, center_y in (
-            ("Adversaire", DEMO_OPPONENT_HP, (384, 88), opponent_slot.top - 44),
-            ("Vous", DEMO_PLAYER_HP, (264, 64), player_slot.bottom + 33),
-        ):
-            plate = pygame.transform.smoothscale(plaque, size)
-            board.blit(plate, plate.get_rect(center=(WIDTH // 2, center_y)))
-            label = self.button_font.render(name, True, INK)
-            health = self.button_font.render(f"{hp} PV", True, HEALTH_COLOR)
-            gap = 16
-            left = (WIDTH - label.get_width() - gap - health.get_width()) // 2
-            label_rect = label.get_rect(midleft=(left, center_y))
-            board.blit(label, label_rect)
-            board.blit(health, health.get_rect(midleft=(label_rect.right + gap, center_y)))
+    def slot_card(self, slot):
+        if slot is None:
+            return None
+        card = copy(self.session.catalogue.cards[slot["id"]])
+        card.hp, card.shield = slot["hp"], slot["shield"]
+        return card
 
-        card_height = round(HAND_CARD_WIDTH * CARD_HEIGHT_RATIO)
-        hand_top = HEIGHT - HAND_BOTTOM_MARGIN - card_height
-        hand_width = len(hand.cards) * HAND_CARD_WIDTH + (len(hand.cards) - 1) * HAND_CARD_GAP
-        hand_left = (WIDTH - hand_width) // 2
-        for index, card in enumerate(hand.cards):
-            x = hand_left + index * (HAND_CARD_WIDTH + HAND_CARD_GAP)
-            card_view.draw(board, pygame.Rect(x, hand_top, HAND_CARD_WIDTH, card_height), card)
+    @property
+    def max_page(self):
+        return max(0, (len(self.state["hand"]) - 1) // CARDS_PER_PAGE)
 
-        footer_y = self.energy_rect.top - 13
-        pygame.draw.line(board, METAL_EDGE, (MARGIN, footer_y), (WIDTH - MARGIN, footer_y))
-        self.draw_energy(board)
-        return board
+    @property
+    def can_act(self):
+        return self.state["result"] is None and self.state["active"] == self.seat and not self.pending
+
+    @property
+    def valid_targets(self):
+        if self.selected is None or not self.can_act:
+            return set()
+        return {tuple(target) for target in self.state["targets"][self.selected]}
+
+    def hand_positions(self):
+        start = self.page * CARDS_PER_PAGE
+        cards = self.state["hand"][start:start + CARDS_PER_PAGE]
+        height = round(HAND_CARD_WIDTH * CARD_HEIGHT_RATIO)
+        step = HAND_CARD_WIDTH + HAND_CARD_GAP
+        left = (WIDTH - len(cards) * step + HAND_CARD_GAP) // 2
+        for offset, card_id in enumerate(cards):
+            rect = pygame.Rect(left + offset * step, HEIGHT - HAND_BOTTOM_MARGIN - height, HAND_CARD_WIDTH, height)
+            yield start + offset, self.session.catalogue.cards[card_id], rect
+
+    def plaque_rect(self, seat):
+        slot = next(rect for player, _, _, rect in self.terrain_ui.positions((WIDTH, HEIGHT), self.seat) if player == seat)
+        if seat == self.opponent:
+            rect = pygame.Rect(0, 0, 384, 88)
+            rect.midbottom = (WIDTH // 2, slot.top)
+        else:
+            rect = pygame.Rect(0, 0, 310, 58)
+            rect.midtop = (WIDTH // 2, slot.bottom)
+        return rect
+
+    def submit(self, kind, **data):
+        if self.can_act:
+            self.pending = True
+            self.session.submit({"type": kind, "revision": self.state["revision"], **data})
+
+    def change_page(self, offset):
+        self.page = max(0, min(self.max_page, self.page + offset))
+
+    def handle_event(self, event):
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+            self.leave()
+        elif event.type == pygame.MOUSEWHEEL:
+            self.change_page(-event.y)
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            position = self.menu.to_canvas_position(event.pos)
+            if self.back_rect.collidepoint(position):
+                self.leave()
+            elif self.pass_rect.collidepoint(position):
+                self.submit("pass")
+            elif self.draw_rect.collidepoint(position) and self.state["can_draw"]:
+                self.submit("draw")
+            elif self.prev_rect.collidepoint(position):
+                self.change_page(-1)
+            elif self.next_rect.collidepoint(position):
+                self.change_page(1)
+            elif self.can_act:
+                self.select(position)
+
+    def select(self, position):
+        for index, _, rect in self.hand_positions():
+            if rect.collidepoint(position):
+                self.selected = None if self.selected == index else index
+                self.notice = "" if self.selected is None or self.valid_targets else "Cette carte ne peut pas être jouée."
+                return
+        if (self.opponent, None) in self.valid_targets and self.plaque_rect(self.opponent).collidepoint(position):
+            self.submit("play", card=self.selected, target=self.opponent, slot=None)
+            return
+        for seat, index, _, rect in self.terrain_ui.positions((WIDTH, HEIGHT), self.seat):
+            if (seat, index) in self.valid_targets and rect.collidepoint(position):
+                self.submit("play", card=self.selected, target=seat, slot=index)
+                return
+
+    def update(self, dt):
+        self.pointer = self.menu.to_canvas_position(pygame.mouse.get_pos())
+        for event in self.session.poll():
+            if event["type"] == "closed":
+                if self.state["result"] is None:
+                    self.leave(event["value"])
+                    return
+            elif event["type"] == "state":
+                self.set_state(event["value"])
+            elif event["type"] == "error":
+                self.pending = False
+                self.notice = event["value"]
 
     @staticmethod
     def make_arena_background():
@@ -93,63 +172,71 @@ class BattleScene:
             arena = pygame.image.load(ROOT / "asset/board/theatre-des-echos.webp")
         except (OSError, pygame.error):
             return background
-
         scale = max(WIDTH / arena.get_width(), ARENA_HEIGHT / arena.get_height())
         size = (round(arena.get_width() * scale), round(arena.get_height() * scale))
         arena = pygame.transform.smoothscale(arena, size)
         background.blit(arena, ((WIDTH - size[0]) // 2, (ARENA_HEIGHT - size[1]) // 2))
-
         shade = pygame.Surface((WIDTH, ARENA_HEIGHT), pygame.SRCALPHA)
         for y in range(ARENA_HEIGHT):
             top_shade = 168 * max(0, 1 - y / 295)
             bottom_shade = 255 * max(0, (y - 750) / (ARENA_HEIGHT - 1 - 750))
-            alpha = round(max(26, top_shade, bottom_shade))
-            pygame.draw.line(shade, (*SHADOW, alpha), (0, y), (WIDTH - 1, y))
+            pygame.draw.line(shade, (*SHADOW, round(max(26, top_shade, bottom_shade))), (0, y), (WIDTH - 1, y))
         background.blit(shade, (0, 0))
         return background
 
-    def draw_energy(self, surface):
-        rect = self.energy_rect
-        pygame.draw.rect(surface, METAL, rect, border_radius=12)
-        pygame.draw.rect(surface, METAL_EDGE, rect, width=1, border_radius=12)
-        x, y = rect.left + 29, rect.centery
-        gem = [(x, y - 14), (x + 9, y), (x, y + 14), (x - 9, y)]
-        pygame.draw.polygon(surface, (142, 205, 205), gem, width=2)
-        text = self.button_font.render("Énergie", True, INK)
-        surface.blit(text, text.get_rect(midleft=(rect.left + 50, y)))
-        value = self.button_font.render("0 / 5", True, GOLD)
-        surface.blit(value, value.get_rect(midright=(rect.right - 18, y)))
+    def button(self, surface, rect, label, enabled=True):
+        color = METAL if not enabled else (85, 62, 35) if rect.collidepoint(self.pointer) else (51, 49, 39)
+        pygame.draw.rect(surface, color, rect, border_radius=10)
+        pygame.draw.rect(surface, GOLD if enabled else METAL_EDGE, rect, width=2, border_radius=10)
+        self.menu.draw_centered(surface, label, self.small_font, INK if enabled else (151, 153, 148), rect.center)
 
-    @staticmethod
-    def draw_label(surface, label, font, color, center):
-        text = font.render(label, True, color)
-        surface.blit(text, text.get_rect(center=center))
-
-    def handle_event(self, event):
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-            self.game.change_scene(self.menu)
-        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            position = self.menu.to_canvas_position(event.pos)
-            if self.back_rect.collidepoint(position):
-                self.game.change_scene(self.menu)
-            elif self.pass_rect.collidepoint(position):
-                self.pass_highlight_until = pygame.time.get_ticks() + 240
-
-    def update(self, dt):
-        self.pointer = self.menu.to_canvas_position(pygame.mouse.get_pos())
+    def status(self):
+        result = self.state["result"]
+        if result is not None:
+            return "Match nul" if result == "draw" else "Victoire" if result == self.seat else "Défaite"
+        turn = "Votre tour" if self.state["active"] == self.seat else "Tour adverse"
+        return f"{turn}  ·  Tour {self.state['turn']}"
 
     def draw(self, surface):
-        surface.blit(self.board, (0, 0))
-        back_color = (36, 52, 55) if self.back_rect.collidepoint(self.pointer) else METAL
-        pygame.draw.rect(surface, back_color, self.back_rect, border_radius=12)
-        pygame.draw.rect(surface, METAL_EDGE, self.back_rect, width=2, border_radius=12)
-        x, y = self.back_rect.left + 23, self.back_rect.centery
-        pygame.draw.lines(surface, GOLD, False, [(x + 6, y - 7), (x, y), (x + 6, y + 7)], 2)
-        self.draw_label(surface, "Menu", self.button_font, INK, (self.back_rect.centerx + 9, y))
+        surface.blit(self.background, (0, 0))
+        self.button(surface, self.back_rect, "Menu")
+        self.button(surface, self.pass_rect, "Passer", self.can_act)
+        self.terrain_ui.draw(surface, self.seat, fill_background=False)
+        targets = self.valid_targets
+        for seat, index, _, rect in self.terrain_ui.positions((WIDTH, HEIGHT), self.seat):
+            if (seat, index) in targets:
+                pygame.draw.rect(surface, GOLD, rect, width=3, border_radius=8)
 
-        pressed = pygame.time.get_ticks() < self.pass_highlight_until
-        hovered = self.pass_rect.collidepoint(self.pointer)
-        color = (161, 111, 54) if pressed else GOLD if hovered else (203, 152, 75)
-        pygame.draw.rect(surface, color, self.pass_rect, border_radius=12)
-        pygame.draw.rect(surface, (246, 213, 147), self.pass_rect, width=2, border_radius=12)
-        self.draw_label(surface, "Passer", self.pass_font, SHADOW, self.pass_rect.center)
+        label = self.menu.draw_centered
+        for player in self.state["players"]:
+            seat = player["seat"]
+            own = seat == self.seat
+            rect = self.plaque_rect(seat)
+            surface.blit(pygame.transform.smoothscale(self.plaque, rect.size), rect)
+            if (seat, None) in targets:
+                pygame.draw.rect(surface, GOLD, rect, width=3, border_radius=8)
+            name = "Vous" if own else "Bot" if self.session.mode == "solo" else "Adversaire"
+            title = f"{name}  ·  {player['hp']} PV"
+            label(surface, title, self.button_font, HEALTH_COLOR, (rect.centerx, rect.centery - (9 if not own else 0)))
+            if not own:
+                label(surface, f"{player['hand_count']} en main  ·  {player['deck_count']} en pioche",
+                      self.small_font, INK, (rect.centerx, rect.centery + 17))
+
+        label(surface, self.status(), self.button_font, GOLD, (WIDTH // 2, 514))
+        hint = self.notice or ("Choisissez une cible" if targets else "")
+        label(surface, hint, self.small_font, INK, (WIDTH // 2, 552))
+
+        for index, card, rect in self.hand_positions():
+            self.card_view.draw(surface, rect, card)
+            if index == self.selected:
+                pygame.draw.rect(surface, GOLD, rect, width=3, border_radius=8)
+        if self.max_page:
+            self.button(surface, self.prev_rect, "Précédentes", self.page > 0)
+            self.button(surface, self.next_rect, "Suivantes", self.page < self.max_page)
+            label(surface, f"{self.page + 1} / {self.max_page + 1}", self.small_font, INK, (WIDTH // 2, 1150))
+
+        own = self.state["players"][self.seat - 1]
+        maximum = self.state["max_energy"]
+        cost = self.state["draw_cost"]
+        self.button(surface, self.energy_rect, f"Énergie  {own['energy']} / {maximum}")
+        self.button(surface, self.draw_rect, f"Piocher · {cost} énergie", self.state["can_draw"] and self.can_act)

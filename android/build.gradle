@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application' version '8.9.2'
+    id 'com.chaquo.python' version '17.2.0'
+}
+
+android {
+    namespace 'fr.battleref.menutest'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'fr.battleref.menutest'
+        minSdk 24
+        targetSdk 35
+        versionCode 2
+        versionName '0.2'
+        ndk { abiFilters 'arm64-v8a', 'x86_64' }
+    }
+
+    if (file('.debug.keystore').exists()) {
+        signingConfigs.debug.storeFile = file('.debug.keystore')
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['build/battle-ref-input/java']
+            assets.srcDirs = ['build/battle-ref-input/assets']
+        }
+    }
+}
+
+chaquopy {
+    defaultConfig {
+        version = '3.12'
+        buildPython(System.getenv('PYTHON') ?: 'python3')
+    }
+    sourceSets {
+        main { srcDir 'build/battle-ref-input/python' }
+    }
+}

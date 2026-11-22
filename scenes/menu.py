@@ -2,8 +2,9 @@ import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT
-from scenes.battle_scene import BattleScene
+from scenes.play_scene import PlayScene
 from scenes.media_collection import GOLD, INK, MediaCollectionScene
+from ui.fonts import interface_font
 
 
 BACKGROUND = (20, 24, 36)
@@ -17,10 +18,10 @@ class MenuScene:
     def __init__(self, game):
         self.game = game
         self.background = self.make_background()
-        self.font_title = pygame.font.SysFont("arial", 88, bold=True)
-        self.font_play = pygame.font.SysFont("arial", 43, bold=True)
-        self.font_button = pygame.font.SysFont("arial", 30, bold=True)
-        self.font_small = pygame.font.SysFont("arial", 24)
+        self.font_title = interface_font(88, bold=True)
+        self.font_play = interface_font(43, bold=True)
+        self.font_button = interface_font(30, bold=True)
+        self.font_small = interface_font(24)
 
         margin = 36
         content_width = WIDTH - 2 * margin
@@ -31,7 +32,6 @@ class MenuScene:
         self.quit_rect = pygame.Rect(0, 0, 180, 64)
         self.quit_rect.midbottom = (WIDTH // 2, HEIGHT - 48)
         self.mouse_pos = (-1, -1)
-        self.battle_scene = None
 
     @staticmethod
     def make_background():
@@ -75,9 +75,7 @@ class MenuScene:
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             mouse = self.to_canvas_position(event.pos)
             if self.play_rect.collidepoint(mouse):
-                if self.battle_scene is None:
-                    self.battle_scene = BattleScene(self)
-                self.game.change_scene(self.battle_scene)
+                self.game.change_scene(PlayScene(self))
             elif self.characters_rect.collidepoint(mouse):
                 self.game.change_scene(MediaCollectionScene(self, "character"))
             elif self.references_rect.collidepoint(mouse):

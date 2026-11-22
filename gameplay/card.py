@@ -7,7 +7,7 @@ CARD_KINDS = {"card_perso": "character", "card_ref": "ref"}
 
 
 class Card_Item:
-    def __init__(self, json_name, cat):
+    def __init__(self, json_name, cat, *, data_root=DATA):
         folder = cat.rstrip("/")
         if folder not in CARD_KINDS:
             raise ValueError(f"Dossier de cartes invalide : {cat}")
@@ -15,7 +15,7 @@ class Card_Item:
         filename = Path(json_name)
         if len(filename.parts) != 1 or filename.suffix != ".json":
             raise ValueError(f"Nom de fiche invalide : {json_name}")
-        path = DATA / folder / filename
+        path = data_root / folder / filename
         data = json.loads(path.read_text(encoding="utf-8"))
         if data["kind"] != CARD_KINDS[folder]:
             raise ValueError(f"Type de carte incompatible avec le dossier : {path.name}")

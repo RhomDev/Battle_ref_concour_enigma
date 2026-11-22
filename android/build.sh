@@ -3,39 +3,50 @@ set -euo pipefail
 
 project=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 cd "$project"
-
-sdk=${ANDROID_HOME:-${ANDROID_SDK_ROOT:-$HOME/Android/Sdk}}
-build_tools="$sdk/build-tools/35.0.0"
-android_jar="$sdk/platforms/android-35/android.jar"
-python=${PYTHON:-python3}
-debug_key="$project/android/.debug.keystore"
-apk="$project/android/battle-ref-menu.apk"
-
-if [[ ! -x "$build_tools/aapt2" || ! -f "$android_jar" ]]; then
-    echo 'Installez les packages Android build-tools;35.0.0 et platforms;android-35, puis définissez ANDROID_HOME.' >&2
+sdk=${ANDROID_HOME:-${ANDROID_SDK_ROOT:-$project/.android-sdk}}
+ndk=${ANDROID_NDK_HOME:-$sdk/ndk/25.1.8937393}
+p4a=${P4A:-p4a}
+storage=${P4A_STORAGE_DIR:-$project/android/build/p4a}
+if [[ ! -d "$sdk/platforms/android-35" || ! -d "$ndk/toolchains/llvm" ]]; then
+    printf '%s\n' 'Installez Android SDK Platform 35 et NDK r25b, puis définissez ANDROID_HOME et ANDROID_NDK_HOME.' >&2
     exit 1
 fi
 
-work=$(mktemp -d)
-trap 'rm -rf -- "$work"' EXIT
-mkdir -p "$work/assets" "$work/classes"
+mkdir -p "$project/android/build"
+stage=$(mktemp -d "$project/android/build/stage.XXXXXXXX")
+trap 'rm -rf -- "$stage"' EXIT
+app="$stage/app"
+mkdir -p "$app/asset/image" "$app/data"
+cp main.py config.py "$app/"
+cp -R core gameplay scenes ui "$app/"
+cp -R data/card_perso data/card_ref data/medias.json "$app/data/"
+cp -R asset/board asset/fonts asset/frames asset/gif asset/sound asset/video "$app/asset/"
+cp -R asset/image/catalogue "$app/asset/image/"
 
-"$python" -B -m android.render_menu "$work/assets/menu.png"
-javac --release 8 -classpath "$android_jar" -d "$work/classes" android/MenuActivity.java
-"$build_tools/d8" --min-api 24 --lib "$android_jar" --output "$work" \
-    "$work/classes/fr/battleref/menutest/MenuActivity.class"
-"$build_tools/aapt2" link -I "$android_jar" --manifest android/AndroidManifest.xml \
-    -A "$work/assets" -o "$work/unsigned.apk"
-(cd "$work" && zip -q unsigned.apk classes.dex)
-"$build_tools/zipalign" -f 4 "$work/unsigned.apk" "$work/aligned.apk"
+export VERSION_pygame=2.6.1
+read -r -a architectures <<< "${ANDROID_ARCHS:-arm64-v8a x86_64}"
+arch_args=()
+for arch in "${architectures[@]}"; do
+    arch_args+=("--arch=$arch")
+done
 
-if [[ ! -f "$debug_key" ]]; then
-    keytool -genkeypair -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 \
-        -dname 'CN=Android Debug,O=Android,C=US' -keystore "$debug_key" \
-        -storepass android -keypass android
+(
+    cd "$stage"
+    "$p4a" apk --bootstrap=sdl2 --requirements=python3,pygame,pillow,ifaddr==0.2.0 \
+        "${arch_args[@]}" --android-api=35 --ndk-api=24 --sdk-dir="$sdk" --ndk-dir="$ndk" \
+        --storage-dir="$storage" --dist-name=battleref --private="$app" --ignore-setup-py \
+        --name='Battle Ref Arena' --package=fr.battleref.menutest --version=0.3 --numeric-version=3 \
+        --orientation=portrait --permission=INTERNET
+)
+apks=("$stage"/*.apk)
+apk="$project/android/battle-ref-debug.apk"
+signed="$stage/battle-ref-signed.apk"
+signer="$sdk/build-tools/35.0.0/apksigner"
+if [[ -f "$project/android/.debug.keystore" ]]; then
+    "$signer" sign --ks "$project/android/.debug.keystore" --ks-pass pass:android --out "$signed" "${apks[0]}"
+else
+    cp "${apks[0]}" "$signed"
 fi
-"$build_tools/apksigner" sign --ks "$debug_key" --ks-pass pass:android \
-    --out "$work/battle-ref-menu.apk" "$work/aligned.apk"
-"$build_tools/apksigner" verify "$work/battle-ref-menu.apk"
-mv -f -- "$work/battle-ref-menu.apk" "$apk"
+"$signer" verify "$signed"
+mv -f -- "$signed" "$apk"
 printf 'APK créé : %s\n' "$apk"

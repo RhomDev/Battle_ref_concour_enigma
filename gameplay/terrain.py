@@ -29,6 +29,10 @@ class Terrain:
         self.slots[player][index] = None
         return True
 
+    def effect_amount(self, player, ref_card):
+        deployed_ids = (card.id for card in self.slots[player] if card is not None)
+        return ref_card.amount_with_synergy(deployed_ids)
+
     def apply_effect(self, player, target_player, index, ref_card):
         if ref_card.type != "ref" or type(player) is not int or player not in self.slots:
             return False
@@ -48,8 +52,7 @@ class Terrain:
         if not allowed_target.get(effect_type, False):
             return False
 
-        deployed_ids = (card.id for card in self.slots[player] if card is not None)
-        amount = ref_card.amount_with_synergy(deployed_ids)
+        amount = self.effect_amount(player, ref_card)
 
         if effect_type == "attack":
             if target.take_damage(amount) == 0:

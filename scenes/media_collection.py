@@ -8,6 +8,7 @@ import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT, AssetManager
+from ui.fonts import interface_font
 
 
 INK = (255, 243, 222)
@@ -31,11 +32,11 @@ class MediaCollectionScene:
             key=lambda card: (card["cost"], card["name"].casefold()),
         )
         self.assets = AssetManager()
-        self.font_title = pygame.font.SysFont("arial", 46, bold=True)
-        self.font_name = pygame.font.SysFont("arial", 32, bold=True)
-        self.font = pygame.font.SysFont("arial", 23)
-        self.font_small = pygame.font.SysFont("arial", 19)
-        self.font_compact = pygame.font.SysFont("arial", 17)
+        self.font_title = interface_font(46, bold=True)
+        self.font_name = interface_font(32, bold=True)
+        self.font = interface_font(23)
+        self.font_small = interface_font(19)
+        self.font_compact = interface_font(17)
 
         self.back_rect = pygame.Rect(WIDTH - 196, 36, 160, 48)
         self.card_rects = [
