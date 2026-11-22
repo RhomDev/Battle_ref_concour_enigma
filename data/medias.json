@@ -4645,5 +4645,62 @@
         "durationMs": 11442
       }
     ]
+  },
+  {
+    "id": "the_mask_source",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/mask",
+    "creator": "Chuck Russell / Dark Horse Entertainment / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Visuel du personnage The Mask incarné par Jim Carrey.",
+    "caption": "The Mask, héros cartoon en costume jaune éclatant.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/the_mask_perso.webp",
+        "assetUrl": "https://www.warnerbros.com/movies/mask",
+        "caption": "Portrait de The Mask."
+      }
+    ]
+  },
+  {
+    "id": "sssplendide_source",
+    "kind": "video",
+    "sourceUrl": "https://www.warnerbros.com/movies/mask",
+    "creator": "Chuck Russell / New Line Cinema",
+    "license": "authorization-required",
+    "status": "reference_only",
+    "restrictions": "Extrait et réplique culte Sssplendide de The Mask.",
+    "caption": "Sssplendide ! Réplique culte de The Mask.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/the_mask_splendide.webp",
+        "assetUrl": "https://www.warnerbros.com/movies/mask",
+        "caption": "Sssplendide ! The Mask en gros plan."
+      },
+      {
+        "kind": "gif",
+        "localPath": "asset/gif/the_mask_splendide.gif",
+        "assetUrl": "https://www.warnerbros.com/movies/mask",
+        "caption": "Extrait animé de The Mask.",
+        "durationMs": 7918
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/the_mask_splendide.mp3",
+        "assetUrl": "https://www.warnerbros.com/movies/mask",
+        "caption": "Réplique Sssplendide ! de The Mask.",
+        "durationMs": 7889
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/the_mask_splendide.mp4",
+        "assetUrl": "https://www.warnerbros.com/movies/mask",
+        "caption": "Extrait vidéo de The Mask.",
+        "durationMs": 7918
+      }
+    ]
   }
 ]

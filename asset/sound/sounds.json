@@ -70,5 +70,13 @@
         "source_url": "https://www.myinstants.com/media/sounds/fermetagueule_R4BhXYv.mp3",
         "theme": "brice_de_nice",
         "duration_s": 3.0
+    },
+    "the_mask_splendide": {
+        "file": "asset/sound/the_mask_splendide.mp3",
+        "description": "Sssplendide ! — The Mask",
+        "source": "The Mask (1994)",
+        "source_url": "https://www.warnerbros.com/movies/mask",
+        "theme": "the_mask",
+        "duration_s": 7.89
     }
 }

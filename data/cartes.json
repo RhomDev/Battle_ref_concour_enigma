@@ -727,6 +727,31 @@
   },
   {
     "schemaVersion": 3,
+    "id": "the_mask",
+    "name": "The Mask",
+    "kind": "character",
+    "category": "cinema",
+    "origin": {
+      "work": "The Mask",
+      "year": 1994,
+      "sources": [
+        "https://www.warnerbros.com/movies/mask"
+      ]
+    },
+    "cost": 3,
+    "text": "Modeste employé de banque métamorphosé en tornade verte bondissante et imprévisible.",
+    "strength": "Dispose de 5 PV.",
+    "weakness": "Dépend des Refs pour agir sur le terrain.",
+    "visual": "pulse",
+    "media": [
+      "the_mask_source"
+    ],
+    "stats": {
+      "hp": 5
+    }
+  },
+  {
+    "schemaVersion": 3,
     "id": "trump",
     "name": "Donald Trump",
     "kind": "character",
@@ -3556,6 +3581,38 @@
     },
     "synergy": {
       "character_id": "patrick_chirac",
+      "bonus": 2
+    }
+  },
+  {
+    "schemaVersion": 3,
+    "id": "sssplendide",
+    "name": "Sssplendide !",
+    "kind": "ref",
+    "category": "cinema",
+    "origin": {
+      "work": "The Mask",
+      "year": 1994,
+      "sources": [
+        "https://www.warnerbros.com/movies/mask"
+      ]
+    },
+    "cost": 2,
+    "text": "Soignez un allié de 2 PV. Avec The Mask sur votre terrain, soignez 4 PV.",
+    "strength": "Régénère un allié au combat.",
+    "weakness": "Demande un personnage allié déployé.",
+    "visual": "spotlight",
+    "media": [
+      "sssplendide_source"
+    ],
+    "abilities": {
+      "effect": {
+        "type": "heal",
+        "amount": 2
+      }
+    },
+    "synergy": {
+      "character_id": "the_mask",
       "bonus": 2
     }
   },
