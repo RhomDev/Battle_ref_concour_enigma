@@ -4,6 +4,8 @@ from gameplay.joueur import Joueur
 from gameplay.terrain import Terrain
 
 
+DRAW_COST = 1
+
 DEFAULT_DECK_P1 = [
     ("macron.json", "card_perso"),
     ("luffy.json", "card_perso"),
@@ -15,6 +17,18 @@ DEFAULT_DECK_P1 = [
     ("saitama_ok.json", "card_ref"),
     ("perlimpinpin.json", "card_ref"),
     ("ymca.json", "card_ref"),
+    ("lucci_luffy_lunettes.json", "card_ref"),
+    ("penser_a_la_mort.json", "card_ref"),
+    ("saitama_moustique.json", "card_ref"),
+    ("traverse_la_rue.json", "card_ref"),
+    ("gear_fifth.json", "card_ref"),
+    ("ymca.json", "card_ref"),
+    ("lucci_luffy_lunettes.json", "card_ref"),
+    ("saitama_moustique.json", "card_ref"),
+    ("hi_barbie.json", "card_ref"),
+    ("saitama_promos.json", "card_ref"),
+    ("dango_luffy_kid.json", "card_ref"),
+    ("saitama_moustique.json", "card_ref"),
 ]
 
 DEFAULT_DECK_P2 = [
@@ -26,8 +40,20 @@ DEFAULT_DECK_P2 = [
     ("creeper_aw_man.json", "card_ref"),
     ("wrong_trump.json", "card_ref"),
     ("gojo_domaine.json", "card_ref"),
-    ("touche_pas_bulma.json", "card_ref"),
-    ("beach_off.json", "card_ref"),
+    ("creeper_sifflement.json", "card_ref"),
+    ("gojo_t_es_faible.json", "card_ref"),
+    ("creeper_sifflement.json", "card_ref"),
+    ("covfefe.json", "card_ref"),
+    ("gojo_elu.json", "card_ref"),
+    ("gojo_t_es_faible.json", "card_ref"),
+    ("ymca.json", "card_ref"),
+    ("creeper_aw_man.json", "card_ref"),
+    ("creeper_sifflement.json", "card_ref"),
+    ("gojo_elu.json", "card_ref"),
+    ("wrong_trump.json", "card_ref"),
+    ("covfefe.json", "card_ref"),
+    ("creeper_sifflement.json", "card_ref"),
+    ("gojo_elu.json", "card_ref"),
 ]
 
 
@@ -65,7 +91,7 @@ class Partie:
             return False, "Ce n'est pas votre tour."
 
         player = self.players.get(player_id)
-        if not player or not (0 <= hand_index < len(player.hand.cards)):
+        if not player or type(hand_index) is not int or not (0 <= hand_index < len(player.hand.cards)):
             return False, "Carte introuvable en main."
 
         card = player.hand.cards[hand_index]
@@ -90,7 +116,7 @@ class Partie:
             return False, "Ce n'est pas votre tour."
 
         player = self.players.get(player_id)
-        if not player or not (0 <= hand_index < len(player.hand.cards)):
+        if not player or type(hand_index) is not int or not (0 <= hand_index < len(player.hand.cards)):
             return False, "Carte introuvable en main."
 
         card = player.hand.cards[hand_index]
@@ -98,17 +124,28 @@ class Partie:
             return False, "La carte n'est pas une référence."
         if not player.can_afford(card):
             return False, f"Énergie insuffisante (coût : {card.cost})."
-        if not self.terrain._has_slot(target_player, target_slot):
-            return False, "Emplacement cible invalide."
-
-        target_char = self.terrain.slots[target_player][target_slot]
-        if target_char is None:
-            return False, "Aucun personnage sur l'emplacement ciblé."
-
-        if card.effect_type == "attack" and target_player == player_id:
+        if type(target_player) is not int or target_player not in self.players:
+            return False, "Joueur cible invalide."
+        attack = card.effect_type == "attack"
+        if attack and target_player == player_id:
             return False, "Une attaque doit cibler un personnage adverse."
         if card.effect_type in ("heal", "shield") and target_player != player_id:
             return False, "Un soin ou bouclier doit cibler un personnage allié."
+
+        direct_attack = target_slot is None
+        if direct_attack:
+            if not attack:
+                return False, "Cet effet doit cibler un personnage."
+            if any(self.terrain.slots[target_player]):
+                return False, "Les personnages adverses protègent les PV du joueur."
+        else:
+            if not self.terrain._has_slot(target_player, target_slot):
+                return False, "Emplacement cible invalide."
+            target_char = self.terrain.slots[target_player][target_slot]
+            if target_char is None:
+                return False, "Aucun personnage sur l'emplacement ciblé."
+            if not self.terrain.apply_effect(player_id, target_player, target_slot, card):
+                return False, "Effet invalide."
 
         player.spend_energy(card.cost)
         player.hand.remove_card(card)
@@ -117,20 +154,15 @@ class Partie:
         amount = card.amount_with_synergy(deployed_ids)
         synergy_active = bool(card.synergy and card.synergy["character_id"] in deployed_ids)
 
-        self.terrain.apply_effect(player_id, target_player, target_slot, card)
-        target_after = self.terrain.slots[target_player][target_slot]
-        is_ko = (target_after is None)
-
-        if card.effect_type == "attack" and is_ko:
+        synergy_label = " [Synergie !]" if synergy_active else ""
+        if direct_attack:
             opponent = self.players[target_player]
-            opponent.take_damage(3)
-            if opponent.hp <= 0:
+            if opponent.take_damage(amount) == 0:
                 self.game_over = True
                 self.winner = player_id
-
-        synergy_label = " [Synergie !]" if synergy_active else ""
-        if card.effect_type == "attack":
-            ko_label = " (K.O. ! -3 PV adversaire)" if is_ko else ""
+            desc = f"a infligé {amount} dégâts directs à {opponent.name}{synergy_label}."
+        elif attack:
+            ko_label = " (K.O. !)" if target_char.hp == 0 else ""
             desc = f"a infligé {amount} dégâts à {target_char.name}{synergy_label}{ko_label}."
         elif card.effect_type == "heal":
             desc = f"a soigné {target_char.name} de {amount} PV{synergy_label}."
@@ -138,6 +170,22 @@ class Partie:
             desc = f"a ajouté {amount} bouclier à {target_char.name}{synergy_label}."
 
         self.last_event = f"{player.name} {desc}"
+        return True, self.last_event
+
+    def draw_card(self, player_id):
+        if self.game_over:
+            return False, "La partie est terminée."
+        if player_id != self.current_turn:
+            return False, "Ce n'est pas votre tour."
+
+        player = self.players[player_id]
+        if not player.deck:
+            return False, "La pioche est vide."
+        if not player.spend_energy(DRAW_COST):
+            return False, "Énergie insuffisante pour piocher."
+
+        player.draw_card()
+        self.last_event = f"{player.name} a pioché une carte."
         return True, self.last_event
 
     def pass_turn(self, player_id):
@@ -151,11 +199,36 @@ class Partie:
         self.turn_number += 1
         active = self.players[next_id]
         active.reset_energy()
-        drawn = active.draw_card()
-
-        draw_str = f" ({drawn.name} pioché)" if drawn else ""
-        self.last_event = f"Tour {self.turn_number} : Au tour de {active.name}{draw_str}."
+        self.last_event = f"Tour {self.turn_number} : Au tour de {active.name}."
         return True, self.last_event
+
+    def play_bot_action(self, player_id):
+        player = self.players[player_id]
+        opponent_id = 3 - player_id
+        allies = self.terrain.slots[player_id]
+        opponents = self.terrain.slots[opponent_id]
+        free_slot = next((i for i, card in enumerate(allies) if card is None), None)
+        ally_slot = next((i for i, card in enumerate(allies) if card is not None), None)
+        opponent_slot = next((i for i, card in enumerate(opponents) if card is not None), None)
+        affordable = [(i, card) for i, card in enumerate(player.hand.cards) if player.can_afford(card)]
+
+        if free_slot is not None:
+            for i, card in affordable:
+                if card.type == "character":
+                    return self.play_character(player_id, i, free_slot)
+
+        for i, card in affordable:
+            if card.type == "ref" and card.effect_type == "attack":
+                return self.play_ref(player_id, i, opponent_id, opponent_slot)
+
+        if ally_slot is not None:
+            for i, card in affordable:
+                if card.type == "ref" and card.effect_type in ("heal", "shield"):
+                    return self.play_ref(player_id, i, player_id, ally_slot)
+
+        if player.deck and player.energy >= DRAW_COST:
+            return self.draw_card(player_id)
+        return self.pass_turn(player_id)
 
     def surrender(self, player_id):
         if not self.game_over:
@@ -174,6 +247,7 @@ class Partie:
             "game_over": self.game_over,
             "winner": self.winner,
             "last_event": self.last_event,
+            "draw_cost": DRAW_COST,
             "you": self.players[player_id].to_dict(include_private=True),
             "opponent": self.players[opponent_id].to_dict(include_private=False),
             "terrain": self.terrain.to_dict(),

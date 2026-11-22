@@ -1,3 +1,5 @@
+import os
+
 import pygame
 from config import WIDTH, HEIGHT, FPS
 from scenes.menu import MenuScene
@@ -7,9 +9,10 @@ class Game:
     def __init__(self):
         pygame.init()
 
-        self.screen = pygame.display.set_mode(
-            (WIDTH, HEIGHT), pygame.RESIZABLE
-        )
+        if "ANDROID_ARGUMENT" in os.environ:
+            self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        else:
+            self.screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
         self.canvas = pygame.Surface((WIDTH, HEIGHT))
 
         self.clock = pygame.time.Clock()

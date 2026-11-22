@@ -1,11 +1,9 @@
 import math
-import time
 import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT
 from gameplay.card import Card_Item
-from gameplay.hand import Hand
 from gameplay.partie import Partie
 from gameplay.terrain import Terrain
 from scenes.media_collection import GOLD, INK
@@ -17,6 +15,7 @@ MARGIN = 30
 HAND_CARD_WIDTH = 130
 HAND_CARD_GAP = 12
 HAND_BOTTOM_MARGIN = 120
+HAND_PAGE_SIZE = 5
 ARENA_HEIGHT = 1054
 SHADOW = (9, 16, 21)
 METAL = (23, 36, 40)
@@ -46,7 +45,12 @@ class BattleScene:
         # Rectangles d'interface
         self.back_rect = pygame.Rect(MARGIN, 28, 146, 62)
         self.pass_rect = pygame.Rect(WIDTH - MARGIN - 184, self.back_rect.y, 184, self.back_rect.height)
-        self.energy_rect = pygame.Rect((WIDTH - 246) // 2, HEIGHT - 100, 246, 72)
+        self.energy_rect = pygame.Rect(WIDTH - MARGIN - 246, HEIGHT - 100, 246, 72)
+        self.draw_rect = pygame.Rect(MARGIN, self.energy_rect.y, 214, self.energy_rect.height)
+        self.prev_hand_rect = pygame.Rect(257, self.energy_rect.y, 56, self.energy_rect.height)
+        self.next_hand_rect = self.prev_hand_rect.move(63, 0)
+        self.opponent_rect = pygame.Rect(0, 0, 460, 68)
+        self.opponent_rect.center = (WIDTH // 2, 135)
 
         # Polices
         self.button_font = pygame.font.SysFont("arial", 26, bold=True)
@@ -74,7 +78,9 @@ class BattleScene:
         self.state = None
         self.hand_cards = []
         self.hand_rects = []
+        self.hand_page = 0
         self.selected_hand_index = None
+        self.action_error = ""
         self.disconnected = False
         self.disconnect_message = ""
         self.bot_timer = 0
@@ -122,6 +128,7 @@ class BattleScene:
 
     def _update_from_state(self, state):
         self.state = state
+        self.action_error = ""
         # Reconstruction des cartes du terrain
         t_data = state.get("terrain", {})
         for p in (1, 2):
@@ -135,36 +142,82 @@ class BattleScene:
         # Reconstruction de la main locale
         hand_data = state.get("you", {}).get("hand", [])
         self.hand_cards = [Card_Item.from_dict(c) for c in hand_data]
+        self.hand_page = min(self.hand_page, self.hand_page_count - 1)
+        self._layout_hand()
 
-        # Calcul des rectangles de cartes en main
+        if self.selected_hand_index is not None and self.selected_hand_index >= len(self.hand_cards):
+            self.selected_hand_index = None
+
+    @property
+    def hand_page_count(self):
+        return max(1, math.ceil(len(self.hand_cards) / HAND_PAGE_SIZE))
+
+    def _layout_hand(self):
         card_height = round(HAND_CARD_WIDTH * CARD_HEIGHT_RATIO)
         hand_top = HEIGHT - HAND_BOTTOM_MARGIN - card_height
-        count = len(self.hand_cards)
+        start = self.hand_page * HAND_PAGE_SIZE
+        count = min(HAND_PAGE_SIZE, len(self.hand_cards) - start)
         total_width = count * HAND_CARD_WIDTH + max(0, count - 1) * HAND_CARD_GAP
         start_x = (WIDTH - total_width) // 2
 
         self.hand_rects = []
         for i in range(count):
             rx = start_x + i * (HAND_CARD_WIDTH + HAND_CARD_GAP)
-            self.hand_rects.append(pygame.Rect(rx, hand_top, HAND_CARD_WIDTH, card_height))
+            rect = pygame.Rect(rx, hand_top, HAND_CARD_WIDTH, card_height)
+            self.hand_rects.append((start + i, rect))
 
-        # Réinitialisation de la sélection si l'index est devenu hors limites
-        if self.selected_hand_index is not None and self.selected_hand_index >= count:
-            self.selected_hand_index = None
+    def can_draw(self):
+        you = self.state["you"]
+        cost = self.state.get("draw_cost")
+        return (
+            cost is not None
+            and self.state["current_turn"] == self.local_player_id
+            and not self.state["game_over"]
+            and not self.disconnected
+            and you["deck_count"] > 0
+            and you["energy"] >= cost
+        )
+
+    def direct_target(self):
+        if (
+            self.selected_hand_index is None
+            or self.state["current_turn"] != self.local_player_id
+            or self.state["game_over"]
+            or self.disconnected
+        ):
+            return None
+        card = self.hand_cards[self.selected_hand_index]
+        opponent_id = 3 - self.local_player_id
+        if (
+            card.type == "ref"
+            and card.effect_type == "attack"
+            and card.cost <= self.state["you"]["energy"]
+            and not any(self.terrain.slots[opponent_id])
+        ):
+            return opponent_id
+        return None
 
     def send_action(self, action_data):
+        self.action_error = ""
         if self.mode == "solo":
             p_id = self.local_player_id
             act = action_data.get("action")
             if act == "play_character":
-                self.partie.play_character(p_id, action_data["hand_index"], action_data["slot_index"])
+                ok, message = self.partie.play_character(p_id, action_data["hand_index"], action_data["slot_index"])
             elif act == "play_ref":
-                self.partie.play_ref(
+                ok, message = self.partie.play_ref(
                     p_id, action_data["hand_index"], action_data["target_player"], action_data["target_slot"]
                 )
+            elif act == "draw_card":
+                ok, message = self.partie.draw_card(p_id)
             elif act == "pass_turn":
-                self.partie.pass_turn(p_id)
-            self._update_from_state(self.partie.get_state_for_player(self.local_player_id))
+                ok, message = self.partie.pass_turn(p_id)
+            else:
+                return
+            if ok:
+                self._update_from_state(self.partie.get_state_for_player(p_id))
+            else:
+                self.action_error = message
 
         elif self.mode == "host":
             if self.server:
@@ -200,6 +253,20 @@ class BattleScene:
             current_turn = self.state.get("current_turn")
             is_my_turn = (current_turn == self.local_player_id)
 
+            if self.draw_rect.collidepoint(pos):
+                if self.can_draw():
+                    self.selected_hand_index = None
+                    self.send_action({"action": "draw_card"})
+                return
+
+            if self.hand_page_count > 1:
+                change_page = int(self.next_hand_rect.collidepoint(pos)) - int(self.prev_hand_rect.collidepoint(pos))
+                if change_page:
+                    self.hand_page = max(0, min(self.hand_page + change_page, self.hand_page_count - 1))
+                    self.selected_hand_index = None
+                    self._layout_hand()
+                    return
+
             # Clic sur le bouton Passer
             if self.pass_rect.collidepoint(pos) and is_my_turn:
                 self.pass_highlight_until = pygame.time.get_ticks() + 240
@@ -209,7 +276,7 @@ class BattleScene:
 
             # Clic sur les cartes de la main
             clicked_hand = False
-            for idx, rect in enumerate(self.hand_rects):
+            for idx, rect in self.hand_rects:
                 if rect.collidepoint(pos):
                     clicked_hand = True
                     if self.selected_hand_index == idx:
@@ -219,6 +286,17 @@ class BattleScene:
                     break
 
             if clicked_hand:
+                return
+
+            direct_target = self.direct_target()
+            if direct_target is not None and self.opponent_rect.collidepoint(pos):
+                self.send_action({
+                    "action": "play_ref",
+                    "hand_index": self.selected_hand_index,
+                    "target_player": direct_target,
+                    "target_slot": None,
+                })
+                self.selected_hand_index = None
                 return
 
             # Clic sur les emplacements du plateau si une carte est sélectionnée
@@ -284,7 +362,8 @@ class BattleScene:
             if self.partie.current_turn == 2:
                 self.bot_timer += dt
                 if self.bot_timer > 1.2:
-                    self._run_bot_turn()
+                    self.partie.play_bot_action(2)
+                    self._update_from_state(self.partie.get_state_for_player(1))
                     self.bot_timer = 0
             else:
                 self.bot_timer = 0
@@ -296,6 +375,8 @@ class BattleScene:
                 ev_type = ev.get("type")
                 if ev_type == "state_update":
                     self._update_from_state(ev["state"])
+                elif ev_type == "error":
+                    self.action_error = ev["message"]
                 elif ev_type == "opponent_disconnected":
                     self.disconnected = True
                     self.disconnect_message = ev.get("message", "Le joueur 2 s'est déconnecté.")
@@ -307,44 +388,11 @@ class BattleScene:
                 ev_type = ev.get("type")
                 if ev_type == "state_update":
                     self._update_from_state(ev["state"])
+                elif ev_type == "action_error":
+                    self.action_error = ev["message"]
                 elif ev_type in ("disconnected", "opponent_disconnected"):
                     self.disconnected = True
                     self.disconnect_message = ev.get("message", "Connexion avec l'hôte perdue.")
-
-    def _run_bot_turn(self):
-        bot = self.partie.players[2]
-        terrain = self.partie.terrain
-
-        # 1. Tenter de déployer un personnage s'il y a un emplacement libre
-        empty_slots = [i for i in range(3) if terrain.slots[2][i] is None]
-        char_cards = [(i, c) for i, c in enumerate(bot.hand.cards) if c.type == "character" and bot.can_afford(c)]
-        if empty_slots and char_cards:
-            h_idx, _ = char_cards[0]
-            self.partie.play_character(2, h_idx, empty_slots[0])
-            self._update_from_state(self.partie.get_state_for_player(1))
-            return
-
-        # 2. Tenter de jouer une Ref d'attaque sur un personnage adverse
-        p1_targets = [i for i in range(3) if terrain.slots[1][i] is not None]
-        attack_refs = [(i, c) for i, c in enumerate(bot.hand.cards) if c.type == "ref" and c.effect_type == "attack" and bot.can_afford(c)]
-        if p1_targets and attack_refs:
-            h_idx, _ = attack_refs[0]
-            self.partie.play_ref(2, h_idx, 1, p1_targets[0])
-            self._update_from_state(self.partie.get_state_for_player(1))
-            return
-
-        # 3. Tenter de jouer une Ref de soin/bouclier sur un personnage allié
-        p2_targets = [i for i in range(3) if terrain.slots[2][i] is not None]
-        buff_refs = [(i, c) for i, c in enumerate(bot.hand.cards) if c.type == "ref" and c.effect_type in ("heal", "shield") and bot.can_afford(c)]
-        if p2_targets and buff_refs:
-            h_idx, _ = buff_refs[0]
-            self.partie.play_ref(2, h_idx, 2, p2_targets[0])
-            self._update_from_state(self.partie.get_state_for_player(1))
-            return
-
-        # 4. Passer le tour
-        self.partie.pass_turn(2)
-        self._update_from_state(self.partie.get_state_for_player(1))
 
     def draw(self, surface):
         surface.blit(self.arena_background, (0, 0))
@@ -375,7 +423,8 @@ class BattleScene:
         # 7. Main du joueur local
         self.draw_hand(surface)
 
-        # 8. Compteur d'énergie
+        # 8. Pioche, navigation dans la main et énergie
+        self.draw_hand_controls(surface)
         self.draw_energy(surface)
 
         # 9. Modales de Fin de partie ou Déconnexion
@@ -447,10 +496,7 @@ class BattleScene:
         opp_energy = opp.get("energy", 0)
         opp_hand_cnt = opp.get("hand_count", 0)
 
-        # Plaque adverse
-        center_y = 135
-        plate_rect = pygame.Rect(0, 0, 460, 68)
-        plate_rect.center = (WIDTH // 2, center_y)
+        plate_rect = self.opponent_rect
 
         if self.plaque_image:
             plate = pygame.transform.smoothscale(self.plaque_image, plate_rect.size)
@@ -468,6 +514,11 @@ class BattleScene:
         surface.blit(hp_surf, (plate_rect.left + 160, plate_rect.top + 20))
         surface.blit(eng_surf, (plate_rect.left + 260, plate_rect.top + 22))
         surface.blit(cards_surf, (plate_rect.left + 340, plate_rect.top + 22))
+
+        if self.direct_target() is not None:
+            pygame.draw.rect(surface, RED, plate_rect, width=2, border_radius=10)
+            target_label = self.status_font.render("Attaque directe", True, INK)
+            surface.blit(target_label, target_label.get_rect(midtop=(plate_rect.centerx, plate_rect.bottom + 4)))
 
     def draw_player_bar(self, surface):
         you = self.state.get("you", {})
@@ -514,7 +565,7 @@ class BattleScene:
         surface.blit(t_surf, t_rect)
 
         # Dernier événement
-        last_ev = self.state.get("last_event", "")
+        last_ev = self.action_error or self.state.get("last_event", "")
         if last_ev:
             ev_surf = self.event_font.render(last_ev, True, INK)
             surface.blit(ev_surf, ev_surf.get_rect(center=(cx, cy + 22)))
@@ -545,7 +596,7 @@ class BattleScene:
     def draw_hand(self, surface):
         you_energy = self.state.get("you", {}).get("energy", 0)
 
-        for idx, rect in enumerate(self.hand_rects):
+        for idx, rect in self.hand_rects:
             card = self.hand_cards[idx]
             is_selected = (self.selected_hand_index == idx)
 
@@ -561,6 +612,33 @@ class BattleScene:
                 dim_overlay = pygame.Surface(draw_rect.size, pygame.SRCALPHA)
                 dim_overlay.fill((0, 0, 0, 110))
                 surface.blit(dim_overlay, draw_rect.topleft)
+
+    def draw_hand_controls(self, surface):
+        active = self.can_draw()
+        hovered = active and self.draw_rect.collidepoint(self.pointer)
+        fill = (46, 66, 68) if hovered else METAL
+        pygame.draw.rect(surface, fill, self.draw_rect, border_radius=12)
+        pygame.draw.rect(surface, METAL_EDGE if active else BORDER, self.draw_rect, width=1, border_radius=12)
+        deck_count = self.state["you"]["deck_count"]
+        cost = self.state.get("draw_cost")
+        label = self.button_font.render(f"Piocher ({deck_count})", True, INK if active else MUTED)
+        surface.blit(label, label.get_rect(center=(self.draw_rect.centerx, self.draw_rect.centery - 12)))
+        if cost is not None:
+            price = self.status_font.render(f"{cost} énergie", True, GOLD if active else MUTED)
+            surface.blit(price, price.get_rect(center=(self.draw_rect.centerx, self.draw_rect.centery + 15)))
+
+        if self.hand_page_count > 1:
+            for rect, direction, enabled in (
+                (self.prev_hand_rect, -1, self.hand_page > 0),
+                (self.next_hand_rect, 1, self.hand_page + 1 < self.hand_page_count),
+            ):
+                pygame.draw.rect(surface, METAL, rect, border_radius=12)
+                pygame.draw.rect(surface, METAL_EDGE if enabled else BORDER, rect, width=1, border_radius=12)
+                x, y = rect.center
+                points = [(x - 4 * direction, y - 8), (x + 4 * direction, y), (x - 4 * direction, y + 8)]
+                pygame.draw.lines(surface, GOLD if enabled else MUTED, False, points, 2)
+            page = self.status_font.render(f"{self.hand_page + 1}/{self.hand_page_count}", True, INK)
+            surface.blit(page, page.get_rect(center=(408, self.energy_rect.centery)))
 
     def draw_energy(self, surface):
         rect = self.energy_rect

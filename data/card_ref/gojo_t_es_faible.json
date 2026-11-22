@@ -16,13 +16,13 @@
     "gojo_t_es_faible_source"
   ],
   "cost": 1,
-  "text": "Infligez 1 dégât à un personnage adverse. Avec Satoru Gojo sur votre terrain, infligez 2 dégâts.",
+  "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",
   "strength": "Peut achever une cible affaiblie.",
-  "weakness": "Demande un personnage adverse déployé.",
+  "weakness": "Les personnages adverses protègent les PV du joueur.",
   "abilities": {
     "effect": {
       "type": "attack",
-      "amount": 1
+      "amount": 2
     }
   },
   "synergy": {

@@ -16,13 +16,13 @@
     "creeper_aw_man_source"
   ],
   "cost": 2,
-  "text": "Infligez 2 dégâts à un personnage adverse.",
+  "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide.",
   "strength": "Peut achever une cible affaiblie.",
-  "weakness": "Demande un personnage adverse déployé.",
+  "weakness": "Les personnages adverses protègent les PV du joueur.",
   "abilities": {
     "effect": {
       "type": "attack",
-      "amount": 2
+      "amount": 3
     }
   },
   "synergy": null

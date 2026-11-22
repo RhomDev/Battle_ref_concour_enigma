@@ -220,19 +220,23 @@ class GameServer:
 
     def submit_action(self, player_id, action_data):
         with self.lock:
+            if not isinstance(action_data, dict):
+                return
             act = action_data.get("action")
             ok, reason = False, "Action inconnue"
             if act == "play_character":
                 ok, reason = self.partie.play_character(
-                    player_id, action_data["hand_index"], action_data["slot_index"]
+                    player_id, action_data.get("hand_index"), action_data.get("slot_index")
                 )
             elif act == "play_ref":
                 ok, reason = self.partie.play_ref(
                     player_id,
-                    action_data["hand_index"],
-                    action_data["target_player"],
-                    action_data["target_slot"],
+                    action_data.get("hand_index"),
+                    action_data.get("target_player"),
+                    action_data.get("target_slot", -1),
                 )
+            elif act == "draw_card":
+                ok, reason = self.partie.draw_card(player_id)
             elif act == "pass_turn":
                 ok, reason = self.partie.pass_turn(player_id)
             elif act == "surrender":
