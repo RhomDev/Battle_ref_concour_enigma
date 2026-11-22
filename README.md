@@ -1,10 +1,10 @@
 # Battle Ref Arena
 
-## Télécharger l’APK Android 0.4.1
+## Télécharger l’APK Android 0.4.2
 
-[Télécharger Battle Ref Arena 0.4.1 — téléphone Android ARM64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.1/battle-ref-arena-arm64-v8a.apk)
+[Télécharger Battle Ref Arena 0.4.2 — téléphone Android ARM64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.2/battle-ref-arena-arm64-v8a.apk)
 
-[Télécharger Battle Ref Arena 0.4.1 — émulateur PC x86_64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.1/battle-ref-arena-x86_64.apk)
+[Télécharger Battle Ref Arena 0.4.2 — émulateur PC x86_64 (.apk)](https://github.com/RhomDev/Battle_ref_concour_enigma/releases/download/android-v0.4.2/battle-ref-arena-x86_64.apk)
 
 Sur téléphone, ouvre l’APK ARM64 pour l’installer. Sur PC, glisse l’APK x86_64 dans la fenêtre de l’émulateur.
 
