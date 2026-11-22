@@ -27,6 +27,21 @@ class PartieTest(unittest.TestCase):
         self.assertTrue(self.partie.play_ref(1, 0, 2, None)[0])
         self.assertEqual(self.opponent.hp, self.opponent.hp_max - attack.amount)
 
+    def test_only_resolved_refs_publish_a_playback_event(self):
+        attack = Card_Item("ymca.json", "card_ref")
+        hidden = Card_Item("hi_barbie.json", "card_ref")
+        self.player.hand.cards = [attack, attack, hidden]
+        self.assertFalse(self.partie.play_ref(1, 0, 1, None)[0])
+        self.assertIsNone(self.partie.get_state_for_player(2)["last_ref"])
+
+        for sequence in (1, 2):
+            self.assertTrue(self.partie.play_ref(1, 0, 2, None)[0])
+            event = {"sequence": sequence, "card_id": attack.id}
+            self.assertEqual(self.partie.get_state_for_player(1)["last_ref"], event)
+            remote_state = self.partie.get_state_for_player(2)
+            self.assertEqual(remote_state["last_ref"], event)
+            self.assertNotIn("hand", remote_state["opponent"])
+
     def test_direct_attack_uses_synergy_and_can_win(self):
         attack = Card_Item("gear_fifth.json", "card_ref")
         luffy = Card_Item("luffy.json", "card_perso")

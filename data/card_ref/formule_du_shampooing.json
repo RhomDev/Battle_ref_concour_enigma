@@ -8,7 +8,8 @@
     "work": "RRRrrrr !!!",
     "year": 2004,
     "sources": [
-      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      "https://www.studiocanal.com/title/rrrrrrr-2004/",
+      "https://www.youtube.com/watch?v=9o8D6cckaL0"
     ]
   },
   "cost": 3,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
+    "source_formule_du_shampooing_image",
     "rrrr_shampooing_media",
-    "habillage_formule_du_shampooing_image",
     "habillage_formule_du_shampooing_audio"
   ],
   "abilities": {

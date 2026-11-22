@@ -69,6 +69,7 @@ class Partie:
         self.game_over = False
         self.winner = None
         self.last_event = "La partie commence."
+        self.last_ref = None
         self._init_decks()
 
     def _init_decks(self):
@@ -170,6 +171,8 @@ class Partie:
             desc = f"a ajouté {amount} bouclier à {target_char.name}{synergy_label}."
 
         self.last_event = f"{player.name} {desc}"
+        sequence = self.last_ref["sequence"] + 1 if self.last_ref else 1
+        self.last_ref = {"sequence": sequence, "card_id": card.id}
         return True, self.last_event
 
     def draw_card(self, player_id):
@@ -247,6 +250,7 @@ class Partie:
             "game_over": self.game_over,
             "winner": self.winner,
             "last_event": self.last_event,
+            "last_ref": self.last_ref,
             "draw_cost": DRAW_COST,
             "you": self.players[player_id].to_dict(include_private=True),
             "opponent": self.players[opponent_id].to_dict(include_private=False),

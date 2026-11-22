@@ -258,16 +258,20 @@ function playCardMedia(card, projection = dom.projection) {
     } else {
       picture.alt = "";
     }
-    picture.src = `../${animation.localPath}`;
     projection.replaceChildren(picture, node("figcaption", "", animation.caption ?? card.name));
     projection.hidden = false;
-    clip.timers.push(setTimeout(() => {
+    const hideProjection = () => {
+      if (playback !== clip) return;
       clip.video?.pause();
       projection.replaceChildren();
       projection.hidden = true;
-    }, animation.durationMs));
-    picture.addEventListener("error", () => { projection.hidden = true; }, { once: true });
-    if (clip.video) clip.video.play().catch(() => { projection.hidden = true; });
+    };
+    picture.addEventListener(clip.video ? "playing" : "load", () => {
+      if (playback === clip) clip.timers.push(setTimeout(hideProjection, animation.durationMs));
+    }, { once: true });
+    picture.addEventListener("error", hideProjection, { once: true });
+    picture.src = `../${animation.localPath}`;
+    if (clip.video) clip.video.play().catch(hideProjection);
   }
   if (sound) {
     sound.volume = Number(dom.volume.value) / 100;

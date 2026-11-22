@@ -8,7 +8,7 @@
     "work": "Camping",
     "year": 2006,
     "sources": [
-      "https://www.pathefilms.com/film/camping"
+      "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod"
     ]
   },
   "cost": 2,
@@ -18,7 +18,6 @@
   "visual": "pulse",
   "media": [
     "camping_slip_media",
-    "habillage_slip_de_bain_bleu_image",
     "habillage_slip_de_bain_bleu_audio"
   ],
   "abilities": {

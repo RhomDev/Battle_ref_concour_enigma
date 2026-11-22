@@ -8,7 +8,8 @@
     "work": "RRRrrrr !!!",
     "year": 2004,
     "sources": [
-      "https://www.studiocanal.com/title/rrrrrrr-2004/"
+      "https://www.studiocanal.com/title/rrrrrrr-2004/",
+      "https://www.youtube.com/watch?v=LinufYk2jkY&t=8s"
     ]
   },
   "cost": 2,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "subtitle",
   "media": [
+    "source_previens_pierre_image",
     "rrrr_previens_media",
-    "habillage_previens_pierre_image",
     "habillage_previens_pierre_audio"
   ],
   "abilities": {

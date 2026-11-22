@@ -8,7 +8,8 @@
     "work": "OSS 117 : Le Caire, nid d'espions",
     "year": 2006,
     "sources": [
-      "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions"
+      "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+      "https://www.normandieimages.fr/images/lyceensaucinema/dossierpedagogiqueoss117.pdf#page=17"
     ]
   },
   "cost": 2,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
+    "source_comment_est_votre_blanquette_image",
     "dujardin_blanquette_media",
-    "habillage_comment_est_votre_blanquette_image",
     "habillage_comment_est_votre_blanquette_audio"
   ],
   "abilities": {

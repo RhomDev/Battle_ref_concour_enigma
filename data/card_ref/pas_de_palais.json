@@ -8,7 +8,8 @@
     "work": "Astérix & Obélix : Mission Cléopâtre",
     "year": 2002,
     "sources": [
-      "https://www.pathefilms.com/film/asterixetobelixmissioncleopatre"
+      "https://www.pathefilms.com/fr/films/asterix-et-obelix-mission-cleopatre/",
+      "https://www.youtube.com/watch?v=6xIJo_tp2f8&t=33s"
     ]
   },
   "cost": 2,
@@ -17,8 +18,7 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
-    "habillage_pas_de_palais_image",
-    "habillage_pas_de_palais_audio"
+    "source_pas_de_palais_mixed"
   ],
   "abilities": {
     "effect": {

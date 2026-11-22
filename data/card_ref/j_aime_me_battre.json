@@ -5,10 +5,11 @@
   "kind": "ref",
   "category": "cinema",
   "origin": {
-    "work": "OSS 117 : Rio ne répond plus",
-    "year": 2009,
+    "work": "OSS 117 : Le Caire, nid d'espions",
+    "year": 2006,
     "sources": [
-      "https://www.gaumont.com/fr/film/oss-117-rio-ne-repond-plus"
+      "https://www.gaumont.com/fr/film/oss-117-le-caire-nid-despions",
+      "https://www.normandieimages.fr/images/lyceensaucinema/dossierpedagogiqueoss117.pdf#page=14"
     ]
   },
   "cost": 3,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
+    "source_j_aime_me_battre_image",
     "dujardin_battre_media",
-    "habillage_j_aime_me_battre_image",
     "habillage_j_aime_me_battre_audio"
   ],
   "abilities": {

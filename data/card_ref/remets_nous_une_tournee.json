@@ -8,7 +8,8 @@
     "work": "Camping",
     "year": 2006,
     "sources": [
-      "https://www.pathefilms.com/film/camping"
+      "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
+      "https://www.dailymotion.com/video/xpxgxq"
     ]
   },
   "cost": 3,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
+    "source_remets_nous_une_tournee_image",
     "camping_tournee_media",
-    "habillage_remets_nous_une_tournee_image",
     "habillage_remets_nous_une_tournee_audio"
   ],
   "abilities": {

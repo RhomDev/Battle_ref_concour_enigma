@@ -2,12 +2,12 @@
 
 import json
 import webbrowser
-from bisect import bisect_right
 
 import pygame
 
 from config import HEIGHT, WIDTH
 from core.asset_manager import ROOT, AssetManager
+from ui.media_preview import MediaPreview
 
 
 INK = (255, 243, 222)
@@ -55,10 +55,7 @@ class MediaCollectionScene:
         self.video_rect = pygame.Rect(318, self.play_rect.top, 160, 46)
         self.source_rect = pygame.Rect(490, self.play_rect.top, 174, 46)
         self.index = 0
-        self.channel = None
-        self.gif_frames = []
-        self.gif_times = []
-        self.started_at = None
+        self.preview = MediaPreview(self.picture_rect.size)
         self.notice = ""
         if self.cards:
             self.select_card(0)
@@ -68,7 +65,7 @@ class MediaCollectionScene:
         return self.index // CARDS_PER_PAGE
 
     def select_card(self, index):
-        self.stop_preview()
+        self.preview.stop()
         self.index = index % len(self.cards)
         self.card = self.cards[self.index]
         media = self.assets.media_for(self.card["media"])
@@ -78,68 +75,23 @@ class MediaCollectionScene:
         self.photo = None
         self.notice = ""
         photo = media["image"]
+        self.source_url = next(
+            (url for item in (self.animation, self.audio, photo)
+             if item and (url := item.get("sourceUrl") or item.get("assetUrl"))),
+            self.card["origin"]["sources"][0],
+        )
         if photo:
             try:
                 image = self.assets.load_image(photo["localPath"])
-                self.photo = self.fit_image(image)
+                self.photo = self.preview.fit(image)
             except (OSError, pygame.error):
                 self.notice = "Image locale indisponible."
 
-    def fit_image(self, image):
-        width, height = image.get_size()
-        scale = min(self.picture_rect.width / width, self.picture_rect.height / height)
-        size = (max(1, round(width * scale)), max(1, round(height * scale)))
-        return pygame.transform.smoothscale(image, size)
-
-    def stop_preview(self):
-        if self.channel is not None:
-            self.channel.stop()
-            self.channel = None
-        self.gif_frames = []
-        self.gif_times = []
-        self.started_at = None
-
     def play_preview(self):
-        self.stop_preview()
-        errors = []
-        if self.animation:
-            try:
-                self.load_gif()
-            except (ImportError, OSError, ValueError, pygame.error):
-                self.gif_frames = []
-                self.gif_times = []
-                errors.append("GIF indisponible.")
-        if self.audio:
-            try:
-                if pygame.mixer.get_init() is None:
-                    pygame.mixer.init()
-                sound = pygame.mixer.Sound(ROOT / self.audio["localPath"])
-                self.channel = sound.play(maxtime=self.audio["durationMs"])
-                if self.channel is None:
-                    errors.append("Sortie audio occupée.")
-            except (OSError, pygame.error):
-                errors.append("Son indisponible.")
-        if self.gif_frames:
-            self.started_at = pygame.time.get_ticks()
-        self.notice = " ".join(errors)
-
-    def load_gif(self):
-        from PIL import Image, ImageSequence
-
-        limit = self.animation["durationMs"]
-        total = 0
-        with Image.open(ROOT / self.animation["localPath"]) as image:
-            for frame in ImageSequence.Iterator(image):
-                rgba = frame.convert("RGBA")
-                surface = pygame.image.frombytes(rgba.tobytes(), rgba.size, "RGBA")
-                self.gif_frames.append(self.fit_image(surface))
-                total += max(20, frame.info.get("duration", 100))
-                self.gif_times.append(total)
-                if total >= limit:
-                    break
+        self.notice = self.preview.play(self.animation, self.audio)
 
     def leave(self):
-        self.stop_preview()
+        self.preview.stop()
         self.game.change_scene(self.menu)
 
     def handle_event(self, event):
@@ -169,22 +121,15 @@ class MediaCollectionScene:
             if self.cards and (self.audio or self.animation) and self.play_rect.collidepoint(mouse):
                 self.play_preview()
             elif self.cards and self.video and self.video_rect.collidepoint(mouse):
-                self.stop_preview()
+                self.preview.stop()
                 if not webbrowser.open((ROOT / self.video["localPath"]).as_uri()):
                     self.notice = "Ouverture de la vidéo indisponible."
             elif self.cards and self.source_rect.collidepoint(mouse):
-                if not webbrowser.open(self.card["origin"]["sources"][0]):
+                if not webbrowser.open(self.source_url):
                     self.notice = "Ouverture de la source indisponible."
 
     def update(self, dt):
-        if self.channel is not None and not self.channel.get_busy():
-            self.channel = None
-        if self.started_at is not None:
-            elapsed = pygame.time.get_ticks() - self.started_at
-            if elapsed >= self.animation["durationMs"]:
-                self.started_at = None
-                self.gif_times = []
-                self.gif_frames = []
+        self.preview.update()
 
     def fit_label(self, label, font, width):
         if font.size(label)[0] <= width:
@@ -227,11 +172,7 @@ class MediaCollectionScene:
         origin = self.fit_label(origin, origin_font, self.picture_rect.width)
         surface.blit(origin_font.render(origin, True, MUTED), (56, self.body.top + 61))
 
-        picture = self.photo
-        if self.started_at is not None:
-            elapsed = pygame.time.get_ticks() - self.started_at
-            frame_index = bisect_right(self.gif_times, elapsed % self.gif_times[-1])
-            picture = self.gif_frames[frame_index]
+        picture = self.preview.frame or self.photo
         pygame.draw.rect(surface, (25, 14, 19), self.picture_rect, border_radius=8)
         if picture:
             surface.blit(picture, picture.get_rect(center=self.picture_rect.center))
@@ -257,7 +198,7 @@ class MediaCollectionScene:
         if self.video:
             self.draw_button(surface, self.video_rect, "Vidéo locale", BUTTON)
         if preview:
-            playing = self.channel is not None or self.started_at is not None
+            playing = self.preview.playing
             self.draw_button(surface, self.play_rect, "Relancer l’aperçu" if playing else "Lire l’aperçu · Espace", SELECTED)
             if preview.get("caption"):
                 caption = self.fit_label(preview["caption"], self.font_small, self.picture_rect.width)

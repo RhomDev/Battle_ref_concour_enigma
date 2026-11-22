@@ -8,7 +8,8 @@
     "work": "Camping",
     "year": 2006,
     "sources": [
-      "https://www.pathefilms.com/film/camping"
+      "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
+      "https://www.dailymotion.com/video/xpxgxq"
     ]
   },
   "cost": 2,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "rewind",
   "media": [
+    "source_mehari_en_panne_image",
     "camping_mehari_media",
-    "habillage_mehari_en_panne_image",
     "habillage_mehari_en_panne_audio"
   ],
   "abilities": {

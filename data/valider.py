@@ -45,9 +45,19 @@ def validate():
             partner = card_index.get(partner_id)
             if partner is None or partner["kind"] != "character":
                 raise ValueError(f"Personnage associé invalide: {card['id']} / {partner_id}")
+        local_kinds = set()
         for media_id in card["media"]:
-            if media_id not in media_index:
+            item = media_index.get(media_id)
+            if item is None:
                 raise ValueError(f"Média inconnu: {media_id}")
+            if "localPath" in item:
+                local_kinds.add(item["kind"])
+            local_kinds.update(copy["kind"] for copy in item.get("localCopies", []))
+        if card["kind"] == "ref":
+            if "video" in local_kinds and "gif" not in local_kinds:
+                raise ValueError(f"Vidéo de Réf sans GIF pour Pygame: {card['id']}")
+            if not local_kinds.intersection(("gif", "audio")):
+                raise ValueError(f"Réf sans aperçu local lisible: {card['id']}")
     for item in media:
         if item["status"] == "demo_asset" and not (ROOT / item["localPath"]).is_file():
             raise ValueError(f"Fichier manquant: {item['localPath']}")

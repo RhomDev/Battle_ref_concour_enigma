@@ -8,7 +8,8 @@
     "work": "Camping",
     "year": 2006,
     "sources": [
-      "https://www.pathefilms.com/film/camping"
+      "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod",
+      "https://www.dailymotion.com/video/xpxgxq"
     ]
   },
   "cost": 2,
@@ -17,8 +18,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "powder",
   "media": [
+    "source_apero_des_flots_bleus_image",
     "camping_apero_media",
-    "habillage_apero_des_flots_bleus_image",
     "habillage_apero_des_flots_bleus_audio"
   ],
   "abilities": {

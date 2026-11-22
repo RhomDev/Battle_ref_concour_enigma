@@ -8,7 +8,7 @@
     "work": "Camping",
     "year": 2006,
     "sources": [
-      "https://www.pathefilms.com/film/camping"
+      "https://www.pathefilms.com/fr/films/camping/dvd-blu-ray-vod"
     ]
   },
   "cost": 2,
@@ -18,7 +18,6 @@
   "visual": "scroll",
   "media": [
     "camping_shogi_media",
-    "habillage_shogi_shogi_image",
     "habillage_shogi_shogi_audio"
   ],
   "abilities": {

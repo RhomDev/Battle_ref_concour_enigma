@@ -8,6 +8,7 @@ from gameplay.partie import Partie
 from gameplay.terrain import Terrain
 from scenes.media_collection import GOLD, INK
 from ui.Card_View import CARD_HEIGHT_RATIO, CardView
+from ui.media_preview import MediaPreview
 from ui.terain_ui import TerrainUI
 
 
@@ -63,6 +64,10 @@ class BattleScene:
         self.pointer = (-1, -1)
         self.pass_highlight_until = 0
         self.card_view = CardView()
+        self.preview_rect = pygame.Rect(0, 0, 500, 282)
+        self.preview_rect.center = (WIDTH // 2, round(HEIGHT * .407))
+        self.preview = MediaPreview(self.preview_rect.inflate(-12, -12).size)
+        self.preview_title = ""
         self.terrain = Terrain()
         self.terrain_ui = TerrainUI(self.terrain, self.card_view)
 
@@ -127,7 +132,18 @@ class BattleScene:
         return pos
 
     def _update_from_state(self, state):
+        previous_ref = self.state.get("last_ref") if self.state else None
         self.state = state
+        played_ref = state.get("last_ref")
+        if played_ref and played_ref != previous_ref:
+            try:
+                card = Card_Item(f'{played_ref["card_id"]}.json', "card_ref")
+                media = self.card_view.assets.media_for(card.media)
+            except (KeyError, OSError, ValueError):
+                pass
+            else:
+                self.preview_title = card.name
+                self.preview.play(media["gif"], media["audio"])
         self.action_error = ""
         # Reconstruction des cartes du terrain
         t_data = state.get("terrain", {})
@@ -343,6 +359,7 @@ class BattleScene:
             self.selected_hand_index = None
 
     def cleanup_and_exit(self):
+        self.preview.stop()
         if self.mode == "host" and self.server:
             self.server.stop()
             self.server = None
@@ -354,6 +371,7 @@ class BattleScene:
             self.game.change_scene(self.menu)
 
     def update(self, dt):
+        self.preview.update()
         self.pointer = self.to_canvas_position(pygame.mouse.get_pos())
         self.pulse_timer += dt
 
@@ -427,6 +445,9 @@ class BattleScene:
         self.draw_hand_controls(surface)
         self.draw_energy(surface)
 
+        if self.preview.playing:
+            self.draw_ref_preview(surface)
+
         # 9. Modales de Fin de partie ou Déconnexion
         if self.disconnected:
             self.draw_modal_overlay(surface, "DÉCONNEXION", self.disconnect_message, RED)
@@ -437,6 +458,17 @@ class BattleScene:
             color = GOLD if is_win else RED
             sub = "Vous avez terrassé l'adversaire !" if is_win else "Vos points de vie sont épuisés."
             self.draw_modal_overlay(surface, title, sub, color)
+
+    def draw_ref_preview(self, surface):
+        frame = self.preview.frame
+        if frame is None:
+            frame = self.event_font.render(self.preview_title, True, INK)
+            if frame.get_width() > self.preview_rect.width - 12:
+                frame = self.preview.fit(frame)
+        rect = frame.get_rect(center=self.preview_rect.center)
+        pygame.draw.rect(surface, SHADOW, rect.inflate(12, 12), border_radius=8)
+        pygame.draw.rect(surface, GOLD, rect.inflate(12, 12), width=1, border_radius=8)
+        surface.blit(frame, rect)
 
     def draw_header(self, surface):
         # Bouton Menu
