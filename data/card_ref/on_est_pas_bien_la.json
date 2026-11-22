@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
   "media": [
-    "camping_bien_la_media"
+    "camping_bien_la_media",
+    "habillage_on_est_pas_bien_la_image",
+    "habillage_on_est_pas_bien_la_audio"
   ],
   "abilities": {
     "effect": {

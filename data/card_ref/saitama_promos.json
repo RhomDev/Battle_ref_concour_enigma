@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "saitama_promos_source"
+    "saitama_promos_source",
+    "habillage_saitama_promos_audio"
   ],
   "cost": 1,
   "text": "Rendez 2 PV à un allié. Avec Saitama sur votre terrain, rendez 3 PV.",

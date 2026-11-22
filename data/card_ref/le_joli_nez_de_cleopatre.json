@@ -16,7 +16,10 @@
   "strength": "Charme historique qui a changé la face du monde.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
-  "media": [],
+  "media": [
+    "habillage_le_joli_nez_de_cleopatre_image",
+    "habillage_le_joli_nez_de_cleopatre_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "heal",

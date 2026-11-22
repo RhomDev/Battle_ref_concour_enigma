@@ -16,7 +16,10 @@
   "strength": "Énergie décuplée permettant de transporter les blocs de granit.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "pulse",
-  "media": [],
+  "media": [
+    "habillage_goutte_de_potion_magique_image",
+    "habillage_goutte_de_potion_magique_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "heal",

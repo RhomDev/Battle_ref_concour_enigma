@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "powder",
   "media": [
-    "camping_apero_media"
+    "camping_apero_media",
+    "habillage_apero_des_flots_bleus_image",
+    "habillage_apero_des_flots_bleus_audio"
   ],
   "abilities": {
     "effect": {

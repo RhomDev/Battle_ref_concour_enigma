@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
-    "lotr_passerez_pas_media"
+    "lotr_passerez_pas_media",
+    "extrait_vous_ne_passerez_pas"
   ],
   "abilities": {
     "effect": {

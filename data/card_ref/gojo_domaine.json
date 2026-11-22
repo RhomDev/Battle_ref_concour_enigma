@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "gojo_domaine_source"
+    "gojo_domaine_source",
+    "habillage_gojo_domaine_audio"
   ],
   "cost": 2,
   "text": "Donnez 1 point de bouclier à un allié. Avec Satoru Gojo sur votre terrain, donnez 2 points de bouclier.",

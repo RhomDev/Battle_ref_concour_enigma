@@ -16,7 +16,9 @@
   "strength": "Monologue philosophique inspirant sur les rencontres de la vie.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
-  "media": [],
+  "media": [
+    "extrait_bonne_situation_scribe"
+  ],
   "abilities": {
     "effect": {
       "type": "heal",

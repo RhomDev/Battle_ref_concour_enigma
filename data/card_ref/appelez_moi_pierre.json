@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
   "media": [
-    "rrrr_pierre_media"
+    "rrrr_pierre_media",
+    "extrait_appelez_moi_pierre"
   ],
   "abilities": {
     "effect": {

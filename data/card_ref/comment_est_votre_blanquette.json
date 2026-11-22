@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
-    "dujardin_blanquette_media"
+    "dujardin_blanquette_media",
+    "habillage_comment_est_votre_blanquette_image",
+    "habillage_comment_est_votre_blanquette_audio"
   ],
   "abilities": {
     "effect": {

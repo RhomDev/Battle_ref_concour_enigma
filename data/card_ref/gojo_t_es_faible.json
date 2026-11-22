@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "gojo_t_es_faible_source"
+    "gojo_t_es_faible_source",
+    "habillage_gojo_t_es_faible_audio"
   ],
   "cost": 1,
   "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",

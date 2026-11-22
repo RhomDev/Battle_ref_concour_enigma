@@ -183,7 +183,7 @@
         "localPath": "asset/sound/canzoni-preferite-apercu.mp3",
         "assetUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/ad/de/dcaddec0-60c9-7bf3-9c04-a05c129f763e/mzaf_12194759979523376773.plus.aac.p.m4a",
         "caption": "Canzoni preferite · piste 18 de la bande originale",
-        "durationMs": 29910
+        "durationMs": 9849
       }
     ]
   },
@@ -280,15 +280,15 @@
         "kind": "gif",
         "localPath": "asset/gif/luffy-gear-5.gif",
         "assetUrl": "https://www.youtube.com/watch?v=yaXu9XrvhhM",
-        "caption": "Luffy déploie le Gear 5 face à Kaido, de 23,5 s à 34,5 s dans l’extrait Crunchyroll.",
-        "durationMs": 11000
+        "caption": "Luffy déploie le Gear 5 face à Kaido, de 23,5 s à 33,3 s dans l’extrait Crunchyroll.",
+        "durationMs": 9800
       },
       {
         "kind": "audio",
         "localPath": "asset/sound/luffy-gear-5-ja.mp3",
         "assetUrl": "https://www.youtube.com/watch?v=yaXu9XrvhhM",
         "caption": "Dialogue japonais et son de la même scène, extrait Crunchyroll.",
-        "durationMs": 11000
+        "durationMs": 9849
       }
     ]
   },
@@ -2695,5 +2695,1708 @@
     "status": "reference_only",
     "restrictions": "Extrait officiel du sauvetage par le chien Uggie.",
     "caption": "Le fidèle Uggie · The Artist"
+  },
+  {
+    "id": "habillage_apero_des_flots_bleus_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-apero-des-flots-bleus.webp",
+    "caption": "Illustration originale · L'apéro des Flots Bleus",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · L'apéro des Flots Bleus",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_apero_des_flots_bleus_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-apero-des-flots-bleus.mp3",
+    "caption": "Bruitages du jeu · tintement des verres au camping",
+    "durationMs": 2304,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · tintement des verres au camping",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_appelez_moi_pierre",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=LinufYk2jkY&t=4s",
+    "creator": "STUDIOCANAL / Chez Wam",
+    "license": "authorization-required",
+    "restrictions": "Présentation des Pierre, extrait publié par STUDIOCANAL.",
+    "status": "reference_only",
+    "caption": "Présentation des Pierre, extrait publié par STUDIOCANAL.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-appelez-moi-pierre.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=LinufYk2jkY&t=4s",
+        "caption": "Présentation des Pierre, extrait publié par STUDIOCANAL."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-appelez-moi-pierre.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=LinufYk2jkY&t=4s",
+        "caption": "Présentation des Pierre, extrait publié par STUDIOCANAL.",
+        "durationMs": 7707
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-appelez-moi-pierre.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=LinufYk2jkY&t=4s",
+        "caption": "Présentation des Pierre, extrait publié par STUDIOCANAL.",
+        "durationMs": 7667
+      }
+    ]
+  },
+  {
+    "id": "extrait_arreter_la_pluie",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=EJa608PrJGs&t=4s",
+    "creator": "6Medias",
+    "license": "authorization-required",
+    "restrictions": "Hollande répond sur la pluie dans l’intervention publiée par 6Medias.",
+    "status": "reference_only",
+    "caption": "Hollande répond sur la pluie dans l’intervention publiée par 6Medias.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-arreter-la-pluie.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=EJa608PrJGs&t=4s",
+        "caption": "Hollande répond sur la pluie dans l’intervention publiée par 6Medias.",
+        "durationMs": 3684
+      }
+    ]
+  },
+  {
+    "id": "habillage_attaque_au_poulet_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-attaque-au-poulet.webp",
+    "caption": "Illustration originale · Attaque au poulet écrasé",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Attaque au poulet écrasé",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_attaque_au_poulet_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-attaque-au-poulet.mp3",
+    "caption": "Bruitages du jeu · bruitage de comédie",
+    "durationMs": 1404,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · bruitage de comédie",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_attendre_la_vague",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=JgjGq82rRVI&t=46s",
+    "creator": "Mandarin Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Brice et les planches sur la plage, passage de la bande-annonce en français.",
+    "status": "reference_only",
+    "caption": "Brice et les planches sur la plage, passage de la bande-annonce en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-attendre-la-vague.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=JgjGq82rRVI&t=46s",
+        "caption": "Brice et les planches sur la plage, passage de la bande-annonce en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-attendre-la-vague.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=JgjGq82rRVI&t=46s",
+        "caption": "Brice et les planches sur la plage, passage de la bande-annonce en français.",
+        "durationMs": 5643
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-attendre-la-vague.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=JgjGq82rRVI&t=46s",
+        "caption": "Brice et les planches sur la plage, passage de la bande-annonce en français.",
+        "durationMs": 5600
+      }
+    ]
+  },
+  {
+    "id": "habillage_aux_crocodiles_sacres_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-aux-crocodiles-sacres.webp",
+    "caption": "Illustration originale · Aux crocodiles sacrés !",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Aux crocodiles sacrés !",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_aux_crocodiles_sacres_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-aux-crocodiles-sacres.mp3",
+    "caption": "Bruitages du jeu · grognements au bord du bassin",
+    "durationMs": 2160,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · grognements au bord du bassin",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_biche_oh_ma_biche_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-biche-oh-ma-biche.webp",
+    "caption": "Illustration originale · Biche, ô ma biche",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Biche, ô ma biche",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_biche_oh_ma_biche_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-biche-oh-ma-biche.mp3",
+    "caption": "Bruitages du jeu · bruits de sous-bois",
+    "durationMs": 2160,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · bruits de sous-bois",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_bonne_situation_scribe",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=WfPo-MOlcqo&t=178s",
+    "creator": "Pathé / Chez Wam",
+    "license": "authorization-required",
+    "restrictions": "Otis répond à la question sur sa situation de scribe, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "Otis répond à la question sur sa situation de scribe, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-bonne-situation-scribe.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=WfPo-MOlcqo&t=178s",
+        "caption": "Otis répond à la question sur sa situation de scribe, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-bonne-situation-scribe.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=WfPo-MOlcqo&t=178s",
+        "caption": "Otis répond à la question sur sa situation de scribe, extrait du film en français.",
+        "durationMs": 6583
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-bonne-situation-scribe.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=WfPo-MOlcqo&t=178s",
+        "caption": "Otis répond à la question sur sa situation de scribe, extrait du film en français.",
+        "durationMs": 6574
+      }
+    ]
+  },
+  {
+    "id": "extrait_ca_va_etre_tout_noir",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=e_2JCDTVX9c&t=0s",
+    "creator": "STUDIOCANAL / Chez Wam",
+    "license": "authorization-required",
+    "restrictions": "Le préveneur annonce la nuit, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "Le préveneur annonce la nuit, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-ca-va-etre-tout-noir.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=e_2JCDTVX9c&t=0s",
+        "caption": "Le préveneur annonce la nuit, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-ca-va-etre-tout-noir.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=e_2JCDTVX9c&t=0s",
+        "caption": "Le préveneur annonce la nuit, extrait du film en français.",
+        "durationMs": 4729
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-ca-va-etre-tout-noir.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=e_2JCDTVX9c&t=0s",
+        "caption": "Le préveneur annonce la nuit, extrait du film en français.",
+        "durationMs": 4720
+      }
+    ]
+  },
+  {
+    "id": "extrait_cela_ne_compte_qu_pour_un",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-that-still-only-counts-as-one-Z5xwLGEY",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-cela-ne-compte-qu-pour-un.webp",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-that-still-only-counts-as-one-Z5xwLGEY",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-cela-ne-compte-qu-pour-un.mp3",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-that-still-only-counts-as-one-Z5xwLGEY",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 3318
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-cela-ne-compte-qu-pour-un.mp4",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-that-still-only-counts-as-one-Z5xwLGEY",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 3296
+      }
+    ]
+  },
+  {
+    "id": "extrait_claquettes_silencieuses",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=qr1i48Zl9Ng&t=139s",
+    "creator": "La Petite Reine / Studio 37 / France 3 Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Démonstration de claquettes dans The Artist, extrait du film.",
+    "status": "reference_only",
+    "caption": "Démonstration de claquettes dans The Artist, extrait du film.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-claquettes-silencieuses.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=qr1i48Zl9Ng&t=139s",
+        "caption": "Démonstration de claquettes dans The Artist, extrait du film."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-claquettes-silencieuses.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=qr1i48Zl9Ng&t=139s",
+        "caption": "Démonstration de claquettes dans The Artist, extrait du film.",
+        "durationMs": 8046
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-claquettes-silencieuses.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=qr1i48Zl9Ng&t=139s",
+        "caption": "Démonstration de claquettes dans The Artist, extrait du film.",
+        "durationMs": 8000
+      }
+    ]
+  },
+  {
+    "id": "habillage_comment_est_votre_blanquette_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-comment-est-votre-blanquette.webp",
+    "caption": "Illustration originale · Comment est votre blanquette ?",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Comment est votre blanquette ?",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_comment_est_votre_blanquette_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-comment-est-votre-blanquette.mp3",
+    "caption": "Bruitages du jeu · service à table",
+    "durationMs": 2304,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · service à table",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_covfefe_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-covfefe.mp3",
+    "caption": "Bruitages du jeu · signal de notification synthétisé",
+    "durationMs": 1332,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · signal de notification synthétisé",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_dango_luffy_kid_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-dango-luffy-kid.mp3",
+    "caption": "Bruitages du jeu · assiettes posées au rythme du concours",
+    "durationMs": 1404,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · assiettes posées au rythme du concours",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_dark_brandon_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-dark-brandon.mp3",
+    "caption": "Bruitages du jeu · montée de science-fiction",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · montée de science-fiction",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_deuxieme_pyramide_a_gauche_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-deuxieme-pyramide-a-gauche.webp",
+    "caption": "Illustration originale · Deuxième pyramide à gauche",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Deuxième pyramide à gauche",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_deuxieme_pyramide_a_gauche_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-deuxieme-pyramide-a-gauche.mp3",
+    "caption": "Bruitages du jeu · pas au pied des pyramides",
+    "durationMs": 2088,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · pas au pied des pyramides",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_emplacement_17_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-emplacement-17.webp",
+    "caption": "Illustration originale · L'emplacement 17",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · L'emplacement 17",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_emplacement_17_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-emplacement-17.mp3",
+    "caption": "Bruitages du jeu · trois coups sur la pancarte",
+    "durationMs": 1404,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · trois coups sur la pancarte",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_et_ma_hache",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=0LC3R9f7cEk&t=155s",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Legolas puis Gimli rejoignent Frodon au conseil, extrait du film en anglais.",
+    "status": "reference_only",
+    "caption": "Legolas puis Gimli rejoignent Frodon au conseil, extrait du film en anglais.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-et-ma-hache.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=0LC3R9f7cEk&t=155s",
+        "caption": "Legolas puis Gimli rejoignent Frodon au conseil, extrait du film en anglais."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-et-ma-hache.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=0LC3R9f7cEk&t=155s",
+        "caption": "Legolas puis Gimli rejoignent Frodon au conseil, extrait du film en anglais.",
+        "durationMs": 5747
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-et-ma-hache.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=0LC3R9f7cEk&t=155s",
+        "caption": "Legolas puis Gimli rejoignent Frodon au conseil, extrait du film en anglais.",
+        "durationMs": 5700
+      }
+    ]
+  },
+  {
+    "id": "habillage_fermer_sa_gueule_la_haut_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-fermer-sa-gueule-la-haut.webp",
+    "caption": "Illustration originale · Il va fermer sa gueule, là-haut ?",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Il va fermer sa gueule, là-haut ?",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_fermer_sa_gueule_la_haut_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-fermer-sa-gueule-la-haut.mp3",
+    "caption": "Bruitages du jeu · haut-parleur du hall",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · haut-parleur du hall",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_formule_du_shampooing_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-formule-du-shampooing.webp",
+    "caption": "Illustration originale · La formule du shampooing",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · La formule du shampooing",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_formule_du_shampooing_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-formule-du-shampooing.mp3",
+    "caption": "Bruitages du jeu · gouttes dans un bol de mousse",
+    "durationMs": 2052,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · gouttes dans un bol de mousse",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_fortnite_default_dance",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=qhBWKdvXC8s&t=0s",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "restrictions": "Musique de l’émote Dance Moves, captation republiée.",
+    "status": "reference_only",
+    "caption": "Musique de l’émote Dance Moves, captation republiée.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-fortnite-default-dance.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=qhBWKdvXC8s&t=0s",
+        "caption": "Musique de l’émote Dance Moves, captation republiée.",
+        "durationMs": 5538
+      }
+    ]
+  },
+  {
+    "id": "extrait_fortnite_floss",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=PPzI6nuYyPU&t=0s",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "restrictions": "Musique de l’émote Floss, captation audio republiée.",
+    "status": "reference_only",
+    "caption": "Musique de l’émote Floss, captation audio republiée.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-fortnite-floss.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=PPzI6nuYyPU&t=0s",
+        "caption": "Musique de l’émote Floss, captation audio republiée.",
+        "durationMs": 4546
+      }
+    ]
+  },
+  {
+    "id": "extrait_fortnite_take_the_l",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=jGqDVknzX3o&t=0s",
+    "creator": "Epic Games",
+    "license": "authorization-required",
+    "restrictions": "Musique de l’émote Take the L, captation republiée.",
+    "status": "reference_only",
+    "caption": "Musique de l’émote Take the L, captation republiée.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-fortnite-take-the-l.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=jGqDVknzX3o&t=0s",
+        "caption": "Musique de l’émote Take the L, captation republiée.",
+        "durationMs": 4546
+      }
+    ]
+  },
+  {
+    "id": "habillage_franklin_et_chop_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-franklin-et-chop.mp3",
+    "caption": "Bruitages du jeu · aboiements de garde stylisés",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · aboiements de garde stylisés",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_fuyez_pauvres_fous",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-fellowship-of-the-ring-fly-you-fools-2A7ab7VX",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-fuyez-pauvres-fous.webp",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-fellowship-of-the-ring-fly-you-fools-2A7ab7VX",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-fuyez-pauvres-fous.mp3",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-fellowship-of-the-ring-fly-you-fools-2A7ab7VX",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5042
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-fuyez-pauvres-fous.mp4",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-fellowship-of-the-ring-fly-you-fools-2A7ab7VX",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5016
+      }
+    ]
+  },
+  {
+    "id": "extrait_giorno_soigne_mista",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=Ei9NwV3hE0Y&t=16s",
+    "creator": "Hirohiko Araki / Shueisha / David Production",
+    "license": "authorization-required",
+    "restrictions": "Voix et son du même extrait que le GIF, épisode 19.",
+    "status": "reference_only",
+    "caption": "Voix et son du même extrait que le GIF, épisode 19.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-giorno-soigne-mista.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=Ei9NwV3hE0Y&t=16s",
+        "caption": "Voix et son du même extrait que le GIF, épisode 19.",
+        "durationMs": 3344
+      }
+    ]
+  },
+  {
+    "id": "habillage_gojo_domaine_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-gojo-domaine.mp3",
+    "caption": "Bruitages du jeu · impulsion suivie d’une chute grave",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · impulsion suivie d’une chute grave",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_gojo_elu_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-gojo-elu.mp3",
+    "caption": "Bruitages du jeu · résonance aérienne",
+    "durationMs": 1980,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · résonance aérienne",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_gojo_t_es_faible_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-gojo-t-es-faible.mp3",
+    "caption": "Bruitages du jeu · tension électrique",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · tension électrique",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_goutte_de_potion_magique_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-goutte-de-potion-magique.webp",
+    "caption": "Illustration originale · Une goutte de potion magique",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Une goutte de potion magique",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_goutte_de_potion_magique_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-goutte-de-potion-magique.mp3",
+    "caption": "Bruitages du jeu · gouttes de potion",
+    "durationMs": 2052,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · gouttes de potion",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_habile_bill",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=jA6manyvCo0&t=0s",
+    "creator": "Gaumont / Mandarin Cinéma",
+    "license": "authorization-required",
+    "restrictions": "La réplique « Habile, Bill ! », extrait du film en français.",
+    "status": "reference_only",
+    "caption": "La réplique « Habile, Bill ! », extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-habile-bill.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=jA6manyvCo0&t=0s",
+        "caption": "La réplique « Habile, Bill ! », extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-habile-bill.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=jA6manyvCo0&t=0s",
+        "caption": "La réplique « Habile, Bill ! », extrait du film en français.",
+        "durationMs": 2848
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-habile-bill.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=jA6manyvCo0&t=0s",
+        "caption": "La réplique « Habile, Bill ! », extrait du film en français.",
+        "durationMs": 2803
+      }
+    ]
+  },
+  {
+    "id": "extrait_ils_ont_un_troll",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=Vi5pdd7xHNI&t=48s",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Le troll des cavernes dans la Moria, extrait du film en version anglaise.",
+    "status": "reference_only",
+    "caption": "Le troll des cavernes dans la Moria, extrait du film en version anglaise.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-ils-ont-un-troll.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=Vi5pdd7xHNI&t=48s",
+        "caption": "Le troll des cavernes dans la Moria, extrait du film en version anglaise."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-ils-ont-un-troll.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=Vi5pdd7xHNI&t=48s",
+        "caption": "Le troll des cavernes dans la Moria, extrait du film en version anglaise.",
+        "durationMs": 7942
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-ils-ont-un-troll.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=Vi5pdd7xHNI&t=48s",
+        "caption": "Le troll des cavernes dans la Moria, extrait du film en version anglaise.",
+        "durationMs": 7925
+      }
+    ]
+  },
+  {
+    "id": "habillage_j_aime_me_battre_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-j-aime-me-battre.webp",
+    "caption": "Illustration originale · J'aime me battre",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · J'aime me battre",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_j_aime_me_battre_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-j-aime-me-battre.mp3",
+    "caption": "Bruitages du jeu · coups de comédie",
+    "durationMs": 1404,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · coups de comédie",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_j_t_ai_casse",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=8s",
+    "creator": "Mandarin Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Brice lance sa réplique à Alice, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "Brice lance sa réplique à Alice, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-j-t-ai-casse.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=8s",
+        "caption": "Brice lance sa réplique à Alice, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-j-t-ai-casse.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=8s",
+        "caption": "Brice lance sa réplique à Alice, extrait du film en français.",
+        "durationMs": 5042
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-j-t-ai-casse.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=8s",
+        "caption": "Brice lance sa réplique à Alice, extrait du film en français.",
+        "durationMs": 5000
+      }
+    ]
+  },
+  {
+    "id": "habillage_l_age_c_est_dans_la_tete_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-l-age-c-est-dans-la-tete.webp",
+    "caption": "Illustration originale · L'âge, c'est dans la tête",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · L'âge, c'est dans la tête",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_l_age_c_est_dans_la_tete_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-l-age-c-est-dans-la-tete.mp3",
+    "caption": "Bruitages du jeu · miroir de palais",
+    "durationMs": 1980,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · miroir de palais",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_la_republique_cest_moi_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-la-republique-cest-moi.mp3",
+    "caption": "Bruitages du jeu · ponctuation de tension",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · ponctuation de tension",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_lamar_roast",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=pgfCT94LWig&t=6s",
+    "creator": "Rockstar North / Rockstar Games",
+    "license": "authorization-required",
+    "restrictions": "Lamar se moque de la coupe de Franklin, dialogue anglais de la cinématique.",
+    "status": "reference_only",
+    "caption": "Lamar se moque de la coupe de Franklin, dialogue anglais de la cinématique.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-lamar-roast.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=pgfCT94LWig&t=6s",
+        "caption": "Lamar se moque de la coupe de Franklin, dialogue anglais de la cinématique.",
+        "durationMs": 4337
+      }
+    ]
+  },
+  {
+    "id": "extrait_le_fidele_uggie",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=HmBSpcF36xU&t=62s",
+    "creator": "La Petite Reine / Studio 37 / France 3 Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Uggie court chercher de l’aide, extrait de The Artist avec sa musique.",
+    "status": "reference_only",
+    "caption": "Uggie court chercher de l’aide, extrait de The Artist avec sa musique.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-le-fidele-uggie.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=HmBSpcF36xU&t=62s",
+        "caption": "Uggie court chercher de l’aide, extrait de The Artist avec sa musique."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-le-fidele-uggie.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=HmBSpcF36xU&t=62s",
+        "caption": "Uggie court chercher de l’aide, extrait de The Artist avec sa musique.",
+        "durationMs": 8151
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-le-fidele-uggie.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=HmBSpcF36xU&t=62s",
+        "caption": "Uggie court chercher de l’aide, extrait de The Artist avec sa musique.",
+        "durationMs": 8120
+      }
+    ]
+  },
+  {
+    "id": "extrait_le_jaune_est_un_etat_d_esprit",
+    "kind": "image",
+    "sourceUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=0s",
+    "creator": "Mandarin Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Brice et Alice en jaune, photogramme du film.",
+    "status": "reference_only",
+    "caption": "Brice et Alice en jaune, photogramme du film.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-le-jaune-est-un-etat-d-esprit.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=eoKkVS0WH6A&t=0s",
+        "caption": "Brice et Alice en jaune, photogramme du film."
+      }
+    ]
+  },
+  {
+    "id": "habillage_le_jaune_est_un_etat_d_esprit_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-le-jaune-est-un-etat-d-esprit.mp3",
+    "caption": "Bruitages du jeu · brise de bord de mer",
+    "durationMs": 3240,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · brise de bord de mer",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_le_joli_nez_de_cleopatre_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-le-joli-nez-de-cleopatre.webp",
+    "caption": "Illustration originale · Le joli nez de Cléopâtre",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Le joli nez de Cléopâtre",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_le_joli_nez_de_cleopatre_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-le-joli-nez-de-cleopatre.mp3",
+    "caption": "Bruitages du jeu · ponctuation de palais",
+    "durationMs": 1980,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · ponctuation de palais",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_le_lion_et_le_cafard",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=0TtjjcsWqJo&t=135s",
+    "creator": "Pathé / Chez Wam",
+    "license": "authorization-required",
+    "restrictions": "La réplique du lion et du cafard, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "La réplique du lion et du cafard, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-le-lion-et-le-cafard.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=0TtjjcsWqJo&t=135s",
+        "caption": "La réplique du lion et du cafard, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-le-lion-et-le-cafard.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=0TtjjcsWqJo&t=135s",
+        "caption": "La réplique du lion et du cafard, extrait du film en français.",
+        "durationMs": 2691
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-le-lion-et-le-cafard.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=0TtjjcsWqJo&t=135s",
+        "caption": "La réplique du lion et du cafard, extrait du film en français.",
+        "durationMs": 2667
+      }
+    ]
+  },
+  {
+    "id": "extrait_lucci_luffy_lunettes",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=jidMn2TMEys&t=8s",
+    "creator": "Eiichiro Oda / Shueisha / Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "Luffy ajuste ses lunettes face à Lucci, épisode 1101, extrait Toei.",
+    "status": "reference_only",
+    "caption": "Luffy ajuste ses lunettes face à Lucci, épisode 1101, extrait Toei.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-lucci-luffy-lunettes.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=jidMn2TMEys&t=8s",
+        "caption": "Luffy ajuste ses lunettes face à Lucci, épisode 1101, extrait Toei.",
+        "durationMs": 7132
+      }
+    ]
+  },
+  {
+    "id": "habillage_mammouth_qui_vole_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-mammouth-qui-vole.webp",
+    "caption": "Illustration originale · Un mammouth qui vole !",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Un mammouth qui vole !",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_mammouth_qui_vole_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-mammouth-qui-vole.mp3",
+    "caption": "Bruitages du jeu · barrissement stylisé",
+    "durationMs": 1944,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · barrissement stylisé",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_manucure_prehistorique_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-manucure-prehistorique.webp",
+    "caption": "Illustration originale · Manucure au silex",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Manucure au silex",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_manucure_prehistorique_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-manucure-prehistorique.mp3",
+    "caption": "Bruitages du jeu · silex frotté",
+    "durationMs": 1692,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · silex frotté",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_mehari_en_panne_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-mehari-en-panne.webp",
+    "caption": "Illustration originale · La Méhari en panne",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · La Méhari en panne",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_mehari_en_panne_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-mehari-en-panne.mp3",
+    "caption": "Bruitages du jeu · moteur qui tousse",
+    "durationMs": 2160,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · moteur qui tousse",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_mon_precieux",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/lord-of-the-rings-my-precious-ymX3931x",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-mon-precieux.webp",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-my-precious-ymX3931x",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-mon-precieux.mp3",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-my-precious-ymX3931x",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 8647
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-mon-precieux.mp4",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-my-precious-ymX3931x",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 8614
+      }
+    ]
+  },
+  {
+    "id": "extrait_notre_rais_a_nous",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=ocdw7lvK78A&t=0s",
+    "creator": "Gaumont / Mandarin Cinéma",
+    "license": "authorization-required",
+    "restrictions": "Hubert montre le portrait de René Coty, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "Hubert montre le portrait de René Coty, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-notre-rais-a-nous.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=ocdw7lvK78A&t=0s",
+        "caption": "Hubert montre le portrait de René Coty, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-notre-rais-a-nous.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=ocdw7lvK78A&t=0s",
+        "caption": "Hubert montre le portrait de René Coty, extrait du film en français.",
+        "durationMs": 5094
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-notre-rais-a-nous.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=ocdw7lvK78A&t=0s",
+        "caption": "Hubert montre le portrait de René Coty, extrait du film en français.",
+        "durationMs": 5067
+      }
+    ]
+  },
+  {
+    "id": "extrait_on_attend_pas_patrick",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=0s",
+    "creator": "Pathé / Nord-Ouest Films",
+    "license": "authorization-required",
+    "restrictions": "Patrick traverse le camping et lance sa réplique, extrait du film en français.",
+    "status": "reference_only",
+    "caption": "Patrick traverse le camping et lance sa réplique, extrait du film en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-on-attend-pas-patrick.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=0s",
+        "caption": "Patrick traverse le camping et lance sa réplique, extrait du film en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-on-attend-pas-patrick.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=0s",
+        "caption": "Patrick traverse le camping et lance sa réplique, extrait du film en français.",
+        "durationMs": 9849
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-on-attend-pas-patrick.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=O94KjQguXOs&t=0s",
+        "caption": "Patrick traverse le camping et lance sa réplique, extrait du film en français.",
+        "durationMs": 9800
+      }
+    ]
+  },
+  {
+    "id": "habillage_on_est_pas_bien_la_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-on-est-pas-bien-la.webp",
+    "caption": "Illustration originale · On est pas bien là ?",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · On est pas bien là ?",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_on_est_pas_bien_la_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-on-est-pas-bien-la.mp3",
+    "caption": "Bruitages du jeu · ressac au loin",
+    "durationMs": 3240,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · ressac au loin",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_on_ne_passe_pas_facilement_en_mordor",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/lord-of-the-rings-one-does-not-simply-walk-into-mordor-IZChm9Kf",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-on-ne-passe-pas-facilement-en-mordor.webp",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-one-does-not-simply-walk-into-mordor-IZChm9Kf",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-on-ne-passe-pas-facilement-en-mordor.mp3",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-one-does-not-simply-walk-into-mordor-IZChm9Kf",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5042
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-on-ne-passe-pas-facilement-en-mordor.mp4",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-one-does-not-simply-walk-into-mordor-IZChm9Kf",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5016
+      }
+    ]
+  },
+  {
+    "id": "habillage_parler_en_alexandrins_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-parler-en-alexandrins.webp",
+    "caption": "Illustration originale · Je parle en alexandrins !",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Je parle en alexandrins !",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_parler_en_alexandrins_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-parler-en-alexandrins.mp3",
+    "caption": "Bruitages du jeu · papyrus que l’on déroule",
+    "durationMs": 1692,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · papyrus que l’on déroule",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_pas_de_palais_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-pas-de-palais.webp",
+    "caption": "Illustration originale · Pas de pierre, pas de palais",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Pas de pierre, pas de palais",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_pas_de_palais_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-pas-de-palais.mp3",
+    "caption": "Bruitages du jeu · blocs de pierre du chantier",
+    "durationMs": 2088,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · blocs de pierre du chantier",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_plan_en_coupe_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-plan-en-coupe.webp",
+    "caption": "Illustration originale · Un plan en coupe",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Un plan en coupe",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_plan_en_coupe_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-plan-en-coupe.mp3",
+    "caption": "Bruitages du jeu · plan d’architecte déroulé",
+    "durationMs": 1692,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · plan d’architecte déroulé",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_plus_d_eau_chaude_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-plus-d-eau-chaude.webp",
+    "caption": "Illustration originale · Plus d'eau chaude au bloc 3",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Plus d'eau chaude au bloc 3",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_plus_d_eau_chaude_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-plus-d-eau-chaude.mp3",
+    "caption": "Bruitages du jeu · gouttes de la douche",
+    "durationMs": 2052,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · gouttes de la douche",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_pour_frodon",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-for-frodo-TEIVlHmq",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-pour-frodon.webp",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-for-frodo-TEIVlHmq",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-pour-frodon.mp3",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-for-frodo-TEIVlHmq",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5042
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-pour-frodon.mp4",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-the-return-of-the-king-for-frodo-TEIVlHmq",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5016
+      }
+    ]
+  },
+  {
+    "id": "extrait_premier_meurtre_de_l_histoire",
+    "kind": "mixed",
+    "sourceUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=48s",
+    "creator": "STUDIOCANAL / Chez Wam",
+    "license": "authorization-required",
+    "restrictions": "Le chef invente le mot « crime », extrait de la bande-annonce en français.",
+    "status": "reference_only",
+    "caption": "Le chef invente le mot « crime », extrait de la bande-annonce en français.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-premier-meurtre-de-l-histoire.webp",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=48s",
+        "caption": "Le chef invente le mot « crime », extrait de la bande-annonce en français."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-premier-meurtre-de-l-histoire.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=48s",
+        "caption": "Le chef invente le mot « crime », extrait de la bande-annonce en français.",
+        "durationMs": 5094
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-premier-meurtre-de-l-histoire.mp4",
+        "assetUrl": "https://www.youtube.com/watch?v=9o8D6cckaL0&t=48s",
+        "caption": "Le chef invente le mot « crime », extrait de la bande-annonce en français.",
+        "durationMs": 5080
+      }
+    ]
+  },
+  {
+    "id": "habillage_previens_pierre_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-previens-pierre.webp",
+    "caption": "Illustration originale · Préviens Pierre !",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Préviens Pierre !",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_previens_pierre_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-previens-pierre.mp3",
+    "caption": "Bruitages du jeu · course du messager",
+    "durationMs": 1404,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · course du messager",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_quatre_cartouches_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-quatre-cartouches.mp3",
+    "caption": "Bruitages du jeu · quatre notes de percussion",
+    "durationMs": 1836,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · quatre notes de percussion",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_remets_nous_une_tournee_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-remets-nous-une-tournee.webp",
+    "caption": "Illustration originale · Remets-nous une tournée !",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Remets-nous une tournée !",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_remets_nous_une_tournee_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-remets-nous-une-tournee.mp3",
+    "caption": "Bruitages du jeu · nouvelle tournée de verres",
+    "durationMs": 2304,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · nouvelle tournée de verres",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_rouge_est_sus",
+    "kind": "audio",
+    "sourceUrl": "https://store.steampowered.com/app/945360/Among_Us/",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "restrictions": "Bande-son du vote dans la bande-annonce de sortie.",
+    "status": "reference_only",
+    "caption": "Bande-son du vote dans la bande-annonce de sortie.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-rouge-est-sus.mp3",
+        "assetUrl": "https://store.steampowered.com/app/945360/Among_Us/",
+        "caption": "Bande-son du vote dans la bande-annonce de sortie.",
+        "durationMs": 3031
+      }
+    ]
+  },
+  {
+    "id": "extrait_saitama_ok",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=bS-dgt0KwS8&t=12s",
+    "creator": "ONE / Yusuke Murata / Shueisha / Madhouse",
+    "license": "authorization-required",
+    "restrictions": "Saitama répond à Boros en japonais, épisode 11.",
+    "status": "reference_only",
+    "caption": "Saitama répond à Boros en japonais, épisode 11.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-saitama-ok.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=bS-dgt0KwS8&t=12s",
+        "caption": "Saitama répond à Boros en japonais, épisode 11.",
+        "durationMs": 4650
+      }
+    ]
+  },
+  {
+    "id": "habillage_saitama_promos_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-saitama-promos.mp3",
+    "caption": "Bruitages du jeu · carillon de caisse",
+    "durationMs": 1548,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · carillon de caisse",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_second_petit_dejeuner",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-what-about-second-breakfast-w4a7Mnlu",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-second-petit-dejeuner.webp",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-what-about-second-breakfast-w4a7Mnlu",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-second-petit-dejeuner.mp3",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-what-about-second-breakfast-w4a7Mnlu",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 2352
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-second-petit-dejeuner.mp4",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-what-about-second-breakfast-w4a7Mnlu",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 2322
+      }
+    ]
+  },
+  {
+    "id": "habillage_shogi_shogi_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-shogi-shogi.webp",
+    "caption": "Illustration originale · La danse du Shogi Shogi",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · La danse du Shogi Shogi",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_shogi_shogi_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-shogi-shogi.mp3",
+    "caption": "Bruitages du jeu · courte danse de camping",
+    "durationMs": 2628,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · courte danse de camping",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_silence_among_us",
+    "kind": "audio",
+    "sourceUrl": "https://store.steampowered.com/app/945360/Among_Us/",
+    "creator": "Innersloth",
+    "license": "authorization-required",
+    "restrictions": "Bande-son de l’écran « Chut ! » dans la bande-annonce de sortie.",
+    "status": "reference_only",
+    "caption": "Bande-son de l’écran « Chut ! » dans la bande-annonce de sortie.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-silence-among-us.mp3",
+        "assetUrl": "https://store.steampowered.com/app/945360/Among_Us/",
+        "caption": "Bande-son de l’écran « Chut ! » dans la bande-annonce de sortie.",
+        "durationMs": 1751
+      }
+    ]
+  },
+  {
+    "id": "habillage_slip_de_bain_bleu_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-slip-de-bain-bleu.webp",
+    "caption": "Illustration originale · Le maillot moulant de Patrick",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Le maillot moulant de Patrick",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_slip_de_bain_bleu_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-slip-de-bain-bleu.mp3",
+    "caption": "Bruitages du jeu · tissu au vent sur le fil",
+    "durationMs": 1692,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · tissu au vent sur le fil",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_takoyaki_vegeta",
+    "kind": "audio",
+    "sourceUrl": "https://www.youtube.com/watch?v=QtBgR_Lw7IA&t=42s",
+    "creator": "Akira Toriyama / Shueisha / Toei Animation",
+    "license": "authorization-required",
+    "restrictions": "Vegeta prépare les takoyakis, extrait republié en japonais.",
+    "status": "reference_only",
+    "caption": "Vegeta prépare les takoyakis, extrait republié en japonais.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-takoyaki-vegeta.mp3",
+        "assetUrl": "https://www.youtube.com/watch?v=QtBgR_Lw7IA&t=42s",
+        "caption": "Vegeta prépare les takoyakis, extrait republié en japonais.",
+        "durationMs": 7184
+      }
+    ]
+  },
+  {
+    "id": "habillage_tournoi_de_petanque_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-tournoi-de-petanque.webp",
+    "caption": "Illustration originale · Tournoi de pétanque d'Arcachon",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Tournoi de pétanque d'Arcachon",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_tournoi_de_petanque_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-tournoi-de-petanque.mp3",
+    "caption": "Bruitages du jeu · choc des boules de pétanque",
+    "durationMs": 1476,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · choc des boules de pétanque",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_un_magicien_nest_jamais_en_retard",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-a-wizard-is-never-late-frodo-baggins-3l4cj612",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-un-magicien-nest-jamais-en-retard.webp",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-a-wizard-is-never-late-frodo-baggins-3l4cj612",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-un-magicien-nest-jamais-en-retard.mp3",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-a-wizard-is-never-late-frodo-baggins-3l4cj612",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 3658
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-un-magicien-nest-jamais-en-retard.mp4",
+        "assetUrl": "https://vlipsy.com/clips/the-lord-of-the-rings-a-wizard-is-never-late-frodo-baggins-3l4cj612",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 3622
+      }
+    ]
+  },
+  {
+    "id": "extrait_vous_ne_passerez_pas",
+    "kind": "mixed",
+    "sourceUrl": "https://vlipsy.com/clips/lord-of-the-rings-you-shall-not-pass-gJcPDaxm",
+    "creator": "New Line Cinema / WingNut Films",
+    "license": "authorization-required",
+    "restrictions": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "status": "reference_only",
+    "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+    "localCopies": [
+      {
+        "kind": "image",
+        "localPath": "asset/image/catalogue/ref-vous-ne-passerez-pas.webp",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-you-shall-not-pass-gJcPDaxm",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy."
+      },
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-vous-ne-passerez-pas.mp3",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-you-shall-not-pass-gJcPDaxm",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5538
+      },
+      {
+        "kind": "video",
+        "localPath": "asset/video/ref-vous-ne-passerez-pas.mp4",
+        "assetUrl": "https://vlipsy.com/clips/lord-of-the-rings-you-shall-not-pass-gJcPDaxm",
+        "caption": "Extrait du film en version originale anglaise, repris sur Vlipsy.",
+        "durationMs": 5506
+      }
+    ]
+  },
+  {
+    "id": "habillage_vous_voulez_un_verre_deau_image",
+    "kind": "image",
+    "localPath": "asset/image/catalogue/ref-vous-voulez-un-verre-deau.webp",
+    "caption": "Illustration originale · Vous voulez un peu d'eau ?",
+    "sourceNote": "Illustration du jeu créée pour évoquer la référence.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Illustration originale · Vous voulez un peu d'eau ?",
+    "status": "demo_asset"
+  },
+  {
+    "id": "habillage_vous_voulez_un_verre_deau_audio",
+    "kind": "audio",
+    "localPath": "asset/sound/ref-vous-voulez-un-verre-deau.mp3",
+    "caption": "Bruitages du jeu · eau versée dans un verre",
+    "durationMs": 2052,
+    "sourceNote": "Bruitages originaux synthétisés pour le jeu.",
+    "creator": "Battle Ref Arena",
+    "license": "CC0-1.0",
+    "restrictions": "Bruitages du jeu · eau versée dans un verre",
+    "status": "demo_asset"
+  },
+  {
+    "id": "extrait_wrong_trump",
+    "kind": "audio",
+    "sourceUrl": "https://vlipsy.com/clips/donald-trump-wrong-2l67mNVH",
+    "creator": "NBC News",
+    "license": "authorization-required",
+    "restrictions": "Donald Trump interrompt Hillary Clinton lors du débat du 26 septembre 2016.",
+    "status": "reference_only",
+    "caption": "Donald Trump interrompt Hillary Clinton lors du débat du 26 septembre 2016.",
+    "localCopies": [
+      {
+        "kind": "audio",
+        "localPath": "asset/sound/ref-wrong-trump.mp3",
+        "assetUrl": "https://vlipsy.com/clips/donald-trump-wrong-2l67mNVH",
+        "caption": "Donald Trump interrompt Hillary Clinton lors du débat du 26 septembre 2016.",
+        "durationMs": 4285
+      }
+    ]
   }
 ]

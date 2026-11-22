@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "pulse",
   "media": [
-    "camping_attend_patrick_media"
+    "camping_attend_patrick_media",
+    "extrait_on_attend_pas_patrick"
   ],
   "abilities": {
     "effect": {

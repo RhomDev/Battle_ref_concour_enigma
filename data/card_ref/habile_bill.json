@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
   "media": [
-    "dujardin_habile_media"
+    "dujardin_habile_media",
+    "extrait_habile_bill"
   ],
   "abilities": {
     "effect": {

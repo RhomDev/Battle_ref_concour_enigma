@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "quatre_cartouches_source"
+    "quatre_cartouches_source",
+    "habillage_quatre_cartouches_audio"
   ],
   "cost": 2,
   "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",

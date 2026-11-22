@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "subtitle",
   "media": [
-    "rrrr_tout_noir_media"
+    "rrrr_tout_noir_media",
+    "extrait_ca_va_etre_tout_noir"
   ],
   "abilities": {
     "effect": {

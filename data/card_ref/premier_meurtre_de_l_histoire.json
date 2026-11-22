@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
-    "rrrr_meurtre_media"
+    "rrrr_meurtre_media",
+    "extrait_premier_meurtre_de_l_histoire"
   ],
   "abilities": {
     "effect": {

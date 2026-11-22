@@ -14,7 +14,8 @@
   },
   "visual": "pixel",
   "media": [
-    "lamar_roast_source"
+    "lamar_roast_source",
+    "extrait_lamar_roast"
   ],
   "cost": 1,
   "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide.",

@@ -16,7 +16,10 @@
   "strength": "Prosodie poétique classique désarmant l'ennemi.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "subtitle",
-  "media": [],
+  "media": [
+    "habillage_parler_en_alexandrins_image",
+    "habillage_parler_en_alexandrins_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "shield",

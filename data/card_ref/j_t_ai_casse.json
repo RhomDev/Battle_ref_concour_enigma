@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "pulse",
   "media": [
-    "dujardin_casse_media"
+    "dujardin_casse_media",
+    "extrait_j_t_ai_casse"
   ],
   "abilities": {
     "effect": {

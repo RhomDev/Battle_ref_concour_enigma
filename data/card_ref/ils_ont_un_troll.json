@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "pulse",
   "media": [
-    "lotr_troll_media"
+    "lotr_troll_media",
+    "extrait_ils_ont_un_troll"
   ],
   "abilities": {
     "effect": {

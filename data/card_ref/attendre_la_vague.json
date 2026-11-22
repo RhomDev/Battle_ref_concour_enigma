@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "dujardin_vague_media"
+    "dujardin_vague_media",
+    "extrait_attendre_la_vague"
   ],
   "abilities": {
     "effect": {

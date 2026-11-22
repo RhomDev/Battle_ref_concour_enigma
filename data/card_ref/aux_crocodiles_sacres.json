@@ -16,7 +16,10 @@
   "strength": "Sentence royale impitoyable jetant les coupables aux bêtes.",
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "spotlight",
-  "media": [],
+  "media": [
+    "habillage_aux_crocodiles_sacres_image",
+    "habillage_aux_crocodiles_sacres_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "attack",

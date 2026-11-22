@@ -14,7 +14,8 @@
   },
   "visual": "pixel",
   "media": [
-    "fortnite_default_dance_source"
+    "fortnite_default_dance_source",
+    "extrait_fortnite_default_dance"
   ],
   "cost": 3,
   "text": "Donnez 1 point de bouclier à un allié. Avec Jonesy sur votre terrain, donnez 2 points de bouclier.",

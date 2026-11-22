@@ -16,7 +16,10 @@
   "strength": "Schéma d'architecte trapézoïdal semant la discorde.",
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
-  "media": [],
+  "media": [
+    "habillage_plan_en_coupe_image",
+    "habillage_plan_en_coupe_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "attack",

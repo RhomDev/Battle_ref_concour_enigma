@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
-    "lotr_retard_media"
+    "lotr_retard_media",
+    "extrait_un_magicien_nest_jamais_en_retard"
   ],
   "abilities": {
     "effect": {

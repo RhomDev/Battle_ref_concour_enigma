@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "spotlight",
   "media": [
-    "rrrr_shampooing_media"
+    "rrrr_shampooing_media",
+    "habillage_formule_du_shampooing_image",
+    "habillage_formule_du_shampooing_audio"
   ],
   "abilities": {
     "effect": {

@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "pulse",
   "media": [
-    "dujardin_jaune_media"
+    "dujardin_jaune_media",
+    "extrait_le_jaune_est_un_etat_d_esprit",
+    "habillage_le_jaune_est_un_etat_d_esprit_audio"
   ],
   "abilities": {
     "effect": {

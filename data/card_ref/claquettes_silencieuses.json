@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "rewind",
   "media": [
-    "dujardin_claquettes_media"
+    "dujardin_claquettes_media",
+    "extrait_claquettes_silencieuses"
   ],
   "abilities": {
     "effect": {

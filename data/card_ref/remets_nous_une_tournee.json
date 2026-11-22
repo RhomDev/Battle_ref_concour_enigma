@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
-    "camping_tournee_media"
+    "camping_tournee_media",
+    "habillage_remets_nous_une_tournee_image",
+    "habillage_remets_nous_une_tournee_audio"
   ],
   "abilities": {
     "effect": {

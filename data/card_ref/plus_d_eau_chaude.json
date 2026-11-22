@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "subtitle",
   "media": [
-    "camping_eau_chaude_media"
+    "camping_eau_chaude_media",
+    "habillage_plus_d_eau_chaude_image",
+    "habillage_plus_d_eau_chaude_audio"
   ],
   "abilities": {
     "effect": {

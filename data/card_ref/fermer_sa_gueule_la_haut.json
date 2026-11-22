@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "spotlight",
   "media": [
-    "dujardin_muezzin_media"
+    "dujardin_muezzin_media",
+    "habillage_fermer_sa_gueule_la_haut_image",
+    "habillage_fermer_sa_gueule_la_haut_audio"
   ],
   "abilities": {
     "effect": {

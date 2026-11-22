@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "saitama_ok_source"
+    "saitama_ok_source",
+    "extrait_saitama_ok"
   ],
   "cost": 1,
   "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Saitama sur votre terrain, infligez 3 dégâts.",

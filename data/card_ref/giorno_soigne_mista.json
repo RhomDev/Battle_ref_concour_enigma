@@ -13,7 +13,8 @@
   },
   "visual": "pulse",
   "media": [
-    "giorno_soigne_mista_source"
+    "giorno_soigne_mista_source",
+    "extrait_giorno_soigne_mista"
   ],
   "cost": 1,
   "text": "Rendez 2 PV à un allié.",

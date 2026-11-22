@@ -16,7 +16,10 @@
   "strength": "Orientation topographique égyptienne sans faille.",
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
-  "media": [],
+  "media": [
+    "habillage_deuxieme_pyramide_a_gauche_image",
+    "habillage_deuxieme_pyramide_a_gauche_audio"
+  ],
   "abilities": {
     "effect": {
       "type": "shield",

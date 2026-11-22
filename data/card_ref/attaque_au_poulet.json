@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
-    "rrrr_poulet_media"
+    "rrrr_poulet_media",
+    "habillage_attaque_au_poulet_image",
+    "habillage_attaque_au_poulet_audio"
   ],
   "abilities": {
     "effect": {

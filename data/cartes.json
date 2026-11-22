@@ -1091,7 +1091,8 @@
     },
     "visual": "powder",
     "media": [
-      "covfefe_source"
+      "covfefe_source",
+      "habillage_covfefe_audio"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Donald Trump sur votre terrain, infligez 3 dégâts.",
@@ -1123,7 +1124,8 @@
     },
     "visual": "pulse",
     "media": [
-      "dango_luffy_kid_source"
+      "dango_luffy_kid_source",
+      "habillage_dango_luffy_kid_audio"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié. Avec Monkey D. Luffy sur votre terrain, rendez 3 PV.",
@@ -1188,7 +1190,8 @@
     },
     "visual": "pixel",
     "media": [
-      "fortnite_take_the_l_source"
+      "fortnite_take_the_l_source",
+      "extrait_fortnite_take_the_l"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide.",
@@ -1249,7 +1252,8 @@
     },
     "visual": "pulse",
     "media": [
-      "giorno_soigne_mista_source"
+      "giorno_soigne_mista_source",
+      "extrait_giorno_soigne_mista"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié.",
@@ -1278,7 +1282,8 @@
     },
     "visual": "pulse",
     "media": [
-      "gojo_t_es_faible_source"
+      "gojo_t_es_faible_source",
+      "habillage_gojo_t_es_faible_audio"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 3 dégâts.",
@@ -1372,7 +1377,8 @@
     },
     "visual": "pixel",
     "media": [
-      "lamar_roast_source"
+      "lamar_roast_source",
+      "extrait_lamar_roast"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide.",
@@ -1499,7 +1505,8 @@
     },
     "visual": "pixel",
     "media": [
-      "rouge_est_sus_source"
+      "rouge_est_sus_source",
+      "extrait_rouge_est_sus"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide.",
@@ -1528,7 +1535,8 @@
     },
     "visual": "pulse",
     "media": [
-      "saitama_ok_source"
+      "saitama_ok_source",
+      "extrait_saitama_ok"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Saitama sur votre terrain, infligez 3 dégâts.",
@@ -1560,7 +1568,8 @@
     },
     "visual": "pulse",
     "media": [
-      "saitama_promos_source"
+      "saitama_promos_source",
+      "habillage_saitama_promos_audio"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié. Avec Saitama sur votre terrain, rendez 3 PV.",
@@ -1686,7 +1695,8 @@
     },
     "visual": "pulse",
     "media": [
-      "takoyaki_vegeta_source"
+      "takoyaki_vegeta_source",
+      "extrait_takoyaki_vegeta"
     ],
     "cost": 1,
     "text": "Rendez 2 PV à un allié. Avec Vegeta sur votre terrain, rendez 3 PV.",
@@ -1784,7 +1794,8 @@
     },
     "visual": "powder",
     "media": [
-      "wrong_trump_source"
+      "wrong_trump_source",
+      "extrait_wrong_trump"
     ],
     "cost": 1,
     "text": "Infligez 2 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Donald Trump sur votre terrain, infligez 3 dégâts.",
@@ -1820,7 +1831,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "powder",
     "media": [
-      "camping_apero_media"
+      "camping_apero_media",
+      "habillage_apero_des_flots_bleus_image",
+      "habillage_apero_des_flots_bleus_audio"
     ],
     "abilities": {
       "effect": {
@@ -1852,7 +1865,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
     "media": [
-      "rrrr_pierre_media"
+      "rrrr_pierre_media",
+      "extrait_appelez_moi_pierre"
     ],
     "abilities": {
       "effect": {
@@ -1880,7 +1894,8 @@
     },
     "visual": "powder",
     "media": [
-      "arreter_la_pluie_source"
+      "arreter_la_pluie_source",
+      "extrait_arreter_la_pluie"
     ],
     "cost": 2,
     "text": "Donnez 2 points de bouclier à un allié. Avec François Hollande sur votre terrain, donnez 3 points de bouclier.",
@@ -1916,7 +1931,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "dujardin_vague_media"
+      "dujardin_vague_media",
+      "extrait_attendre_la_vague"
     ],
     "abilities": {
       "effect": {
@@ -1980,7 +1996,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "rrrr_biche_media"
+      "rrrr_biche_media",
+      "habillage_biche_oh_ma_biche_image",
+      "habillage_biche_oh_ma_biche_audio"
     ],
     "abilities": {
       "effect": {
@@ -2044,7 +2062,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "subtitle",
     "media": [
-      "rrrr_tout_noir_media"
+      "rrrr_tout_noir_media",
+      "extrait_ca_va_etre_tout_noir"
     ],
     "abilities": {
       "effect": {
@@ -2076,7 +2095,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "lotr_compte_un_media"
+      "lotr_compte_un_media",
+      "extrait_cela_ne_compte_qu_pour_un"
     ],
     "abilities": {
       "effect": {
@@ -2172,7 +2192,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "dujardin_claquettes_media"
+      "dujardin_claquettes_media",
+      "extrait_claquettes_silencieuses"
     ],
     "abilities": {
       "effect": {
@@ -2204,7 +2225,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "dujardin_blanquette_media"
+      "dujardin_blanquette_media",
+      "habillage_comment_est_votre_blanquette_image",
+      "habillage_comment_est_votre_blanquette_audio"
     ],
     "abilities": {
       "effect": {
@@ -2332,7 +2355,8 @@
     },
     "visual": "powder",
     "media": [
-      "dark_brandon_source"
+      "dark_brandon_source",
+      "habillage_dark_brandon_audio"
     ],
     "cost": 2,
     "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Joe Biden sur votre terrain, infligez 4 dégâts.",
@@ -2367,7 +2391,10 @@
     "strength": "Orientation topographique égyptienne sans faille.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
-    "media": [],
+    "media": [
+      "habillage_deuxieme_pyramide_a_gauche_image",
+      "habillage_deuxieme_pyramide_a_gauche_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "shield",
@@ -2398,7 +2425,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "lotr_hache_media"
+      "lotr_hache_media",
+      "extrait_et_ma_hache"
     ],
     "abilities": {
       "effect": {
@@ -2430,7 +2458,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
     "media": [
-      "dujardin_muezzin_media"
+      "dujardin_muezzin_media",
+      "habillage_fermer_sa_gueule_la_haut_image",
+      "habillage_fermer_sa_gueule_la_haut_audio"
     ],
     "abilities": {
       "effect": {
@@ -2458,7 +2488,8 @@
     },
     "visual": "pixel",
     "media": [
-      "fortnite_floss_source"
+      "fortnite_floss_source",
+      "extrait_fortnite_floss"
     ],
     "cost": 2,
     "text": "Donnez 2 points de bouclier à un allié.",
@@ -2487,7 +2518,8 @@
     },
     "visual": "pixel",
     "media": [
-      "franklin_et_chop_source"
+      "franklin_et_chop_source",
+      "habillage_franklin_et_chop_audio"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Franklin Clinton sur votre terrain, donnez 2 points de bouclier.",
@@ -2519,7 +2551,8 @@
     },
     "visual": "pulse",
     "media": [
-      "gojo_domaine_source"
+      "gojo_domaine_source",
+      "habillage_gojo_domaine_audio"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Satoru Gojo sur votre terrain, donnez 2 points de bouclier.",
@@ -2551,7 +2584,8 @@
     },
     "visual": "pulse",
     "media": [
-      "gojo_elu_source"
+      "gojo_elu_source",
+      "habillage_gojo_elu_audio"
     ],
     "cost": 2,
     "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Satoru Gojo sur votre terrain, infligez 4 dégâts.",
@@ -2587,7 +2621,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
     "media": [
-      "dujardin_habile_media"
+      "dujardin_habile_media",
+      "extrait_habile_bill"
     ],
     "abilities": {
       "effect": {
@@ -2714,7 +2749,10 @@
     "strength": "Revendication d'un forfait moderne dans le désert.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
-    "media": [],
+    "media": [
+      "habillage_l_age_c_est_dans_la_tete_image",
+      "habillage_l_age_c_est_dans_la_tete_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "shield",
@@ -2741,7 +2779,8 @@
     },
     "visual": "powder",
     "media": [
-      "la_republique_cest_moi_source"
+      "la_republique_cest_moi_source",
+      "habillage_la_republique_cest_moi_audio"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Jean-Luc Mélenchon sur votre terrain, donnez 2 points de bouclier.",
@@ -2777,7 +2816,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "dujardin_uggie_media"
+      "dujardin_uggie_media",
+      "extrait_le_fidele_uggie"
     ],
     "abilities": {
       "effect": {
@@ -2808,7 +2848,10 @@
     "strength": "Charme historique qui a changé la face du monde.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
-    "media": [],
+    "media": [
+      "habillage_le_joli_nez_de_cleopatre_image",
+      "habillage_le_joli_nez_de_cleopatre_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "heal",
@@ -2835,7 +2878,8 @@
     },
     "visual": "pulse",
     "media": [
-      "lucci_luffy_lunettes_source"
+      "lucci_luffy_lunettes_source",
+      "extrait_lucci_luffy_lunettes"
     ],
     "cost": 2,
     "text": "Infligez 3 dégâts à un personnage adverse ou au joueur si son terrain est vide. Avec Monkey D. Luffy sur votre terrain, infligez 4 dégâts.",
@@ -2871,7 +2915,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "rrrr_mammouth_media"
+      "rrrr_mammouth_media",
+      "habillage_mammouth_qui_vole_image",
+      "habillage_mammouth_qui_vole_audio"
     ],
     "abilities": {
       "effect": {
@@ -2903,7 +2949,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "rrrr_manucure_media"
+      "rrrr_manucure_media",
+      "habillage_manucure_prehistorique_image",
+      "habillage_manucure_prehistorique_audio"
     ],
     "abilities": {
       "effect": {
@@ -2935,7 +2983,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "camping_mehari_media"
+      "camping_mehari_media",
+      "habillage_mehari_en_panne_image",
+      "habillage_mehari_en_panne_audio"
     ],
     "abilities": {
       "effect": {
@@ -2999,7 +3049,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "lotr_precieux_media"
+      "lotr_precieux_media",
+      "extrait_mon_precieux"
     ],
     "abilities": {
       "effect": {
@@ -3031,7 +3082,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "pulse",
     "media": [
-      "camping_attend_patrick_media"
+      "camping_attend_patrick_media",
+      "extrait_on_attend_pas_patrick"
     ],
     "abilities": {
       "effect": {
@@ -3063,7 +3115,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "lotr_mordor_media"
+      "lotr_mordor_media",
+      "extrait_on_ne_passe_pas_facilement_en_mordor"
     ],
     "abilities": {
       "effect": {
@@ -3094,7 +3147,10 @@
     "strength": "Prosodie poétique classique désarmant l'ennemi.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
-    "media": [],
+    "media": [
+      "habillage_parler_en_alexandrins_image",
+      "habillage_parler_en_alexandrins_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "shield",
@@ -3124,7 +3180,10 @@
     "strength": "Logique implacable sur la rupture d'approvisionnement.",
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
-    "media": [],
+    "media": [
+      "habillage_pas_de_palais_image",
+      "habillage_pas_de_palais_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "attack",
@@ -3154,7 +3213,10 @@
     "strength": "Schéma d'architecte trapézoïdal semant la discorde.",
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
-    "media": [],
+    "media": [
+      "habillage_plan_en_coupe_image",
+      "habillage_plan_en_coupe_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "attack",
@@ -3185,7 +3247,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "subtitle",
     "media": [
-      "camping_eau_chaude_media"
+      "camping_eau_chaude_media",
+      "habillage_plus_d_eau_chaude_image",
+      "habillage_plus_d_eau_chaude_audio"
     ],
     "abilities": {
       "effect": {
@@ -3217,7 +3281,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "subtitle",
     "media": [
-      "rrrr_previens_media"
+      "rrrr_previens_media",
+      "habillage_previens_pierre_image",
+      "habillage_previens_pierre_audio"
     ],
     "abilities": {
       "effect": {
@@ -3245,7 +3311,8 @@
     },
     "visual": "pulse",
     "media": [
-      "quatre_cartouches_source"
+      "quatre_cartouches_source",
+      "habillage_quatre_cartouches_audio"
     ],
     "cost": 2,
     "text": "Donnez 2 points de bouclier à un allié. Avec Guido Mista sur votre terrain, donnez 3 points de bouclier.",
@@ -3377,7 +3444,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
     "media": [
-      "lotr_dejeuner_media"
+      "lotr_dejeuner_media",
+      "extrait_second_petit_dejeuner"
     ],
     "abilities": {
       "effect": {
@@ -3409,7 +3477,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "camping_shogi_media"
+      "camping_shogi_media",
+      "habillage_shogi_shogi_image",
+      "habillage_shogi_shogi_audio"
     ],
     "abilities": {
       "effect": {
@@ -3437,7 +3507,8 @@
     },
     "visual": "pixel",
     "media": [
-      "silence_among_us_source"
+      "silence_among_us_source",
+      "extrait_silence_among_us"
     ],
     "cost": 2,
     "text": "Donnez 1 point de bouclier à un allié. Avec Rouge sur votre terrain, donnez 2 points de bouclier.",
@@ -3473,7 +3544,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "camping_slip_media"
+      "camping_slip_media",
+      "habillage_slip_de_bain_bleu_image",
+      "habillage_slip_de_bain_bleu_audio"
     ],
     "abilities": {
       "effect": {
@@ -3505,7 +3578,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
     "media": [
-      "camping_petanque_media"
+      "camping_petanque_media",
+      "habillage_tournoi_de_petanque_image",
+      "habillage_tournoi_de_petanque_audio"
     ],
     "abilities": {
       "effect": {
@@ -3537,7 +3612,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "lotr_retard_media"
+      "lotr_retard_media",
+      "extrait_un_magicien_nest_jamais_en_retard"
     ],
     "abilities": {
       "effect": {
@@ -3598,7 +3674,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "rrrr_eau_media"
+      "rrrr_eau_media",
+      "habillage_vous_voulez_un_verre_deau_image",
+      "habillage_vous_voulez_un_verre_deau_audio"
     ],
     "abilities": {
       "effect": {
@@ -3737,7 +3815,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "rrrr_poulet_media"
+      "rrrr_poulet_media",
+      "habillage_attaque_au_poulet_image",
+      "habillage_attaque_au_poulet_audio"
     ],
     "abilities": {
       "effect": {
@@ -3768,7 +3848,10 @@
     "strength": "Sentence royale impitoyable jetant les coupables aux bêtes.",
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
-    "media": [],
+    "media": [
+      "habillage_aux_crocodiles_sacres_image",
+      "habillage_aux_crocodiles_sacres_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "attack",
@@ -3798,7 +3881,9 @@
     "strength": "Monologue philosophique inspirant sur les rencontres de la vie.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
-    "media": [],
+    "media": [
+      "extrait_bonne_situation_scribe"
+    ],
     "abilities": {
       "effect": {
         "type": "heal",
@@ -3829,7 +3914,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "camping_emplacement_media"
+      "camping_emplacement_media",
+      "habillage_emplacement_17_image",
+      "habillage_emplacement_17_audio"
     ],
     "abilities": {
       "effect": {
@@ -3893,7 +3980,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "rrrr_shampooing_media"
+      "rrrr_shampooing_media",
+      "habillage_formule_du_shampooing_image",
+      "habillage_formule_du_shampooing_audio"
     ],
     "abilities": {
       "effect": {
@@ -3922,7 +4011,8 @@
     },
     "visual": "pixel",
     "media": [
-      "fortnite_default_dance_source"
+      "fortnite_default_dance_source",
+      "extrait_fortnite_default_dance"
     ],
     "cost": 3,
     "text": "Donnez 1 point de bouclier à un allié. Avec Jonesy sur votre terrain, donnez 2 points de bouclier.",
@@ -3958,7 +4048,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "rewind",
     "media": [
-      "lotr_fuyez_media"
+      "lotr_fuyez_media",
+      "extrait_fuyez_pauvres_fous"
     ],
     "abilities": {
       "effect": {
@@ -3989,7 +4080,10 @@
     "strength": "Énergie décuplée permettant de transporter les blocs de granit.",
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
-    "media": [],
+    "media": [
+      "habillage_goutte_de_potion_magique_image",
+      "habillage_goutte_de_potion_magique_audio"
+    ],
     "abilities": {
       "effect": {
         "type": "heal",
@@ -4020,7 +4114,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "pulse",
     "media": [
-      "lotr_troll_media"
+      "lotr_troll_media",
+      "extrait_ils_ont_un_troll"
     ],
     "abilities": {
       "effect": {
@@ -4084,7 +4179,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "dujardin_battre_media"
+      "dujardin_battre_media",
+      "habillage_j_aime_me_battre_image",
+      "habillage_j_aime_me_battre_audio"
     ],
     "abilities": {
       "effect": {
@@ -4116,7 +4213,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "pulse",
     "media": [
-      "dujardin_casse_media"
+      "dujardin_casse_media",
+      "extrait_j_t_ai_casse"
     ],
     "abilities": {
       "effect": {
@@ -4148,7 +4246,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "pulse",
     "media": [
-      "dujardin_jaune_media"
+      "dujardin_jaune_media",
+      "extrait_le_jaune_est_un_etat_d_esprit",
+      "habillage_le_jaune_est_un_etat_d_esprit_audio"
     ],
     "abilities": {
       "effect": {
@@ -4179,7 +4279,9 @@
     "strength": "Mépris tranchant de l'architecte officiel envers son rival.",
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "spotlight",
-    "media": [],
+    "media": [
+      "extrait_le_lion_et_le_cafard"
+    ],
     "abilities": {
       "effect": {
         "type": "attack",
@@ -4243,7 +4345,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "scroll",
     "media": [
-      "dujardin_coty_media"
+      "dujardin_coty_media",
+      "extrait_notre_rais_a_nous"
     ],
     "abilities": {
       "effect": {
@@ -4275,7 +4378,9 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "subtitle",
     "media": [
-      "camping_bien_la_media"
+      "camping_bien_la_media",
+      "habillage_on_est_pas_bien_la_image",
+      "habillage_on_est_pas_bien_la_audio"
     ],
     "abilities": {
       "effect": {
@@ -4307,7 +4412,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "pulse",
     "media": [
-      "lotr_pour_frodon_media"
+      "lotr_pour_frodon_media",
+      "extrait_pour_frodon"
     ],
     "abilities": {
       "effect": {
@@ -4339,7 +4445,8 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "rrrr_meurtre_media"
+      "rrrr_meurtre_media",
+      "extrait_premier_meurtre_de_l_histoire"
     ],
     "abilities": {
       "effect": {
@@ -4371,7 +4478,9 @@
     "weakness": "Demande un personnage adverse déployé.",
     "visual": "powder",
     "media": [
-      "camping_tournee_media"
+      "camping_tournee_media",
+      "habillage_remets_nous_une_tournee_image",
+      "habillage_remets_nous_une_tournee_audio"
     ],
     "abilities": {
       "effect": {
@@ -4468,7 +4577,8 @@
     "weakness": "Demande un personnage allié déployé.",
     "visual": "spotlight",
     "media": [
-      "lotr_passerez_pas_media"
+      "lotr_passerez_pas_media",
+      "extrait_vous_ne_passerez_pas"
     ],
     "abilities": {
       "effect": {

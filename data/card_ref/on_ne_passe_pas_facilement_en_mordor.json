@@ -17,7 +17,8 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "scroll",
   "media": [
-    "lotr_mordor_media"
+    "lotr_mordor_media",
+    "extrait_on_ne_passe_pas_facilement_en_mordor"
   ],
   "abilities": {
     "effect": {

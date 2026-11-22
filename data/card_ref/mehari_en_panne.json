@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage allié déployé.",
   "visual": "rewind",
   "media": [
-    "camping_mehari_media"
+    "camping_mehari_media",
+    "habillage_mehari_en_panne_image",
+    "habillage_mehari_en_panne_audio"
   ],
   "abilities": {
     "effect": {

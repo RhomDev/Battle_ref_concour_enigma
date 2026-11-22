@@ -17,7 +17,9 @@
   "weakness": "Demande un personnage adverse déployé.",
   "visual": "powder",
   "media": [
-    "dujardin_battre_media"
+    "dujardin_battre_media",
+    "habillage_j_aime_me_battre_image",
+    "habillage_j_aime_me_battre_audio"
   ],
   "abilities": {
     "effect": {
